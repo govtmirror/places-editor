@@ -4963,16 +4963,29 @@
     {
         "default": true,
         "description": "Shows major features to help orient you.",
-        "id": "locator",
-        "name": "Locator Overlay",
+        "id": "esri-boundaries-overlay",
+        "name": "Esri Boundaries Locator Overlay",
         "overlay": true,
         "scaleExtent": [
             0,
-            26.01
+            20
         ],
-        "template": "http://{switch:a,b,c}.tiles.mapbox.com/v3/nps.gdipreks/{zoom}/{x}/{y}.png",
+        "template": "http://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{zoom}/{y}/{x}.png",
         "type": "tms"
     },
+    {
+        "default": true,
+        "description": "Shows major features to help orient you.",
+        "id": "esri-roads-overlay",
+        "name": "Esri Roads Locator Overlay",
+        "overlay": true,
+        "scaleExtent": [
+            0,
+            20
+        ],
+        "template": "http://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Transportation/MapServer/tile/{zoom}/{y}/{x}.png",
+        "type": "tms"
+    }, 
     {
         "default": true,
         "description": "Strava Heat",
