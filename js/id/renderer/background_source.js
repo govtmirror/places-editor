@@ -64,7 +64,7 @@ iD.BackgroundSource = function(data) {
     };
 
     source.isLocatorOverlay = function() {
-        return name === 'Locator Overlay';
+        return name.match('Locator Overlay');
     };
 
     source.copyrightNotices = function() {};

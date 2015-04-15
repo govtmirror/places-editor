@@ -83,7 +83,7 @@ sources.forEach(function(source) {
         ]];
     }
 
-    if (source.name == 'Locator Overlay') {
+    if (source.name.match('Locator Overlay')) {
         im.overzoom = false;
     }
 
