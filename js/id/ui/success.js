@@ -3,8 +3,8 @@ iD.ui.Success = function(context) {
         changeset;
 
     function success(selection) {
-        var message = (changeset.comment || t('success.edited_osm')).substring(0, 130) +
-            ' ' + context.connection().changesetURL(changeset.id);
+        // var message = (changeset.comment || t('success.edited_osm')).substring(0, 130) +
+            // ' ' + context.connection().changesetURL(changeset.id);
 
         var header = selection.append('div')
             .attr('class', 'header fillL');
@@ -24,14 +24,15 @@ iD.ui.Success = function(context) {
         body.append('p')
             .html(t('success.help_html'));
 
-        var changesetURL = context.connection().changesetURL(changeset.id);
+        // var changesetURL = context.connection().changesetURL(changeset.id);
 
         body.append('a')
             .attr('class', 'button col12 osm')
-            .attr('target', '_blank')
-            .attr('href', changesetURL)
-            .text(t('success.view_on_osm'));
+            .attr('target', '_blank');
+            // .attr('href', changesetURL)
+            // .text(t('success.view_on_osm'));
 
+        /*
         var sharing = {
             facebook: 'https://facebook.com/sharer/sharer.php?u=' + encodeURIComponent(changesetURL),
             twitter: 'https://twitter.com/intent/tweet?source=webclient&text=' + encodeURIComponent(message),
@@ -47,6 +48,7 @@ iD.ui.Success = function(context) {
             .call(bootstrap.tooltip()
                 .title(function(d) { return t('success.' + d.key); })
                 .placement('bottom'));
+        */
     }
 
     success.changeset = function(_) {

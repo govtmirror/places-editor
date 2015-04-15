@@ -375,7 +375,7 @@ en:
     untagged_point: Untagged point
     untagged_line: Untagged line
     untagged_area: Untagged area
-    many_deletions: "You're deleting {n} objects. Are you sure you want to do this? This will delete them from the map that everyone else sees on openstreetmap.org."
+    many_deletions: "You're deleting {n} objects. Are you sure you want to do this? This will delete them from every map using Places."
     tag_suggests_area: "The tag {tag} suggests line should be area, but it is not an area"
     untagged_point_tooltip: "Select a feature type that describes what this point is."
     untagged_line_tooltip: "Select a feature type that describes what this line is."
