@@ -16,6 +16,6 @@
     "tags": {
         "place": "island"
     },
-    "searchable": false,
+    "searchable": true,
     "name": "Island"
 }
