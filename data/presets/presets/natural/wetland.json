@@ -11,6 +11,6 @@
         "natural": "wetland"
     },
     "terms": [],
-    "searchable": false,
+    "searchable": true,
     "name": "Wetland"
 }
