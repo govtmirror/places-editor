@@ -1,11 +1,12 @@
 {
     "geometry": [
+        "point",
         "area"
     ],
     "tags": {
         "landuse": "basin"
     },
     "terms": [],
-    "searchable": false,
+    "searchable": true,
     "name": "Basin"
 }
