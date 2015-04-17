@@ -1,0 +1,17 @@
+{
+    "fields": [
+        "name"
+    ],
+    "geometry": [
+        "point",
+        "line"
+    ],
+    "terms": [
+      "valley"
+    ],
+    "tags": {
+        "natural": "valley"
+    },
+    "searchable": true,
+    "name": "Valley"
+}

@@ -1,0 +1,15 @@
+{
+    "fields": [
+        "name"
+    ],
+    "geometry": [
+        "point",
+        "area"
+    ],
+    "terms": [],
+    "tags": {
+        "natural": "dune"
+    },
+    "searchable": true,
+    "name": "Dune"
+}

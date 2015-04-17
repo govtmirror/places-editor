@@ -1,0 +1,17 @@
+{
+    "fields": [
+        "name"
+    ],
+    "geometry": [
+        "point",
+        "line"
+    ],
+    "terms": [
+      "ridge"
+    ],
+    "tags": {
+        "natural": "ridge"
+    },
+    "searchable": true,
+    "name": "Ridge"
+}

@@ -1,0 +1,13 @@
+{
+    "geometry": [
+        "point",
+        "area"
+    ],
+    "terms": [],
+    "tags": {
+        "natural": "grassland",
+        "grassland": "prarie"
+    },
+    "searchable": true,
+    "name": "Prarie"
+}
