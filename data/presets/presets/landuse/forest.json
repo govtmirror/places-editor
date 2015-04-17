@@ -10,7 +10,7 @@
     "tags": {
         "landuse": "forest"
     },
-    "searchable": false,
+    "searchable": true,
     "terms": [
         "tree"
     ],
