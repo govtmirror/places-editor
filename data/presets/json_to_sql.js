@@ -2,7 +2,7 @@ var fs = require('fs'),
   inputFilename = './presets.json',
   outputFilename = './presets.sql',
   schemaFilename = './schema/preset.json',
-  tableName = 'table',
+  tableName = 'tag_list',
   format = function(dataType, data) {
     var returnValue,
       types = {
@@ -41,9 +41,7 @@ var fs = require('fs'),
         }
       };
     for (var type in types) {
-      console.log('x', dataType.type);
       if (dataType.type === type) {
-        console.log('*', dataType.type);
         returnValue = types[type](data);
         break;
       }
@@ -62,8 +60,11 @@ var fs = require('fs'),
           inputJson = JSON.parse(inputData),
           values = [];
         for (var key in inputJson) {
-          columns = [];
-          values = [];
+          columns = ['pathname'];
+          values = [format({
+            'type': 'string',
+            'required': 'true'
+          }, key)];
           for (var column in schema) {
             if (inputJson[key][column] || schema[column] && typeof schema[column] === 'string' && schema[column].split(' ').indexOf('key') > -1) {
               columns.push(column);
