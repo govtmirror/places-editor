@@ -8,12 +8,13 @@ all: \
 	dist/imagery.js \
 	dist/img/line-presets.png \
 	dist/img/relation-presets.png \
-	node_modules/.install
 
 DATA_FILES = $(shell find data -type f -name '*.json' -o -name '*.md')
 data/data.js: $(DATA_FILES) dist/locales/en.json dist/img/maki-sprite.png data/presets/presets.json data/presets/defaults.json data/presets/categories.json data/presets/fields.json
 	@echo "----< $@ >----"
 	node build.js
+
+node_modules/maki/www/images/maki-sprite.png: node_modules/.install
 
 dist/locales/en.json: data/core.yaml data/presets.yaml data/presets/presets.json data/presets/defaults.json data/presets/categories.json data/presets/fields.json
 	@echo "----< $@ >----"
