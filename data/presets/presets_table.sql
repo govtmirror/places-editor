@@ -1,4 +1,4 @@
-CREATE TABLE public.tag_list
+CREATE TABLE IF NOT EXISTS public.tag_list
 (
   pathname text NOT NULL,
   name text NOT NULL,
