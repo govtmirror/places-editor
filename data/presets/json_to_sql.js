@@ -27,7 +27,7 @@ var fs = require('fs'),
             if (returnValue) {
               returnValue = returnValue.substring(0, returnValue.length - 1);
             }
-            return 'ARRAY[' + returnValue + ']';
+            return returnValue.length > 0 ? 'ARRAY[' + returnValue + ']' : 'null';
           } else {
             throw 'Array isn\'t really an array';
           }
