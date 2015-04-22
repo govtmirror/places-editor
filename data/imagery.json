@@ -1,19 +1,7 @@
 [
     {
         "default": true,
-        "description": "Satellite and aerial imagery.",
-        "id": "bing-imagery",
-        "name": "Bing Imagery",
-        "scaleExtent": [
-            0,
-            22
-        ],
-        "template": "http://www.bing.com/maps/",
-        "type": "bing"
-    },
-    {
-        "default": true,
-        "description": "Satellite and aerial imagery.",
+        "description": "Esri satellite and aerial imagery.",
         "id": "esri-imagery",
         "name": "Esri Imagery",
         "scaleExtent": [
@@ -25,7 +13,7 @@
     },
     {
         "default": true,
-        "description": "Satellite and aerial imagery.",
+        "description": "Mapbox satellite and aerial imagery.",
         "id": "mapbox-satellite",
         "name": "Mapbox Satellite",
         "scaleExtent": [
@@ -39,6 +27,7 @@
     },
     {
         "default": true,
+        "description": "Open source aerial imagery from MapQuest.",
         "id": "mapquest-open-aerial",
         "name": "MapQuest Open Aerial",
         "template": "http://oatile{switch:1,2,3,4}.mqcdn.com/tiles/1.0.0/sat/{zoom}/{x}/{y}.png",
@@ -46,6 +35,7 @@
     },
     {
         "default": true,
+        "description": "Imagery from the National Agriculture Imagery Program.",
         "id": "usgs-naip",
         "name": "USGS NAIP",
         "scaleExtent": [
@@ -4205,6 +4195,7 @@
     },
     {
         "default": true,
+        "description": "Scanned topographic maps from the USGS.",
         "id": "usgs-topo",
         "name": "USGS Topographic Maps",
         "template": "http://{switch:a,b,c}.tile.openstreetmap.us/usgs_scanned_topos/{zoom}/{x}/{y}.png",
@@ -4962,9 +4953,9 @@
     },
     {
         "default": true,
-        "description": "Shows major features to help orient you.",
+        "description": "Boundary features from Esri.",
         "id": "esri-boundaries-overlay",
-        "name": "Esri Boundaries Locator Overlay",
+        "name": "Esri Boundaries Overlay",
         "overlay": true,
         "scaleExtent": [
             0,
@@ -4975,9 +4966,9 @@
     },
     {
         "default": true,
-        "description": "Shows major features to help orient you.",
+        "description": "Roads and other transportation features from Esri.",
         "id": "esri-roads-overlay",
-        "name": "Esri Roads Locator Overlay",
+        "name": "Esri Roads Overlay",
         "overlay": true,
         "scaleExtent": [
             0,
@@ -4985,10 +4976,23 @@
         ],
         "template": "http://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Transportation/MapServer/tile/{zoom}/{y}/{x}.png",
         "type": "tms"
-    }, 
+    },
     {
         "default": true,
-        "description": "Strava Heat",
+        "description": "Park, boundaries, and state labels from Park Tiles.",
+        "id": "park-tiles-overlay",
+        "name": "Park Tiles Overlay",
+        "overlay": true,
+        "scaleExtent": [
+            0,
+            20
+        ],
+        "template": "http://{switch:a,b,c}.tiles.mapbox.com/v3/nps.5c677638/{zoom}/{x}/{y}.png",
+        "type": "tms"
+    },
+    {
+        "default": true,
+        "description": "An activity heatmap from Strava.",
         "id": "strava-heat",
         "name": "Strava Heat",
         "overlay": true,

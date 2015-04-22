@@ -56,7 +56,7 @@ function switchTo(to) {
     }
   }
 
-  window.location.href = '../edit/#background=bing-imagery&map=' + split[0] + '/' + split[2] + '/' + split[1] + '&overlays=locator';
+  window.location.href = '../edit/#background=mapbox-satellite&map=' + split[0] + '/' + split[2] + '/' + split[1] + '&overlays=park-tiles-overlay';
 }
 
 window.onload = function() {

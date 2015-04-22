@@ -76,7 +76,7 @@ window.onload = function() {
 
     iframe.src = path;
   } else {
-    var initial = 'background=bing-imagery&map=4.00/-99.00/39.00&overlays=locator';
+    var initial = 'background=mapbox-satellite&map=4.00/-99.00/39.00&overlays=park-tiles-overlay';
 
     path = '../dist/index.html#' + initial;
 
