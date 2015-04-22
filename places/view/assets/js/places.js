@@ -104,6 +104,6 @@ window.onload = function() {
 
 (function() {
   var s = document.createElement('script');
-  s.src = 'http://www.nps.gov/npmap/npmap.js/2.0.0/npmap-bootstrap.min.js';
+  s.src = 'http://www.nps.gov/lib/npmap.js/2.0.0/npmap-bootstrap.min.js';
   document.body.appendChild(s);
 })();
