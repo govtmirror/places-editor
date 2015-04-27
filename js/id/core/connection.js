@@ -20,7 +20,9 @@ iD.Connection = function(context) {
         nodeStr = 'node',
         wayStr = 'way',
         relationStr = 'relation',
+        userDetails,
         off;
+
 
     connection.changesetURL = function(changesetId) {
         return url + '/changeset/' + changesetId;
@@ -285,8 +287,6 @@ iD.Connection = function(context) {
             });
     };
 
-    var userDetails;
-
     connection.userDetails = function(callback) {
         if (userDetails) {
             callback(undefined, userDetails);
@@ -413,6 +413,7 @@ iD.Connection = function(context) {
     };
 
     connection.flush = function() {
+        userDetails = undefined;
         _.forEach(inflight, abortRequest);
         loadedTiles = {};
         inflight = {};
@@ -426,12 +427,14 @@ iD.Connection = function(context) {
     };
 
     connection.logout = function() {
+        userDetails = undefined;
         oauth.logout();
         event.auth();
         return connection;
     };
 
     connection.authenticate = function(callback) {
+        userDetails = undefined;
         function done(err, res) {
             event.auth();
             if (callback) callback(err, res);

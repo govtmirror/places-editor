@@ -133,14 +133,42 @@ iD.ui.EntityEditor = function(context) {
     }
 
     function clean(o) {
+        function isOpeningHours(k) {
+            return _.any(['opening_hours', 'service_times', 'collection_times',
+                'operating_times', 'smoking_hours', 'happy_hours'], function(s) {
+                    return k.indexOf(s) !== -1;
+            });
+        }
+        function cleanVal(k, v) {
+            var cleaned = v.split(';')
+                .map(function(s) { return s.trim(); })
+                .join(isOpeningHours(k) ? '; ' : ';');
+
+            // The code below is not intended to validate websites and emails.
+            // It is only intended to prevent obvious copy-paste errors. (#2323)
+
+            // clean website-like tags
+            if (k.indexOf('website') !== -1 || cleaned.indexOf('http') !== -1) {
+                cleaned = cleaned
+                    .replace(/[\u200B-\u200F\uFEFF]/g, '')  // strip LRM and other zero width chars
+                    .replace(/[^\w\+\-\.\/\?\[\]\(\)~!@#$%&*',:;=]/g, encodeURIComponent);
+
+            // clean email-like tags
+            } else if (k.indexOf('email') !== -1) {
+                cleaned = cleaned
+                    .replace(/[\u200B-\u200F\uFEFF]/g, '')  // strip LRM and other zero width chars
+                    .replace(/[^\w\+\-\.\/\?\|~!@#$%^&*'`{};=]/g, '');  // note: ';' allowed as OSM delimiter
+            }
+
+            return cleaned;
+        }
+
         var out = {}, k, v;
-        /*jshint -W083 */
         for (k in o) {
             if (k && (v = o[k]) !== undefined) {
-                out[k] = v.split(';').map(function(s) { return s.trim(); }).join(';');
+                out[k] = cleanVal(k, v);
             }
         }
-        /*jshint +W083 */
         return out;
     }
 
