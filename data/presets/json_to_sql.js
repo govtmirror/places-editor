@@ -66,9 +66,9 @@ var fs = require('fs'),
             'required': 'true'
           }, key)];
           for (var column in schema) {
-            if (inputJson[key][column] || schema[column] && typeof schema[column] === 'string' && schema[column].split(' ').indexOf('key') > -1) {
+            if (inputJson[key][column] || inputJson[key][column] === false || schema[column] && typeof schema[column] === 'string' && schema[column].split(' ').indexOf('key') > -1) {
               columns.push(column);
-              values.push(format(schema[column], inputJson[key][column] || column));
+              values.push(format(schema[column], (inputJson[key][column] === false ? false : inputJson[key][column] || column)));
             }
           }
           inserts.push(['INSERT INTO', tableName, '(', columns.join(','), ') VALUES (', values.join(','), ');'].join(' '));
