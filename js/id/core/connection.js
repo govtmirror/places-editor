@@ -72,7 +72,7 @@ iD.Connection = function(context) {
             return result;
         }
 
-        _.each(_.groupBy(ids, iD.Entity.id.type), function(v, k) {
+        _.each(_.groupBy(_.uniq(ids), iD.Entity.id.type), function(v, k) {
             var type = k + 's',
                 osmIDs = _.map(v, iD.Entity.id.toOSM);
 

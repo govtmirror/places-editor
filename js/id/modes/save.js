@@ -52,10 +52,27 @@ iD.modes.Save = function(context) {
                 showErrors();
 
             } else {
+                var loadMore = [];
                 _.each(result.data, function(entity) {
                     remoteGraph.replace(entity);
                     toLoad = _.without(toLoad, entity.id);
+
+                    // Because loadMultiple doesn't download /full like loadEntity,
+                    // need to also load children that aren't already being checked..
+                    if (!entity.visible) return;
+                    if (entity.type === 'way') {
+                        loadMore.push.apply(loadMore,
+                            _.difference(entity.nodes, toCheck, toLoad, loadMore));
+                    } else if (entity.type === 'relation' && entity.isMultipolygon()) {
+                        loadMore.push.apply(loadMore,
+                            _.difference(_.pluck(entity.members, 'id'), toCheck, toLoad, loadMore));
+                    }
                 });
+
+                if (loadMore.length) {
+                    toLoad.push.apply(toLoad, loadMore);
+                    context.connection().loadMultiple(loadMore, loaded);
+                }
 
                 if (!toLoad.length) {
                     checkConflicts();
@@ -85,7 +102,7 @@ iD.modes.Save = function(context) {
                         var a = localGraph.hasEntity(children[i]),
                             b = remoteGraph.hasEntity(children[i]);
 
-                        if (!a || !b || a.version !== b.version) return false;
+                        if (a && b && a.version !== b.version) return false;
                     }
                 }
 
@@ -184,15 +201,14 @@ iD.modes.Save = function(context) {
                 .on('save', function() {
                     for (var i = 0; i < conflicts.length; i++) {
                         if (conflicts[i].chosen === 1) {  // user chose "keep theirs"
-                            var entity = context.entity(conflicts[i].id);
-                            if (entity.type === 'way') {
+                            var entity = context.hasEntity(conflicts[i].id);
+                            if (entity && entity.type === 'way') {
                                 var children = _.uniq(entity.nodes);
                                 for (var j = 0; j < children.length; j++) {
-                                    var child = context.entity(children[j]);
-                                    history.replace(iD.actions.Revert(child));
+                                    history.replace(iD.actions.Revert(children[j]));
                                 }
                             }
-                            history.replace(iD.actions.Revert(entity));
+                            history.replace(iD.actions.Revert(conflicts[i].id));
                         }
                     }
 
