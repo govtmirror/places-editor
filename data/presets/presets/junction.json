@@ -3,8 +3,9 @@
         "vertex",
         "area"
     ],
+    "name": "Junction",
+    "searchable": false,
     "tags": {
         "junction": "yes"
-    },
-    "name": "Junction"
+    }
 }

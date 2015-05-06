@@ -2,9 +2,9 @@
     "geometry": [
         "vertex"
     ],
+    "name": "High-Voltage Tower",
+    "searchable": false,
     "tags": {
         "power": "tower"
-    },
-    "searchable": false,
-    "name": "High-Voltage Tower"
+    }
 }

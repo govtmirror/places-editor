@@ -3,9 +3,9 @@
         "line",
         "area"
     ],
+    "name": "Ditch",
+    "searchable": false,
     "tags": {
         "barrier": "ditch"
-    },
-    "searchable": false,
-    "name": "Ditch"
+    }
 }

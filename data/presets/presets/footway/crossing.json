@@ -9,14 +9,14 @@
     "geometry": [
         "line"
     ],
+    "name": "Crossing",
+    "searchable": false,
     "tags": {
-        "highway": "footway",
-        "footway": "crossing"
+        "footway": "crossing",
+        "highway": "footway"
     },
     "terms": [
         "crosswalk",
         "zebra crossing"
-    ],
-    "searchable": false,
-    "name": "Crossing"
+    ]
 }

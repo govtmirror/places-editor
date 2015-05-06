@@ -1,5 +1,4 @@
 {
-    "icon": "bus",
     "fields": [
         "ref",
         "network",
@@ -8,9 +7,10 @@
     "geometry": [
         "vertex"
     ],
+    "icon": "bus",
+    "name": "Stop Position",
+    "searchable": false,
     "tags": {
         "public_transport": "stop_position"
-    },
-    "searchable": false,
-    "name": "Stop Position"
+    }
 }

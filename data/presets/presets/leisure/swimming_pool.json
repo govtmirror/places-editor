@@ -1,5 +1,4 @@
 {
-    "icon": "swimming",
     "fields": [
         "access_simple",
         "operator",
@@ -10,9 +9,10 @@
         "vertex",
         "area"
     ],
+    "icon": "swimming",
+    "name": "Swimming Pool",
+    "searchable": false,
     "tags": {
         "leisure": "swimming_pool"
-    },
-    "searchable": false,
-    "name": "Swimming Pool"
+    }
 }

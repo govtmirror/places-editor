@@ -1,0 +1,27 @@
+{
+    "name": "Airstrip",
+    "tags": {
+        "aeroway":  "aerodrome",
+        "aerodrome":  "airstrip"
+    },
+    "geometry": [
+        "point"
+    ],
+    "icon": "airfield",
+    "fields": [
+        "name",
+        "operator",
+        "addr",
+        "icao",
+        "iata"
+    ],
+    "terms": [
+        "airstrip",
+        "aeroway",
+        "aerodrome",
+        "air field",
+        "landing strip",
+        "landing field"
+    ],
+    "searchable": true
+}

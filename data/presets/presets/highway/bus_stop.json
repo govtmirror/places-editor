@@ -1,19 +1,27 @@
 {
-    "icon": "bus-shuttle-stop-black",
-    "maki": "npmaki",
     "fields": [
-        "network",
+        "name",
         "operator",
-        "bench",
+        "address",
+        "public_transport",
+        "network",
         "shelter",
-        "covered"
+        "bench"
     ],
     "geometry": [
         "point"
     ],
+    "icon": "bus-stop-black",
+    "maki": "npmaki",
+    "name": "Bus Stop / Shuttle Stop",
+    "searchable": true,
     "tags": {
         "highway": "bus_stop"
     },
-    "name": "Bus Stop / Shuttle Stop",
-    "searchable": true
+    "terms": [
+        "bus stop / shuttle stop",
+        "bus stop",
+        "shuttle stop",
+        "bus station"
+    ]
 }

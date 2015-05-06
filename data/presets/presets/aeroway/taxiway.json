@@ -1,14 +1,14 @@
 {
-    "geometry": [
-        "line"
-    ],
     "fields": [
         "ref",
         "surface"
     ],
+    "geometry": [
+        "line"
+    ],
+    "name": "Taxiway",
+    "searchable": false,
     "tags": {
         "aeroway": "taxiway"
-    },
-    "searchable": false,
-    "name": "Taxiway"
+    }
 }

@@ -1,5 +1,4 @@
 {
-    "icon": "shop",
     "fields": [
         "operator",
         "address",
@@ -10,12 +9,13 @@
         "point",
         "area"
     ],
-    "terms": [
-        "DVD"
-    ],
+    "icon": "shop",
+    "name": "Video Store",
+    "searchable": false,
     "tags": {
         "shop": "video"
     },
-    "searchable": false,
-    "name": "Video Store"
+    "terms": [
+        "dvd"
+    ]
 }

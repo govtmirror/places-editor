@@ -1,5 +1,4 @@
 {
-    "icon": "beer",
     "fields": [
         "address",
         "building_area",
@@ -10,15 +9,16 @@
         "point",
         "area"
     ],
+    "icon": "beer",
+    "name": "Pub",
+    "searchable": false,
     "tags": {
         "amenity": "pub"
     },
-    "searchable": false,
     "terms": [
         "dive",
         "beer",
         "bier",
         "booze"
-    ],
-    "name": "Pub"
+    ]
 }

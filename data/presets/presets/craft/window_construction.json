@@ -1,6 +1,4 @@
 {
-    "searchable": false,
-    "icon": "marker-stroked",
     "fields": [
         "operator",
         "address",
@@ -11,11 +9,13 @@
         "point",
         "area"
     ],
-    "terms": [
-        "glass"
-    ],
+    "icon": "marker-stroked",
+    "name": "Window Construction",
+    "searchable": false,
     "tags": {
         "craft": "window_construction"
     },
-    "name": "Window Construction"
+    "terms": [
+        "glass"
+    ]
 }

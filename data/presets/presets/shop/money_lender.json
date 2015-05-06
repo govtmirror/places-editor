@@ -1,5 +1,4 @@
 {
-    "icon": "bank",
     "fields": [
         "operator",
         "address",
@@ -10,9 +9,10 @@
         "point",
         "area"
     ],
+    "icon": "bank",
+    "name": "Money Lender",
+    "searchable": false,
     "tags": {
         "shop": "money_lender"
-    },
-    "name": "Money Lender",
-    "searchable": false
+    }
 }

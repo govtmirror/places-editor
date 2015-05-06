@@ -1,5 +1,4 @@
 {
-    "icon": "religious-christian",
     "fields": [
         "denomination",
         "building_area",
@@ -9,6 +8,13 @@
         "point",
         "area"
     ],
+    "icon": "religious-christian",
+    "name": "Church",
+    "searchable": false,
+    "tags": {
+        "amenity": "place_of_worship",
+        "religion": "christian"
+    },
     "terms": [
         "christian",
         "abbey",
@@ -19,7 +25,7 @@
         "chantry",
         "chapel",
         "fold",
-        "house of God",
+        "house of god",
         "house of prayer",
         "house of worship",
         "minster",
@@ -31,11 +37,5 @@
         "shrine",
         "tabernacle",
         "temple"
-    ],
-    "tags": {
-        "amenity": "place_of_worship",
-        "religion": "christian"
-    },
-    "searchable": false,
-    "name": "Church"
+    ]
 }

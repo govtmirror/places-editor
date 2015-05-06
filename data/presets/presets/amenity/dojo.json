@@ -1,22 +1,22 @@
 {
-    "icon": "pitch",
     "fields": [
         "sport",
         "address",
         "building_area",
         "opening_hours"
     ],
-    "geometry" : [
+    "geometry": [
         "point",
         "area"
     ],
-    "terms": [
-        "martial arts",
-        "dojang"
-    ],
+    "icon": "pitch",
+    "name": "Dojo / Martial Arts Academy",
+    "searchable": false,
     "tags": {
         "amenity": "dojo"
     },
-    "searchable": false,
-    "name": "Dojo / Martial Arts Academy"
+    "terms": [
+        "martial arts",
+        "dojang"
+    ]
 }

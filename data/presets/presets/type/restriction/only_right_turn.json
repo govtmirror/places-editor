@@ -1,15 +1,15 @@
 {
-    "name": "Right Turn Only",
-    "geometry": [
-        "relation"
-    ],
-    "tags": {
-        "type": "restriction",
-        "restriction": "only_right_turn"
-    },
     "fields": [
         "except"
     ],
+    "geometry": [
+        "relation"
+    ],
     "icon": "restriction-only-right-turn",
-    "searchable": false
+    "name": "Right Turn Only",
+    "searchable": false,
+    "tags": {
+        "restriction": "only_right_turn",
+        "type": "restriction"
+    }
 }

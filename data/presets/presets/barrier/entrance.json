@@ -1,10 +1,25 @@
 {
+    "fields": [
+        "name",
+        "operator",
+        "address",
+        "opening_hours"
+    ],
     "geometry": [
         "point"
     ],
+    "icon": "ranger-station-white",
+    "maki": "npmaki",
+    "name": "Entrance Station",
+    "searchable": true,
     "tags": {
         "barrier": "entrance"
     },
-    "name": "Entrance Station",
-    "searchable": true
+    "terms": [
+        "entrance station",
+        "entrance",
+        "entry",
+        "gateway",
+        "portal"
+    ]
 }

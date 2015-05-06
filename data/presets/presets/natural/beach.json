@@ -4,13 +4,17 @@
         "surface"
     ],
     "geometry": [
-        "point",
-        "area"
+        "point"
     ],
-    "terms": [],
+    "name": "Beach",
+    "searchable": true,
     "tags": {
         "natural": "beach"
     },
-    "searchable": true,
-    "name": "Beach"
+    "terms": [
+        "beach",
+        "coast",
+        "shore",
+        "strand"
+    ]
 }

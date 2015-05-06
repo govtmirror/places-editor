@@ -6,10 +6,9 @@
     "geometry": [
         "area"
     ],
+    "name": "Construction",
+    "searchable": false,
     "tags": {
         "landuse": "construction"
-    },
-    "terms": [],
-    "searchable": false,
-    "name": "Construction"
+    }
 }

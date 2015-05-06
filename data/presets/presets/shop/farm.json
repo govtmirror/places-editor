@@ -1,5 +1,4 @@
 {
-    "icon": "shop",
     "fields": [
         "operator",
         "address",
@@ -10,13 +9,14 @@
         "point",
         "area"
     ],
-    "terms": [
-        "farm shop",
-        "farm stand"
-    ],
+    "icon": "shop",
+    "name": "Produce Stand",
     "searchable": false,
     "tags": {
         "shop": "farm"
     },
-    "name": "Produce Stand"
+    "terms": [
+        "farm shop",
+        "farm stand"
+    ]
 }

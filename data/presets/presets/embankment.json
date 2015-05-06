@@ -2,10 +2,10 @@
     "geometry": [
         "line"
     ],
+    "name": "Embankment",
+    "matchScore": 0.2,
+    "searchable": false,
     "tags": {
         "embankment": "yes"
-    },
-    "searchable": false,
-    "name": "Embankment",
-    "matchScore": 0.2
+    }
 }

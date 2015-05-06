@@ -1,15 +1,15 @@
 {
-    "name": "No Straight On",
-    "geometry": [
-        "relation"
-    ],
-    "tags": {
-        "type": "restriction",
-        "restriction": "no_straight_on"
-    },
     "fields": [
         "except"
     ],
+    "geometry": [
+        "relation"
+    ],
     "icon": "restriction-no-straight-on",
-    "searchable": false
+    "name": "No Straight On",
+    "searchable": false,
+    "tags": {
+        "restriction": "no_straight_on",
+        "type": "restriction"
+    }
 }

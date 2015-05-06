@@ -4,10 +4,9 @@
         "vertex",
         "area"
     ],
-    "terms": [],
+    "name": "Barracks",
+    "searchable": false,
     "tags": {
         "military": "barracks"
-    },
-    "searchable": false,
-    "name": "Barracks"
+    }
 }

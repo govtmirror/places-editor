@@ -1,0 +1,21 @@
+{
+    "name": "Shaft (Mine)",
+    "tags": {
+        "man_made":  "mineshaft"
+    },
+    "geometry": [
+        "point"
+    ],
+    "fields": [
+        "name",
+        "operator",
+        "resource"
+    ],
+    "terms": [
+        "shaft",
+        "mine",
+        "mineshaft",
+        "adit"
+    ],
+    "searchable": true
+}

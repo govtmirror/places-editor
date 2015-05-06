@@ -1,4 +1,7 @@
 {
+    "fields": [
+        "name"
+    ],
     "geometry": [
         "point"
     ],
@@ -8,5 +11,8 @@
     "searchable": true,
     "tags": {
         "leisure": "fishing"
-    }
+    },
+    "terms": [
+        "fishing"
+    ]
 }

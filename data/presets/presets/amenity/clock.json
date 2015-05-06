@@ -3,9 +3,9 @@
         "point",
         "vertex"
     ],
+    "name": "Clock",
+    "searchable": false,
     "tags": {
         "amenity": "clock"
-    },
-    "searchable": false,
-    "name": "Clock"
+    }
 }

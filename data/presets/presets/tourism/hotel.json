@@ -1,19 +1,25 @@
 {
-    "icon": "lodging-black",
-    "maki": "npmaki",
     "fields": [
-        "operator",
+        "name",
         "address",
-        "building_area",
+        "levels",
         "smoking"
     ],
     "geometry": [
-        "point",
-        "area"
+        "point"
     ],
+    "icon": "lodging-black",
+    "maki": "npmaki",
+    "name": "Lodging",
+    "searchable": true,
     "tags": {
+        "building": "yes",
         "tourism": "hotel"
     },
-    "name": "Lodging",
-    "searchable": true
+    "terms": [
+        "lodging",
+        "hotel",
+        "motel",
+        "resort"
+    ]
 }

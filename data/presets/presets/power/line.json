@@ -2,10 +2,10 @@
     "geometry": [
         "line"
     ],
+    "icon": "power-line",
+    "name": "Power Line",
+    "searchable": false,
     "tags": {
         "power": "line"
-    },
-    "searchable": false,
-    "name": "Power Line",
-    "icon": "power-line"
+    }
 }

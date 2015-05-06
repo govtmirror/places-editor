@@ -1,16 +1,16 @@
 {
-    "geometry": [
-        "relation"
-    ],
-    "tags": {
-        "type": "route",
-        "route": "power"
-    },
-    "searchable": false,
-    "name": "Power Route",
-    "icon": "route-power",
     "fields": [
         "ref",
         "operator"
-    ]
+    ],
+    "geometry": [
+        "relation"
+    ],
+    "icon": "route-power",
+    "name": "Power Route",
+    "searchable": false,
+    "tags": {
+        "route": "power",
+        "type": "route"
+    }
 }

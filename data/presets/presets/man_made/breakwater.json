@@ -3,9 +3,9 @@
         "line",
         "area"
     ],
+    "name": "Breakwater",
+    "searchable": false,
     "tags": {
         "man_made": "breakwater"
-    },
-    "searchable": false,
-    "name": "Breakwater"
+    }
 }

@@ -1,17 +1,17 @@
 {
-    "geometry": [
-        "relation"
-    ],
-    "tags": {
-        "type": "route",
-        "route": "foot"
-    },
-    "searchable": false,
-    "name": "Foot Route",
-    "icon": "route-foot",
     "fields": [
         "ref",
         "operator",
         "network"
-    ]
+    ],
+    "geometry": [
+        "relation"
+    ],
+    "icon": "route-foot",
+    "name": "Foot Route",
+    "searchable": false,
+    "tags": {
+        "route": "foot",
+        "type": "route"
+    }
 }

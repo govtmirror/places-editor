@@ -1,6 +1,4 @@
 {
-    "searchable": false,
-    "icon": "art-gallery",
     "fields": [
         "operator",
         "address",
@@ -11,8 +9,10 @@
         "point",
         "area"
     ],
+    "icon": "art-gallery",
+    "name": "Basket Maker",
+    "searchable": false,
     "tags": {
         "craft": "basket_maker"
-    },
-    "name": "Basket Maker"
+    }
 }

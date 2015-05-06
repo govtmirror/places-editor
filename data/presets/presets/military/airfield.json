@@ -1,13 +1,13 @@
 {
-    "icon": "airfield",
     "geometry": [
         "point",
         "vertex",
         "area"
     ],
-    "terms": [],
+    "icon": "airfield",
+    "name": "Airfield",
+    "searchable": false,
     "tags": {
         "military": "airfield"
-    },
-    "name": "Airfield"
+    }
 }

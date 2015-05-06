@@ -1,16 +1,23 @@
 {
-    "icon": "telephone-white",
-    "maki": "npmaki",
     "fields": [
-        "operator"
+        "name",
+        "operator",
+        "address"
     ],
     "geometry": [
-        "point",
-        "vertex"
+        "point"
     ],
+    "icon": "telephone-white",
+    "maki": "npmaki",
+    "name": "Emergency Telephone",
+    "searchable": true,
     "tags": {
         "emergency": "phone"
     },
-    "searchable": true,
-    "name": "Emergency Telephone"
+    "terms": [
+        "emergency telephone",
+        "emergency phone",
+        "phone",
+        "emergency"
+    ]
 }

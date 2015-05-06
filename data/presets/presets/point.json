@@ -1,7 +1,9 @@
 {
-    "searchable": false,
+    "geometry": [
+        "point"
+    ],
+    "matchScore": 0.1,
     "name": "Point",
-    "tags": {},
-    "geometry": ["point"],
-    "matchScore": 0.1
+    "searchable": false,
+    "tags": {}
 }

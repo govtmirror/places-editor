@@ -1,5 +1,4 @@
 {
-    "icon": "highway-living-street",
     "fields": [
         "oneway",
         "maxspeed",
@@ -10,9 +9,10 @@
     "geometry": [
         "line"
     ],
+    "icon": "highway-living-street",
+    "name": "Living Street",
+    "searchable": false,
     "tags": {
         "highway": "living_street"
-    },
-    "searchable": false,
-    "name": "Living Street"
+    }
 }

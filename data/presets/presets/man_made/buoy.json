@@ -2,9 +2,9 @@
     "geometry": [
         "point"
     ],
+    "name": "Buoy",
+    "searchable": false,
     "tags": {
         "man_made": "buoy"
-    },
-    "name": "Buoy",
-    "searchable": false
+    }
 }

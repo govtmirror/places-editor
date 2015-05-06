@@ -1,11 +1,24 @@
 {
-    "geometry": [
-        "point",
-        "vertex"
+    "fields": [
+        "name",
+        "operator",
+        "address",
+        "opening_hours"
     ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "viewing area|scenic viewpoint",
+    "maki": "nps",
+    "name": "Viewpoint",
+    "searchable": true,
     "tags": {
         "tourism": "viewpoint"
     },
-    "name": "Viewpoint",
-    "searchable": false
+    "terms": [
+        "viewpoint",
+        "scenic viewpoint",
+        "scenic",
+        "scenery"
+    ]
 }

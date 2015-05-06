@@ -8,8 +8,9 @@
         "point",
         "area"
     ],
+    "name": "Substation",
+    "searchable": false,
     "tags": {
         "power": "substation"
-    },
-    "name": "Substation"
+    }
 }

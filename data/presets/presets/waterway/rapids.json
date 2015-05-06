@@ -1,0 +1,22 @@
+{
+    "name": "Rapids",
+    "tags": {
+        "waterway":  "rapids"
+    },
+    "geometry": [
+        "point"
+    ],
+    "icon": "water",
+    "fields": [
+        "name",
+        "whitewater",
+        "width",
+        "rapid_grade"
+    ],
+    "terms": [
+        "rapids",
+        "riffle",
+        "ripple"
+    ],
+    "searchable": true
+}

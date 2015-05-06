@@ -1,12 +1,16 @@
 {
-    "geometry": [
-        "point",
-        "area"
+    "fields": [
+        "name"
     ],
+    "geometry": [
+        "point"
+    ],
+    "name": "Basin",
+    "searchable": true,
     "tags": {
         "landuse": "basin"
     },
-    "terms": [],
-    "searchable": true,
-    "name": "Basin"
+    "terms": [
+        "basin"
+    ]
 }

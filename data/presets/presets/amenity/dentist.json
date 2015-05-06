@@ -1,6 +1,4 @@
 {
-    "searchable": false,
-    "icon": "hospital",
     "fields": [
         "address",
         "building_area",
@@ -10,12 +8,14 @@
         "point",
         "area"
     ],
-    "terms": [
-        "tooth",
-        "teeth"
-    ],
+    "icon": "hospital",
+    "name": "Dentist",
+    "searchable": false,
     "tags": {
         "amenity": "dentist"
     },
-    "name": "Dentist"
+    "terms": [
+        "tooth",
+        "teeth"
+    ]
 }

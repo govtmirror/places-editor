@@ -1,16 +1,16 @@
 {
-    "geometry": [
-        "relation"
-    ],
-    "tags": {
-        "type": "route",
-        "route": "pipeline"
-    },
-    "searchable": false,
-    "name": "Pipeline Route",
-    "icon": "route-pipeline",
     "fields": [
         "ref",
         "operator"
-    ]
+    ],
+    "geometry": [
+        "relation"
+    ],
+    "icon": "route-pipeline",
+    "name": "Pipeline Route",
+    "searchable": false,
+    "tags": {
+        "route": "pipeline",
+        "type": "route"
+    }
 }

@@ -1,0 +1,21 @@
+{
+    "name": "Historic Site",
+    "tags": {
+        "historic":  "yes"
+    },
+    "geometry": [
+        "point"
+    ],
+    "maki": "npmaki",
+    "icon": "ruin",
+    "fields": [
+        "name",
+        "site_type"
+    ],
+    "terms": [
+        "historic site",
+        "historic",
+        "site"
+    ],
+    "searchable": true
+}

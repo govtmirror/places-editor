@@ -1,5 +1,4 @@
 {
-    "icon": "marker-stroked",
     "fields": [
         "craft",
         "operator",
@@ -11,10 +10,10 @@
         "point",
         "area"
     ],
+    "icon": "marker-stroked",
+    "name": "Craft",
+    "searchable": false,
     "tags": {
         "craft": "*"
-    },
-    "terms": [],
-    "name": "Craft",
-    "searchable": false
+    }
 }

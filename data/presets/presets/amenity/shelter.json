@@ -1,24 +1,29 @@
 {
     "fields": [
-        "shelter_type"
+        "name",
+        "operator",
+        "address",
+        "shelter_type",
+        "drinking_water"
     ],
     "geometry": [
-        "point",
-        "vertex",
-        "area"
+        "point"
     ],
+    "icon": "shelter-black",
+    "maki": "npmaki",
+    "name": "Shelter",
+    "searchable": true,
+    "tags": {
+        "amenity": "shelter",
+        "building": "hut"
+    },
     "terms": [
+        "shelter",
+        "sanctuary",
+        "cover",
+        "hide",
         "lean-to",
         "gazebo",
         "picnic"
-    ],
-    "tags": {
-        "amenity": "shelter",
-        "building": "hut",
-        "tourism": "camp_site"
-    },
-    "icon": "shelter-black",
-    "maki": "npmaki",
-    "searchable": true,
-    "name": "Shelter"
+    ]
 }

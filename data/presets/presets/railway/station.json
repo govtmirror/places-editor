@@ -8,11 +8,10 @@
     "geometry": [
         "point"
     ],
+    "icon": "rail",
+    "name": "Railway Station",
+    "searchable": false,
     "tags": {
         "railway": "station"
-    },
-    "icon": "rail",
-    "maki": "maki",
-    "name": "Railway Station",
-    "searchable": false
+    }
 }

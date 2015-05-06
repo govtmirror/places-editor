@@ -1,6 +1,4 @@
 {
-    "searchable": false,
-    "icon": "marker-stroked",
     "fields": [
         "operator",
         "address",
@@ -11,8 +9,10 @@
         "point",
         "area"
     ],
+    "icon": "marker-stroked",
+    "name": "Plasterer",
+    "searchable": false,
     "tags": {
         "craft": "plasterer"
-    },
-    "name": "Plasterer"
+    }
 }

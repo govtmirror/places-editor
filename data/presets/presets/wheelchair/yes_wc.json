@@ -1,12 +1,20 @@
 {
+    "name": "Wheelchair Accessible",
+    "tags": {
+        "wheelchair":  "yes"
+    },
     "geometry": [
         "point"
     ],
-    "tags": {
-        "wheelchair": "yes"
-    },
-    "searchable": true,
-    "icon": "wheelchair-accessible-black",
     "maki": "npmaki",
-    "name": "Wheelchair Accessible"
+    "icon": "wheelchair-accessible-black",
+    "fields": [
+        "name"
+    ],
+    "terms": [
+        "wheelchair accessible",
+        "wheelchair",
+        "accessible"
+    ],
+    "searchable": true
 }

@@ -6,14 +6,14 @@
     "geometry": [
         "point"
     ],
+    "name": "Vending Machine",
+    "searchable": false,
+    "tags": {
+        "amenity": "vending_machine"
+    },
     "terms": [
         "snack",
         "soda",
         "ticket"
-    ],
-    "tags": {
-        "amenity": "vending_machine"
-    },
-    "searchable": false,
-    "name": "Vending Machine"
+    ]
 }

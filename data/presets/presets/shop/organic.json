@@ -1,5 +1,4 @@
 {
-    "icon": "shop",
     "fields": [
         "operator",
         "address",
@@ -10,10 +9,11 @@
         "point",
         "area"
     ],
-    "tags": {
-        "shop": "supermarket",
-        "organic": "only"
-    },
+    "icon": "shop",
     "name": "Organic Goods Store",
-    "searchable": false
+    "searchable": false,
+    "tags": {
+        "organic": "only",
+        "shop": "supermarket"
+    }
 }

@@ -1,25 +1,28 @@
 {
-    "icon": "parking-black",
-    "maki": "npmaki",
-    "searchable": true,
     "fields": [
+        "name",
         "operator",
-        "parking",
+        "address",
         "capacity",
+        "maxstay",
         "fee",
-        "access_simple",
-        "supervised",
-        "park_ride",
-        "address"
+        "access"
     ],
     "geometry": [
-        "point",
-        "vertex",
-        "area"
+        "point"
     ],
+    "icon": "parking-black",
+    "maki": "npmaki",
+    "name": "Parking",
+    "searchable": true,
     "tags": {
         "amenity": "parking"
     },
-    "terms": [],
-    "name": "Parking"
+    "terms": [
+        "parking",
+        "car parking",
+        "vehicle parking",
+        "parking lot",
+        "car park"
+    ]
 }

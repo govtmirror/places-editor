@@ -1,5 +1,4 @@
 {
-    "icon": "art-gallery",
     "fields": [
         "artwork_type",
         "artist"
@@ -9,6 +8,9 @@
         "vertex",
         "area"
     ],
+    "icon": "art-gallery",
+    "name": "Artwork",
+    "searchable": false,
     "tags": {
         "tourism": "artwork"
     },
@@ -16,7 +18,5 @@
         "mural",
         "sculpture",
         "statue"
-    ],
-    "searchable": false,
-    "name": "Artwork"
+    ]
 }

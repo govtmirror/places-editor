@@ -1,5 +1,4 @@
 {
-    "icon": "place-of-worship",
     "fields": [
         "religion",
         "denomination",
@@ -10,6 +9,12 @@
         "point",
         "area"
     ],
+    "icon": "place-of-worship",
+    "name": "Place of Worship",
+    "searchable": false,
+    "tags": {
+        "amenity": "place_of_worship"
+    },
     "terms": [
         "abbey",
         "basilica",
@@ -20,7 +25,7 @@
         "chapel",
         "church",
         "fold",
-        "house of God",
+        "house of god",
         "house of prayer",
         "house of worship",
         "minster",
@@ -34,10 +39,5 @@
         "synagogue",
         "tabernacle",
         "temple"
-    ],
-    "tags": {
-        "amenity": "place_of_worship"
-    },
-    "searchable": false,
-    "name": "Place of Worship"
+    ]
 }

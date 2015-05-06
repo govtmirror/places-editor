@@ -1,5 +1,4 @@
 {
-    "searchable": false,
     "fields": [
         "operator",
         "address",
@@ -12,15 +11,16 @@
         "point",
         "area"
     ],
-    "terms": [
-        "houseless",
-        "unhoused",
-        "displaced"
-    ],
+    "name": "Homeless Shelter",
+    "searchable": false,
     "tags": {
         "amenity": "social_facility",
         "social_facility": "shelter",
         "social_facility:for": "homeless"
     },
-    "name": "Homeless Shelter"
+    "terms": [
+        "houseless",
+        "unhoused",
+        "displaced"
+    ]
 }

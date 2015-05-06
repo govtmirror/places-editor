@@ -1,12 +1,20 @@
 {
-    "icon": "waterway-stream",
-    "maki": "maki",
+    "fields": [
+        "name"
+    ],
     "geometry": [
         "point"
     ],
+    "icon": "water",
+    "name": "Waterfall",
+    "searchable": true,
     "tags": {
         "waterway": "waterfall"
     },
-    "name": "Waterfall",
-    "searchable": true
+    "terms": [
+        "waterfall",
+        "falls",
+        "cascade",
+        "cataract"
+    ]
 }

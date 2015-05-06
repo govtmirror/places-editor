@@ -1,5 +1,4 @@
 {
-    "icon": "fast-food",
     "fields": [
         "cuisine",
         "operator",
@@ -15,12 +14,13 @@
         "point",
         "area"
     ],
+    "icon": "fast-food",
+    "name": "Fast Food",
+    "searchable": false,
     "tags": {
         "amenity": "fast_food"
     },
-    "searchable": false,
     "terms": [
         "restaurant"
-    ],
-    "name": "Fast Food"
+    ]
 }

@@ -2,10 +2,10 @@
     "geometry": [
         "point"
     ],
+    "icon": "embassy",
+    "name": "Flagpole",
+    "searchable": false,
     "tags": {
         "man_made": "flagpole"
-    },
-    "searchable": false,
-    "name": "Flagpole",
-    "icon": "embassy"
+    }
 }

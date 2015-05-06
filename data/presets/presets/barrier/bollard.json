@@ -7,9 +7,9 @@
         "vertex",
         "line"
     ],
+    "name": "Bollard",
+    "searchable": false,
     "tags": {
         "barrier": "bollard"
-    },
-    "searchable": false,
-    "name": "Bollard"
+    }
 }

@@ -1,14 +1,25 @@
 {
-    "geometry": [
-        "point",
-        "vertex",
-        "line"
+    "fields": [
+        "name",
+        "operator",
+        "address",
+        "opening_hours",
+        "fee",
+        "access"
     ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "showers-black",
+    "maki": "npmaki",
+    "name": "Showers",
+    "searchable": true,
     "tags": {
         "amenity": "shower"
     },
-    "icon": "showers-black",
-    "maki": "npmaki",
-    "searchable": true,
-    "name": "Showers"
+    "terms": [
+        "showers",
+        "shower",
+        "bath"
+    ]
 }

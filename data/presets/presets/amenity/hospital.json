@@ -1,33 +1,34 @@
 {
-    "icon": "hospital-black",
-    "maki": "npmaki",
     "fields": [
+        "name",
         "operator",
         "address",
+        "opening_hours",
         "emergency"
     ],
     "geometry": [
-        "point",
-        "area"
+        "point"
     ],
-    "terms": [
-        "clinic",
-        "doctor",
-        "emergency room",
-        "health service",
-        "hospice",
-        "infirmary",
-        "institution",
-        "nursing home",
-        "sanatorium",
-        "sanitarium",
-        "sick",
-        "surgery",
-        "ward"
-    ],
+    "icon": "hospital-black",
+    "maki": "npmaki",
+    "name": "Hospital Grounds",
+    "searchable": true,
     "tags": {
         "amenity": "hospital"
     },
-    "searchable": true,
-    "name": "Hospital Grounds"
+    "terms": [
+        "hospital grounds",
+        "hospital",
+        "ward",
+        "institution",
+        "infirmary",
+        "clinic",
+        "emergency room",
+        "doctor",
+        "health service",
+        "sick",
+        "surgery",
+        "medical",
+        "emergency"
+    ]
 }

@@ -1,13 +1,13 @@
 {
-    "icon": "golf",
     "geometry": [
         "line",
         "area"
     ],
+    "icon": "golf",
+    "name": "Lateral Water Hazard",
+    "searchable": false,
     "tags": {
         "golf": "lateral_water_hazard",
         "natural": "water"
-    },
-    "searchable": false,
-    "name": "Lateral Water Hazard"
+    }
 }

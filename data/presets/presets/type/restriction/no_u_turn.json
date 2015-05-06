@@ -1,15 +1,15 @@
 {
-    "name": "No U-turn",
-    "geometry": [
-        "relation"
-    ],
-    "tags": {
-        "type": "restriction",
-        "restriction": "no_u_turn"
-    },
     "fields": [
         "except"
     ],
+    "geometry": [
+        "relation"
+    ],
     "icon": "restriction-no-u-turn",
-    "searchable": false
+    "name": "No U-turn",
+    "searchable": false,
+    "tags": {
+        "restriction": "no_u_turn",
+        "type": "restriction"
+    }
 }

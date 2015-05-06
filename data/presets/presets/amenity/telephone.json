@@ -1,16 +1,24 @@
 {
+    "fields": [
+        "name",
+        "operator",
+        "address",
+        "indoor"
+    ],
+    "geometry": [
+        "point"
+    ],
     "icon": "telephone-black",
     "maki": "npmaki",
+    "name": "Telephone",
     "searchable": true,
-    "geometry": [
-        "point",
-        "vertex"
-    ],
     "tags": {
         "amenity": "telephone"
     },
-    "terms":  [
-        "phone"
-    ],
-    "name": "Telephone"
+    "terms": [
+        "telephone",
+        "phone",
+        "telephone box",
+        "phone booth"
+    ]
 }

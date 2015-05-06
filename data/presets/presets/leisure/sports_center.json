@@ -1,5 +1,4 @@
 {
-    "icon": "pitch",
     "fields": [
         "sport",
         "address",
@@ -10,12 +9,13 @@
         "point",
         "area"
     ],
+    "icon": "pitch",
+    "name": "Sports Center / Gym",
+    "searchable": false,
     "tags": {
         "leisure": "sports_centre"
     },
     "terms": [
         "gym"
-    ],
-    "searchable": false,
-    "name": "Sports Center / Gym"
+    ]
 }

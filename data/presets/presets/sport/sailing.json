@@ -1,12 +1,18 @@
 {
+    "fields": [
+        "name"
+    ],
     "geometry": [
         "point"
     ],
+    "icon": "sailing-black",
+    "maki": "npmaki",
+    "name": "Sailing",
+    "searchable": true,
     "tags": {
         "sport": "sailing"
     },
-    "name": "Sailing",
-    "icon": "sailing-black",
-    "maki": "npmaki",
-    "searchable": true
+    "terms": [
+        "sailing"
+    ]
 }

@@ -1,6 +1,4 @@
 {
-    "icon": "motor-bike-trail-black",
-    "maki": "npmaki",
     "fields": [
         "tracktype",
         "oneway",
@@ -12,16 +10,18 @@
     "geometry": [
         "point"
     ],
+    "icon": "motor-bike-trail-black",
+    "maki": "npmaki",
+    "name": "Motor Bike Trail",
+    "searchable": false,
     "tags": {
         "highway": "track",
         "motorbike": "yes"
     },
     "terms": [
-      "Motorbike",
-      "Motorcycle",
-      "Dirt Bike",
-      "4wd"
-    ],
-    "name": "Motor Bike Trail",
-    "searchable": true
+        "motorbike",
+        "motorcycle",
+        "dirt bike",
+        "4wd"
+    ]
 }

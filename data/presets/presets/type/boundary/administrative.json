@@ -1,15 +1,15 @@
 {
-    "searchable": false,
-    "name": "Administrative Boundary",
-    "geometry": [
-        "relation"
-    ],
-    "tags": {
-        "type": "boundary",
-        "boundary": "administrative"
-    },
     "fields": [
         "admin_level"
     ],
-    "icon": "boundary"
+    "geometry": [
+        "relation"
+    ],
+    "icon": "boundary",
+    "name": "Administrative Boundary",
+    "searchable": false,
+    "tags": {
+        "boundary": "administrative",
+        "type": "boundary"
+    }
 }

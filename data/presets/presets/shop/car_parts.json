@@ -1,5 +1,4 @@
 {
-    "icon": "car",
     "fields": [
         "operator",
         "address",
@@ -10,12 +9,13 @@
         "point",
         "area"
     ],
-    "terms": [
-        "auto"
-    ],
+    "icon": "car",
+    "name": "Car Parts Store",
+    "searchable": false,
     "tags": {
         "shop": "car_parts"
     },
-    "searchable": false,
-    "name": "Car Parts Store"
+    "terms": [
+        "auto"
+    ]
 }

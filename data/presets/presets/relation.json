@@ -1,10 +1,12 @@
 {
-    "searchable": false,
-    "name": "Relation",
-    "icon": "relation",
-    "tags": {},
-    "geometry": ["relation"],
     "fields": [
         "relation"
-    ]
+    ],
+    "geometry": [
+        "relation"
+    ],
+    "icon": "relation",
+    "name": "Relation",
+    "searchable": false,
+    "tags": {}
 }

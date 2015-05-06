@@ -1,17 +1,24 @@
 {
-    "icon": "building",
     "fields": [
+        "name",
         "address",
         "levels",
         "smoking"
     ],
     "geometry": [
-        "point",
-        "area"
+        "point"
     ],
+    "icon": "building",
+    "name": "Public Building",
+    "searchable": true,
     "tags": {
         "building": "public"
     },
-    "searchable": true,
-    "name": "Public Building"
+    "terms": [
+        "public building",
+        "public",
+        "civic",
+        "town hall",
+        "court house"
+    ]
 }

@@ -1,0 +1,21 @@
+{
+    "name": "Reef (Bar)",
+    "tags": {
+        "natural":  "reef"
+    },
+    "geometry": [
+        "point"
+    ],
+    "fields": [
+        "name"
+    ],
+    "terms": [
+        "reef",
+        "bar",
+        "ledge",
+        "sandbar",
+        "shoal",
+        "spit"
+    ],
+    "searchable": true
+}

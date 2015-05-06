@@ -1,6 +1,4 @@
 {
-    "searchable": false,
-    "icon": "bakery",
     "fields": [
         "cuisine",
         "operator",
@@ -12,8 +10,10 @@
         "point",
         "area"
     ],
+    "icon": "bakery",
+    "name": "Caterer",
+    "searchable": false,
     "tags": {
         "craft": "caterer"
-    },
-    "name": "Caterer"
+    }
 }

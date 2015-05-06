@@ -7,14 +7,13 @@
     "geometry": [
         "vertex"
     ],
+    "name": "Crossing",
+    "searchable": false,
     "tags": {
         "highway": "crossing"
     },
     "terms": [
         "crosswalk",
         "zebra crossing"
-    ],
-    "searchable": false,
-    "terms": [],
-    "name": "Crossing"
+    ]
 }

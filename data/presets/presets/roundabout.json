@@ -3,9 +3,9 @@
         "vertex",
         "line"
     ],
+    "name": "Roundabout",
+    "searchable": false,
     "tags": {
         "junction": "roundabout"
-    },
-    "name": "Roundabout",
-    "searchable": false
+    }
 }

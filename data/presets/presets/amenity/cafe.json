@@ -1,5 +1,4 @@
 {
-    "icon": "cafe",
     "fields": [
         "cuisine",
         "internet_access",
@@ -12,13 +11,14 @@
         "point",
         "area"
     ],
-    "terms": [
-        "coffee",
-        "tea"
-    ],
+    "icon": "cafe",
+    "name": "Cafe",
+    "searchable": false,
     "tags": {
         "amenity": "cafe"
     },
-    "searchable": false,
-    "name": "Cafe"
+    "terms": [
+        "coffee",
+        "tea"
+    ]
 }

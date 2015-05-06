@@ -1,23 +1,27 @@
 {
-    "icon": "post-office-black",
-    "maki": "npmaki",
     "fields": [
+        "name",
         "operator",
         "address",
-        "building_area",
-        "collection_times"
+        "opening_hours"
     ],
     "geometry": [
-        "point",
-        "area"
+        "point"
     ],
-    "terms": [
-        "letter",
-        "mail"
-    ],
+    "icon": "post-office-black",
+    "maki": "npmaki",
+    "name": "Post Office",
+    "searchable": true,
     "tags": {
         "amenity": "post_office"
     },
-    "searchable": true,
-    "name": "Post Office"
+    "terms": [
+        "post office",
+        "mail office",
+        "post",
+        "mail",
+        "letter",
+        "parcel",
+        "package"
+    ]
 }

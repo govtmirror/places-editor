@@ -1,5 +1,4 @@
 {
-    "icon": "shop",
     "fields": [
         "operator",
         "address",
@@ -10,13 +9,14 @@
         "point",
         "area"
     ],
-    "terms": [
-        "card",
-        "paper"
-    ],
+    "icon": "shop",
+    "name": "Stationery Store",
+    "searchable": false,
     "tags": {
         "shop": "stationery"
     },
-    "searchable": false,
-    "name": "Stationery Store"
+    "terms": [
+        "card",
+        "paper"
+    ]
 }

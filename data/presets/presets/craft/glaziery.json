@@ -1,6 +1,4 @@
 {
-    "searchable": false,
-    "icon": "fire-station",
     "fields": [
         "operator",
         "address",
@@ -11,13 +9,15 @@
         "point",
         "area"
     ],
+    "icon": "fire-station",
+    "name": "Glaziery",
+    "searchable": false,
+    "tags": {
+        "craft": "glaziery"
+    },
     "terms": [
         "glass",
         "stained-glass",
         "window"
-    ],
-    "tags": {
-        "craft": "glaziery"
-    },
-    "name": "Glaziery"
+    ]
 }

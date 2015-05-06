@@ -1,5 +1,4 @@
 {
-    "icon": "restaurant",
     "fields": [
         "cuisine",
         "address",
@@ -14,6 +13,12 @@
         "point",
         "area"
     ],
+    "icon": "restaurant",
+    "name": "Restaurant",
+    "searchable": false,
+    "tags": {
+        "amenity": "restaurant"
+    },
     "terms": [
         "bar",
         "breakfast",
@@ -29,10 +34,5 @@
         "grill",
         "lunch",
         "table"
-    ],
-    "tags": {
-        "amenity": "restaurant"
-    },
-    "searchable": false,
-    "name": "Restaurant"
+    ]
 }

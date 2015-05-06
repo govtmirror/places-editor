@@ -1,19 +1,26 @@
 {
-    "icon": "highway-residential",
     "fields": [
-        "oneway",
+        "name",
+        "operator",
+        "surface",
+        "width",
         "maxspeed",
-        "structure",
-        "access",
-        "surface"
+        "oneway",
+        "lanes",
+        "access"
     ],
     "geometry": [
         "line"
     ],
+    "icon": "highway-residential",
+    "name": "Residential Road",
+    "searchable": true,
     "tags": {
         "highway": "residential"
     },
-    "terms": [],
-    "searchable": true,
-    "name": "Residential Road"
+    "terms": [
+        "residential road",
+        "residential",
+        "road"
+    ]
 }

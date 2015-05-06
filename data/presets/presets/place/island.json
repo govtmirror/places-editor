@@ -1,21 +1,27 @@
 {
+    "fields": [
+        "name"
+    ],
     "geometry": [
-        "point",
-        "area"
+        "point"
     ],
-    "terms": [
-        "archipelago",
-        "atoll",
-        "bar",
-        "cay",
-        "isle",
-        "islet",
-        "key",
-        "reef"
-    ],
+    "name": "Island",
+    "searchable": true,
     "tags": {
         "place": "island"
     },
-    "searchable": true,
-    "name": "Island"
+    "terms": [
+        "island",
+        "archipelago",
+        "atoll",
+        "cay",
+        "hammock",
+        "hummock",
+        "isla",
+        "isle",
+        "islet",
+        "key",
+        "moku",
+        "rock"
+    ]
 }

@@ -1,16 +1,23 @@
 {
-    "icon": "park",
-    "geometry": [
-        "point",
-        "area"
+    "fields": [
+        "name",
+        "operator"
     ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "park",
+    "name": "Reserve",
+    "searchable": true,
     "tags": {
         "leisure": "nature_reserve"
     },
-    "name": "Nature Center",
-    "searchable": false,
     "terms": [
-        "protected",
-        "wildlife"
+        "reserve",
+        "nature reserve",
+        "wildlife reserve",
+        "wildlife",
+        "protected area",
+        "protected"
     ]
 }

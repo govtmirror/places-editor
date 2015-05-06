@@ -1,17 +1,32 @@
 {
+    "fields": [
+        "name",
+        "operator",
+        "tracktype",
+        "surface",
+        "width",
+        "incline",
+        "mtb/scale",
+        "mtb/scale/uphill",
+        "mtb/scale/imba",
+        "sac_scale",
+        "trail_visibility",
+        "access"
+    ],
     "geometry": [
-        "point",
-        "vertex"
+        "point"
     ],
-    "terms": [
-      "Trailhead",
-      "Trail head"
-    ],
+    "icon": "trailhead-black",
+    "maki": "npmaki",
+    "name": "Trailhead",
+    "searchable": true,
     "tags": {
         "highway": "trailhead"
     },
-    "name": "Trailhead",
-    "icon": "trailhead-black",
-    "maki": "npmaki",
-    "searchable": true
+    "terms": [
+        "trailhead",
+        "trail head",
+        "trail",
+        "track"
+    ]
 }

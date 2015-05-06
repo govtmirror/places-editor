@@ -1,5 +1,4 @@
 {
-    "icon": "pitch",
     "fields": [
         "sport",
         "address"
@@ -8,9 +7,10 @@
         "point",
         "area"
     ],
+    "icon": "pitch",
+    "name": "Stadium",
+    "searchable": false,
     "tags": {
         "leisure": "stadium"
-    },
-    "searchable": false,
-    "name": "Stadium"
+    }
 }

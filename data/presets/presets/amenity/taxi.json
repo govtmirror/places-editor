@@ -1,5 +1,4 @@
 {
-    "icon": "car",
     "fields": [
         "operator",
         "capacity"
@@ -9,12 +8,13 @@
         "vertex",
         "area"
     ],
-    "terms": [
-        "cab"
-    ],
+    "icon": "car",
+    "name": "Taxi Stand",
+    "searchable": false,
     "tags": {
         "amenity": "taxi"
     },
-    "searchable": false,
-    "name": "Taxi Stand"
+    "terms": [
+        "cab"
+    ]
 }

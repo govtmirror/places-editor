@@ -1,16 +1,33 @@
 {
-    "icon": "building",
     "fields": [
+        "name",
+        "operator",
         "address",
-        "levels"
+        "emergency"
     ],
     "geometry": [
-        "point",
-        "area"
+        "point"
     ],
+    "icon": "hospital-black",
+    "maki": "npmaki",
+    "name": "Hospital Building",
+    "searchable": false,
     "tags": {
         "building": "hospital"
     },
-    "searchable": true,
-    "name": "Hospital Building"
+    "terms": [
+        "hospital building",
+        "hospital",
+        "ward",
+        "institution",
+        "infirmary",
+        "clinic",
+        "emergency room",
+        "doctor",
+        "health service",
+        "sick",
+        "surgery",
+        "medical",
+        "emergency"
+    ]
 }

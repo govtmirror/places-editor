@@ -4,6 +4,8 @@
         "vertex",
         "area"
     ],
+    "name": "Service Area",
+    "searchable": false,
     "tags": {
         "highway": "services"
     },
@@ -11,7 +13,5 @@
         "services",
         "travel plaza",
         "service station"
-    ],
-    "searchable": false,
-    "name": "Service Area"
+    ]
 }

@@ -1,12 +1,12 @@
 {
-    "icon": "golf",
     "geometry": [
         "area"
     ],
+    "icon": "golf",
+    "name": "Fairway",
+    "searchable": false,
     "tags": {
         "golf": "fairway",
         "landuse": "grass"
-    },
-    "searchable": false,
-    "name": "Fairway"
+    }
 }

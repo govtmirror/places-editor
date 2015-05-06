@@ -1,5 +1,4 @@
 {
-    "searchable": false,
     "fields": [
         "operator",
         "address",
@@ -12,15 +11,16 @@
         "point",
         "area"
     ],
-    "terms": [
-        "old",
-        "senior",
-        "living"
-    ],
+    "name": "Elderly Group Home",
+    "searchable": false,
     "tags": {
         "amenity": "social_facility",
         "social_facility": "group_home",
         "social_facility:for": "senior"
     },
-    "name": "Elderly Group Home"
+    "terms": [
+        "old",
+        "senior",
+        "living"
+    ]
 }

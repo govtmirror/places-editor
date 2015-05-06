@@ -1,16 +1,15 @@
 {
-    "icon": "railway-abandoned",
-    "geometry": [
-        "line"
-    ],
-    "tags": {
-        "railway": "abandoned"
-    },
     "fields": [
         "structure",
         "service_rail"
     ],
-    "terms": [],
+    "geometry": [
+        "line"
+    ],
+    "icon": "railway-abandoned",
+    "name": "Abandoned Railway",
     "searchable": false,
-    "name": "Abandoned Railway"
+    "tags": {
+        "railway": "abandoned"
+    }
 }

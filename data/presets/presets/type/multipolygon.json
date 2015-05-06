@@ -3,13 +3,11 @@
         "area",
         "relation"
     ],
+    "icon": "multipolygon",
+    "matchScore": 0.1,
+    "name": "Multipolygon",
+    "searchable": false,
     "tags": {
         "type": "multipolygon"
-    },
-    "removeTags": {},
-    "name": "Multipolygon",
-    "icon": "multipolygon",
-    "maki": "maki",
-    "matchScore": 0.1,
-    "searchable": false
+    }
 }

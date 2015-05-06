@@ -1,5 +1,4 @@
 {
-    "icon": "dog-park",
     "fields": [
         "operator",
         "address",
@@ -10,15 +9,16 @@
         "point",
         "area"
     ],
+    "icon": "dog-park",
+    "name": "Veterinary",
+    "searchable": false,
+    "tags": {
+        "amenity": "veterinary"
+    },
     "terms": [
         "pet clinic",
         "veterinarian",
         "animal hospital",
         "pet doctor"
-    ],
-    "tags": {
-        "amenity": "veterinary"
-    },
-    "searchable": false,
-    "name": "Veterinary"
+    ]
 }

@@ -1,5 +1,4 @@
 {
-    "icon": "commercial",
     "fields": [
         "address",
         "building_area",
@@ -10,10 +9,10 @@
         "vertex",
         "area"
     ],
+    "icon": "commercial",
+    "name": "IT Office",
+    "searchable": false,
     "tags": {
         "office": "it"
-    },
-    "terms": [],
-    "searchable": false,
-    "name": "IT Office"
+    }
 }

@@ -1,16 +1,21 @@
 {
-    "icon": "building",
     "fields": [
+        "name",
         "address",
         "levels"
     ],
     "geometry": [
-        "point",
-        "area"
+        "point"
     ],
+    "icon": "building",
+    "name": "Building Under Construction",
+    "searchable": true,
     "tags": {
         "building": "construction"
     },
-    "searchable": true,
-    "name": "Building Under Construction"
+    "terms": [
+        "building under construction",
+        "construction",
+        "under construction"
+    ]
 }

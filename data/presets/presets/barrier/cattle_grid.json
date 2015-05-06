@@ -2,9 +2,9 @@
     "geometry": [
         "vertex"
     ],
+    "name": "Cattle Grid",
+    "searchable": false,
     "tags": {
         "barrier": "cattle_grid"
-    },
-    "searchable": false,
-    "name": "Cattle Grid"
+    }
 }

@@ -1,10 +1,12 @@
 {
-    "icon": "horseback-riding-black",
-    "maki": "npmaki",
     "geometry": [
         "point",
         "area"
     ],
+    "icon": "horseback-riding-black",
+    "maki": "npmaki",
+    "name": "Horseback Riding",
+    "searchable": false,
     "tags": {
         "leisure": "horse_riding"
     },
@@ -12,7 +14,5 @@
         "horse",
         "riding",
         "horseback"
-    ],
-    "name": "Horseback Riding",
-    "searchable": true
+    ]
 }

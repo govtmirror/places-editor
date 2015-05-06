@@ -1,34 +1,25 @@
 {
-    "icon": "park",
+    "fields": [
+        "name",
+        "operator"
+    ],
     "geometry": [
-        "point",
-        "area"
+        "point"
     ],
-    "terms": [
-        "esplanade",
-        "estate",
-        "forest",
-        "garden",
-        "grass",
-        "green",
-        "grounds",
-        "lawn",
-        "lot",
-        "meadow",
-        "parkland",
-        "place",
-        "playground",
-        "plaza",
-        "pleasure garden",
-        "recreation area",
-        "square",
-        "tract",
-        "village green",
-        "woodland"
-    ],
+    "icon": "park",
+    "name": "Park",
+    "searchable": true,
     "tags": {
         "leisure": "park"
     },
-    "name": "Park",
-    "searchable": false
+    "terms": [
+        "park",
+        "green area",
+        "national park",
+        "state park",
+        "city park",
+        "recreation area",
+        "woodland",
+        "parkland"
+    ]
 }

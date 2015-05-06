@@ -1,16 +1,16 @@
 {
+    "fields": [
+        "barrier"
+    ],
     "geometry": [
         "point",
         "vertex",
         "line",
         "area"
     ],
+    "name": "Barrier",
+    "searchable": false,
     "tags": {
         "barrier": "*"
-    },
-    "fields": [
-        "barrier"
-    ],
-    "searchable": false,
-    "name": "Barrier"
+    }
 }

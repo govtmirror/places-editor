@@ -4,10 +4,9 @@
         "vertex",
         "area"
     ],
-    "terms": [],
+    "name": "Military Range",
+    "searchable": false,
     "tags": {
         "military": "range"
-    },
-    "searchable": false,
-    "name": "Military Range"
+    }
 }

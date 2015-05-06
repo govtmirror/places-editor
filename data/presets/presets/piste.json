@@ -1,5 +1,4 @@
 {
-    "icon": "skiing",
     "fields": [
         "piste/type",
         "piste/difficulty",
@@ -12,6 +11,12 @@
         "line",
         "area"
     ],
+    "icon": "skiing",
+    "name": "Piste/Ski Trail",
+    "searchable": false,
+    "tags": {
+        "piste:type": "*"
+    },
     "terms": [
         "ski",
         "sled",
@@ -20,10 +25,5 @@
         "nordic",
         "downhill",
         "snowmobile"
-    ],
-    "tags": {
-        "piste:type": "*"
-    },
-    "searchable": false,
-    "name": "Piste/Ski Trail"
+    ]
 }

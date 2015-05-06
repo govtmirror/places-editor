@@ -1,16 +1,20 @@
 {
-    "icon": "place-of-worship",
     "fields": [
+        "name",
         "address",
-        "levels"
+        "levels",
+        "religion"
     ],
     "geometry": [
-        "point",
-        "area"
+        "point"
     ],
+    "icon": "place-of-worship",
+    "name": "Cathedral",
+    "searchable": true,
     "tags": {
         "building": "cathedral"
     },
-    "searchable": true,
-    "name": "Cathedral"
+    "terms": [
+        "cathedral"
+    ]
 }

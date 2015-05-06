@@ -9,9 +9,9 @@
         "point",
         "area"
     ],
+    "name": "Marketplace",
+    "searchable": false,
     "tags": {
         "amenity": "marketplace"
-    },
-    "searchable": false,
-    "name": "Marketplace"
+    }
 }

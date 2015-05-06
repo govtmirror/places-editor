@@ -1,12 +1,14 @@
 {
-    "icon": "airport",
+    "fields": [
+        "ref"
+    ],
     "geometry": [
         "point"
     ],
-    "fields": ["ref"],
+    "icon": "airport",
+    "name": "Airport gate",
+    "searchable": false,
     "tags": {
         "aeroway": "gate"
-    },
-    "searchable": false,
-    "name": "Airport gate"
+    }
 }

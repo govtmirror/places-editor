@@ -1,11 +1,16 @@
 {
-    "geometry": [
-        "area"
+    "fields": [
+        "name"
     ],
+    "geometry": [
+        "point"
+    ],
+    "name": "Military Area",
+    "searchable": true,
     "tags": {
         "landuse": "military"
     },
-    "terms": [],
-    "searchable": false,
-    "name": "Military Area"
+    "terms": [
+        "military area"
+    ]
 }

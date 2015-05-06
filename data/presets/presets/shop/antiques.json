@@ -1,5 +1,4 @@
 {
-    "icon": "shop",
     "fields": [
         "operator",
         "address",
@@ -10,9 +9,10 @@
         "point",
         "area"
     ],
+    "icon": "shop",
+    "name": "Antiques Shop",
+    "searchable": false,
     "tags": {
         "shop": "antiques"
-    },
-    "name": "Antiques Shop",
-    "searchable": false
+    }
 }

@@ -1,5 +1,4 @@
 {
-    "icon": "embassy",
     "fields": [
         "country",
         "address",
@@ -9,9 +8,10 @@
         "point",
         "area"
     ],
+    "icon": "embassy",
+    "name": "Embassy",
+    "searchable": false,
     "tags": {
         "amenity": "embassy"
-    },
-    "searchable": false,
-    "name": "Embassy"
+    }
 }

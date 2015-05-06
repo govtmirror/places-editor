@@ -1,5 +1,4 @@
 {
-    "icon": "pharmacy",
     "fields": [
         "operator",
         "address",
@@ -11,13 +10,14 @@
         "point",
         "area"
     ],
+    "icon": "pharmacy",
+    "name": "Pharmacy",
+    "searchable": false,
     "tags": {
         "amenity": "pharmacy"
     },
-    "searchable": false,
     "terms": [
         "drug",
         "medicine"
-    ],
-    "name": "Pharmacy"
+    ]
 }

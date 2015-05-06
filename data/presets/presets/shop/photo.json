@@ -1,5 +1,4 @@
 {
-    "icon": "camera",
     "fields": [
         "operator",
         "address",
@@ -10,13 +9,14 @@
         "point",
         "area"
     ],
-    "terms": [
-        "camera",
-        "film"
-    ],
+    "icon": "camera",
+    "name": "Photography Store",
+    "searchable": false,
     "tags": {
         "shop": "photo"
     },
-    "searchable": false,
-    "name": "Photography Store"
+    "terms": [
+        "camera",
+        "film"
+    ]
 }

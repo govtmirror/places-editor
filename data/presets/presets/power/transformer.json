@@ -4,9 +4,9 @@
         "vertex",
         "area"
     ],
+    "name": "Transformer",
+    "searchable": false,
     "tags": {
         "power": "transformer"
-    },
-    "searchable": false,
-    "name": "Transformer"
+    }
 }

@@ -1,5 +1,4 @@
 {
-    "icon": "shop",
     "fields": [
         "operator",
         "address",
@@ -10,14 +9,15 @@
         "point",
         "area"
     ],
+    "icon": "shop",
+    "name": "Outdoors Store",
+    "searchable": false,
+    "tags": {
+        "shop": "outdoor"
+    },
     "terms": [
         "camping",
         "climbing",
         "hiking"
-    ],
-    "tags": {
-        "shop": "outdoor"
-    },
-    "searchable": false,
-    "name": "Outdoors Store"
+    ]
 }

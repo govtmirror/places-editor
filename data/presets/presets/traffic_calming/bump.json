@@ -5,11 +5,12 @@
     "geometry": [
         "vertex"
     ],
+    "name": "Speed Bump",
+    "searchable": false,
     "tags": {
         "traffic_calming": "bump"
     },
     "terms": [
         "speed hump"
-    ],
-    "name": "Speed Bump"
+    ]
 }

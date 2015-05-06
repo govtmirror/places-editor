@@ -1,5 +1,4 @@
 {
-    "icon": "music",
     "fields": [
         "operator",
         "address",
@@ -10,9 +9,10 @@
         "point",
         "area"
     ],
+    "icon": "music",
+    "name": "Musical Instrument Store",
+    "searchable": false,
     "tags": {
         "shop": "musical_instrument"
-    },
-    "name": "Musical Instrument Store",
-    "searchable": false
+    }
 }

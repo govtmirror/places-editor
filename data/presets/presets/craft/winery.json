@@ -1,5 +1,4 @@
 {
-    "icon": "alcohol-shop",
     "fields": [
         "operator",
         "address",
@@ -10,9 +9,10 @@
         "point",
         "area"
     ],
+    "icon": "alcohol-shop",
+    "name": "Winery",
+    "searchable": false,
     "tags": {
         "craft": "winery"
-    },
-    "name": "Winery",
-    "searchable": false
+    }
 }

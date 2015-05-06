@@ -1,17 +1,17 @@
 {
-    "geometry": [
-        "relation"
-    ],
-    "tags": {
-        "type": "route",
-        "route": "ferry"
-    },
-    "searchable": false,
-    "name": "Ferry Route",
-    "icon": "route-ferry",
     "fields": [
         "ref",
         "operator",
         "network"
-    ]
+    ],
+    "geometry": [
+        "relation"
+    ],
+    "icon": "route-ferry",
+    "name": "Ferry Route",
+    "searchable": false,
+    "tags": {
+        "route": "ferry",
+        "type": "route"
+    }
 }

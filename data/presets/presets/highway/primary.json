@@ -1,21 +1,29 @@
 {
-    "icon": "highway-primary",
     "fields": [
-        "oneway",
-        "maxspeed",
-        "structure",
-        "access",
-        "lanes",
+        "name",
+        "operator",
         "surface",
-        "ref"
+        "width",
+        "maxspeed",
+        "oneway",
+        "lanes",
+        "access"
     ],
     "geometry": [
         "line"
     ],
+    "icon": "highway-primary",
+    "name": "Primary Road",
+    "searchable": true,
     "tags": {
         "highway": "primary"
     },
-    "terms": [],
-    "searchable": true,
-    "name": "Primary Road"
+    "terms": [
+        "primary road",
+        "primary",
+        "road",
+        "highway",
+        "interstate",
+        "interstate highway"
+    ]
 }

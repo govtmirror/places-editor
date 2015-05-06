@@ -1,15 +1,15 @@
 {
-    "name": "No Turns",
-    "geometry": [
-        "relation"
-    ],
-    "tags": {
-        "type": "restriction",
-        "restriction": "only_straight_on"
-    },
     "fields": [
         "except"
     ],
+    "geometry": [
+        "relation"
+    ],
     "icon": "restriction-only-straight-on",
-    "searchable": false
+    "name": "No Turns",
+    "searchable": false,
+    "tags": {
+        "restriction": "only_straight_on",
+        "type": "restriction"
+    }
 }

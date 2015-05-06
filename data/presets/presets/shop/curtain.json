@@ -1,5 +1,4 @@
 {
-    "icon": "shop",
     "fields": [
         "operator",
         "address",
@@ -10,13 +9,14 @@
         "point",
         "area"
     ],
-    "terms": [
-        "drape*",
-        "window"
-    ],
+    "icon": "shop",
+    "name": "Curtain Store",
+    "searchable": false,
     "tags": {
         "shop": "curtain"
     },
-    "name": "Curtain Store",
-    "searchable": false
+    "terms": [
+        "drape*",
+        "window"
+    ]
 }

@@ -1,5 +1,4 @@
 {
-    "icon": "school",
     "fields": [
         "operator",
         "address",
@@ -10,14 +9,15 @@
         "point",
         "area"
     ],
+    "icon": "school",
+    "name": "Nursery/Childcare",
+    "searchable": false,
+    "tags": {
+        "amenity": "childcare"
+    },
     "terms": [
         "daycare",
         "orphanage",
         "playgroup"
-    ],
-    "tags": {
-        "amenity": "childcare"
-    },
-    "searchable": false,
-    "name": "Nursery/Childcare"
+    ]
 }

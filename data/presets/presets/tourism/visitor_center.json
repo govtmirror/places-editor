@@ -1,17 +1,25 @@
 {
+    "fields": [
+        "name",
+        "operator",
+        "address",
+        "opening_hours"
+    ],
     "geometry": [
         "point"
     ],
+    "icon": "visitor-center-black",
+    "maki": "npmaki",
+    "name": "Visitor Center",
+    "searchable": true,
+    "tags": {
+        "information": "office",
+        "tourism": "information"
+    },
     "terms": [
         "visitor center",
-        "visitor centre"
-    ],
-    "tags": {
-        "tourism": "information",
-        "information": "office"
-    },
-    "name": "Visitor Center",
-    "icon": "commercial",
-    "maki": "maki",
-    "searchable": true
+        "visitor centre",
+        "visitor information",
+        "information"
+    ]
 }

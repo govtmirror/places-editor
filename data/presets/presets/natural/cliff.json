@@ -1,14 +1,27 @@
 {
-    "geometry": [
-        "point",
-        "vertex",
-        "line",
-        "area"
+    "fields": [
+        "name",
+        "height"
     ],
-    "terms": [],
+    "geometry": [
+        "point"
+    ],
+    "name": "Cliff",
+    "searchable": true,
     "tags": {
         "natural": "cliff"
     },
-    "searchable": false,
-    "name": "Cliff"
+    "terms": [
+        "cliff",
+        "bluff",
+        "crag",
+        "head",
+        "headland",
+        "nose",
+        "palisades",
+        "precipice",
+        "promontory",
+        "rim",
+        "rimrock"
+    ]
 }

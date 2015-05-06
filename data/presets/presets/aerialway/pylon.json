@@ -1,14 +1,14 @@
 {
+    "fields": [
+        "ref"
+    ],
     "geometry": [
         "point",
         "vertex"
     ],
-    "fields": [
-        "ref"
-    ],
+    "name": "Aerialway Pylon",
+    "searchable": false,
     "tags": {
         "aerialway": "pylon"
-    },
-    "searchable": false,
-    "name": "Aerialway Pylon"
+    }
 }

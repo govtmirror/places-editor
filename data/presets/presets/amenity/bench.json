@@ -1,15 +1,24 @@
 {
     "fields": [
-        "backrest"
+        "name",
+        "operator",
+        "backrest",
+        "cardinal_direction",
+        "seats",
+        "material"
     ],
     "geometry": [
-        "point",
-        "vertex",
-        "line"
+        "point"
     ],
+    "icon": "",
+    "maki": "",
+    "name": "Bench",
+    "searchable": true,
     "tags": {
         "amenity": "bench"
     },
-    "name": "Bench",
-    "searchable": false
+    "terms": [
+        "bench",
+        "seat"
+    ]
 }

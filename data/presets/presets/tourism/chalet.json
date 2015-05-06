@@ -1,5 +1,4 @@
 {
-    "icon": "lodging",
     "fields": [
         "operator",
         "address",
@@ -10,9 +9,10 @@
         "point",
         "area"
     ],
+    "icon": "lodging",
+    "name": "Chalet",
+    "searchable": false,
     "tags": {
         "tourism": "chalet"
-    },
-    "searchable": false,
-    "name": "Chalet"
+    }
 }

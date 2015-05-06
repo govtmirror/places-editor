@@ -1,11 +1,11 @@
 {
-    "icon": "ferry",
     "geometry": [
         "line"
     ],
+    "icon": "ferry",
+    "name": "Ferry Route",
+    "searchable": false,
     "tags": {
         "route": "ferry"
-    },
-    "searchable": false,
-    "name": "Ferry Route"
+    }
 }

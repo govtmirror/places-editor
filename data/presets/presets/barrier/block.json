@@ -6,9 +6,9 @@
         "point",
         "vertex"
     ],
+    "name": "Block",
+    "searchable": false,
     "tags": {
         "barrier": "block"
-    },
-    "searchable": false,
-    "name": "Block"
+    }
 }

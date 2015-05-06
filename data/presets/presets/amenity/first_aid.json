@@ -1,17 +1,23 @@
 {
+    "fields": [
+        "name",
+        "operator",
+        "address"
+    ],
+    "geometry": [
+        "point"
+    ],
     "icon": "first-aid-black",
     "maki": "npmaki",
     "name": "First Aid Station",
-    "geometry": [
-        "point",
-        "area"
-    ],
-    "terms": [
-        "First Aid",
-        "medical"
-    ],
+    "searchable": true,
     "tags": {
         "amenity": "first_aid"
     },
-    "searchable": true
+    "terms": [
+        "first aid station",
+        "first aid",
+        "medical",
+        "emergency"
+    ]
 }

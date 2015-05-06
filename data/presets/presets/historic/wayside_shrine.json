@@ -4,9 +4,9 @@
         "vertex",
         "area"
     ],
+    "name": "Wayside Shrine",
+    "searchable": false,
     "tags": {
         "historic": "wayside_shrine"
-    },
-    "searchable": false,
-    "name": "Wayside Shrine"
+    }
 }

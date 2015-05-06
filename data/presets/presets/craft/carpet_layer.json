@@ -1,6 +1,4 @@
 {
-    "searchable": false,
-    "icon": "square",
     "fields": [
         "operator",
         "address",
@@ -11,8 +9,10 @@
         "point",
         "area"
     ],
+    "icon": "square",
+    "name": "Carpet Layer",
+    "searchable": false,
     "tags": {
         "craft": "carpet_layer"
-    },
-    "name": "Carpet Layer"
+    }
 }

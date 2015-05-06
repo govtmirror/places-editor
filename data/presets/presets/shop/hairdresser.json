@@ -1,5 +1,4 @@
 {
-    "icon": "hairdresser",
     "fields": [
         "operator",
         "address",
@@ -10,9 +9,10 @@
         "point",
         "area"
     ],
+    "icon": "hairdresser",
+    "name": "Hairdresser",
+    "searchable": false,
     "tags": {
         "shop": "hairdresser"
-    },
-    "searchable": false,
-    "name": "Hairdresser"
+    }
 }

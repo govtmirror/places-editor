@@ -1,15 +1,15 @@
 {
-    "geometry": [
-        "relation"
-    ],
-    "tags": {
-        "type": "route"
-    },
-    "searchable": false,
-    "name": "Route",
-    "icon": "route",
     "fields": [
         "route",
         "ref"
-    ]
+    ],
+    "geometry": [
+        "relation"
+    ],
+    "icon": "route",
+    "name": "Route",
+    "searchable": false,
+    "tags": {
+        "type": "route"
+    }
 }

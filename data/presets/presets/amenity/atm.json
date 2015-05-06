@@ -1,5 +1,4 @@
 {
-    "icon": "bank",
     "fields": [
         "operator",
         "drive_through"
@@ -8,14 +7,15 @@
         "point",
         "vertex"
     ],
+    "icon": "bank",
+    "name": "ATM",
+    "searchable": false,
+    "tags": {
+        "amenity": "atm"
+    },
     "terms": [
         "money",
         "cash",
         "machine"
-    ],
-    "tags": {
-        "amenity": "atm"
-    },
-    "searchable": false,
-    "name": "ATM"
+    ]
 }

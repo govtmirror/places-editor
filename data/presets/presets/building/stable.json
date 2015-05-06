@@ -1,13 +1,21 @@
 {
-    "geometry": [
-        "point",
-        "area"
+    "fields": [
+        "name",
+        "address",
+        "levels",
+        "landuse"
     ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "stable-black",
+    "maki": "npmaki",
+    "name": "Stable",
+    "searchable": true,
     "tags": {
         "building": "stable"
     },
-    "name": "Stable",
-    "icon": "stable-black",
-    "maki": "npmaki",
-    "searchable": true
+    "terms": [
+        "stable"
+    ]
 }

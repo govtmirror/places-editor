@@ -1,18 +1,17 @@
 {
-    "icon": "farm",
     "fields": [
         "crop"
     ],
     "geometry": [
         "area"
     ],
+    "icon": "farm",
+    "name": "Farmland",
+    "searchable": false,
     "tags": {
         "landuse": "farmland"
     },
-    "searchable": false,
-    "name": "Farmland",
     "terms": [
         "farmland"
-    ],
-    "icon": "farm"
+    ]
 }

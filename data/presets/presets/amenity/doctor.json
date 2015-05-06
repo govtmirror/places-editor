@@ -1,6 +1,4 @@
 {
-    "searchable": false,
-    "icon": "hospital",
     "fields": [
         "address",
         "building_area",
@@ -10,11 +8,13 @@
         "point",
         "area"
     ],
-    "terms": [
-        "medic*"
-    ],
+    "icon": "hospital",
+    "name": "Doctor",
+    "searchable": false,
     "tags": {
         "amenity": "doctors"
     },
-    "name": "Doctor"
+    "terms": [
+        "medic*"
+    ]
 }

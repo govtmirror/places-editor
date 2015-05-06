@@ -1,5 +1,4 @@
 {
-    "searchable": false,
     "fields": [
         "operator",
         "generator/source",
@@ -11,8 +10,9 @@
         "vertex",
         "area"
     ],
+    "name": "Power Generator",
+    "searchable": false,
     "tags": {
         "power": "generator"
-    },
-    "name": "Power Generator"
+    }
 }

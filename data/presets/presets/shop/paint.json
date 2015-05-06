@@ -1,5 +1,4 @@
 {
-    "icon": "water",
     "fields": [
         "operator",
         "address",
@@ -10,9 +9,10 @@
         "point",
         "area"
     ],
+    "icon": "water",
+    "name": "Paint Store",
+    "searchable": false,
     "tags": {
         "shop": "paint"
-    },
-    "name": "Paint Store",
-    "searchable": false
+    }
 }

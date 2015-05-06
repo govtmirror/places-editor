@@ -1,5 +1,4 @@
 {
-    "icon": "village",
     "fields": [
         "population"
     ],
@@ -7,9 +6,10 @@
         "point",
         "area"
     ],
+    "icon": "village",
+    "name": "Village",
+    "searchable": false,
     "tags": {
         "place": "village"
-    },
-    "searchable": false,
-    "name": "Village"
+    }
 }

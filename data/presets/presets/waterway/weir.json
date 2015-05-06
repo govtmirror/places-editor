@@ -1,12 +1,12 @@
 {
-    "icon": "dam",
     "geometry": [
         "vertex",
         "line"
     ],
+    "icon": "dam",
+    "name": "Weir",
+    "searchable": false,
     "tags": {
         "waterway": "weir"
-    },
-    "searchable": false,
-    "name": "Weir"
+    }
 }

@@ -1,5 +1,4 @@
 {
-    "icon": "mobilephone",
     "fields": [
         "operator",
         "address",
@@ -10,9 +9,10 @@
         "point",
         "area"
     ],
+    "icon": "mobilephone",
+    "name": "Mobile Phone Store",
+    "searchable": false,
     "tags": {
         "shop": "mobile_phone"
-    },
-    "searchable": false,
-    "name": "Mobile Phone Store"
+    }
 }

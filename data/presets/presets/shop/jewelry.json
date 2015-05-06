@@ -1,5 +1,4 @@
 {
-    "icon": "shop",
     "fields": [
         "operator",
         "address",
@@ -10,14 +9,15 @@
         "point",
         "area"
     ],
+    "icon": "shop",
+    "name": "Jeweler",
+    "searchable": false,
+    "tags": {
+        "shop": "jewelry"
+    },
     "terms": [
         "diamond",
         "gem",
         "ring"
-    ],
-    "tags": {
-        "shop": "jewelry"
-    },
-    "searchable": false,
-    "name": "Jeweler"
+    ]
 }

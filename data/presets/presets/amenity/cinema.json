@@ -1,5 +1,4 @@
 {
-    "icon": "cinema",
     "fields": [
         "address",
         "building_area",
@@ -9,6 +8,12 @@
         "point",
         "area"
     ],
+    "icon": "cinema",
+    "name": "Cinema",
+    "searchable": false,
+    "tags": {
+        "amenity": "cinema"
+    },
     "terms": [
         "drive-in",
         "film",
@@ -18,10 +23,5 @@
         "picture",
         "show",
         "screen"
-    ],
-    "tags": {
-        "amenity": "cinema"
-    },
-    "searchable": false,
-    "name": "Cinema"
+    ]
 }

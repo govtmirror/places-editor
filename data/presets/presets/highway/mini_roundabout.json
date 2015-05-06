@@ -1,13 +1,13 @@
 {
-    "geometry": [
-        "vertex"
-    ],
-    "tags": {
-        "highway": "mini_roundabout"
-    },
     "fields": [
         "clock_direction"
     ],
+    "geometry": [
+        "vertex"
+    ],
+    "name": "Mini-Roundabout",
     "searchable": false,
-    "name": "Mini-Roundabout"
+    "tags": {
+        "highway": "mini_roundabout"
+    }
 }

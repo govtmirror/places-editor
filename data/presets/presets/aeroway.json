@@ -1,5 +1,4 @@
 {
-    "icon": "airport",
     "fields": [
         "aeroway"
     ],
@@ -9,9 +8,10 @@
         "line",
         "area"
     ],
+    "icon": "airport",
+    "name": "Aeroway",
+    "searchable": false,
     "tags": {
         "aeroway": "*"
-    },
-    "searchable": false,
-    "name": "Aeroway"
+    }
 }

@@ -1,5 +1,4 @@
 {
-    "icon": "highway-cycleway",
     "fields": [
         "surface",
         "lit",
@@ -11,12 +10,13 @@
     "geometry": [
         "line"
     ],
+    "icon": "highway-cycleway",
+    "name": "Cycle Path",
+    "searchable": false,
     "tags": {
         "highway": "cycleway"
     },
-    "searchable": false,
     "terms": [
         "bike"
-    ],
-    "name": "Cycle Path"
+    ]
 }

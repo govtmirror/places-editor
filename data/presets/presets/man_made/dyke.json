@@ -1,0 +1,18 @@
+{
+    "name": "Dyke (Levee)",
+    "tags": {
+        "man_made":  "dyke"
+    },
+    "geometry": [
+        "point"
+    ],
+    "fields": [
+        "name",
+        "operator"
+    ],
+    "terms": [
+        "dyke",
+        "levee"
+    ],
+    "searchable": true
+}

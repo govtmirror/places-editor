@@ -3,9 +3,9 @@
         "line",
         "area"
     ],
+    "name": "Hedge",
+    "searchable": false,
     "tags": {
         "barrier": "hedge"
-    },
-    "searchable": false,
-    "name": "Hedge"
+    }
 }

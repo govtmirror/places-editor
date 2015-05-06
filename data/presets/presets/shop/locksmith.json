@@ -1,5 +1,4 @@
 {
-    "icon": "shop",
     "fields": [
         "operator",
         "address",
@@ -10,13 +9,14 @@
         "point",
         "area"
     ],
-    "terms": [
-        "key",
-        "lockpick"
-    ],
+    "icon": "shop",
+    "name": "Locksmith",
+    "searchable": false,
     "tags": {
         "shop": "locksmith"
     },
-    "searchable": false,
-    "name": "Locksmith"
+    "terms": [
+        "key",
+        "lockpick"
+    ]
 }

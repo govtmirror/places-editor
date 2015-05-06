@@ -1,0 +1,19 @@
+{
+    "name": "Sea",
+    "tags": {
+        "place":  "sea"
+    },
+    "geometry": [
+        "point"
+    ],
+    "icon": "water",
+    "fields": [
+        "name"
+    ],
+    "terms": [
+        "sea",
+        "gulf",
+        "ocean"
+    ],
+    "searchable": true
+}

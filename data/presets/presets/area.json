@@ -1,9 +1,11 @@
 {
-    "searchable": false,
+    "geometry": [
+        "area"
+    ],
+    "matchScore": 0.1,
     "name": "Area",
+    "searchable": false,
     "tags": {
         "area": "yes"
-    },
-    "geometry": ["area"],
-    "matchScore": 0.1
+    }
 }

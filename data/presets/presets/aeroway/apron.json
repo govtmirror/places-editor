@@ -1,18 +1,18 @@
 {
-    "icon": "airport",
-    "geometry": [
-        "area"
-    ],
-    "terms": [
-        "ramp"
-    ],
     "fields": [
         "ref",
         "surface"
     ],
+    "geometry": [
+        "area"
+    ],
+    "icon": "airport",
+    "name": "Apron",
+    "searchable": false,
     "tags": {
         "aeroway": "apron"
     },
-    "searchable": false,
-    "name": "Apron"
+    "terms": [
+        "ramp"
+    ]
 }

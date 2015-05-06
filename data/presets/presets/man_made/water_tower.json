@@ -1,5 +1,4 @@
 {
-    "icon": "water",
     "fields": [
         "operator"
     ],
@@ -7,9 +6,10 @@
         "point",
         "area"
     ],
+    "icon": "water",
+    "name": "Water Tower",
+    "searchable": false,
     "tags": {
         "man_made": "water_tower"
-    },
-    "searchable": false,
-    "name": "Water Tower"
+    }
 }

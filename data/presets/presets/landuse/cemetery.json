@@ -1,5 +1,4 @@
 {
-    "icon": "cemetery",
     "fields": [
         "religion",
         "denomination"
@@ -7,10 +6,10 @@
     "geometry": [
         "area"
     ],
+    "icon": "cemetery",
+    "name": "Cemetery",
+    "searchable": false,
     "tags": {
         "landuse": "cemetery"
-    },
-    "terms": [],
-    "searchable": false,
-    "name": "Cemetery"
+    }
 }

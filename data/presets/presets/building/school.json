@@ -1,22 +1,24 @@
 {
-    "icon": "building",
     "fields": [
+        "name",
         "address",
         "levels"
     ],
     "geometry": [
-        "point",
-        "area"
+        "point"
     ],
+    "icon": "school",
+    "name": "School Building",
+    "searchable": true,
+    "tags": {
+        "building": "school"
+    },
     "terms": [
+        "school building",
+        "school",
         "academy",
         "elementary school",
         "middle school",
         "high school"
-    ],
-    "tags": {
-        "building": "school"
-    },
-    "searchable": true,
-    "name": "School Building"
+    ]
 }

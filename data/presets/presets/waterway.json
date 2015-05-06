@@ -8,9 +8,9 @@
         "line",
         "area"
     ],
+    "name": "Waterway",
+    "searchable": false,
     "tags": {
         "waterway": "*"
-    },
-    "searchable": false,
-    "name": "Waterway"
+    }
 }

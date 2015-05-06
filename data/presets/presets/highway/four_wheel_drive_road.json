@@ -1,27 +1,30 @@
 {
-    "icon": "4-wheel-drive-black",
-    "maki": "npmaki",
     "fields": [
-        "tracktype",
-        "oneway",
+        "name",
+        "operator",
+        "surface",
+        "width",
         "maxspeed",
-        "structure",
-        "access",
-        "surface"
+        "oneway",
+        "lanes",
+        "access"
     ],
     "geometry": [
-        "point"
+        "line"
     ],
+    "icon": "highway-road",
+    "name": "Four-Wheel Drive Road",
+    "searchable": true,
     "tags": {
-        "highway": "track",
-        "atv": "yes"
+        "4wd_only": "yes",
+        "highway": "road"
     },
     "terms": [
-      "ATV",
-      "All Terrain Vehicle",
-      "Off-road",
-      "4wd"
-    ],
-    "name": "Four-Wheel Drive Road",
-    "searchable": true
+        "four-wheel drive road",
+        "4wd",
+        "4 wheeler",
+        "4-wheeler",
+        "four wheeler",
+        "four-wheeler"
+    ]
 }

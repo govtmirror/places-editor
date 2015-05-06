@@ -1,5 +1,6 @@
 {
     "fields": [
+        "name",
         "operator",
         "address",
         "recycling/cans",
@@ -8,21 +9,22 @@
         "recycling/clothes"
     ],
     "geometry": [
-        "point",
-        "area"
+        "point"
     ],
-    "terms": [
-        "can",
-        "bottle",
-        "garbage",
-        "scrap",
-        "trash"
-    ],
+    "icon": "recycling-black",
+    "maki": "npmaki",
+    "name": "Recycling",
+    "searchable": true,
     "tags": {
         "amenity": "recycling"
     },
-    "name": "Recycling",
-    "icon": "recycling-black",
-    "maki": "npmaki",
-    "searchable": true
+    "terms": [
+        "recycling",
+        "salvage",
+        "garbage",
+        "trash",
+        "can",
+        "bottle",
+        "scrap"
+    ]
 }

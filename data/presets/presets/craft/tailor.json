@@ -1,5 +1,4 @@
 {
-    "icon": "clothing-store",
     "fields": [
         "operator",
         "address",
@@ -10,13 +9,14 @@
         "point",
         "area"
     ],
-    "terms": [
-        "clothes",
-        "suit"
-    ],
+    "icon": "clothing-store",
+    "name": "Tailor",
+    "searchable": false,
     "tags": {
         "craft": "tailor"
     },
-    "name": "Tailor",
-    "searchable": false
+    "terms": [
+        "clothes",
+        "suit"
+    ]
 }

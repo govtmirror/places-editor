@@ -1,12 +1,19 @@
 {
-    "geometry": [
-        "point",
-        "vertex",
-        "area"
+    "fields": [
+        "name"
     ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "ruin",
+    "maki": "npmaki",
+    "name": "Historic Ruins",
+    "searchable": true,
     "tags": {
         "historic": "ruins"
     },
-    "searchable": false,
-    "name": "Ruins"
+    "terms": [
+        "historic ruins",
+        "ruins"
+    ]
 }

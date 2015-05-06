@@ -1,14 +1,14 @@
 {
+    "fields": [
+        "boundary"
+    ],
     "geometry": [
         "relation"
     ],
+    "icon": "boundary",
+    "name": "Boundary",
+    "searchable": false,
     "tags": {
         "type": "boundary"
-    },
-    "searchable": false,
-    "name": "Boundary",
-    "icon": "boundary",
-    "fields": [
-        "boundary"
-    ]
+    }
 }

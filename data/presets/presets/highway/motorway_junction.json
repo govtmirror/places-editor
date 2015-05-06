@@ -1,13 +1,13 @@
 {
-    "geometry": [
-        "vertex"
-    ],
-    "tags": {
-        "highway": "motorway_junction"
-    },
     "fields": [
         "ref"
     ],
+    "geometry": [
+        "vertex"
+    ],
+    "name": "Motorway Junction / Exit",
     "searchable": false,
-    "name": "Motorway Junction / Exit"
+    "tags": {
+        "highway": "motorway_junction"
+    }
 }

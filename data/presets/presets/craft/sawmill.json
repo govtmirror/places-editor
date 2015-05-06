@@ -1,6 +1,4 @@
 {
-    "searchable": false,
-    "icon": "park",
     "fields": [
         "operator",
         "address",
@@ -11,11 +9,13 @@
         "point",
         "area"
     ],
-    "terms": [
-        "lumber"
-    ],
+    "icon": "park",
+    "name": "Sawmill",
+    "searchable": false,
     "tags": {
         "craft": "sawmill"
     },
-    "name": "Sawmill"
+    "terms": [
+        "lumber"
+    ]
 }

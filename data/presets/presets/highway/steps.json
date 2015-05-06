@@ -6,17 +6,17 @@
         "incline_steps",
         "access"
     ],
-    "icon": "highway-steps",
     "geometry": [
         "line"
     ],
+    "icon": "highway-steps",
+    "name": "Steps",
+    "searchable": false,
     "tags": {
         "highway": "steps"
     },
     "terms": [
         "stairs",
         "staircase"
-    ],
-    "searchable": false,
-    "name": "Steps"
+    ]
 }

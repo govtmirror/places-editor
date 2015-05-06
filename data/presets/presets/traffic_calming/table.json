@@ -5,13 +5,14 @@
     "geometry": [
         "vertex"
     ],
+    "name": "Raised Pedestrian Crossing",
+    "searchable": false,
     "tags": {
-        "highway":"crossing",
+        "highway": "crossing",
         "traffic_calming": "table"
     },
     "terms": [
         "speed table",
         "flat top hump"
-    ],
-    "name": "Raised Pedestrian Crossing"
+    ]
 }

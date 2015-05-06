@@ -2,9 +2,9 @@
     "geometry": [
         "point"
     ],
+    "name": "Sign",
+    "searchable": false,
     "tags": {
         "traffic_sign": "yes"
-    },
-    "searchable": false,
-    "name": "Sign"
+    }
 }

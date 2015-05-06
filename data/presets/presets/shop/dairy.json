@@ -1,5 +1,4 @@
 {
-    "icon": "shop",
     "fields": [
         "operator",
         "address",
@@ -10,14 +9,15 @@
         "point",
         "area"
     ],
+    "icon": "shop",
+    "name": "Dairy Store",
+    "searchable": false,
+    "tags": {
+        "shop": "dairy"
+    },
     "terms": [
         "milk",
         "egg",
         "cheese"
-    ],
-    "tags": {
-        "shop": "dairy"
-    },
-    "name": "Dairy Store",
-    "searchable": false
+    ]
 }

@@ -1,7 +1,9 @@
 {
-    "searchable": false,
+    "geometry": [
+        "vertex"
+    ],
+    "matchScore": 0.1,
     "name": "Other",
-    "tags": {},
-    "geometry": ["vertex"],
-    "matchScore": 0.1
+    "searchable": false,
+    "tags": {}
 }

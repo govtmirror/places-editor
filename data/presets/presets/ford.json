@@ -2,9 +2,9 @@
     "geometry": [
         "vertex"
     ],
+    "name": "Ford",
+    "searchable": false,
     "tags": {
         "ford": "yes"
-    },
-    "name": "Ford",
-    "searchable": false
+    }
 }

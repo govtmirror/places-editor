@@ -1,5 +1,4 @@
 {
-    "icon": "shop",
     "fields": [
         "operator",
         "address",
@@ -10,15 +9,16 @@
         "point",
         "area"
     ],
+    "icon": "shop",
+    "name": "Garden Center",
+    "searchable": false,
+    "tags": {
+        "shop": "garden_centre"
+    },
     "terms": [
         "landscape",
         "mulch",
         "shrub",
         "tree"
-    ],
-    "tags": {
-        "shop": "garden_centre"
-    },
-    "searchable": false,
-    "name": "Garden Center"
+    ]
 }

@@ -1,5 +1,4 @@
 {
-    "icon": "shop",
     "fields": [
         "operator",
         "address",
@@ -10,13 +9,14 @@
         "point",
         "area"
     ],
-    "terms": [
-        "fruit",
-        "vegetable"
-    ],
+    "icon": "shop",
+    "name": "Greengrocer",
+    "searchable": false,
     "tags": {
         "shop": "greengrocer"
     },
-    "searchable": false,
-    "name": "Greengrocer"
+    "terms": [
+        "fruit",
+        "vegetable"
+    ]
 }

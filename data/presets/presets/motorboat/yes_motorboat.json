@@ -1,0 +1,26 @@
+{
+    "name": "Motorized Watercraft Trail",
+    "tags": {
+        "motorboat":  "yes",
+        "waterway":  "yes"
+    },
+    "geometry": [
+        "line"
+    ],
+    "icon": "highway-track",
+    "fields": [
+        "name",
+        "operator",
+        "whitewater",
+        "width",
+        "section_grade"
+    ],
+    "terms": [
+        "motorized watercraft trail",
+        "motorized watercraft",
+        "motorboat",
+        "trail",
+        "track"
+    ],
+    "searchable": true
+}

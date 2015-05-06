@@ -1,13 +1,20 @@
 {
-  "icon": "building",
-  "geometry": [
-    "point",
-    "area"
-  ],
-  "tags": {
-    "building": "yes",
-    "historic": "building"
-  },
-  "name": "Historic Building",
-  "searchable": true
+    "fields": [
+        "name",
+        "site_type"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "ruin",
+    "maki": "npmaki",
+    "name": "Historic Building",
+    "searchable": true,
+    "tags": {
+        "building": "yes",
+        "historic": "building"
+    },
+    "terms": [
+        "historic building"
+    ]
 }

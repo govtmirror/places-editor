@@ -1,5 +1,4 @@
 {
-    "icon": "shop",
     "fields": [
         "operator",
         "address",
@@ -10,12 +9,13 @@
         "point",
         "area"
     ],
-    "terms": [
-        "fishmonger"
-    ],
+    "icon": "shop",
+    "name": "Seafood Shop",
     "searchable": false,
     "tags": {
         "shop": "seafood"
     },
-    "name": "Seafood Shop"
+    "terms": [
+        "fishmonger"
+    ]
 }

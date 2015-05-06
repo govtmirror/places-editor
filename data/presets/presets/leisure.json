@@ -7,9 +7,9 @@
         "vertex",
         "area"
     ],
+    "name": "Leisure",
+    "searchable": false,
     "tags": {
         "leisure": "*"
-    },
-    "searchable": false,
-    "name": "Leisure"
+    }
 }

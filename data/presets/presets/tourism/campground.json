@@ -1,12 +1,23 @@
 {
+    "fields": [
+        "name",
+        "operator",
+        "address",
+        "opening_hours",
+        "capacity",
+        "fee"
+    ],
     "geometry": [
         "point"
     ],
+    "icon": "campground-black",
+    "maki": "npmaki",
+    "name": "Campground",
+    "searchable": true,
     "tags": {
         "tourism": "camp_site"
     },
-    "name": "Campground",
-    "icon": "camping-black",
-    "maki": "npmaki",
-    "searchable": true
+    "terms": [
+        "campground"
+    ]
 }

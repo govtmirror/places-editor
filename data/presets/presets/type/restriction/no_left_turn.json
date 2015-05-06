@@ -1,15 +1,15 @@
 {
-    "name": "No Left Turn",
-    "geometry": [
-        "relation"
-    ],
-    "tags": {
-        "type": "restriction",
-        "restriction": "no_left_turn"
-    },
     "fields": [
         "except"
     ],
+    "geometry": [
+        "relation"
+    ],
     "icon": "restriction-no-left-turn",
-    "searchable": false
+    "name": "No Left Turn",
+    "searchable": false,
+    "tags": {
+        "restriction": "no_left_turn",
+        "type": "restriction"
+    }
 }

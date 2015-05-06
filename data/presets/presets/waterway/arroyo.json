@@ -1,0 +1,22 @@
+{
+    "name": "Arroyo",
+    "tags": {
+        "waterway":  "drain",
+        "intermittent":  "yes"
+    },
+    "geometry": [
+        "point"
+    ],
+    "icon": "water",
+    "fields": [
+        "name"
+    ],
+    "terms": [
+        "arroyo",
+        "coulee",
+        "draw",
+        "gully",
+        "wash"
+    ],
+    "searchable": true
+}

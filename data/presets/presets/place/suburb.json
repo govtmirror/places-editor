@@ -1,5 +1,4 @@
 {
-    "icon": "triangle-stroked",
     "fields": [
         "population"
     ],
@@ -7,13 +6,14 @@
         "point",
         "area"
     ],
+    "icon": "triangle-stroked",
+    "name": "Borough",
+    "searchable": false,
     "tags": {
         "place": "suburb"
     },
     "terms": [
-        "Boro",
-        "Quarter"
-    ],
-    "name": "Borough",
-    "searchable": false
+        "boro",
+        "quarter"
+    ]
 }

@@ -1,12 +1,12 @@
 {
-    "icon": "golf",
     "geometry": [
         "area"
     ],
+    "icon": "golf",
+    "name": "Rough",
+    "searchable": false,
     "tags": {
         "golf": "rough",
         "landuse": "grass"
-    },
-    "searchable": false,
-    "name": "Rough"
+    }
 }

@@ -1,0 +1,19 @@
+{
+    "name": "Oilfield",
+    "tags": {
+        "man_made":  "oilfield"
+    },
+    "geometry": [
+        "point"
+    ],
+    "icon": "oil-well",
+    "fields": [
+        "name",
+        "operator",
+        "resource"
+    ],
+    "terms": [
+        "oilfield"
+    ],
+    "searchable": true
+}

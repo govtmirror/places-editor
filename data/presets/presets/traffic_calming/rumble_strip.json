@@ -2,6 +2,8 @@
     "geometry": [
         "vertex"
     ],
+    "name": "Rumble Strip",
+    "searchable": false,
     "tags": {
         "traffic_calming": "rumble_strip"
     },
@@ -9,6 +11,5 @@
         "sleeper lines",
         "audible lines",
         "growlers"
-    ],
-    "name": "Rumble Strip"
+    ]
 }

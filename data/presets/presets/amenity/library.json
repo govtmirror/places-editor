@@ -1,5 +1,4 @@
 {
-    "icon": "library",
     "fields": [
         "operator",
         "building_area",
@@ -10,12 +9,13 @@
         "point",
         "area"
     ],
-    "terms": [
-        "book"
-    ],
+    "icon": "library",
+    "name": "Library",
+    "searchable": false,
     "tags": {
         "amenity": "library"
     },
-    "searchable": false,
-    "name": "Library"
+    "terms": [
+        "book"
+    ]
 }

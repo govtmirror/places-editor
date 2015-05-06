@@ -1,5 +1,4 @@
 {
-    "icon": "school",
     "fields": [
         "operator",
         "address"
@@ -8,13 +7,14 @@
         "point",
         "area"
     ],
-    "terms": [
-        "kindergarden",
-        "pre-school"
-    ],
+    "icon": "school",
+    "name": "Preschool/Kindergarten Grounds",
+    "searchable": false,
     "tags": {
         "amenity": "kindergarten"
     },
-    "searchable": false,
-    "name": "Preschool/Kindergarten Grounds"
+    "terms": [
+        "kindergarden",
+        "pre-school"
+    ]
 }

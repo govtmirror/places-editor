@@ -2,9 +2,9 @@
     "geometry": [
         "line"
     ],
+    "name": "Fence",
+    "searchable": false,
     "tags": {
         "barrier": "fence"
-    },
-    "searchable": false,
-    "name": "Fence"
+    }
 }

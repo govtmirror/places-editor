@@ -1,17 +1,25 @@
 {
-    "icon": "monument",
     "fields": [
+        "name",
         "operator",
-        "address"
+        "address",
+        "opening_hours"
     ],
     "geometry": [
-        "point",
-        "vertex",
-        "area"
+        "point"
     ],
+    "icon": "information-white",
+    "maki": "npmaki",
+    "name": "Exhibit / Wayside",
+    "searchable": true,
     "tags": {
         "tourism": "attraction"
     },
-    "name": "Exhibit",
-    "searchable": false
+    "terms": [
+        "exhibit / wayside",
+        "exhibit",
+        "wayside",
+        "attraction",
+        "tourist attraction"
+    ]
 }

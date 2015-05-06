@@ -3,9 +3,9 @@
         "line",
         "area"
     ],
+    "name": "Retaining Wall",
+    "searchable": false,
     "tags": {
         "barrier": "retaining_wall"
-    },
-    "searchable": false,
-    "name": "Retaining Wall"
+    }
 }

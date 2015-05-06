@@ -1,18 +1,22 @@
 {
     "fields": [
-        "information",
+        "name",
         "operator",
         "address",
-        "building_area"
+        "opening_hours"
     ],
     "geometry": [
         "point"
     ],
+    "icon": "information-black",
+    "maki": "npmaki",
+    "name": "Information",
+    "searchable": true,
     "tags": {
         "tourism": "information"
     },
-    "name": "Information",
-    "icon": "information-black",
-    "maki": "npmaki",
-    "searchable": true
+    "terms": [
+        "information",
+        "tourist information"
+    ]
 }

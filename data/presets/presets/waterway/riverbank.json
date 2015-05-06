@@ -1,11 +1,11 @@
 {
-    "icon": "water",
     "geometry": [
         "area"
     ],
+    "icon": "water",
+    "name": "Riverbank",
+    "searchable": false,
     "tags": {
         "waterway": "riverbank"
-    },
-    "searchable": false,
-    "name": "Riverbank"
+    }
 }

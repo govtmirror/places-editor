@@ -1,12 +1,17 @@
 {
-    "geometry": [
-        "point",
-        "area"
+    "fields": [
+        "name"
     ],
-    "tags": {
-        "natural": "landform",
-        "landform": "plateau"
-    },
+    "geometry": [
+        "point"
+    ],
     "name": "Plateau",
-    "searchable": true
+    "searchable": true,
+    "tags": {
+        "landform": "plateau",
+        "natural": "landform"
+    },
+    "terms": [
+        "plateau"
+    ]
 }

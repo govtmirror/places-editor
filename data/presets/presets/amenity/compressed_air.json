@@ -1,12 +1,12 @@
 {
-    "icon": "car",
     "geometry": [
         "point",
         "area"
     ],
+    "icon": "car",
+    "name": "Compressed Air",
+    "searchable": false,
     "tags": {
         "amenity": "compressed_air"
-    },
-    "name": "Compressed Air",
-    "searchable": false
+    }
 }

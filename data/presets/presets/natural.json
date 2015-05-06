@@ -7,9 +7,9 @@
         "vertex",
         "area"
     ],
+    "name": "Natural",
+    "searchable": false,
     "tags": {
         "natural": "*"
-    },
-    "searchable": false,
-    "name": "Natural"
+    }
 }

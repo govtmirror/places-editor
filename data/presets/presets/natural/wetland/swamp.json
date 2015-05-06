@@ -1,0 +1,24 @@
+{
+    "name": "Swamp",
+    "tags": {
+        "natural":  "wetland",
+        "wetland":  "swamp"
+    },
+    "geometry": [
+        "point"
+    ],
+    "icon": "water",
+    "fields": [
+        "name"
+    ],
+    "terms": [
+        "swamp",
+        "wetland",
+        "bog",
+        "cienega",
+        "marais",
+        "marsh",
+        "pocosin"
+    ],
+    "searchable": true
+}

@@ -1,24 +1,24 @@
 {
+    "fields": [
+        "name",
+        "operator",
+        "address",
+        "icao",
+        "iata"
+    ],
+    "geometry": [
+        "point"
+    ],
     "icon": "airport-black",
     "maki": "npmaki",
-    "geometry": [
-        "point",
-        "area"
-    ],
-    "terms": [
-        "airplane",
-        "airport",
-        "aerodrome"
-    ],
-    "fields": [
-        "ref",
-        "iata",
-        "icao",
-        "operator"
-    ],
+    "name": "Airport",
+    "searchable": true,
     "tags": {
         "aeroway": "aerodrome"
     },
-    "name": "Airport",
-    "searchable": true
+    "terms": [
+        "airport",
+        "aeroway",
+        "aerodrome"
+    ]
 }

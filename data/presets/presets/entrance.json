@@ -1,16 +1,16 @@
 {
-    "icon": "entrance",
-    "geometry": [
-        "vertex"
-    ],
-    "tags": {
-        "entrance": "*"
-    },
     "fields": [
         "entrance",
         "access_simple",
         "address"
     ],
+    "geometry": [
+        "vertex"
+    ],
+    "icon": "entrance",
+    "name": "Entrance/Exit",
     "searchable": false,
-    "name": "Entrance/Exit"
+    "tags": {
+        "entrance": "*"
+    }
 }

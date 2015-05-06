@@ -1,21 +1,21 @@
 {
-    "icon": "golfing-black",
-    "maki": "npmaki",
-    "searchable": true,
     "fields": [
+        "name",
         "operator",
-        "address",
+        "addr",
         "opening_hours"
     ],
     "geometry": [
-        "point",
-        "area"
+        "point"
     ],
-    "terms": [
-        "links"
-    ],
+    "icon": "golfing-black",
+    "maki": "npmaki",
+    "name": "Golf Course",
+    "searchable": true,
     "tags": {
         "leisure": "golf_course"
     },
-    "name": "Golf Course"
+    "terms": [
+        "golf course"
+    ]
 }

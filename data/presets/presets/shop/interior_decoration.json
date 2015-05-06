@@ -1,5 +1,4 @@
 {
-    "icon": "shop",
     "fields": [
         "operator",
         "address",
@@ -10,9 +9,10 @@
         "point",
         "area"
     ],
+    "icon": "shop",
+    "name": "Interior Decoration Store",
+    "searchable": false,
     "tags": {
         "shop": "interior_decoration"
-    },
-    "name": "Interior Decoration Store",
-    "searchable": false
+    }
 }

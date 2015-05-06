@@ -1,15 +1,20 @@
 {
-    "icon": "warehouse",
     "fields": [
+        "name",
+        "address",
+        "levels",
         "capacity"
     ],
     "geometry": [
-        "point",
-        "area"
+        "point"
     ],
+    "icon": "warehouse",
+    "name": "Garages",
+    "searchable": true,
     "tags": {
         "building": "garages"
     },
-    "searchable": true,
-    "name": "Garages"
+    "terms": [
+        "garages"
+    ]
 }

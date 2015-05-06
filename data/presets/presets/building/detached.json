@@ -1,16 +1,21 @@
 {
-    "icon": "building",
     "fields": [
+        "name",
         "address",
         "levels"
     ],
     "geometry": [
-        "point",
-        "area"
+        "point"
     ],
+    "icon": "building",
+    "name": "Detached Home",
+    "searchable": true,
     "tags": {
         "building": "detached"
     },
-    "searchable": true,
-    "name": "Detached Home"
+    "terms": [
+        "detached home",
+        "detached",
+        "detached building"
+    ]
 }

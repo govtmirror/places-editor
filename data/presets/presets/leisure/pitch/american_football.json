@@ -1,5 +1,4 @@
 {
-    "icon": "america-football",
     "fields": [
         "surface",
         "lit"
@@ -8,11 +7,11 @@
         "point",
         "area"
     ],
+    "icon": "america-football",
+    "name": "American Football Field",
+    "searchable": false,
     "tags": {
         "leisure": "pitch",
         "sport": "american_football"
-    },
-    "terms": [],
-    "searchable": false,
-    "name": "American Football Field"
+    }
 }

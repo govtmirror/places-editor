@@ -1,18 +1,20 @@
 {
+    "fields": [
+        "name"
+    ],
+    "geometry": [
+        "point"
+    ],
     "icon": "campfire-black",
     "maki": "npmaki",
-    "geometry": [
-        "point",
-        "area"
-    ],
+    "name": "Campfire",
+    "searchable": true,
     "tags": {
         "leisure": "firepit"
     },
     "terms": [
-        "fireplace",
+        "campfire",
         "firepit",
-        "campfire"
-    ],
-    "name": "Campfire",
-    "searchable": true
+        "fireplace"
+    ]
 }

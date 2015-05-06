@@ -5,9 +5,9 @@
     "geometry": [
         "vertex"
     ],
+    "name": "Toll Booth",
+    "searchable": false,
     "tags": {
         "barrier": "toll_booth"
-    },
-    "searchable": false,
-    "name": "Toll Booth"
+    }
 }

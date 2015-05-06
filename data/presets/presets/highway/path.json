@@ -1,31 +1,37 @@
 {
-    "icon": "highway-path",
     "fields": [
+        "name",
+        "operator",
+        "tracktype",
         "surface",
         "width",
-        "structure",
-        "access",
         "incline",
-        "sac_scale",
-        "trail_visibility",
         "mtb/scale",
         "mtb/scale/uphill",
         "mtb/scale/imba",
-        "ref"
+        "sac_scale",
+        "trail_visibility",
+        "access"
     ],
     "geometry": [
+        "point",
         "line"
     ],
-    "terms": [
-        "hike",
-        "hiking",
-        "trackway",
-        "trail",
-        "walk"
-    ],
+    "icon": "trailhead-white",
+    "maki": "npmaki",
+    "name": "Trail",
+    "searchable": true,
     "tags": {
         "highway": "path"
     },
-    "searchable": true,
-    "name": "Trail"
+    "terms": [
+        "trail",
+        "path",
+        "track",
+        "hike",
+        "hiking",
+        "trackway",
+        "walk",
+        "footpath"
+    ]
 }

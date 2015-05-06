@@ -1,7 +1,9 @@
 {
-    "searchable": false,
+    "geometry": [
+        "line"
+    ],
+    "matchScore": 0.1,
     "name": "Line",
-    "tags": {},
-    "geometry": ["line"],
-    "matchScore": 0.1
+    "searchable": false,
+    "tags": {}
 }

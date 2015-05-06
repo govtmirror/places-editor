@@ -2,12 +2,12 @@
     "geometry": [
         "point"
     ],
-    "tags": {
-        "tourism": "information",
-        "information": "guidepost"
-    },
-    "name": "Self-guiding Trail",
     "icon": "self-guided-trail-black",
     "maki": "npmaki",
-    "searchable": true
+    "name": "Self-guiding Trail",
+    "searchable": false,
+    "tags": {
+        "information": "guidepost",
+        "tourism": "information"
+    }
 }

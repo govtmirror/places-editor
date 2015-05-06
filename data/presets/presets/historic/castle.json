@@ -3,9 +3,9 @@
         "point",
         "area"
     ],
+    "name": "Castle",
+    "searchable": false,
     "tags": {
         "historic": "castle"
-    },
-    "searchable": false,
-    "name": "Castle"
+    }
 }

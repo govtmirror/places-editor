@@ -1,5 +1,4 @@
 {
-    "icon": "alcohol-shop",
     "fields": [
         "operator",
         "address",
@@ -11,15 +10,16 @@
         "point",
         "area"
     ],
+    "icon": "alcohol-shop",
+    "name": "Liquor Store",
+    "searchable": false,
+    "tags": {
+        "shop": "alcohol"
+    },
     "terms": [
         "alcohol",
         "beer",
         "booze",
         "wine"
-    ],
-    "tags": {
-        "shop": "alcohol"
-    },
-    "searchable": false,
-    "name": "Liquor Store"
+    ]
 }

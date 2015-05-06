@@ -1,16 +1,17 @@
 {
-    "icon": "wetland",
     "fields": [
-        "wetland"
+        "name"
     ],
     "geometry": [
-        "point",
-        "area"
+        "point"
     ],
+    "icon": "wetland",
+    "name": "Wetland",
+    "searchable": true,
     "tags": {
         "natural": "wetland"
     },
-    "terms": [],
-    "searchable": true,
-    "name": "Wetland"
+    "terms": [
+        "wetland"
+    ]
 }

@@ -6,9 +6,9 @@
         "point",
         "area"
     ],
+    "name": "Boat Rental",
+    "searchable": false,
     "tags": {
         "amenity": "boat_rental"
-    },
-    "searchable": false,
-    "name": "Boat Rental"
+    }
 }

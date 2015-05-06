@@ -1,16 +1,21 @@
 {
-    "icon": "building",
     "fields": [
+        "name",
         "address",
         "levels"
     ],
     "geometry": [
-        "point",
-        "area"
+        "point"
     ],
+    "icon": "building",
+    "name": "Row House",
+    "searchable": true,
     "tags": {
         "building": "terrace"
     },
-    "searchable": true,
-    "name": "Row Houses"
+    "terms": [
+        "row house",
+        "terrace",
+        "townhouse"
+    ]
 }

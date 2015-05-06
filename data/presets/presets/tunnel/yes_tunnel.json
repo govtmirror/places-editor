@@ -1,0 +1,22 @@
+{
+    "name": "Tunnel",
+    "tags": {
+        "tunnel":  "yes"
+    },
+    "geometry": [
+        "point",
+        "line"
+    ],
+    "maki": "nps",
+    "icon": "tunnel",
+    "fields": [
+        "name",
+        "operator",
+        "address",
+        "opening_hours"
+    ],
+    "terms": [
+        "tunnel"
+    ],
+    "searchable": true
+}

@@ -1,5 +1,4 @@
 {
-    "icon": "chemist",
     "fields": [
         "operator",
         "address",
@@ -10,9 +9,10 @@
         "point",
         "area"
     ],
+    "icon": "chemist",
+    "name": "Chemist",
+    "searchable": false,
     "tags": {
         "shop": "chemist"
-    },
-    "searchable": false,
-    "name": "Chemist"
+    }
 }

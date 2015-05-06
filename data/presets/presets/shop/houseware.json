@@ -1,5 +1,4 @@
 {
-    "icon": "shop",
     "fields": [
         "operator",
         "address",
@@ -10,13 +9,14 @@
         "point",
         "area"
     ],
-    "terms": [
-        "home",
-        "household"
-    ],
+    "icon": "shop",
+    "name": "Houseware Store",
+    "searchable": false,
     "tags": {
         "shop": "houseware"
     },
-    "searchable": false,
-    "name": "Houseware Store"
+    "terms": [
+        "home",
+        "household"
+    ]
 }

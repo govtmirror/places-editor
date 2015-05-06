@@ -1,5 +1,4 @@
 {
-    "icon": "shop",
     "fields": [
         "operator",
         "address",
@@ -10,13 +9,14 @@
         "point",
         "area"
     ],
-    "terms": [
-        "sex",
-        "porn"
-    ],
+    "icon": "shop",
+    "name": "Erotic Store",
+    "searchable": false,
     "tags": {
         "shop": "erotic"
     },
-    "name": "Erotic Store",
-    "searchable": false
+    "terms": [
+        "sex",
+        "porn"
+    ]
 }

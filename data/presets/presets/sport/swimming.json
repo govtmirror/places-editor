@@ -1,12 +1,18 @@
 {
+    "fields": [
+        "name"
+    ],
     "geometry": [
         "point"
     ],
+    "icon": "swimming-black",
+    "maki": "npmaki",
+    "name": "Swimming Area",
+    "searchable": true,
     "tags": {
         "sport": "swimming"
     },
-    "name": "Swimming Area",
-    "icon": "swimming-black",
-    "maki": "npmaki",
-    "searchable": true
+    "terms": [
+        "swimming area"
+    ]
 }

@@ -1,16 +1,21 @@
 {
-    "icon": "building",
     "fields": [
+        "name",
         "address",
         "levels"
     ],
     "geometry": [
-        "point",
-        "area"
+        "point"
     ],
+    "icon": "garden",
+    "name": "Greenhouse",
+    "searchable": true,
     "tags": {
         "building": "greenhouse"
     },
-    "searchable": true,
-    "name": "Greenhouse"
+    "terms": [
+        "greenhouse",
+        "glasshouse",
+        "garden"
+    ]
 }

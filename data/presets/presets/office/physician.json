@@ -1,5 +1,4 @@
 {
-    "icon": "commercial",
     "fields": [
         "address",
         "building_area",
@@ -10,10 +9,10 @@
         "vertex",
         "area"
     ],
+    "icon": "commercial",
+    "name": "Physician",
+    "searchable": false,
     "tags": {
         "office": "physician"
-    },
-    "terms": [],
-    "searchable": false,
-    "name": "Physician"
+    }
 }

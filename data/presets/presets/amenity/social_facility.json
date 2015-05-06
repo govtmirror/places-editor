@@ -1,5 +1,4 @@
 {
-    "searchable": false,
     "fields": [
         "operator",
         "address",
@@ -12,10 +11,9 @@
         "point",
         "area"
     ],
-    "terms": [
-    ],
+    "name": "Social Facility",
+    "searchable": false,
     "tags": {
         "amenity": "social_facility"
-    },
-    "name": "Social Facility"
+    }
 }

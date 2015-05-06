@@ -1,16 +1,16 @@
 {
-    "geometry": [
-        "relation"
-    ],
-    "tags": {
-        "type": "route",
-        "route": "road"
-    },
-    "searchable": false,
-    "name": "Road Route",
-    "icon": "route-road",
     "fields": [
         "ref",
         "network"
-    ]
+    ],
+    "geometry": [
+        "relation"
+    ],
+    "icon": "route-road",
+    "name": "Road Route",
+    "searchable": false,
+    "tags": {
+        "route": "road",
+        "type": "route"
+    }
 }

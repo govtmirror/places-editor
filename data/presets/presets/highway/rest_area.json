@@ -4,12 +4,12 @@
         "vertex",
         "area"
     ],
+    "name": "Rest Area",
+    "searchable": false,
     "tags": {
         "highway": "rest_area"
     },
     "terms": [
         "rest stop"
-    ],
-    "searchable": false,
-    "name": "Rest Area"
+    ]
 }

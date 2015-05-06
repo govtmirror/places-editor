@@ -1,6 +1,4 @@
 {
-    "searchable": false,
-    "icon": "library",
     "fields": [
         "operator",
         "address",
@@ -11,11 +9,13 @@
         "point",
         "area"
     ],
-    "terms": [
-        "book repair"
-    ],
+    "icon": "library",
+    "name": "Bookbinder",
+    "searchable": false,
     "tags": {
         "craft": "bookbinder"
     },
-    "name": "Bookbinder"
+    "terms": [
+        "book repair"
+    ]
 }

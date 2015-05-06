@@ -6,10 +6,9 @@
     "geometry": [
         "area"
     ],
+    "name": "Churchyard",
+    "searchable": false,
     "tags": {
         "landuse": "churchyard"
-    },
-    "terms": [],
-    "name": "Churchyard",
-    "searchable": false
+    }
 }

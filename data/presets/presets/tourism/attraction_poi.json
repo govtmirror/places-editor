@@ -1,5 +1,4 @@
 {
-    "icon": "monument",
     "fields": [
         "operator",
         "address"
@@ -9,9 +8,10 @@
         "vertex",
         "area"
     ],
+    "icon": "monument",
+    "name": "Point of Interest",
+    "searchable": false,
     "tags": {
         "tourism": "attraction"
-    },
-    "name": "Point of Interest",
-    "searchable": false
+    }
 }

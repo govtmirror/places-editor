@@ -4,15 +4,14 @@
         "leaf_cycle",
         "denotation"
     ],
-    "icon": "park",
     "geometry": [
         "point",
         "vertex"
     ],
-    "terms": [],
+    "icon": "park",
+    "name": "Tree",
+    "searchable": false,
     "tags": {
         "natural": "tree"
-    },
-    "searchable": false,
-    "name": "Tree"
+    }
 }

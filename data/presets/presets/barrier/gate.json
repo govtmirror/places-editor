@@ -2,9 +2,9 @@
     "geometry": [
         "point"
     ],
+    "name": "Gate",
+    "searchable": false,
     "tags": {
         "barrier": "gate"
-    },
-    "name": "Gate",
-    "searchable": false
+    }
 }

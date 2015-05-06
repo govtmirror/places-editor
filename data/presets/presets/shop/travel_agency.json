@@ -1,5 +1,4 @@
 {
-    "icon": "suitcase",
     "fields": [
         "operator",
         "address",
@@ -10,9 +9,10 @@
         "point",
         "area"
     ],
+    "icon": "suitcase",
+    "name": "Travel Agency",
+    "searchable": false,
     "tags": {
         "shop": "travel_agency"
-    },
-    "searchable": false,
-    "name": "Travel Agency"
+    }
 }

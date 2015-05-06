@@ -1,5 +1,4 @@
 {
-    "icon": "triangle-stroked",
     "fields": [
         "population"
     ],
@@ -7,9 +6,10 @@
         "point",
         "area"
     ],
+    "icon": "triangle-stroked",
+    "name": "Hamlet",
+    "searchable": false,
     "tags": {
         "place": "hamlet"
-    },
-    "searchable": false,
-    "name": "Hamlet"
+    }
 }

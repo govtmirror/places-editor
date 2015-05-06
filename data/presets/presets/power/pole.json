@@ -2,9 +2,9 @@
     "geometry": [
         "vertex"
     ],
+    "name": "Power Pole",
+    "searchable": false,
     "tags": {
         "power": "pole"
-    },
-    "searchable": false,
-    "name": "Power Pole"
+    }
 }

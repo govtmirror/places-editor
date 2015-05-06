@@ -2,9 +2,9 @@
     "geometry": [
         "point"
     ],
+    "name": "Ladder",
+    "searchable": false,
     "tags": {
         "safety_equipment": "ladder"
-    },
-    "name": "Ladder",
-    "searchable": false
+    }
 }

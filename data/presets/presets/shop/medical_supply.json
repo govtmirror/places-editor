@@ -1,5 +1,4 @@
 {
-    "icon": "shop",
     "fields": [
         "operator",
         "address",
@@ -10,9 +9,10 @@
         "point",
         "area"
     ],
+    "icon": "shop",
+    "name": "Medical Supply Store",
+    "searchable": false,
     "tags": {
         "shop": "medical_supply"
-    },
-    "name": "Medical Supply Store",
-    "searchable": false
+    }
 }

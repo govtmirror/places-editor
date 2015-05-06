@@ -1,5 +1,4 @@
 {
-    "icon": "commercial",
     "fields": [
         "address",
         "building_area",
@@ -10,12 +9,13 @@
         "vertex",
         "area"
     ],
+    "icon": "commercial",
+    "name": "Employment Agency",
+    "searchable": false,
     "tags": {
         "office": "employment_agency"
     },
-    "searchable": false,
     "terms": [
         "job"
-    ],
-    "name": "Employment Agency"
+    ]
 }

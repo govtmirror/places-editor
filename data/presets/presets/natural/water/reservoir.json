@@ -1,12 +1,21 @@
 {
-    "geometry": [
-        "area"
+    "fields": [
+        "name"
     ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "water",
+    "name": "Reservoir",
+    "searchable": true,
     "tags": {
+        "landuse": "reservoir",
         "natural": "water",
         "water": "reservoir"
     },
-    "icon": "water",
-    "searchable": false,
-    "name": "Reservoir"
+    "terms": [
+        "reservoir",
+        "lake",
+        "tank"
+    ]
 }

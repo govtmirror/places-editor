@@ -1,11 +1,21 @@
 {
+    "fields": [
+        "name",
+        "operator",
+        "address"
+    ],
     "geometry": [
         "point",
-        "vertex"
+        "line"
     ],
+    "icon": "bridge",
+    "maki": "nps",
+    "name": "Bridge",
+    "searchable": true,
     "tags": {
         "bridge": "yes"
     },
-    "searchable": false,
-    "name": "Bridge"
+    "terms": [
+        "bridge"
+    ]
 }

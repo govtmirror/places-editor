@@ -1,0 +1,21 @@
+{
+    "name": "Building",
+    "tags": {
+        "building":  "yes"
+    },
+    "geometry": [
+        "point",
+        "area"
+    ],
+    "icon": "building",
+    "fields": [
+        "name",
+        "addr",
+        "levels"
+    ],
+    "terms": [
+        "building",
+        "structure"
+    ],
+    "searchable": true
+}

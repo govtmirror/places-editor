@@ -1,5 +1,4 @@
 {
-    "icon": "monument",
     "fields": [
         "ref"
     ],
@@ -7,9 +6,10 @@
         "point",
         "vertex"
     ],
+    "icon": "monument",
+    "name": "Survey Point",
+    "searchable": false,
     "tags": {
         "man_made": "survey_point"
-    },
-    "searchable": false,
-    "name": "Survey Point"
+    }
 }

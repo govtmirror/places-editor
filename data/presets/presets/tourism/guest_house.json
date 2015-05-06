@@ -1,5 +1,4 @@
 {
-    "icon": "lodging",
     "fields": [
         "operator",
         "address",
@@ -10,13 +9,14 @@
         "point",
         "area"
     ],
+    "icon": "lodging",
+    "name": "Guest House",
+    "searchable": false,
     "tags": {
         "tourism": "guest_house"
     },
     "terms": [
-        "B&B",
-        "Bed and Breakfast"
-    ],
-    "searchable": false,
-    "name": "Guest House"
+        "b&b",
+        "bed and breakfast"
+    ]
 }

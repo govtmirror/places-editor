@@ -3,12 +3,12 @@
         "point",
         "area"
     ],
-    "terms": [
-        "open space"
-    ],
+    "name": "Common",
+    "searchable": false,
     "tags": {
         "leisure": "common"
     },
-    "searchable": false,
-    "name": "Common"
+    "terms": [
+        "open space"
+    ]
 }

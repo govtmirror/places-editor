@@ -1,5 +1,4 @@
 {
-    "icon": "car",
     "fields": [
         "operator",
         "address",
@@ -10,12 +9,13 @@
         "point",
         "area"
     ],
-    "terms": [
-        "auto"
-    ],
+    "icon": "car",
+    "name": "Car Dealership",
+    "searchable": false,
     "tags": {
         "shop": "car"
     },
-    "searchable": false,
-    "name": "Car Dealership"
+    "terms": [
+        "auto"
+    ]
 }

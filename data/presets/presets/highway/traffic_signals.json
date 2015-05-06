@@ -1,15 +1,23 @@
 {
-    "geometry": [
-        "vertex"
+    "fields": [
+        "name",
+        "operator",
+        "address"
     ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "circle",
+    "name": "Traffic Signals",
+    "searchable": true,
     "tags": {
         "highway": "traffic_signals"
     },
     "terms": [
-        "light",
-        "stoplight",
-        "traffic light"
-    ],
-    "searchable": true,
-    "name": "Traffic Signals"
+        "traffic signals",
+        "traffic signal",
+        "traffic light",
+        "stop light",
+        "stoplight"
+    ]
 }

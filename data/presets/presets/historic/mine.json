@@ -1,0 +1,20 @@
+{
+    "name": "Historic Mine",
+    "tags": {
+        "historic":  "mine"
+    },
+    "geometry": [
+        "point"
+    ],
+    "maki": "npmaki",
+    "icon": "ruin",
+    "fields": [
+        "name",
+        "description",
+        "mineral"
+    ],
+    "terms": [
+        "historic mine"
+    ],
+    "searchable": true
+}

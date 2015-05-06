@@ -1,5 +1,4 @@
 {
-    "icon": "shop",
     "fields": [
         "operator",
         "address",
@@ -10,16 +9,17 @@
         "point",
         "area"
     ],
+    "icon": "shop",
+    "name": "Consignment/Thrift Store",
+    "searchable": false,
+    "tags": {
+        "shop": "second_hand"
+    },
     "terms": [
         "secondhand",
         "second hand",
         "resale",
         "thrift",
         "used"
-    ],
-    "tags": {
-        "shop": "second_hand"
-    },
-    "name": "Consignment/Thrift Store",
-    "searchable": false
+    ]
 }

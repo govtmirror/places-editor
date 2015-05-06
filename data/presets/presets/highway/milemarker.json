@@ -2,9 +2,9 @@
     "geometry": [
         "point"
     ],
+    "name": "Mile Marker",
+    "searchable": false,
     "tags": {
         "highway": "milemarker"
-    },
-    "name": "Mile Marker",
-    "searchable": false
+    }
 }

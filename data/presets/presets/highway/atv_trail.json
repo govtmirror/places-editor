@@ -1,0 +1,41 @@
+{
+    "name": "ATV Trail",
+    "tags": {
+        "highway":  "track",
+        "atv":  "yes"
+    },
+    "geometry": [
+        "point",
+        "line"
+    ],
+    "maki": "nps",
+    "icon": "all-terrain trail",
+    "fields": [
+        "name",
+        "operator",
+        "tracktype",
+        "surface",
+        "width",
+        "incline",
+        "mtb/scale",
+        "mtb/scale/uphill",
+        "mtb/scale/imba",
+        "sac_scale",
+        "trail_visibility",
+        "access"
+    ],
+    "terms": [
+        "atv trail",
+        "atv",
+        "all terrain vehicle",
+        "quad",
+        "4wd",
+        "4 wheeler",
+        "four-wheeler",
+        "off-road",
+        "off road",
+        "trail",
+        "track"
+    ],
+    "searchable": true
+}

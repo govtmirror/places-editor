@@ -1,13 +1,24 @@
 {
+    "fields": [
+        "name",
+        "operator",
+        "address",
+        "opening_hours"
+    ],
     "geometry": [
         "point"
     ],
-    "tags": {
-        "tourism": "information",
-        "information": "map"
-    },
-    "name": "Information",
-    "icon": "information-black",
+    "icon": "information-white",
     "maki": "npmaki",
-    "searchable": true
+    "name": "Information Map",
+    "searchable": true,
+    "tags": {
+        "information": "map",
+        "tourism": "information"
+    },
+    "terms": [
+        "information map",
+        "information",
+        "map"
+    ]
 }

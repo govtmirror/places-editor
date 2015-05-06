@@ -1,14 +1,14 @@
 {
-    "icon": "rail",
     "geometry": [
         "point",
         "vertex"
     ],
+    "icon": "rail",
+    "name": "Railway Halt",
+    "searchable": false,
     "tags": {
         "railway": "halt"
     },
-    "searchable": false,
-    "name": "Railway Halt",
     "terms": [
         "break",
         "interrupt",

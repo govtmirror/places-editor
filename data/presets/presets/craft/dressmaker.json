@@ -1,6 +1,4 @@
 {
-    "searchable": false,
-    "icon": "clothing-store",
     "fields": [
         "operator",
         "address",
@@ -11,11 +9,13 @@
         "point",
         "area"
     ],
-    "terms": [
-        "seamstress"
-    ],
+    "icon": "clothing-store",
+    "name": "Dressmaker",
+    "searchable": false,
     "tags": {
         "craft": "dressmaker"
     },
-    "name": "Dressmaker"
+    "terms": [
+        "seamstress"
+    ]
 }

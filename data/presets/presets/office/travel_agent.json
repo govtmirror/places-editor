@@ -1,5 +1,4 @@
 {
-    "icon": "suitcase",
     "fields": [
         "address",
         "building_area",
@@ -10,10 +9,10 @@
         "vertex",
         "area"
     ],
+    "icon": "suitcase",
+    "name": "Travel Agency",
+    "searchable": false,
     "tags": {
         "office": "travel_agent"
-    },
-    "terms": [],
-    "name": "Travel Agency",
-    "searchable": false
+    }
 }

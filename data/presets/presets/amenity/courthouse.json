@@ -1,5 +1,4 @@
 {
-    "icon": "town-hall",
     "fields": [
         "operator",
         "address",
@@ -9,9 +8,10 @@
         "point",
         "area"
     ],
+    "icon": "town-hall",
+    "name": "Courthouse",
+    "searchable": false,
     "tags": {
         "amenity": "courthouse"
-    },
-    "searchable": false,
-    "name": "Courthouse"
+    }
 }

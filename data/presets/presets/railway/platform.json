@@ -5,9 +5,9 @@
         "line",
         "area"
     ],
+    "name": "Railway Platform",
+    "searchable": false,
     "tags": {
         "railway": "platform"
-    },
-    "searchable": false,
-    "name": "Railway Platform"
+    }
 }

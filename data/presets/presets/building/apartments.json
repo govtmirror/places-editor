@@ -1,16 +1,21 @@
 {
-    "icon": "commercial",
     "fields": [
+        "name",
         "address",
         "levels"
     ],
     "geometry": [
-        "point",
-        "area"
+        "point"
     ],
+    "icon": "building",
+    "name": "Apartments",
+    "searchable": true,
     "tags": {
         "building": "apartments"
     },
-    "searchable": true,
-    "name": "Apartments"
+    "terms": [
+        "apartments",
+        "apartment",
+        "apartment building"
+    ]
 }

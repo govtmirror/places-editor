@@ -1,0 +1,41 @@
+{
+    "name": "Four-Wheel Drive Trail",
+    "tags": {
+        "highway":  "track",
+        "4wd_only":  "yes"
+    },
+    "geometry": [
+        "point",
+        "line"
+    ],
+    "maki": "npmaki",
+    "icon": "all-terrain trail",
+    "fields": [
+        "name",
+        "operator",
+        "tracktype",
+        "surface",
+        "width",
+        "incline",
+        "mtb/scale",
+        "mtb/scale/uphill",
+        "mtb/scale/imba",
+        "sac_scale",
+        "trail_visibility",
+        "access"
+    ],
+    "terms": [
+        "four-wheel drive trail",
+        "atv",
+        "all terrain vehicle",
+        "quad",
+        "4wd",
+        "4 wheeler",
+        "four-wheeler",
+        "off-road",
+        "off road",
+        "trail",
+        "track"
+    ],
+    "searchable": true
+}

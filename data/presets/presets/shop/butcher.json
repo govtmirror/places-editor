@@ -1,5 +1,4 @@
 {
-    "icon": "slaughterhouse",
     "fields": [
         "operator",
         "address",
@@ -10,12 +9,13 @@
         "point",
         "area"
     ],
-    "terms": [
-        "meat"
-    ],
+    "icon": "slaughterhouse",
+    "name": "Butcher",
+    "searchable": false,
     "tags": {
         "shop": "butcher"
     },
-    "searchable": false,
-    "name": "Butcher"
+    "terms": [
+        "meat"
+    ]
 }

@@ -1,5 +1,4 @@
 {
-    "icon": "music",
     "fields": [
         "operator",
         "address",
@@ -10,13 +9,14 @@
         "point",
         "area"
     ],
-    "terms": [
-        "CD",
-        "vinyl"
-    ],
+    "icon": "music",
+    "name": "Music Store",
+    "searchable": false,
     "tags": {
         "shop": "music"
     },
-    "searchable": false,
-    "name": "Music Store"
+    "terms": [
+        "cd",
+        "vinyl"
+    ]
 }

@@ -1,12 +1,20 @@
 {
-    "geometry": [
-        "point",
-        "vertex",
-        "area"
+    "fields": [
+        "name",
+        "site_type"
     ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "ruin",
+    "maki": "npmaki",
+    "name": "Archaeological Site",
+    "searchable": true,
     "tags": {
         "historic": "archaeological_site"
     },
-    "searchable": false,
-    "name": "Archaeological Site"
+    "terms": [
+        "archaeological site",
+        "archeological site"
+    ]
 }

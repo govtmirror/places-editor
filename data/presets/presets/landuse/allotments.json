@@ -2,10 +2,9 @@
     "geometry": [
         "area"
     ],
+    "name": "Allotments",
+    "searchable": false,
     "tags": {
         "landuse": "allotments"
-    },
-    "terms": [],
-    "searchable": false,
-    "name": "Allotments"
+    }
 }

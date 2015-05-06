@@ -8,9 +8,9 @@
         "line",
         "area"
     ],
+    "name": "Man Made",
+    "searchable": false,
     "tags": {
         "man_made": "*"
-    },
-    "searchable": false,
-    "name": "Man Made"
+    }
 }

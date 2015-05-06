@@ -4,9 +4,9 @@
         "vertex",
         "area"
     ],
+    "name": "Wayside Cross",
+    "searchable": false,
     "tags": {
         "historic": "wayside_cross"
-    },
-    "searchable": false,
-    "name": "Wayside Cross"
+    }
 }

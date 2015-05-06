@@ -1,11 +1,20 @@
 {
-    "geometry": [
-        "point",
-        "vertex"
+    "fields": [
+        "name",
+        "operator",
+        "address",
+        "cargo"
     ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "ferry",
+    "name": "Ferry Terminal",
+    "searchable": true,
     "tags": {
         "amenity": "ferry_terminal"
     },
-    "name": "Ferry Terminal",
-    "searchable": false
+    "terms": [
+        "ferry terminal"
+    ]
 }

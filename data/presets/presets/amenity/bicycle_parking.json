@@ -1,7 +1,4 @@
 {
-    "icon": "bike-trail-black",
-    "maki": "npmaki",
-    "searchable": false,
     "fields": [
         "bicycle_parking",
         "capacity",
@@ -14,11 +11,14 @@
         "vertex",
         "area"
     ],
-    "terms": [
-        "bike"
-    ],
+    "icon": "bike-trail-black",
+    "maki": "npmaki",
+    "name": "Bicycle Parking",
+    "searchable": false,
     "tags": {
         "amenity": "bicycle_parking"
     },
-    "name": "Bicycle Parking"
+    "terms": [
+        "bike"
+    ]
 }

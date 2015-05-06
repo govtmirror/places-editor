@@ -1,14 +1,14 @@
 {
-    "icon": "waterway-stream",
     "fields": [
         "tunnel"
     ],
     "geometry": [
         "line"
     ],
+    "icon": "waterway-stream",
+    "name": "Drain",
+    "searchable": false,
     "tags": {
         "waterway": "drain"
-    },
-    "searchable": false,
-    "name": "Drain"
+    }
 }

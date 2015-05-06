@@ -1,0 +1,19 @@
+{
+    "name": "Arch",
+    "tags": {
+        "natural":  "arch"
+    },
+    "geometry": [
+        "point"
+    ],
+    "fields": [
+        "name"
+    ],
+    "terms": [
+        "arch",
+        "bridge",
+        "natural bridge",
+        "sea arch"
+    ],
+    "searchable": true
+}

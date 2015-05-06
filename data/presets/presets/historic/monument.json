@@ -1,13 +1,18 @@
 {
-    "icon": "monument",
-    "geometry": [
-        "point",
-        "vertex",
-        "area"
+    "fields": [
+        "name"
     ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "monument",
+    "name": "Monument",
+    "searchable": true,
     "tags": {
         "historic": "monument"
     },
-    "searchable": true,
-    "name": "Monument"
+    "terms": [
+        "monument",
+        "historic monument"
+    ]
 }

@@ -1,19 +1,23 @@
 {
-    "icon": "park2",
     "fields": [
+        "name",
         "leaf_type",
-        "leaf_cycle"
+        "leaf_cycle",
+        "crop"
     ],
     "geometry": [
-        "point",
-        "area"
+        "point"
     ],
+    "icon": "park2",
+    "name": "Woods",
+    "searchable": true,
     "tags": {
         "natural": "wood"
     },
-    "searchable": false,
     "terms": [
-        "tree"
-    ],
-    "name": "Wood"
+        "wood",
+        "forest",
+        "park",
+        "jungle"
+    ]
 }

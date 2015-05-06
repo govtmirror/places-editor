@@ -1,5 +1,4 @@
 {
-    "icon": "entrance",
     "fields": [
         "access_simple",
         "ref"
@@ -7,9 +6,10 @@
     "geometry": [
         "vertex"
     ],
+    "icon": "entrance",
+    "name": "Parking Garage Entrance/Exit",
+    "searchable": false,
     "tags": {
         "amenity": "parking_entrance"
-    },
-    "searchable": false,
-    "name": "Parking Garage Entrance/Exit"
+    }
 }

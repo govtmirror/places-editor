@@ -1,13 +1,13 @@
 {
-    "icon": "swimming",
     "geometry": [
         "point",
         "vertex",
         "area"
     ],
+    "icon": "swimming",
+    "name": "Swimming Pool",
+    "searchable": false,
     "tags": {
         "amenity": "swimming_pool"
-    },
-    "name": "Swimming Pool",
-    "searchable": false
+    }
 }

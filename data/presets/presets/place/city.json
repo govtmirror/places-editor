@@ -1,5 +1,4 @@
 {
-    "icon": "city",
     "fields": [
         "population"
     ],
@@ -7,9 +6,10 @@
         "point",
         "area"
     ],
+    "icon": "city",
+    "name": "City",
+    "searchable": false,
     "tags": {
         "place": "city"
-    },
-    "searchable": false,
-    "name": "City"
+    }
 }

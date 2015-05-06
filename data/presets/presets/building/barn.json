@@ -1,16 +1,20 @@
 {
-    "icon": "building",
     "fields": [
+        "name",
         "address",
-        "levels"
+        "levels",
+        "landuse"
     ],
     "geometry": [
-        "point",
-        "area"
+        "point"
     ],
+    "icon": "farm",
+    "name": "Barn",
+    "searchable": true,
     "tags": {
         "building": "barn"
     },
-    "searchable": true,
-    "name": "Barn"
+    "terms": [
+        "barn"
+    ]
 }

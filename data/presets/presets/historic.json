@@ -7,9 +7,9 @@
         "vertex",
         "area"
     ],
+    "name": "Historic Site",
+    "searchable": false,
     "tags": {
         "historic": "*"
-    },
-    "searchable": false,
-    "name": "Historic Site"
+    }
 }

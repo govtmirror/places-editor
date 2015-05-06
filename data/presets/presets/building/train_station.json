@@ -1,17 +1,21 @@
 {
-    "icon": "building",
     "fields": [
+        "name",
         "address",
-        "levels"
+        "levels",
+        "smoking"
     ],
     "geometry": [
-        "point",
-        "vertex",
-        "area"
+        "point"
     ],
+    "icon": "rail",
+    "name": "Train Station",
+    "searchable": true,
     "tags": {
         "building": "train_station"
     },
-    "searchable": true,
-    "name": "Train Station"
+    "terms": [
+        "train station",
+        "railway station"
+    ]
 }

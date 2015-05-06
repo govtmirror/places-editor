@@ -1,13 +1,27 @@
 {
+    "fields": [
+        "name",
+        "operator",
+        "address",
+        "opening_hours",
+        "capacity",
+        "fee"
+    ],
     "geometry": [
         "point"
     ],
-    "tags": {
-        "tourism": "camp_site",
-        "caravans": "yes"
-    },
-    "name": "RV Campground",
     "icon": "rv-campground-black",
     "maki": "npmaki",
-    "searchable": true
+    "name": "RV Campground",
+    "searchable": true,
+    "tags": {
+        "caravans": "yes",
+        "tourism": "camp_site"
+    },
+    "terms": [
+        "rv campground",
+        "campsite",
+        "camp_site",
+        "motorhome park"
+    ]
 }

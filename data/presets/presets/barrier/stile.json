@@ -6,9 +6,9 @@
         "point",
         "vertex"
     ],
+    "name": "Stile",
+    "searchable": false,
     "tags": {
         "barrier": "stile"
-    },
-    "searchable": false,
-    "name": "Stile"
+    }
 }

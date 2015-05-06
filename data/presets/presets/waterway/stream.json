@@ -1,12 +1,16 @@
 {
-    "icon": "waterway-stream",
     "fields": [
-        "tunnel",
-        "width"
+        "name"
     ],
     "geometry": [
-        "line"
+        "point"
     ],
+    "icon": "water",
+    "name": "Stream",
+    "searchable": true,
+    "tags": {
+        "waterway": "stream"
+    },
     "terms": [
         "beck",
         "branch",
@@ -33,10 +37,5 @@
         "torrent",
         "tributary",
         "watercourse"
-    ],
-    "tags": {
-        "waterway": "stream"
-    },
-    "searchable": false,
-    "name": "Stream"
+    ]
 }

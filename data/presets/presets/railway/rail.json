@@ -1,18 +1,17 @@
 {
-    "icon": "railway-rail",
-    "geometry": [
-        "line"
-    ],
-    "tags": {
-        "railway": "rail"
-    },
     "fields": [
         "structure",
         "gauge",
         "electrified",
         "service_rail"
     ],
-    "terms": [],
+    "geometry": [
+        "line"
+    ],
+    "icon": "railway-rail",
+    "name": "Rail",
     "searchable": false,
-    "name": "Rail"
+    "tags": {
+        "railway": "rail"
+    }
 }

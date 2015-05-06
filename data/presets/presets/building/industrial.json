@@ -1,16 +1,21 @@
 {
-    "icon": "industrial",
     "fields": [
+        "name",
         "address",
-        "levels"
+        "levels",
+        "smoking"
     ],
     "geometry": [
-        "point",
-        "area"
+        "point"
     ],
+    "icon": "industrial",
+    "name": "Industrial Building",
+    "searchable": true,
     "tags": {
         "building": "industrial"
     },
-    "searchable": true,
-    "name": "Industrial Building"
+    "terms": [
+        "industrial building",
+        "industrial"
+    ]
 }

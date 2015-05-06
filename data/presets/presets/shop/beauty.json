@@ -1,5 +1,4 @@
 {
-    "icon": "shop",
     "fields": [
         "operator",
         "address",
@@ -10,15 +9,16 @@
         "point",
         "area"
     ],
+    "icon": "shop",
+    "name": "Beauty Shop",
+    "searchable": false,
+    "tags": {
+        "shop": "beauty"
+    },
     "terms": [
         "nail spa",
         "spa",
         "salon",
         "tanning"
-    ],
-    "tags": {
-        "shop": "beauty"
-    },
-    "searchable": false,
-    "name": "Beauty Shop"
+    ]
 }

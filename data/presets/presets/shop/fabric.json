@@ -1,5 +1,4 @@
 {
-    "icon": "shop",
     "fields": [
         "operator",
         "address",
@@ -10,12 +9,13 @@
         "point",
         "area"
     ],
-    "terms": [
-        "sew"
-    ],
+    "icon": "shop",
+    "name": "Fabric Store",
+    "searchable": false,
     "tags": {
         "shop": "fabric"
     },
-    "name": "Fabric Store",
-    "searchable": false
+    "terms": [
+        "sew"
+    ]
 }

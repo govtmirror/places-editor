@@ -1,12 +1,11 @@
 {
-    "icon": "industrial",
     "geometry": [
         "area"
     ],
+    "icon": "industrial",
+    "name": "Industrial Area",
+    "searchable": false,
     "tags": {
         "landuse": "industrial"
-    },
-    "terms": [],
-    "searchable": false,
-    "name": "Industrial Area"
+    }
 }

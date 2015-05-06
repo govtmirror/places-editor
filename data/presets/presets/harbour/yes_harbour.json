@@ -1,0 +1,21 @@
+{
+    "name": "Harbor",
+    "tags": {
+        "harbour":  "yes"
+    },
+    "geometry": [
+        "point"
+    ],
+    "icon": "harbor",
+    "fields": [
+        "name",
+        "operator",
+        "addr"
+    ],
+    "terms": [
+        "harbour",
+        "harbor",
+        "marina"
+    ],
+    "searchable": true
+}

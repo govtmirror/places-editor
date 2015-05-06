@@ -1,5 +1,4 @@
 {
-    "icon": "shop",
     "fields": [
         "operator",
         "address",
@@ -10,13 +9,14 @@
         "point",
         "area"
     ],
-    "terms": [
-        "stereo",
-        "video"
-    ],
+    "icon": "shop",
+    "name": "Hifi Store",
+    "searchable": false,
     "tags": {
         "shop": "hifi"
     },
-    "searchable": false,
-    "name": "Hifi Store"
+    "terms": [
+        "stereo",
+        "video"
+    ]
 }

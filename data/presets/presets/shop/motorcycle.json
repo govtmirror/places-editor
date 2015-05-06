@@ -1,5 +1,4 @@
 {
-    "icon": "scooter",
     "fields": [
         "operator",
         "address",
@@ -10,9 +9,10 @@
         "point",
         "area"
     ],
+    "icon": "scooter",
+    "name": "Motorcycle Dealership",
+    "searchable": false,
     "tags": {
         "shop": "motorcycle"
-    },
-    "searchable": false,
-    "name": "Motorcycle Dealership"
+    }
 }

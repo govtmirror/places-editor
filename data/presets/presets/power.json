@@ -1,16 +1,16 @@
 {
+    "fields": [
+        "power"
+    ],
     "geometry": [
         "point",
         "vertex",
         "line",
         "area"
     ],
+    "name": "Power",
+    "searchable": false,
     "tags": {
         "power": "*"
-    },
-    "fields": [
-        "power"
-    ],
-    "searchable": false,
-    "name": "Power"
+    }
 }

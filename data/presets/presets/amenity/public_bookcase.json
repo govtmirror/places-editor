@@ -1,6 +1,4 @@
 {
-    "searchable": false,
-    "icon": "library",
     "fields": [
         "name",
         "operator",
@@ -11,12 +9,14 @@
         "point",
         "area"
     ],
-    "terms": [
-        "library",
-        "bookcrossing"
-    ],
+    "icon": "library",
+    "name": "Public Bookcase",
+    "searchable": false,
     "tags": {
         "amenity": "public_bookcase"
     },
-    "name": "Public Bookcase"
+    "terms": [
+        "library",
+        "bookcrossing"
+    ]
 }

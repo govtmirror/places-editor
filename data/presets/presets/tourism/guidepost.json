@@ -1,0 +1,24 @@
+{
+    "name": "Guidepost",
+    "tags": {
+        "tourism":  "information",
+        "information":  "guidepost"
+    },
+    "geometry": [
+        "point"
+    ],
+    "maki": "npmaki",
+    "icon": "self-guiding-trail-black",
+    "fields": [
+        "name",
+        "operator",
+        "addr",
+        "opening_hours"
+    ],
+    "terms": [
+        "guidepost",
+        "guide post",
+        "information"
+    ],
+    "searchable": true
+}

@@ -1,17 +1,29 @@
 {
-    "geometry": [
-        "area"
+    "fields": [
+        "name"
     ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "water",
+    "name": "Lake",
+    "searchable": true,
     "tags": {
         "natural": "water",
         "water": "lake"
     },
     "terms": [
+        "lake",
+        "backwater",
+        "lac",
+        "lagoon",
+        "laguna",
+        "pond",
+        "pool",
+        "resaca",
+        "waterhole",
         "lakelet",
         "loch",
         "mere"
-    ],
-    "icon": "water",
-    "searchable": false,
-    "name": "Lake"
+    ]
 }

@@ -6,12 +6,12 @@
     "geometry": [
         "point"
     ],
-    "terms": [
-        "bbq"
-    ],
+    "name": "Barbecue/Grill",
     "searchable": false,
     "tags": {
         "amenity": "bbq"
     },
-    "name": "Barbecue/Grill"
+    "terms": [
+        "bbq"
+    ]
 }

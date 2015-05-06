@@ -1,0 +1,23 @@
+{
+    "name": "Mountain Pass (Gap)",
+    "tags": {
+        "mountain":  "yes"
+    },
+    "geometry": [
+        "point"
+    ],
+    "fields": [
+        "name"
+    ],
+    "terms": [
+        "mountain pass",
+        "gap",
+        "col",
+        "notch",
+        "pass",
+        "saddle",
+        "water gap",
+        "wind gap"
+    ],
+    "searchable": true
+}

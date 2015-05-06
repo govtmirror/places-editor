@@ -2,9 +2,9 @@
     "geometry": [
         "line"
     ],
+    "name": "Cut line",
+    "searchable": false,
     "tags": {
         "man_made": "cutline"
-    },
-    "searchable": false,
-    "name": "Cut line"
+    }
 }

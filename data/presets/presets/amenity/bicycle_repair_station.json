@@ -1,6 +1,4 @@
 {
-    "searchable": false,
-    "icon": "bicycle",
     "fields": [
         "operator",
         "brand",
@@ -14,11 +12,13 @@
         "vertex",
         "area"
     ],
-    "terms": [
-        "bike"
-    ],
+    "icon": "bicycle",
+    "name": "Bicycle Repair Station",
+    "searchable": false,
     "tags": {
         "amenity": "bicycle_repair_station"
     },
-    "name": "Bicycle Repair Station"
+    "terms": [
+        "bike"
+    ]
 }

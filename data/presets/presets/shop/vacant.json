@@ -1,5 +1,4 @@
 {
-    "icon": "shop",
     "fields": [
         "address",
         "building_area"
@@ -8,9 +7,10 @@
         "point",
         "area"
     ],
+    "icon": "shop",
+    "name": "Vacant Shop",
+    "searchable": false,
     "tags": {
         "shop": "vacant"
-    },
-    "name": "Vacant Shop",
-    "searchable": false
+    }
 }

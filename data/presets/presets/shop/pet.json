@@ -1,5 +1,4 @@
 {
-    "icon": "dog-park",
     "fields": [
         "operator",
         "address",
@@ -10,14 +9,15 @@
         "point",
         "area"
     ],
+    "icon": "dog-park",
+    "name": "Pet Store",
+    "searchable": false,
+    "tags": {
+        "shop": "pet"
+    },
     "terms": [
         "cat",
         "dog",
         "fish"
-    ],
-    "tags": {
-        "shop": "pet"
-    },
-    "searchable": false,
-    "name": "Pet Store"
+    ]
 }

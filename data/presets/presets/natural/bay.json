@@ -1,12 +1,23 @@
 {
-    "geometry": [
-        "point",
-        "area"
+    "fields": [
+        "name"
     ],
-    "terms": [],
+    "geometry": [
+        "point"
+    ],
+    "name": "Bay",
+    "searchable": true,
     "tags": {
         "natural": "bay"
     },
-    "searchable": false,
-    "name": "Bay"
+    "terms": [
+        "bay",
+        "arm",
+        "bight",
+        "cove",
+        "estuary",
+        "gulf",
+        "inlet",
+        "sound"
+    ]
 }

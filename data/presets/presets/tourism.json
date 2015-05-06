@@ -7,9 +7,9 @@
         "vertex",
         "area"
     ],
+    "name": "Tourism",
+    "searchable": false,
     "tags": {
         "tourism": "*"
-    },
-    "searchable": false,
-    "name": "Tourism"
+    }
 }

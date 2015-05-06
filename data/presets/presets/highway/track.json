@@ -1,27 +1,31 @@
 {
-    "icon": "highway-track",
     "fields": [
+        "name",
+        "operator",
+        "tracktype",
         "surface",
         "width",
-        "structure",
-        "access",
         "incline",
-        "tracktype",
-        "smoothness",
         "mtb/scale",
         "mtb/scale/uphill",
-        "mtb/scale/imba"
+        "mtb/scale/imba",
+        "sac_scale",
+        "trail_visibility",
+        "access"
     ],
     "geometry": [
+        "point",
         "line"
     ],
+    "icon": "trailhead-white",
+    "maki": "npmaki",
+    "name": "Track",
+    "searchable": true,
     "tags": {
         "highway": "track"
     },
-    "searchable": true,
     "terms": [
-        "woods road",
-        "fire road"
-    ],
-    "name": "Track"
+        "track",
+        "trail"
+    ]
 }

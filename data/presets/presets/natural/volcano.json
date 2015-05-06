@@ -1,0 +1,22 @@
+{
+    "name": "Volcano (Crater)",
+    "tags": {
+        "natural":  "volcano"
+    },
+    "geometry": [
+        "point"
+    ],
+    "icon": "triangle",
+    "fields": [
+        "name",
+        "status",
+        "ele",
+        "type"
+    ],
+    "terms": [
+        "volcano",
+        "crater",
+        "caldera"
+    ],
+    "searchable": true
+}

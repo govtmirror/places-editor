@@ -1,18 +1,21 @@
 {
-    "icon": "fire-station",
     "fields": [
+        "name",
         "operator",
-        "address",
-        "building_area"
+        "address"
     ],
     "geometry": [
-        "point",
-        "area"
+        "point"
     ],
-    "terms": [],
+    "icon": "fire-station",
+    "name": "Fire Station",
+    "searchable": true,
     "tags": {
         "amenity": "fire_station"
     },
-    "searchable": false,
-    "name": "Fire Station"
+    "terms": [
+        "fire station",
+        "fire department",
+        "emergency"
+    ]
 }

@@ -2,12 +2,12 @@
     "geometry": [
         "area"
     ],
+    "name": "Landfill",
+    "searchable": false,
     "tags": {
         "landuse": "landfill"
     },
     "terms": [
         "dump"
-    ],
-    "name": "Landfill",
-    "searchable": false
+    ]
 }

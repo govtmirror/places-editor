@@ -1,5 +1,4 @@
 {
-    "icon": "shop",
     "fields": [
         "operator",
         "address",
@@ -12,9 +11,10 @@
         "point",
         "area"
     ],
+    "icon": "shop",
+    "name": "Religious Store",
+    "searchable": false,
     "tags": {
         "shop": "religion"
-    },
-    "name": "Religious Store",
-    "searchable": false
+    }
 }

@@ -1,0 +1,20 @@
+{
+    "name": "Cape",
+    "tags": {
+        "natural":  "cape"
+    },
+    "geometry": [
+        "point"
+    ],
+    "fields": [
+        "name"
+    ],
+    "terms": [
+        "cape",
+        "lea",
+        "neck",
+        "peninsula",
+        "point"
+    ],
+    "searchable": true
+}

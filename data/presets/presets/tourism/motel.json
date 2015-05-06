@@ -1,5 +1,4 @@
 {
-    "icon": "lodging",
     "fields": [
         "operator",
         "address",
@@ -10,9 +9,10 @@
         "point",
         "area"
     ],
+    "icon": "lodging",
+    "name": "Motel",
+    "searchable": false,
     "tags": {
         "tourism": "motel"
-    },
-    "searchable": false,
-    "name": "Motel"
+    }
 }

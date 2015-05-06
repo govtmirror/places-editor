@@ -1,5 +1,4 @@
 {
-    "icon": "restaurant",
     "fields": [
         "operator",
         "address",
@@ -10,14 +9,15 @@
         "point",
         "area"
     ],
+    "icon": "restaurant",
+    "name": "Deli",
+    "searchable": false,
+    "tags": {
+        "shop": "deli"
+    },
     "terms": [
         "lunch",
         "meat",
         "sandwich"
-    ],
-    "tags": {
-        "shop": "deli"
-    },
-    "searchable": false,
-    "name": "Deli"
+    ]
 }

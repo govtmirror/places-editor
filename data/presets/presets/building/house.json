@@ -1,16 +1,19 @@
 {
-    "icon": "building",
     "fields": [
+        "name",
         "address",
         "levels"
     ],
     "geometry": [
-        "point",
-        "area"
+        "point"
     ],
+    "icon": "building",
+    "name": "House",
+    "searchable": true,
     "tags": {
         "building": "house"
     },
-    "searchable": true,
-    "name": "House"
+    "terms": [
+        "house"
+    ]
 }

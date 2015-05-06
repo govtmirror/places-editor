@@ -1,5 +1,4 @@
 {
-    "icon": "grocery",
     "fields": [
         "operator",
         "address",
@@ -10,14 +9,15 @@
         "point",
         "area"
     ],
+    "icon": "grocery",
+    "name": "Supermarket",
+    "searchable": false,
+    "tags": {
+        "shop": "supermarket"
+    },
     "terms": [
         "grocery",
         "store",
         "shop"
-    ],
-    "tags": {
-        "shop": "supermarket"
-    },
-    "searchable": false,
-    "name": "Supermarket"
+    ]
 }

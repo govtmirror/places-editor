@@ -1,5 +1,4 @@
 {
-    "icon": "cemetery",
     "fields": [
         "religion",
         "denomination"
@@ -8,9 +7,10 @@
         "point",
         "area"
     ],
+    "icon": "cemetery",
+    "name": "Graveyard",
+    "searchable": false,
     "tags": {
         "amenity": "grave_yard"
-    },
-    "searchable": false,
-    "name": "Graveyard"
+    }
 }

@@ -5,10 +5,12 @@
         "structure",
         "access"
     ],
-    "icon": "highway-bridleway",
     "geometry": [
         "line"
     ],
+    "icon": "highway-bridleway",
+    "name": "Equestrian Path",
+    "searchable": false,
     "tags": {
         "highway": "bridleway"
     },
@@ -17,7 +19,5 @@
         "bridleway",
         "equestrian",
         "horse"
-    ],
-    "searchable": true,
-    "name": "Equestrian Path"
+    ]
 }

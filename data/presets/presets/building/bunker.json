@@ -1,15 +1,21 @@
 {
     "fields": [
+        "name",
         "address",
-        "levels"
+        "levels",
+        "bunker_type"
     ],
     "geometry": [
-        "point",
-        "area"
+        "point"
     ],
+    "icon": "building",
+    "name": "Bunker",
+    "searchable": true,
     "tags": {
         "building": "bunker"
     },
-    "searchable": true,
-    "name": "Bunker"
+    "terms": [
+        "bunker",
+        "military bunker"
+    ]
 }

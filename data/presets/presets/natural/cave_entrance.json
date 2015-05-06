@@ -1,10 +1,20 @@
 {
+    "fields": [
+        "name"
+    ],
     "geometry": [
         "point"
     ],
+    "icon": "spelunking/caves",
+    "maki": "npmaki",
+    "name": "Cave Entrance",
+    "searchable": true,
     "tags": {
         "natural": "cave_entrance"
     },
-    "name": "Cave Entrance",
-    "searchable": false
+    "terms": [
+        "cave",
+        "cavern",
+        "grotto"
+    ]
 }

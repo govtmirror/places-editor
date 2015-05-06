@@ -1,5 +1,4 @@
 {
-    "icon": "highway-service",
     "fields": [
         "oneway",
         "access",
@@ -8,10 +7,11 @@
     "geometry": [
         "line"
     ],
+    "icon": "highway-service",
+    "name": "Parking Aisle",
+    "searchable": false,
     "tags": {
         "highway": "service",
         "service": "parking_aisle"
-    },
-    "searchable": false,
-    "name": "Parking Aisle"
+    }
 }

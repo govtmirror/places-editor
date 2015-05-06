@@ -1,5 +1,4 @@
 {
-    "icon": "town-hall",
     "fields": [
         "address",
         "building_area",
@@ -10,10 +9,10 @@
         "point",
         "area"
     ],
-    "terms": [
-    ],
+    "icon": "town-hall",
+    "name": "Register Office",
+    "searchable": false,
     "tags": {
         "amenity": "register_office"
-    },
-    "name": "Register Office"
+    }
 }

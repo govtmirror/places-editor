@@ -1,5 +1,4 @@
 {
-    "icon": "laundry",
     "fields": [
         "operator",
         "address",
@@ -10,9 +9,10 @@
         "point",
         "area"
     ],
+    "icon": "laundry",
+    "name": "Laundry",
+    "searchable": false,
     "tags": {
         "shop": "laundry"
-    },
-    "searchable": false,
-    "name": "Laundry"
+    }
 }

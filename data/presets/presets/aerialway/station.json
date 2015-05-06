@@ -1,16 +1,16 @@
 {
-    "geometry": [
-        "point",
-        "vertex"
-    ],
     "fields": [
         "aerialway/access",
         "aerialway/summer/access",
         "elevation"
     ],
+    "geometry": [
+        "point",
+        "vertex"
+    ],
+    "name": "Aerialway Station",
+    "searchable": false,
     "tags": {
         "aerialway": "station"
-    },
-    "searchable": false,
-    "name": "Aerialway Station"
+    }
 }

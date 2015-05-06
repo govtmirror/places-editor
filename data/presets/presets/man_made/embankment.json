@@ -2,9 +2,9 @@
     "geometry": [
         "line"
     ],
+    "name": "Embankment",
+    "searchable": false,
     "tags": {
         "man_made": "embankment"
-    },
-    "searchable": false,
-    "name": "Embankment"
+    }
 }

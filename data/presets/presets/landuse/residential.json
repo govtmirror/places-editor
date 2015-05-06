@@ -1,12 +1,11 @@
 {
-    "icon": "building",
     "geometry": [
         "area"
     ],
+    "icon": "building",
+    "name": "Residential Area",
+    "searchable": false,
     "tags": {
         "landuse": "residential"
-    },
-    "terms": [],
-    "searchable": false,
-    "name": "Residential Area"
+    }
 }

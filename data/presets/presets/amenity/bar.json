@@ -1,5 +1,4 @@
 {
-    "icon": "bar",
     "fields": [
         "operator",
         "address",
@@ -11,15 +10,16 @@
         "point",
         "area"
     ],
+    "icon": "bar",
+    "name": "Bar",
+    "searchable": false,
+    "tags": {
+        "amenity": "bar"
+    },
     "terms": [
         "dive",
         "beer",
         "bier",
         "booze"
-    ],
-    "tags": {
-        "amenity": "bar"
-    },
-    "searchable": false,
-    "name": "Bar"
+    ]
 }

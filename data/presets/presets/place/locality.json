@@ -1,15 +1,21 @@
 {
-    "icon": "marker",
     "fields": [
+        "name",
         "population"
     ],
     "geometry": [
-        "point",
-        "area"
+        "point"
     ],
+    "icon": "marker",
+    "name": "Locale",
+    "searchable": true,
     "tags": {
         "place": "locality"
     },
-    "searchable": false,
-    "name": "Locality"
+    "terms": [
+        "locale",
+        "locality",
+        "location",
+        "place"
+    ]
 }

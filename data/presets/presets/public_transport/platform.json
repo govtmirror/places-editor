@@ -11,9 +11,9 @@
         "line",
         "area"
     ],
+    "name": "Platform",
+    "searchable": false,
     "tags": {
         "public_transport": "platform"
-    },
-    "searchable": false,
-    "name": "Platform"
+    }
 }

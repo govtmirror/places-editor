@@ -2,9 +2,9 @@
     "geometry": [
         "point"
     ],
+    "name": "Parasailing Launch",
+    "searchable": false,
     "tags": {
         "free_flying:site": "takeoff"
-    },
-    "name": "Parasailing Launch",
-    "searchable": false
+    }
 }

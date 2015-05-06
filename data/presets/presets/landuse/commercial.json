@@ -1,12 +1,11 @@
 {
-    "icon": "commercial",
     "geometry": [
         "area"
     ],
+    "icon": "commercial",
+    "name": "Commercial Area",
+    "searchable": false,
     "tags": {
         "landuse": "commercial"
-    },
-    "terms": [],
-    "searchable": false,
-    "name": "Commercial Area"
+    }
 }

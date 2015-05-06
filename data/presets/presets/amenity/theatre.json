@@ -1,5 +1,4 @@
 {
-    "icon": "theatre",
     "fields": [
         "operator",
         "address",
@@ -9,15 +8,16 @@
         "point",
         "area"
     ],
+    "icon": "theatre",
+    "name": "Theater",
+    "searchable": false,
+    "tags": {
+        "amenity": "theatre"
+    },
     "terms": [
         "theatre",
         "performance",
         "play",
         "musical"
-    ],
-    "tags": {
-        "amenity": "theatre"
-    },
-    "searchable": false,
-    "name": "Theater"
+    ]
 }

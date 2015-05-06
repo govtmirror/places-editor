@@ -1,5 +1,4 @@
 {
-    "icon": "highway-motorway-link",
     "fields": [
         "oneway_yes",
         "maxspeed",
@@ -11,18 +10,15 @@
     "geometry": [
         "line"
     ],
+    "icon": "highway-motorway-link",
+    "name": "Motorway Link",
+    "searchable": false,
     "tags": {
         "highway": "motorway_link"
     },
-    "addTags": {
-        "highway": "motorway_link",
-        "oneway": "yes"
-    },
-    "removeTags": {
-        "highway": "motorway_link",
-        "oneway": "yes"
-    },
-    "terms": ["ramp", "on ramp", "off ramp"],
-    "searchable": true,
-    "name": "Motorway Link"
+    "terms": [
+        "ramp",
+        "on ramp",
+        "off ramp"
+    ]
 }

@@ -1,15 +1,15 @@
 {
+    "fields": [
+        "ref"
+    ],
     "geometry": [
         "relation"
     ],
-    "tags": {
-        "type": "route",
-        "route": "detour"
-    },
-    "searchable": false,
-    "name": "Detour Route",
     "icon": "route-detour",
-    "fields": [
-        "ref"
-    ]
+    "name": "Detour Route",
+    "searchable": false,
+    "tags": {
+        "route": "detour",
+        "type": "route"
+    }
 }

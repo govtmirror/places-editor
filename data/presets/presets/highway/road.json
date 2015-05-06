@@ -1,19 +1,25 @@
 {
-    "icon": "highway-road",
     "fields": [
-        "oneway",
+        "name",
+        "operator",
+        "surface",
+        "width",
         "maxspeed",
-        "structure",
-        "access",
-        "surface"
+        "oneway",
+        "lanes",
+        "access"
     ],
     "geometry": [
         "line"
     ],
+    "icon": "highway-road",
+    "name": "Unknown Road",
+    "searchable": true,
     "tags": {
         "highway": "road"
     },
-    "terms": [],
-    "searchable": true,
-    "name": "Unknown Road"
+    "terms": [
+        "unknown road",
+        "road"
+    ]
 }

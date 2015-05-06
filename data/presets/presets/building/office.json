@@ -1,11 +1,21 @@
 {
+    "fields": [
+        "name",
+        "address",
+        "levels",
+        "smoking"
+    ],
     "geometry": [
         "point"
     ],
+    "icon": "commercial",
+    "name": "Office Building",
+    "searchable": true,
     "tags": {
         "building": "office"
     },
-    "searchable": true,
-    "name": "Office",
-    "icon": "commercial"
+    "terms": [
+        "office",
+        "office building"
+    ]
 }

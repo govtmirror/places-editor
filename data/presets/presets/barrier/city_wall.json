@@ -3,9 +3,9 @@
         "line",
         "area"
     ],
+    "name": "City Wall",
+    "searchable": false,
     "tags": {
         "barrier": "city_wall"
-    },
-    "searchable": false,
-    "name": "City Wall"
+    }
 }

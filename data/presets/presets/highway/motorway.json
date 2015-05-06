@@ -1,5 +1,4 @@
 {
-    "icon": "highway-motorway",
     "fields": [
         "oneway_yes",
         "maxspeed",
@@ -12,10 +11,10 @@
     "geometry": [
         "line"
     ],
+    "icon": "highway-motorway",
+    "name": "Motorway",
+    "searchable": false,
     "tags": {
         "highway": "motorway"
-    },
-    "terms": [],
-    "searchable": true,
-    "name": "Motorway"
+    }
 }

@@ -5,10 +5,10 @@
     "geometry": [
         "area"
     ],
+    "icon": "water",
+    "name": "Water",
+    "searchable": false,
     "tags": {
         "natural": "water"
-    },
-    "icon": "water",
-    "searchable": false,
-    "name": "Water"
+    }
 }

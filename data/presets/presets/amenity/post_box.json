@@ -1,5 +1,4 @@
 {
-    "icon": "post",
     "fields": [
         "operator",
         "collection_times",
@@ -9,13 +8,14 @@
         "point",
         "vertex"
     ],
+    "icon": "post",
+    "name": "Mailbox",
+    "searchable": false,
     "tags": {
         "amenity": "post_box"
     },
     "terms": [
         "letter",
         "post"
-    ],
-    "searchable": false,
-    "name": "Mailbox"
+    ]
 }

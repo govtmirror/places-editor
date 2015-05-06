@@ -1,17 +1,22 @@
 {
-    "icon": "building",
     "fields": [
+        "name",
         "address",
-        "levels",
-        "smoking"
+        "levels"
     ],
     "geometry": [
-        "point",
-        "area"
+        "point"
     ],
+    "icon": "building",
+    "name": "Dormitory",
+    "searchable": true,
     "tags": {
         "building": "dormitory"
     },
-    "searchable": true,
-    "name": "Dormitory"
+    "terms": [
+        "dormitory",
+        "residence hall",
+        "dormatorium",
+        "dorm"
+    ]
 }

@@ -1,13 +1,13 @@
 {
-    "icon": "monument",
     "geometry": [
         "point",
         "vertex",
         "area"
     ],
+    "icon": "monument",
+    "name": "Wayside",
+    "searchable": false,
     "tags": {
         "tourism": "attraction"
-    },
-    "name": "Wayside",
-    "searchable": false
+    }
 }

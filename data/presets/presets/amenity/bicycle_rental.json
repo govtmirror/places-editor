@@ -1,5 +1,4 @@
 {
-    "icon": "bicycle",
     "fields": [
         "capacity",
         "network",
@@ -10,12 +9,13 @@
         "vertex",
         "area"
     ],
-    "terms": [
-        "bike"
-    ],
+    "icon": "bicycle",
+    "name": "Bicycle Rental",
+    "searchable": false,
     "tags": {
         "amenity": "bicycle_rental"
     },
-    "searchable": false,
-    "name": "Bicycle Rental"
+    "terms": [
+        "bike"
+    ]
 }

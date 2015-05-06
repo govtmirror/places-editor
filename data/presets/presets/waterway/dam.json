@@ -1,14 +1,20 @@
 {
-    "icon": "dam",
-    "geometry": [
-        "point",
-        "vertex",
-        "line",
-        "area"
+    "fields": [
+        "name"
     ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "dam",
+    "name": "Dam",
+    "searchable": true,
     "tags": {
         "waterway": "dam"
     },
-    "searchable": false,
-    "name": "Dam"
+    "terms": [
+        "dam",
+        "breakwater",
+        "dike",
+        "jetty"
+    ]
 }

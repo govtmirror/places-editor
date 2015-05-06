@@ -3,9 +3,9 @@
         "line",
         "area"
     ],
+    "name": "Wall",
+    "searchable": false,
     "tags": {
         "barrier": "wall"
-    },
-    "searchable": false,
-    "name": "Wall"
+    }
 }

@@ -1,6 +1,4 @@
 {
-    "searchable": false,
-    "icon": "garden",
     "fields": [
         "operator",
         "address",
@@ -11,12 +9,14 @@
         "point",
         "area"
     ],
-    "terms": [
-        "landscaper",
-        "grounds keeper"
-    ],
+    "icon": "garden",
+    "name": "Gardener",
+    "searchable": false,
     "tags": {
         "craft": "gardener"
     },
-    "name": "Gardener"
+    "terms": [
+        "landscaper",
+        "grounds keeper"
+    ]
 }

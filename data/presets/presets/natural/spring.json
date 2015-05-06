@@ -1,12 +1,18 @@
 {
-    "geometry": [
-        "point",
-        "vertex"
+    "fields": [
+        "name",
+        "drinking_water"
     ],
-    "terms": [],
+    "geometry": [
+        "point"
+    ],
+    "name": "Spring",
+    "searchable": true,
     "tags": {
         "natural": "spring"
     },
-    "searchable": false,
-    "name": "Spring"
+    "terms": [
+        "spring",
+        "seep"
+    ]
 }

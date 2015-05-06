@@ -1,5 +1,4 @@
 {
-    "icon": "shop",
     "fields": [
         "operator",
         "address",
@@ -10,12 +9,13 @@
         "point",
         "area"
     ],
-    "terms": [
-        "flower"
-    ],
+    "icon": "shop",
+    "name": "Florist",
+    "searchable": false,
     "tags": {
         "shop": "florist"
     },
-    "searchable": false,
-    "name": "Florist"
+    "terms": [
+        "flower"
+    ]
 }

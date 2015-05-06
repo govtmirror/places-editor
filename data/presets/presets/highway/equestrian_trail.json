@@ -1,0 +1,37 @@
+{
+    "name": "Equestrian Trail",
+    "tags": {
+        "highway":  "track",
+        "horse":  "yes"
+    },
+    "geometry": [
+        "point",
+        "line"
+    ],
+    "maki": "npmaki",
+    "icon": "horseback-riding-black",
+    "fields": [
+        "name",
+        "operator",
+        "tracktype",
+        "surface",
+        "width",
+        "incline",
+        "mtb/scale",
+        "mtb/scale/uphill",
+        "mtb/scale/imba",
+        "sac_scale",
+        "trail_visibility",
+        "access"
+    ],
+    "terms": [
+        "equestrian trail",
+        "equestrian",
+        "bridleway",
+        "horse riding",
+        "horse",
+        "trail",
+        "track"
+    ],
+    "searchable": true
+}

@@ -2,9 +2,9 @@
     "geometry": [
         "point"
     ],
+    "name": "Wifi",
+    "searchable": false,
     "tags": {
         "wifi": "yes"
-    },
-    "name": "Wifi",
-    "searchable": true
+    }
 }

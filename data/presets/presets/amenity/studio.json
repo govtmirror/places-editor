@@ -1,6 +1,4 @@
 {
-    "searchable": false,
-    "icon": "music",
     "fields": [
         "studio_type",
         "address",
@@ -10,13 +8,15 @@
         "point",
         "area"
     ],
+    "icon": "music",
+    "name": "Studio",
+    "searchable": false,
+    "tags": {
+        "amenity": "studio"
+    },
     "terms": [
         "recording",
         "radio",
         "television"
-    ],
-    "tags": {
-        "amenity": "studio"
-    },
-    "name": "Studio"
+    ]
 }

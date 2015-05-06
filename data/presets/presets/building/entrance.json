@@ -1,11 +1,11 @@
 {
-    "icon": "entrance",
     "geometry": [
         "vertex"
     ],
+    "icon": "entrance",
+    "name": "Entrance/Exit",
+    "searchable": false,
     "tags": {
         "building": "entrance"
-    },
-    "name": "Entrance/Exit",
-    "searchable": true
+    }
 }

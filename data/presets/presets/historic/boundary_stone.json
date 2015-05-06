@@ -3,9 +3,9 @@
         "point",
         "vertex"
     ],
+    "name": "Boundary Stone",
+    "searchable": false,
     "tags": {
         "historic": "boundary_stone"
-    },
-    "searchable": false,
-    "name": "Boundary Stone"
+    }
 }

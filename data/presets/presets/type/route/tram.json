@@ -1,16 +1,16 @@
 {
-    "geometry": [
-        "relation"
-    ],
-    "tags": {
-        "type": "route",
-        "route": "tram"
-    },
-    "searchable": false,
-    "name": "Tram Route",
-    "icon": "route-tram",
     "fields": [
         "ref",
         "operator"
-    ]
+    ],
+    "geometry": [
+        "relation"
+    ],
+    "icon": "route-tram",
+    "name": "Tram Route",
+    "searchable": false,
+    "tags": {
+        "route": "tram",
+        "type": "route"
+    }
 }

@@ -1,5 +1,4 @@
 {
-    "icon": "commercial",
     "fields": [
         "address",
         "building_area",
@@ -11,10 +10,10 @@
         "vertex",
         "area"
     ],
+    "icon": "commercial",
+    "name": "NGO Office",
+    "searchable": false,
     "tags": {
         "office": "ngo"
-    },
-    "terms": [],
-    "searchable": false,
-    "name": "NGO Office"
+    }
 }

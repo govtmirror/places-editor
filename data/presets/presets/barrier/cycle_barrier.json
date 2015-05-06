@@ -5,9 +5,9 @@
     "geometry": [
         "vertex"
     ],
+    "name": "Cycle Barrier",
+    "searchable": false,
     "tags": {
         "barrier": "cycle_barrier"
-    },
-    "searchable": false,
-    "name": "Cycle Barrier"
+    }
 }

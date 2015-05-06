@@ -1,5 +1,4 @@
 {
-    "icon": "golf",
     "fields": [
         "golf_hole",
         "par",
@@ -8,9 +7,10 @@
     "geometry": [
         "line"
     ],
+    "icon": "golf",
+    "name": "Golf Hole",
+    "searchable": false,
     "tags": {
         "golf": "hole"
-    },
-    "searchable": false,
-    "name": "Golf Hole"
+    }
 }

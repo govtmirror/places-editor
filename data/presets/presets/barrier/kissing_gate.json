@@ -5,9 +5,9 @@
     "geometry": [
         "vertex"
     ],
+    "name": "Kissing Gate",
+    "searchable": false,
     "tags": {
         "barrier": "kissing_gate"
-    },
-    "searchable": false,
-    "name": "Kissing Gate"
+    }
 }

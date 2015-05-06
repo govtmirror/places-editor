@@ -2,12 +2,12 @@
     "geometry": [
         "vertex"
     ],
+    "name": "Stop Sign",
+    "searchable": false,
     "tags": {
         "highway": "stop"
     },
     "terms": [
         "stop sign"
-    ],
-    "searchable": false,
-    "name": "Stop Sign"
+    ]
 }

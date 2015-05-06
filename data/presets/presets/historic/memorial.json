@@ -1,13 +1,13 @@
 {
-    "icon": "monument",
     "geometry": [
         "point",
         "vertex",
         "area"
     ],
+    "icon": "monument",
+    "name": "Memorial",
+    "searchable": false,
     "tags": {
         "historic": "memorial"
-    },
-    "searchable": false,
-    "name": "Memorial"
+    }
 }

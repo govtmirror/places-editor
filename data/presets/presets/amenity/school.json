@@ -1,5 +1,4 @@
 {
-    "icon": "school",
     "fields": [
         "operator",
         "address"
@@ -8,15 +7,16 @@
         "point",
         "area"
     ],
+    "icon": "school",
+    "name": "School Grounds",
+    "searchable": false,
+    "tags": {
+        "amenity": "school"
+    },
     "terms": [
         "academy",
         "elementary school",
         "middle school",
         "high school"
-    ],
-    "tags": {
-        "amenity": "school"
-    },
-    "searchable": false,
-    "name": "School Grounds"
+    ]
 }

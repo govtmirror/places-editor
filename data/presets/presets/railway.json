@@ -8,9 +8,9 @@
         "line",
         "area"
     ],
+    "name": "Railway",
+    "searchable": false,
     "tags": {
         "railway": "*"
-    },
-    "searchable": false,
-    "name": "Railway"
+    }
 }

@@ -1,5 +1,4 @@
 {
-    "icon": "highway-road",
     "fields": [
         "surface",
         "sport_racing",
@@ -11,9 +10,10 @@
         "point",
         "line"
     ],
+    "icon": "highway-road",
+    "name": "Racetrack (non-Motorsport)",
+    "searchable": false,
     "tags": {
         "leisure": "track"
-    },
-    "searchable": false,
-    "name": "Racetrack (non-Motorsport)"
+    }
 }

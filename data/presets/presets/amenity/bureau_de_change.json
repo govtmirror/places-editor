@@ -1,5 +1,4 @@
 {
-    "icon": "bank",
     "fields": [
         "operator"
     ],
@@ -7,13 +6,14 @@
         "point",
         "vertex"
     ],
-    "terms": [
-        "bureau de change",
-        "money changer"
-    ],
+    "icon": "bank",
+    "name": "Currency Exchange",
+    "searchable": false,
     "tags": {
         "amenity": "bureau_de_change"
     },
-    "name": "Currency Exchange",
-    "searchable": false
+    "terms": [
+        "bureau de change",
+        "money changer"
+    ]
 }

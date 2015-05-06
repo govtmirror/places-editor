@@ -1,5 +1,4 @@
 {
-    "icon": "marker-stroked",
     "fields": [
         "operator",
         "address",
@@ -10,9 +9,10 @@
         "point",
         "area"
     ],
+    "icon": "marker-stroked",
+    "name": "Locksmith",
+    "searchable": false,
     "tags": {
         "craft": "locksmith"
-    },
-    "name": "Locksmith",
-    "searchable": false
+    }
 }

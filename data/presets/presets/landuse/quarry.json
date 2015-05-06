@@ -1,11 +1,21 @@
 {
-    "geometry": [
-        "area"
+    "fields": [
+        "name",
+        "operator",
+        "resource"
     ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "",
+    "maki": "",
+    "name": "Quarry (Mine)",
+    "searchable": true,
     "tags": {
         "landuse": "quarry"
     },
-    "terms": [],
-    "searchable": false,
-    "name": "Quarry"
+    "terms": [
+        "quarry",
+        "mine"
+    ]
 }

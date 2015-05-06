@@ -1,0 +1,20 @@
+{
+    "name": "Wifi",
+    "tags": {
+        "wifi":  "yes"
+    },
+    "geometry": [
+        "point"
+    ],
+    "maki": "nps",
+    "icon": "wi-fi",
+    "fields": [
+        "name"
+    ],
+    "terms": [
+        "wifi",
+        "internet",
+        "online"
+    ],
+    "searchable": true
+}

@@ -1,15 +1,24 @@
 {
-    "icon": "marina-black",
-    "maki": "npmaki",
-    "searchable": true,
+    "fields": [
+        "name",
+        "operator",
+        "addr",
+        "capacity",
+        "mooring"
+    ],
     "geometry": [
         "point"
     ],
-    "terms": [
-        "boat"
-    ],
+    "icon": "marina-black",
+    "maki": "npmaki",
+    "name": "Marina",
+    "searchable": true,
     "tags": {
         "leisure": "marina"
     },
-    "name": "Marina"
+    "terms": [
+        "marina",
+        "harbour",
+        "harbor"
+    ]
 }

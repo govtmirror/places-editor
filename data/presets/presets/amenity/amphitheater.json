@@ -1,27 +1,28 @@
 {
-    "icon": "amphitheater-black",
-    "maki": "npmaki",
-    "searchable": true,
     "fields": [
+        "name",
         "operator",
-        "building_area",
         "address"
     ],
     "geometry": [
-        "point",
-        "vertex",
-        "area"
+        "point"
     ],
+    "icon": "amphitheater-black",
+    "maki": "npmaki",
+    "name": "Amphitheater",
+    "searchable": true,
+    "tags": {
+        "amenity": "theatre",
+        "theatre: type": "amphi"
+    },
     "terms": [
         "amphitheater",
         "theatre",
+        "theater",
+        "opera house",
+        "playhouse",
         "performance",
         "play",
         "musical"
-    ],
-    "tags": {
-        "amenity": "theatre",
-        "theatre:type": "amphi"
-    },
-    "name": "Amphitheater"
+    ]
 }

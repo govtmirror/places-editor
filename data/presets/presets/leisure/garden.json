@@ -1,13 +1,13 @@
 {
-    "icon": "garden",
     "geometry": [
         "point",
         "vertex",
         "area"
     ],
+    "icon": "garden",
+    "name": "Garden",
+    "searchable": false,
     "tags": {
         "leisure": "garden"
-    },
-    "searchable": false,
-    "name": "Garden"
+    }
 }

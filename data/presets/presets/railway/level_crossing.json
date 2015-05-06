@@ -1,8 +1,10 @@
 {
-    "icon": "cross",
     "geometry": [
         "vertex"
     ],
+    "icon": "cross",
+    "name": "Level Crossing",
+    "searchable": false,
     "tags": {
         "railway": "level_crossing"
     },
@@ -13,7 +15,5 @@
         "grade crossing",
         "road through railroad",
         "train crossing"
-    ],
-    "searchable": false,
-    "name": "Level Crossing"
+    ]
 }

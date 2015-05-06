@@ -1,5 +1,4 @@
 {
-    "icon": "shop",
     "fields": [
         "operator",
         "address",
@@ -10,13 +9,14 @@
         "point",
         "area"
     ],
-    "terms": [
-        "oven",
-        "stove"
-    ],
+    "icon": "shop",
+    "name": "Furnace Store",
+    "searchable": false,
     "tags": {
         "shop": "furnace"
     },
-    "name": "Furnace Store",
-    "searchable": false
+    "terms": [
+        "oven",
+        "stove"
+    ]
 }

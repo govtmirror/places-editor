@@ -1,16 +1,14 @@
 {
-    "icon": "farm",
     "fields": [
         "crop"
     ],
     "geometry": [
         "area"
     ],
+    "icon": "farm",
+    "name": "Farmyard",
+    "searchable": false,
     "tags": {
         "landuse": "farmyard"
-    },
-    "terms": [],
-    "searchable": false,
-    "name": "Farmyard",
-    "icon": "farm"
+    }
 }

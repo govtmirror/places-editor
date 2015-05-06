@@ -1,29 +1,31 @@
 {
-    "icon": "police",
     "fields": [
+        "name",
         "operator",
         "address",
-        "building_area"
+        "opening_hours"
     ],
     "geometry": [
-        "point",
-        "area"
+        "point"
     ],
-    "terms": [
-        "badge",
-        "constable",
-        "constabulary",
-        "cop",
-        "detective",
-        "fed",
-        "law",
-        "enforcement",
-        "officer",
-        "patrol"
-    ],
+    "icon": "police",
+    "name": "Police",
+    "searchable": true,
     "tags": {
         "amenity": "police"
     },
-    "searchable": false,
-    "name": "Police"
+    "terms": [
+        "police",
+        "police station",
+        "cops",
+        "police force",
+        "badge",
+        "constable",
+        "detective",
+        "fed",
+        "law enforcement",
+        "officer",
+        "patrol",
+        "emergency"
+    ]
 }

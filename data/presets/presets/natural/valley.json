@@ -3,15 +3,25 @@
         "name"
     ],
     "geometry": [
-        "point",
-        "line"
+        "point"
     ],
-    "terms": [
-      "valley"
-    ],
+    "name": "Valley",
+    "searchable": true,
     "tags": {
         "natural": "valley"
     },
-    "searchable": true,
-    "name": "Valley"
+    "terms": [
+        "valley",
+        "barranca",
+        "canyon",
+        "chasm",
+        "cove",
+        "draw",
+        "glen",
+        "gorge",
+        "gulch",
+        "gulf",
+        "hollow",
+        "ravine"
+    ]
 }

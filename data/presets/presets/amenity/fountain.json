@@ -1,11 +1,23 @@
 {
-    "geometry": [
-        "point",
-        "area"
+    "fields": [
+        "name",
+        "operator",
+        "address",
+        "drinking_water",
+        "lit"
     ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "",
+    "maki": "",
+    "name": "Fountain",
+    "searchable": true,
     "tags": {
         "amenity": "fountain"
     },
-    "searchable": false,
-    "name": "Fountain"
+    "terms": [
+        "fountain",
+        "well"
+    ]
 }

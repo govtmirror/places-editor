@@ -1,19 +1,29 @@
 {
+    "fields": [
+        "name",
+        "operator",
+        "address",
+        "waste",
+        "bin"
+    ],
+    "geometry": [
+        "point"
+    ],
     "icon": "litter-receptacle-black",
     "maki": "npmaki",
-    "geometry": [
-        "point",
-        "vertex"
-    ],
+    "name": "Waste Basket",
+    "searchable": true,
     "tags": {
         "amenity": "waste_basket"
     },
     "terms": [
+        "waste basket",
+        "waste paper basket",
+        "trash bin",
+        "waste bin",
+        "trash",
         "rubbish",
         "litter",
-        "trash",
         "garbage"
-    ],
-    "name": "Waste Basket",
-    "searchable": true
+    ]
 }

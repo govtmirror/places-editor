@@ -1,7 +1,4 @@
 {
-    "geometry": [
-        "line"
-    ],
     "fields": [
         "aerialway/occupancy",
         "aerialway/capacity",
@@ -9,9 +6,12 @@
         "aerialway/bubble",
         "aerialway/heating"
     ],
+    "geometry": [
+        "line"
+    ],
+    "name": "Gondola",
+    "searchable": false,
     "tags": {
         "aerialway": "gondola"
-    },
-    "searchable": false,
-    "name": "Gondola"
+    }
 }

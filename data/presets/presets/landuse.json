@@ -5,9 +5,9 @@
     "geometry": [
         "area"
     ],
+    "name": "Landuse",
+    "searchable": false,
     "tags": {
         "landuse": "*"
-    },
-    "searchable": false,
-    "name": "Landuse"
+    }
 }

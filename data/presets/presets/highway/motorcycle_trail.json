@@ -1,0 +1,34 @@
+{
+    "name": "Motorcycle Trail",
+    "tags": {
+        "highway":  "track",
+        "motorcycle":  "yes"
+    },
+    "geometry": [
+        "point",
+        "line"
+    ],
+    "maki": "npmaki",
+    "icon": "motor-bike-trail-black",
+    "fields": [
+        "name",
+        "operator",
+        "tracktype",
+        "surface",
+        "width",
+        "incline",
+        "mtb/scale",
+        "mtb/scale/uphill",
+        "mtb/scale/imba",
+        "sac_scale",
+        "trail_visibility",
+        "access"
+    ],
+    "terms": [
+        "motorcycle trail",
+        "motorcycle",
+        "trail",
+        "track"
+    ],
+    "searchable": true
+}

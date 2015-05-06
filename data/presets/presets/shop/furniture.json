@@ -1,5 +1,4 @@
 {
-    "icon": "shop",
     "fields": [
         "operator",
         "address",
@@ -10,14 +9,15 @@
         "point",
         "area"
     ],
+    "icon": "shop",
+    "name": "Furniture Store",
+    "searchable": false,
+    "tags": {
+        "shop": "furniture"
+    },
     "terms": [
         "chair",
         "sofa",
         "table"
-    ],
-    "tags": {
-        "shop": "furniture"
-    },
-    "searchable": false,
-    "name": "Furniture Store"
+    ]
 }

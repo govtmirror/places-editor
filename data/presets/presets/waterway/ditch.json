@@ -1,14 +1,14 @@
 {
-    "icon": "waterway-ditch",
     "fields": [
         "tunnel"
     ],
     "geometry": [
         "line"
     ],
+    "icon": "waterway-ditch",
+    "name": "Ditch",
+    "searchable": false,
     "tags": {
         "waterway": "ditch"
-    },
-    "searchable": false,
-    "name": "Ditch"
+    }
 }

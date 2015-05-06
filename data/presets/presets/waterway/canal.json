@@ -1,14 +1,19 @@
 {
-    "icon": "waterway-canal",
     "fields": [
-        "width"
+        "name"
     ],
     "geometry": [
-        "line"
+        "point"
     ],
+    "icon": "water",
+    "name": "Canal",
+    "searchable": true,
     "tags": {
         "waterway": "canal"
     },
-    "searchable": false,
-    "name": "Canal"
+    "terms": [
+        "canal",
+        "ditch",
+        "lateal"
+    ]
 }

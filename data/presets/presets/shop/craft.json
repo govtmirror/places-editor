@@ -1,5 +1,4 @@
 {
-    "icon": "art-gallery",
     "fields": [
         "operator",
         "address",
@@ -10,9 +9,10 @@
         "point",
         "area"
     ],
+    "icon": "art-gallery",
+    "name": "Arts and Crafts Store",
+    "searchable": false,
     "tags": {
         "shop": "craft"
-    },
-    "name": "Arts and Crafts Store",
-    "searchable": false
+    }
 }

@@ -1,5 +1,4 @@
 {
-    "icon": "town-hall",
     "fields": [
         "operator",
         "address",
@@ -9,16 +8,17 @@
         "point",
         "area"
     ],
+    "icon": "town-hall",
+    "name": "Town Hall",
+    "searchable": false,
+    "tags": {
+        "amenity": "townhall"
+    },
     "terms": [
         "village",
         "city",
         "government",
         "courthouse",
         "municipal"
-    ],
-    "tags": {
-        "amenity": "townhall"
-    },
-    "searchable": false,
-    "name": "Town Hall"
+    ]
 }

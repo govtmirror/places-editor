@@ -1,17 +1,21 @@
 {
-    "icon": "building",
     "fields": [
+        "name",
         "address",
         "levels",
         "smoking"
     ],
     "geometry": [
-        "point",
-        "area"
+        "point"
     ],
+    "icon": "commercial",
+    "name": "Retail Building",
+    "searchable": true,
     "tags": {
         "building": "retail"
     },
-    "searchable": true,
-    "name": "Retail Building"
+    "terms": [
+        "retail building",
+        "retail"
+    ]
 }

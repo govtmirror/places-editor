@@ -1,6 +1,4 @@
 {
-    "searchable": false,
-    "icon": "marker-stroked",
     "fields": [
         "operator",
         "address",
@@ -11,11 +9,13 @@
         "point",
         "area"
     ],
-    "terms": [
-        "pipe"
-    ],
+    "icon": "marker-stroked",
+    "name": "Plumber",
+    "searchable": false,
     "tags": {
         "craft": "plumber"
     },
-    "name": "Plumber"
+    "terms": [
+        "pipe"
+    ]
 }

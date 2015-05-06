@@ -1,5 +1,4 @@
 {
-    "icon": "place-of-worship",
     "fields": [
         "denomination",
         "building_area",
@@ -9,6 +8,13 @@
         "point",
         "area"
     ],
+    "icon": "place-of-worship",
+    "name": "Buddhist Temple",
+    "searchable": false,
+    "tags": {
+        "amenity": "place_of_worship",
+        "religion": "buddhist"
+    },
     "terms": [
         "stupa",
         "vihara",
@@ -17,11 +23,5 @@
         "pagoda",
         "zendo",
         "dojo"
-    ],
-    "tags": {
-        "amenity": "place_of_worship",
-        "religion": "buddhist"
-    },
-    "searchable": false,
-    "name": "Buddhist Temple"
+    ]
 }

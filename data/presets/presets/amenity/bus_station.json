@@ -1,5 +1,4 @@
 {
-    "icon": "bus",
     "fields": [
         "building_area",
         "operator"
@@ -8,9 +7,10 @@
         "point",
         "area"
     ],
+    "icon": "bus",
+    "name": "Bus Station",
+    "searchable": false,
     "tags": {
         "amenity": "bus_station"
-    },
-    "name": "Bus Station",
-    "searchable": false
+    }
 }

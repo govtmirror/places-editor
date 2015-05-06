@@ -1,19 +1,19 @@
 {
-    "geometry": [
-        "point",
-        "area"
-    ],
-    "terms": [
-        "airport",
-        "aerodrome"
-    ],
     "fields": [
         "operator",
         "building_area"
     ],
+    "geometry": [
+        "point",
+        "area"
+    ],
+    "name": "Airport terminal",
+    "searchable": false,
     "tags": {
         "aeroway": "terminal"
     },
-    "searchable": false,
-    "name": "Airport terminal"
+    "terms": [
+        "airport",
+        "aerodrome"
+    ]
 }

@@ -1,34 +1,37 @@
 {
     "fields": [
-        "toilets/disposal",
+        "name",
         "operator",
-        "building_area",
-        "access_toilets",
-        "gender"
+        "address",
+        "opening_hours",
+        "toilets/disposal",
+        "gender",
+        "indoor",
+        "fee",
+        "access"
     ],
     "geometry": [
-        "point",
-        "vertex",
-        "area"
+        "point"
     ],
-    "terms": [
-        "bathroom",
-        "toilet",
-        "restroom",
-        "outhouse",
-        "privy",
-        "head",
-        "lavatory",
-        "latrine",
-        "water closet",
-        "WC",
-        "W.C."
-    ],
-    "tags": {
-        "amenity": "toilets"
-    },
-    "icon": "restroom-black",
+    "icon": "restrooms-black",
     "maki": "npmaki",
     "name": "Restroom",
-    "searchable": true
+    "searchable": true,
+    "tags": {
+        "amenity": "toilets",
+        "building": "yes"
+    },
+    "terms": [
+        "restroom",
+        "toilets",
+        "toilet",
+        "privy",
+        "head",
+        "bathroom",
+        "lavatory",
+        "wc",
+        "water closet",
+        "latrine",
+        "outhouse"
+    ]
 }

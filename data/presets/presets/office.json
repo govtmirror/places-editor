@@ -1,5 +1,4 @@
 {
-    "icon": "commercial",
     "fields": [
         "office",
         "address",
@@ -12,10 +11,10 @@
         "vertex",
         "area"
     ],
+    "icon": "commercial",
+    "name": "Office",
+    "searchable": false,
     "tags": {
         "office": "*"
-    },
-    "terms": [],
-    "searchable": false,
-    "name": "Office"
+    }
 }

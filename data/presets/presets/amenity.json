@@ -7,9 +7,9 @@
         "vertex",
         "area"
     ],
+    "name": "Amenity",
+    "searchable": false,
     "tags": {
         "amenity": "*"
-    },
-    "searchable": false,
-    "name": "Amenity"
+    }
 }

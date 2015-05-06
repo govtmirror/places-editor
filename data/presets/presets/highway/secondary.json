@@ -1,21 +1,29 @@
 {
-    "icon": "highway-secondary",
     "fields": [
-        "oneway",
-        "maxspeed",
-        "structure",
-        "access",
-        "lanes",
+        "name",
+        "operator",
         "surface",
-        "ref"
+        "width",
+        "maxspeed",
+        "oneway",
+        "lanes",
+        "access"
     ],
     "geometry": [
         "line"
     ],
+    "icon": "highway-secondary",
+    "name": "Secondary Road",
+    "searchable": true,
     "tags": {
         "highway": "secondary"
     },
-    "terms": [],
-    "searchable": true,
-    "name": "Secondary Road"
+    "terms": [
+        "secondary road",
+        "secondary",
+        "road",
+        "us highway",
+        "state highway",
+        "county highway"
+    ]
 }

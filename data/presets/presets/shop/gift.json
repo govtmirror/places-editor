@@ -1,5 +1,4 @@
 {
-    "icon": "gift",
     "fields": [
         "operator",
         "address",
@@ -10,9 +9,10 @@
         "point",
         "area"
     ],
+    "icon": "gift",
+    "name": "Gift Shop",
+    "searchable": false,
     "tags": {
         "shop": "gift"
-    },
-    "searchable": false,
-    "name": "Gift Shop"
+    }
 }

@@ -7,9 +7,9 @@
         "vertex",
         "area"
     ],
+    "name": "Place",
+    "searchable": false,
     "tags": {
         "place": "*"
-    },
-    "searchable": false,
-    "name": "Place"
+    }
 }

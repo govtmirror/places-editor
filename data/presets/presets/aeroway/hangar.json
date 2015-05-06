@@ -1,13 +1,13 @@
 {
-    "geometry": [
-        "area"
-    ],
     "fields": [
         "building_area"
     ],
+    "geometry": [
+        "area"
+    ],
+    "name": "Hangar",
+    "searchable": false,
     "tags": {
         "aeroway": "hangar"
-    },
-    "searchable": false,
-    "name": "Hangar"
+    }
 }

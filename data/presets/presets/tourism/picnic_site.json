@@ -1,21 +1,24 @@
 {
     "fields": [
+        "name",
         "operator",
         "address",
-        "smoking"
+        "opening_hours",
+        "fee"
     ],
     "geometry": [
-        "point",
-        "vertex"
+        "point"
     ],
-    "terms": [
-        "camp"
-    ],
+    "icon": "picnic-area-black",
+    "maki": "npmaki",
+    "name": "Picnic Area",
+    "searchable": true,
     "tags": {
         "tourism": "picnic_site"
     },
-    "name": "Picnic Area",
-    "icon": "picnic-black",
-    "maki": "npmaki",
-    "searchable": true
+    "terms": [
+        "picnic area",
+        "picnic site",
+        "picnic"
+    ]
 }

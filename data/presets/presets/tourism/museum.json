@@ -1,6 +1,4 @@
 {
-    "icon": "museum",
-    "maki": "maki",
     "fields": [
         "operator",
         "address",
@@ -11,16 +9,17 @@
         "point",
         "area"
     ],
+    "icon": "museum",
+    "name": "Museum",
+    "searchable": false,
+    "tags": {
+        "tourism": "museum"
+    },
     "terms": [
         "exhibition",
         "foundation",
         "gallery",
         "hall",
         "institution"
-    ],
-    "tags": {
-        "tourism": "museum"
-    },
-    "name": "Museum",
-    "searchable": false
+    ]
 }

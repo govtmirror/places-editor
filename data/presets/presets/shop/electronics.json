@@ -1,5 +1,4 @@
 {
-    "icon": "shop",
     "fields": [
         "operator",
         "address",
@@ -10,15 +9,16 @@
         "point",
         "area"
     ],
+    "icon": "shop",
+    "name": "Electronics Store",
+    "searchable": false,
+    "tags": {
+        "shop": "electronics"
+    },
     "terms": [
         "appliance",
         "audio",
         "computer",
         "tv"
-    ],
-    "tags": {
-        "shop": "electronics"
-    },
-    "searchable": false,
-    "name": "Electronics Store"
+    ]
 }

@@ -8,9 +8,9 @@
         "line",
         "area"
     ],
+    "name": "Highway",
+    "searchable": false,
     "tags": {
         "highway": "*"
-    },
-    "searchable": false,
-    "name": "Highway"
+    }
 }

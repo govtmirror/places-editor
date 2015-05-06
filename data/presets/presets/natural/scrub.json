@@ -3,10 +3,9 @@
         "point",
         "area"
     ],
+    "name": "Bushes",
+    "searchable": false,
     "tags": {
         "natural": "scrub"
-    },
-    "terms": [],
-    "name": "Bushes",
-    "searchable": false
+    }
 }

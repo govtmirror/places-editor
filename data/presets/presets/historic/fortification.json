@@ -1,18 +1,24 @@
 {
+    "fields": [
+        "name",
+        "site_type"
+    ],
     "geometry": [
         "point"
     ],
+    "icon": "fort",
+    "maki": "npmaki",
+    "name": "Fortification",
+    "searchable": true,
+    "tags": {
+        "historic": "archaeological_site",
+        "site_type": "fortification"
+    },
     "terms": [
         "fortification",
+        "fort",
         "earthworks",
         "hill fort",
         "trench"
-    ],
-    "tags": {
-        "historic": "archaeological_site",
-        "site_type": "fortification",
-        "fortification_type": "hill_fort"
-    },
-    "searchable": true,
-    "name": "Fortification / Hill Fort"
+    ]
 }

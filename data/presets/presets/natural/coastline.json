@@ -2,12 +2,12 @@
     "geometry": [
         "line"
     ],
-    "terms": [
-        "shore"
-    ],
+    "name": "Coastline",
+    "searchable": false,
     "tags": {
         "natural": "coastline"
     },
-    "searchable": false,
-    "name": "Coastline"
+    "terms": [
+        "shore"
+    ]
 }

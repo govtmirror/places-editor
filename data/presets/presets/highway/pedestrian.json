@@ -8,12 +8,12 @@
         "access"
     ],
     "geometry": [
-        "line", "area"
+        "line",
+        "area"
     ],
+    "name": "Pedestrian",
+    "searchable": false,
     "tags": {
         "highway": "pedestrian"
-    },
-    "terms": [],
-    "searchable": false,
-    "name": "Pedestrian"
+    }
 }

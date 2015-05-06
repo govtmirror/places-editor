@@ -1,5 +1,4 @@
 {
-    "icon": "shop",
     "fields": [
         "operator",
         "address",
@@ -10,9 +9,10 @@
         "point",
         "area"
     ],
+    "icon": "shop",
+    "name": "Tattoo Parlor",
+    "searchable": false,
     "tags": {
         "shop": "tattoo"
-    },
-    "name": "Tattoo Parlor",
-    "searchable": false
+    }
 }

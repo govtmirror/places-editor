@@ -1,26 +1,26 @@
 {
-    "icon": "ice-skating-black",
-    "maki": "npmaki",
     "fields": [
-        "seasonal",
-        "sport_ice",
+        "name",
         "operator",
-        "address",
-        "building_area",
-        "opening_hours"
+        "addr",
+        "opening_hours",
+        "seasonal",
+        "sport"
     ],
     "geometry": [
-        "point",
-        "area"
+        "point"
     ],
-    "terms": [
-        "hockey",
-        "skating",
-        "curling"
-    ],
+    "icon": "ice-skating-black",
+    "maki": "npmaki",
+    "name": "Ice Rink",
+    "searchable": true,
     "tags": {
         "leisure": "ice_rink"
     },
-    "name": "Ice Rink",
-    "searchable": true
+    "terms": [
+        "ice rink",
+        "hockey",
+        "skating",
+        "curling"
+    ]
 }

@@ -1,6 +1,4 @@
 {
-    "searchable": false,
-    "icon": "bakery",
     "fields": [
         "operator",
         "address",
@@ -11,12 +9,14 @@
         "point",
         "area"
     ],
-    "terms": [
-        "sweets",
-        "candy"
-    ],
+    "icon": "bakery",
+    "name": "Confectionery",
+    "searchable": false,
     "tags": {
         "craft": "confectionery"
     },
-    "name": "Confectionery"
+    "terms": [
+        "sweets",
+        "candy"
+    ]
 }

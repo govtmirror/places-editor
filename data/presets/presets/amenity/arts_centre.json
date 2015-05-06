@@ -1,7 +1,4 @@
 {
-    "searchable": false,
-    "name": "Arts Center",
-    "icon": "theatre",
     "fields": [
         "address",
         "building_area",
@@ -11,8 +8,9 @@
         "point",
         "area"
     ],
-    "terms": [
-    ],
+    "icon": "theatre",
+    "name": "Arts Center",
+    "searchable": false,
     "tags": {
         "amenity": "arts_centre"
     }

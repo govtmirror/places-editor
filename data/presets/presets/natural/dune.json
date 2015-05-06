@@ -3,13 +3,15 @@
         "name"
     ],
     "geometry": [
-        "point",
-        "area"
+        "point"
     ],
-    "terms": [],
+    "name": "Dune",
+    "searchable": true,
     "tags": {
         "natural": "dune"
     },
-    "searchable": true,
-    "name": "Dune"
+    "terms": [
+        "dune",
+        "sand dune"
+    ]
 }

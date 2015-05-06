@@ -3,14 +3,14 @@
         "point",
         "area"
     ],
-    "terms": [
-        "lookout tower",
-        "fire tower"
-    ],
+    "name": "Observation Tower",
+    "searchable": false,
     "tags": {
         "man_made": "tower",
         "tower:type": "observation"
     },
-    "searchable": false,
-    "name": "Observation Tower"
+    "terms": [
+        "lookout tower",
+        "fire tower"
+    ]
 }

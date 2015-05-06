@@ -1,6 +1,4 @@
 {
-    "searchable": false,
-    "icon": "logging",
     "fields": [
         "operator",
         "address",
@@ -11,11 +9,13 @@
         "point",
         "area"
     ],
-    "terms": [
-        "woodworker"
-    ],
+    "icon": "logging",
+    "name": "Carpenter",
+    "searchable": false,
     "tags": {
         "craft": "carpenter"
     },
-    "name": "Carpenter"
+    "terms": [
+        "woodworker"
+    ]
 }

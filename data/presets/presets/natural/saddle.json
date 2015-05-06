@@ -1,0 +1,24 @@
+{
+    "name": "Saddle (Gap)",
+    "tags": {
+        "natural":  "saddle"
+    },
+    "geometry": [
+        "point"
+    ],
+    "fields": [
+        "name",
+        "ele",
+        "direction"
+    ],
+    "terms": [
+        "saddle",
+        "gap",
+        "col",
+        "notch",
+        "pass",
+        "water gap",
+        "wind gap"
+    ],
+    "searchable": true
+}

@@ -4,10 +4,9 @@
         "vertex",
         "area"
     ],
-    "terms": [],
+    "name": "Bunker",
+    "searchable": false,
     "tags": {
         "military": "bunker"
-    },
-    "searchable": false,
-    "name": "Bunker"
+    }
 }

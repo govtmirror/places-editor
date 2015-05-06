@@ -1,5 +1,4 @@
 {
-    "icon": "waterway-river",
     "fields": [
         "tunnel",
         "width"
@@ -7,6 +6,12 @@
     "geometry": [
         "line"
     ],
+    "icon": "waterway-river",
+    "name": "River",
+    "searchable": false,
+    "tags": {
+        "waterway": "river"
+    },
     "terms": [
         "beck",
         "branch",
@@ -21,10 +26,5 @@
         "stream",
         "tributary",
         "watercourse"
-    ],
-    "tags": {
-        "waterway": "river"
-    },
-    "searchable": false,
-    "name": "River"
+    ]
 }

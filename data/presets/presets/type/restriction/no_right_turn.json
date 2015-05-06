@@ -1,15 +1,15 @@
 {
-    "name": "No Right Turn",
-    "geometry": [
-        "relation"
-    ],
-    "tags": {
-        "type": "restriction",
-        "restriction": "no_right_turn"
-    },
     "fields": [
         "except"
     ],
+    "geometry": [
+        "relation"
+    ],
     "icon": "restriction-no-right-turn",
-    "searchable": false
+    "name": "No Right Turn",
+    "searchable": false,
+    "tags": {
+        "restriction": "no_right_turn",
+        "type": "restriction"
+    }
 }

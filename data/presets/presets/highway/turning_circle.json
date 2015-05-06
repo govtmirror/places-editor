@@ -1,14 +1,22 @@
 {
-    "icon": "circle",
-    "geometry": [
-        "vertex"
+    "fields": [
+        "name",
+        "operator",
+        "address"
     ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "circle",
+    "name": "Turning Circle",
+    "searchable": true,
     "tags": {
         "highway": "turning_circle"
     },
-    "searchable": true,
     "terms": [
-        "cul-de-sac"
-    ],
-    "name": "Turning Circle"
+        "turning circle",
+        "cul-de-sac",
+        "dead end street",
+        "blind alley"
+    ]
 }
