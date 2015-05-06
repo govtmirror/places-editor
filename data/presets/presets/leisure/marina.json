@@ -2,7 +2,7 @@
     "fields": [
         "name",
         "operator",
-        "addr",
+        "address",
         "capacity",
         "mooring"
     ],

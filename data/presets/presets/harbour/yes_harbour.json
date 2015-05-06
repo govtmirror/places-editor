@@ -10,7 +10,7 @@
     "fields": [
         "name",
         "operator",
-        "addr"
+        "address"
     ],
     "terms": [
         "harbour",

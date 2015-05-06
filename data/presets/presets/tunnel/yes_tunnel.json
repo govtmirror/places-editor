@@ -7,7 +7,7 @@
         "point",
         "line"
     ],
-    "maki": "nps",
+    "maki": "npmaki",
     "icon": "tunnel",
     "fields": [
         "name",

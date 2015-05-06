@@ -2,7 +2,7 @@
     "fields": [
         "name",
         "operator",
-        "addr",
+        "address",
         "opening_hours",
         "seasonal",
         "sport"

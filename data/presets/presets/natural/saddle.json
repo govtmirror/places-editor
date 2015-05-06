@@ -8,8 +8,8 @@
     ],
     "fields": [
         "name",
-        "ele",
-        "direction"
+        "elevation",
+        "cardinal_direction"
     ],
     "terms": [
         "saddle",

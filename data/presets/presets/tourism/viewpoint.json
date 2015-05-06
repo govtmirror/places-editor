@@ -9,7 +9,7 @@
         "point"
     ],
     "icon": "viewing area|scenic viewpoint",
-    "maki": "nps",
+    "maki": "npmaki",
     "name": "Viewpoint",
     "searchable": true,
     "tags": {

@@ -10,8 +10,8 @@
     "fields": [
         "name",
         "status",
-        "ele",
-        "type"
+        "elevation",
+        "volcano_type"
     ],
     "terms": [
         "volcano",

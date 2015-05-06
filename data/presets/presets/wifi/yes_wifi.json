@@ -6,7 +6,7 @@
     "geometry": [
         "point"
     ],
-    "maki": "nps",
+    "maki": "npmaki",
     "icon": "wi-fi",
     "fields": [
         "name"

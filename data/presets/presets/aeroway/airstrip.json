@@ -11,7 +11,7 @@
     "fields": [
         "name",
         "operator",
-        "addr",
+        "address",
         "icao",
         "iata"
     ],

@@ -10,7 +10,7 @@
     "icon": "building",
     "fields": [
         "name",
-        "addr",
+        "address",
         "levels"
     ],
     "terms": [

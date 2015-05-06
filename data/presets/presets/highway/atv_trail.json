@@ -8,7 +8,7 @@
         "point",
         "line"
     ],
-    "maki": "nps",
+    "maki": "npmaki",
     "icon": "all-terrain trail",
     "fields": [
         "name",

@@ -7,7 +7,7 @@
         "point",
         "line"
     ],
-    "maki": "nps",
+    "maki": "npmaki",
     "icon": "snowshoeing",
     "fields": [
         "name",

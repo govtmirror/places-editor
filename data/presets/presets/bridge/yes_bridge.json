@@ -9,7 +9,7 @@
         "line"
     ],
     "icon": "bridge",
-    "maki": "nps",
+    "maki": "npmaki",
     "name": "Bridge",
     "searchable": true,
     "tags": {
