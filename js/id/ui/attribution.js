@@ -64,6 +64,18 @@ iD.ui.Attribution = function(context) {
         attribution(context.background().overlayLayerSources().filter(function (s) {
             return s.validZoom(context.map().zoom());
         }), 'overlay-layer-attribution');
+
+        // Get the unit code
+        d3.json(iD.npmap.settings.connection.api + '/api/data/park/' + context.map().center()[0] + '/' + context.map().center()[1] + '/1.json?suppress_status_codes=true', function(error, json) {
+            if (error || !json || !json.osm || (json.osm && json.osm.error)) {
+                d3.select('.current-park').style('display', 'none');
+            } else {
+                d3.select('.current-park').style('display', 'block');
+                d3.select('.current-park-name').text(json.osm.short_name);
+                d3.select('.current-park-name').attr('full-name', json.osm.long_name);
+                d3.select('.current-park').select('a').attr('href', 'http://nps.gov/' + json.osm.unit_code);
+            }
+        });
     }
 
     return function(select) {
