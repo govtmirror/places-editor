@@ -136,6 +136,25 @@ iD.ui = function(context) {
             .attr('tabindex', -1)
             .call(iD.ui.FeatureInfo(context));
 
+        var currentPark = aboutList.append('li')
+            .attr('class', 'current-park')
+            .style('display', 'none')
+            .append('a')
+            .attr('target', '_blank')
+            .attr('tabindex', -1)
+            .attr('href', 'https://github.com/nationalparkservice/places/issues');
+
+        currentPark.append('span')
+            .attr('full-name', 'No Park')
+            .attr('class','current-park-name')
+            .text('[NONE]');
+
+        currentPark.call(bootstrap.tooltip()
+                .title(function(){return d3.select('.current-park-name').attr ? d3.select('.current-park-name').attr('full-name') : '';})
+                .placement('top')
+            );
+
+
         aboutList.append('li')
             .attr('class', 'user-list')
             .attr('tabindex', -1)
