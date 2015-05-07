@@ -24,13 +24,13 @@ iD.ui.Success = function(context) {
         body.append('p')
             .html(t('success.help_html'));
 
-        // var changesetURL = context.connection().changesetURL(changeset.id);
+        var changesetURL = context.connection().changesetURL('data/' + changeset.id);
 
         body.append('a')
             .attr('class', 'button col12 osm')
-            .attr('target', '_blank');
-            // .attr('href', changesetURL)
-            // .text(t('success.view_on_osm'));
+            .attr('target', '_blank')
+             .attr('href', changesetURL)
+             .text(t('success.view_on_osm'));
 
         /*
         var sharing = {
