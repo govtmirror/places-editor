@@ -30,6 +30,41 @@ var iframe = document.getElementById('iframe'),
         };
         NPMap.config.baseLayers.push(baseLayer);
         callback();
+      },
+      init: function(callback) {
+        var sql = 'SELECT * FROM parks WHERE the_geom && St_MakePoint({{x}}, {{y}}) AND St_Intersects(the_geom, St_SetSRID(St_MakePoint({{x}}, {{y}}),4326)) ORDER BY area DESC LIMIT 1;',
+          matchOption = function(parkName) {
+            var select = document.getElementById('to-park');
+            selected = parkName;
+            if (parkName) {
+              for (var i = 0; i < select.options.length; i++) {
+                if (parkName === select.options[i].text) {
+                  select.selectedIndex = i;
+                  return;
+                }
+              }
+            }
+            select.selectedIndex = 0;
+            return;
+          };
+        // Add a moveend function
+        NPMap.config.L.on('moveend', function() {
+          var newSql;
+          var center = NPMap.config.L.getCenter();
+          newSql = encodeURIComponent(sql.replace(/{{x}}/g, center.lng).replace(/{{y}}/g, center.lat));
+          reqwest({
+            success: function(park) {
+              if (park && park.rows && park.rows[0]) {
+                matchOption(park.rows[0].full_name);
+              } else {
+                matchOption();
+              }
+            },
+            type: 'jsonp',
+            url: 'https://nps.cartodb.com/api/v2/sql?q=' + newSql
+          });
+        });
+        callback();
       }
     }
   },
