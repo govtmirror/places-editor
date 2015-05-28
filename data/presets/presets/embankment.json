@@ -5,7 +5,6 @@
     "tags": {
         "embankment": "yes"
     },
-    "searchable": false,
     "name": "Embankment",
     "matchScore": 0.2
 }

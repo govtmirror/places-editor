@@ -7,7 +7,6 @@
     "tags": {
         "railway": "halt"
     },
-    "searchable": false,
     "name": "Railway Halt",
     "terms": [
         "break",

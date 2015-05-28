@@ -1,4 +1,5 @@
 {
+    "icon": "recycling",
     "fields": [
         "operator",
         "address",
@@ -21,8 +22,5 @@
     "tags": {
         "amenity": "recycling"
     },
-    "name": "Recycling",
-    "icon": "recycling-black",
-    "maki": "npmaki",
-    "searchable": true
+    "name": "Recycling"
 }

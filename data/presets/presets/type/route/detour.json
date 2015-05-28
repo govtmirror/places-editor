@@ -6,7 +6,6 @@
         "type": "route",
         "route": "detour"
     },
-    "searchable": false,
     "name": "Detour Route",
     "icon": "route-detour",
     "fields": [

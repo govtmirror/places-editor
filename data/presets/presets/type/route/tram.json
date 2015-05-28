@@ -6,7 +6,6 @@
         "type": "route",
         "route": "tram"
     },
-    "searchable": false,
     "name": "Tram Route",
     "icon": "route-tram",
     "fields": [

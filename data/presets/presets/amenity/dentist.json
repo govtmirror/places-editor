@@ -1,5 +1,4 @@
 {
-    "searchable": false,
     "icon": "hospital",
     "fields": [
         "address",

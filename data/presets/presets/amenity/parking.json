@@ -1,7 +1,5 @@
 {
-    "icon": "parking-black",
-    "maki": "npmaki",
-    "searchable": true,
+    "icon": "parking",
     "fields": [
         "operator",
         "parking",
@@ -21,5 +19,5 @@
         "amenity": "parking"
     },
     "terms": [],
-    "name": "Parking"
+    "name": "Car Parking"
 }

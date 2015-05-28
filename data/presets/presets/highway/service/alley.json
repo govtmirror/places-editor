@@ -12,6 +12,5 @@
         "highway": "service",
         "service": "alley"
     },
-    "searchable": false,
     "name": "Alley"
 }

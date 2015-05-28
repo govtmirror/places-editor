@@ -1,5 +1,4 @@
 {
-    "searchable": false,
     "icon": "farm",
     "fields": [
         "operator",

@@ -1,17 +1,16 @@
 {
+    "icon": "lodging",
     "fields": [
         "operator",
         "address",
         "building_area"
     ],
     "geometry": [
-        "point"
+        "point",
+        "area"
     ],
     "tags": {
         "tourism": "alpine_hut"
     },
-    "name": "Lodge",
-    "icon": "lodging-black",
-    "maki": "npmaki",
-    "searchable": true
+    "name": "Alpine Hut"
 }

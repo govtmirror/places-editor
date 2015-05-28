@@ -1,6 +1,5 @@
 {
     "icon": "museum",
-    "maki": "maki",
     "fields": [
         "operator",
         "address",
@@ -21,6 +20,5 @@
     "tags": {
         "tourism": "museum"
     },
-    "name": "Museum",
-    "searchable": false
+    "name": "Museum"
 }

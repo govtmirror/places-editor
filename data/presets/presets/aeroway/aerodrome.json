@@ -1,6 +1,5 @@
 {
-    "icon": "airport-black",
-    "maki": "npmaki",
+    "icon": "airport",
     "geometry": [
         "point",
         "area"
@@ -19,6 +18,5 @@
     "tags": {
         "aeroway": "aerodrome"
     },
-    "name": "Airport",
-    "searchable": true
+    "name": "Airport"
 }

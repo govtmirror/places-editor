@@ -4,12 +4,11 @@
         "building_area"
     ],
     "geometry": [
-        "point"
+        "point",
+        "area"
     ],
     "tags": {
         "man_made": "lighthouse"
     },
-    "maki": "maki",
-    "searchable": false,
     "name": "Lighthouse"
 }

@@ -1,7 +1,5 @@
 {
-    "icon": "golfing-black",
-    "maki": "npmaki",
-    "searchable": true,
+    "icon": "golf",
     "fields": [
         "operator",
         "address",

@@ -5,7 +5,6 @@
     "tags": {
         "power": "line"
     },
-    "searchable": false,
     "name": "Power Line",
     "icon": "power-line"
 }

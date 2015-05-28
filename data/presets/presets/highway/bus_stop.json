@@ -1,6 +1,5 @@
 {
-    "icon": "bus-shuttle-stop-black",
-    "maki": "npmaki",
+    "icon": "bus",
     "fields": [
         "network",
         "operator",
@@ -9,11 +8,12 @@
         "covered"
     ],
     "geometry": [
-        "point"
+        "point",
+        "vertex"
     ],
     "tags": {
         "highway": "bus_stop"
     },
-    "name": "Bus Stop / Shuttle Stop",
-    "searchable": true
+    "terms": [],
+    "name": "Bus Stop"
 }

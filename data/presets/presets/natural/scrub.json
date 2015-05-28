@@ -1,12 +1,10 @@
 {
     "geometry": [
-        "point",
         "area"
     ],
     "tags": {
         "natural": "scrub"
     },
     "terms": [],
-    "name": "Bushes",
-    "searchable": false
+    "name": "Scrub"
 }

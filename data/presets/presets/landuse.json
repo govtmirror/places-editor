@@ -8,6 +8,5 @@
     "tags": {
         "landuse": "*"
     },
-    "searchable": false,
     "name": "Landuse"
 }

@@ -1,6 +1,5 @@
 {
-    "icon": "telephone-white",
-    "maki": "npmaki",
+    "icon": "emergency-telephone",
     "fields": [
         "operator"
     ],
@@ -11,6 +10,5 @@
     "tags": {
         "emergency": "phone"
     },
-    "searchable": true,
-    "name": "Emergency Telephone"
+    "name": "Emergency Phone"
 }

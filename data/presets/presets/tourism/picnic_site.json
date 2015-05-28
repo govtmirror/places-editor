@@ -1,4 +1,5 @@
 {
+    "icon": "park",
     "fields": [
         "operator",
         "address",
@@ -6,7 +7,8 @@
     ],
     "geometry": [
         "point",
-        "vertex"
+        "vertex",
+        "area"
     ],
     "terms": [
         "camp"
@@ -14,8 +16,5 @@
     "tags": {
         "tourism": "picnic_site"
     },
-    "name": "Picnic Area",
-    "icon": "picnic-black",
-    "maki": "npmaki",
-    "searchable": true
+    "name": "Picnic Site"
 }

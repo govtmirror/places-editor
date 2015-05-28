@@ -13,6 +13,5 @@
         "service_rail"
     ],
     "terms": ["streetcar"],
-    "searchable": false,
     "name": "Tram"
 }

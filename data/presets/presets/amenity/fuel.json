@@ -1,6 +1,5 @@
 {
-    "icon": "gas-station-black",
-    "maki": "npmaki",
+    "icon": "fuel",
     "fields": [
         "operator",
         "address",
@@ -23,6 +22,5 @@
     "tags": {
         "amenity": "fuel"
     },
-    "name": "Gas Station",
-    "searchable": true
+    "name": "Gas Station"
 }

@@ -11,6 +11,5 @@
         "man_made": "tower",
         "tower:type": "observation"
     },
-    "searchable": false,
     "name": "Observation Tower"
 }

@@ -7,5 +7,5 @@
         "building": "entrance"
     },
     "name": "Entrance/Exit",
-    "searchable": true
+    "searchable": false
 }

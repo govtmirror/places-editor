@@ -1,10 +1,9 @@
 {
-    "geometry": [
-        "point"
-    ],
     "icon": "playground",
-    "maki": "maki",
-    "searchable": false,
+    "geometry": [
+        "point",
+        "area"
+    ],
     "terms": [
         "jungle gym",
         "play area"

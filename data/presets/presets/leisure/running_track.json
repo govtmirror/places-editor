@@ -15,6 +15,5 @@
         "leisure": "track",
         "sport": "running"
     },
-    "name": "Running Track",
-    "searchable": false
+    "name": "Running Track"
 }

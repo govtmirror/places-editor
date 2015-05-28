@@ -16,6 +16,5 @@
     "tags": {
         "amenity": "atm"
     },
-    "searchable": false,
     "name": "ATM"
 }

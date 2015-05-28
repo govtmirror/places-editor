@@ -13,12 +13,7 @@
         "picnic"
     ],
     "tags": {
-        "amenity": "shelter",
-        "building": "hut",
-        "tourism": "camp_site"
+        "amenity": "shelter"
     },
-    "icon": "shelter-black",
-    "maki": "npmaki",
-    "searchable": true,
     "name": "Shelter"
 }

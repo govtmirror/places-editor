@@ -5,7 +5,6 @@
     "tags": {
         "type": "route_master"
     },
-    "searchable": false,
     "name": "Route Master",
     "icon": "route-master",
     "fields": [

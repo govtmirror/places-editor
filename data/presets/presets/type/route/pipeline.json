@@ -6,7 +6,6 @@
         "type": "route",
         "route": "pipeline"
     },
-    "searchable": false,
     "name": "Pipeline Route",
     "icon": "route-pipeline",
     "fields": [

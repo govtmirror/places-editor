@@ -6,6 +6,5 @@
     "tags": {
         "amenity": "clock"
     },
-    "searchable": false,
     "name": "Clock"
 }

@@ -10,11 +10,6 @@
     "tags": {
         "highway": "crossing"
     },
-    "terms": [
-        "crosswalk",
-        "zebra crossing"
-    ],
-    "searchable": false,
     "terms": [],
     "name": "Crossing"
 }

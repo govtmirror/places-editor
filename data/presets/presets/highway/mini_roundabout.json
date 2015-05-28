@@ -8,6 +8,5 @@
     "fields": [
         "clock_direction"
     ],
-    "searchable": false,
     "name": "Mini-Roundabout"
 }

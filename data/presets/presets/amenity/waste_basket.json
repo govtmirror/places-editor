@@ -1,6 +1,5 @@
 {
-    "icon": "litter-receptacle-black",
-    "maki": "npmaki",
+    "icon": "waste-basket",
     "geometry": [
         "point",
         "vertex"
@@ -14,6 +13,5 @@
         "trash",
         "garbage"
     ],
-    "name": "Waste Basket",
-    "searchable": true
+    "name": "Waste Basket"
 }

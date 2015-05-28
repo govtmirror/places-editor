@@ -7,6 +7,5 @@
         "water": "reservoir"
     },
     "icon": "water",
-    "searchable": false,
     "name": "Reservoir"
 }

@@ -1,6 +1,5 @@
 {
-    "icon": "lodging-black",
-    "maki": "npmaki",
+    "icon": "lodging",
     "fields": [
         "operator",
         "address",
@@ -14,6 +13,5 @@
     "tags": {
         "tourism": "hotel"
     },
-    "name": "Lodging",
-    "searchable": true
+    "name": "Hotel"
 }

@@ -10,7 +10,9 @@
         "internet_access"
     ],
     "geometry": [
-        "point"
+        "point",
+        "vertex",
+        "area"
     ],
     "terms": [
         "boat"

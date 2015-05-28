@@ -1,4 +1,9 @@
 {
+    "icon": "building",
+    "fields": [
+        "address",
+        "levels"
+    ],
     "geometry": [
         "point",
         "area"
@@ -6,8 +11,5 @@
     "tags": {
         "building": "stable"
     },
-    "name": "Stable",
-    "icon": "stable-black",
-    "maki": "npmaki",
-    "searchable": true
+    "name": "Stable"
 }

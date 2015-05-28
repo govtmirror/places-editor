@@ -20,6 +20,5 @@
     "tags": {
         "amenity": "bar"
     },
-    "searchable": false,
     "name": "Bar"
 }

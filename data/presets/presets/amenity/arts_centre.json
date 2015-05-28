@@ -1,6 +1,4 @@
 {
-    "searchable": false,
-    "name": "Arts Center",
     "icon": "theatre",
     "fields": [
         "address",
@@ -15,5 +13,6 @@
     ],
     "tags": {
         "amenity": "arts_centre"
-    }
+    },
+    "name": "Arts Center"
 }

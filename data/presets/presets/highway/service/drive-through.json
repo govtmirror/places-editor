@@ -12,6 +12,5 @@
         "highway": "service",
         "service": "drive-through"
     },
-    "searchable": false,
     "name": "Drive-Through"
 }

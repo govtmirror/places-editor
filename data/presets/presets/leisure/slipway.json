@@ -1,8 +1,7 @@
 {
-    "icon": "boat-launch-black",
-    "maki": "npmaki",
     "geometry": [
-        "point"
+        "point",
+        "line"
     ],
     "terms": [
         "boat launch",
@@ -11,6 +10,5 @@
     "tags": {
         "leisure": "slipway"
     },
-    "name": "Boat Launch",
-    "searchable": true
+    "name": "Slipway"
 }

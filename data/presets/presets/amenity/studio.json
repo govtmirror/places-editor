@@ -1,5 +1,4 @@
 {
-    "searchable": false,
     "icon": "music",
     "fields": [
         "studio_type",

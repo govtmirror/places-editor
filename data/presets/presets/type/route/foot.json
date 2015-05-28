@@ -6,7 +6,6 @@
         "type": "route",
         "route": "foot"
     },
-    "searchable": false,
     "name": "Foot Route",
     "icon": "route-foot",
     "fields": [

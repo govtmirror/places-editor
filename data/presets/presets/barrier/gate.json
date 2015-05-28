@@ -1,10 +1,14 @@
 {
+    "fields": [
+        "access"
+    ],
     "geometry": [
-        "point"
+        "point",
+        "vertex",
+        "line"
     ],
     "tags": {
         "barrier": "gate"
     },
-    "name": "Gate",
-    "searchable": false
+    "name": "Gate"
 }

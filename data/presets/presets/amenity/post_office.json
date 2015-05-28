@@ -1,6 +1,5 @@
 {
-    "icon": "post-office-black",
-    "maki": "npmaki",
+    "icon": "post",
     "fields": [
         "operator",
         "address",
@@ -18,6 +17,5 @@
     "tags": {
         "amenity": "post_office"
     },
-    "searchable": true,
     "name": "Post Office"
 }

@@ -12,6 +12,5 @@
         "highway": "service",
         "service": "parking_aisle"
     },
-    "searchable": false,
     "name": "Parking Aisle"
 }

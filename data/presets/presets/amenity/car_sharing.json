@@ -11,6 +11,5 @@
     "tags": {
         "amenity": "car_sharing"
     },
-    "searchable": false,
     "name": "Car Sharing"
 }

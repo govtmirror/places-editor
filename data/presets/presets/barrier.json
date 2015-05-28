@@ -11,6 +11,5 @@
     "fields": [
         "barrier"
     ],
-    "searchable": false,
     "name": "Barrier"
 }

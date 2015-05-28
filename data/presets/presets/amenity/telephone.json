@@ -1,7 +1,5 @@
 {
-    "icon": "telephone-black",
-    "maki": "npmaki",
-    "searchable": true,
+    "icon": "telephone",
     "geometry": [
         "point",
         "vertex"

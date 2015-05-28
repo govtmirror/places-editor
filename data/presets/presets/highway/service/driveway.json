@@ -12,6 +12,5 @@
         "highway": "service",
         "service": "driveway"
     },
-    "searchable": false,
     "name": "Driveway"
 }

@@ -1,6 +1,5 @@
 {
-    "icon": "drinking-water-black",
-    "maki": "npmaki",
+    "icon": "water",
     "geometry": [
         "point"
     ],
@@ -11,6 +10,5 @@
         "fountain",
         "potable"
     ],
-    "name": "Drinking Water",
-    "searchable": true
+    "name": "Drinking Water"
 }

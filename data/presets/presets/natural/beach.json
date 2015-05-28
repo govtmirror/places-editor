@@ -1,6 +1,5 @@
 {
     "fields": [
-        "name",
         "surface"
     ],
     "geometry": [
@@ -11,6 +10,5 @@
     "tags": {
         "natural": "beach"
     },
-    "searchable": true,
     "name": "Beach"
 }

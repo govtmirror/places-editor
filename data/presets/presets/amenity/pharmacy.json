@@ -14,7 +14,6 @@
     "tags": {
         "amenity": "pharmacy"
     },
-    "searchable": false,
     "terms": [
         "drug",
         "medicine"

@@ -7,10 +7,9 @@
     "tags": {
         "leisure": "nature_reserve"
     },
-    "name": "Nature Center",
-    "searchable": false,
     "terms": [
         "protected",
         "wildlife"
-    ]
+    ],
+    "name": "Nature Reserve"
 }

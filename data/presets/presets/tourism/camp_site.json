@@ -1,4 +1,5 @@
 {
+    "icon": "campsite",
     "fields": [
         "operator",
         "address",
@@ -6,17 +7,15 @@
         "fee"
     ],
     "geometry": [
-        "point"
+        "point",
+        "vertex",
+        "area"
     ],
     "terms": [
         "Tent"
     ],
     "tags": {
-        "tourism": "camp_site",
-        "camp_site": "pitch"
+        "tourism": "camp_site"
     },
-    "name": "Campsite",
-    "icon": "camping-white",
-    "maki": "npmaki",
-    "searchable": true
+    "name": "Camp Site"
 }

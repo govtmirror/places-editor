@@ -18,7 +18,6 @@
     "tags": {
         "amenity": "fast_food"
     },
-    "searchable": false,
     "terms": [
         "restaurant"
     ],

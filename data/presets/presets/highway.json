@@ -11,6 +11,5 @@
     "tags": {
         "highway": "*"
     },
-    "searchable": false,
     "name": "Highway"
 }

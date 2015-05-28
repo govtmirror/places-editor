@@ -6,13 +6,12 @@
         "building_area"
     ],
     "geometry": [
-        "point"
+        "point",
+        "vertex",
+        "area"
     ],
     "tags": {
         "tourism": "information"
     },
-    "name": "Information",
-    "icon": "information-black",
-    "maki": "npmaki",
-    "searchable": true
+    "name": "Information"
 }

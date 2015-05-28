@@ -1,5 +1,4 @@
 {
-    "searchable": false,
     "name": "Administrative Boundary",
     "geometry": [
         "relation"

@@ -11,6 +11,6 @@
     "tags": {
         "power": "sub_station"
     },
-    "searchable": false,
-    "name": "Substation"
+    "name": "Substation",
+    "searchable": false
 }
