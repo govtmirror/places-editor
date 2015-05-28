@@ -1,7 +1,6 @@
 {
     "fields": [
         "name",
-        "whitewater",
         "width",
         "rapid_grade"
     ],

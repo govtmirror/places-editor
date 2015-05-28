@@ -2,7 +2,6 @@
     "fields": [
         "name",
         "operator",
-        "whitewater",
         "width",
         "section_grade"
     ],
