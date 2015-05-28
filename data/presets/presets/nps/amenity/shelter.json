@@ -2,9 +2,8 @@
     "fields": [
         "name",
         "operator",
-        "addr",
-        "shelter_type",
-        "drinking_water"
+        "address",
+        "shelter_type"
     ],
     "geometry": [
         "point"

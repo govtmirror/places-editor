@@ -1,7 +1,6 @@
 {
     "fields": [
-        "name",
-        "site_type"
+        "name"
     ],
     "geometry": [
         "point"

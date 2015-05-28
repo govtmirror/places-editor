@@ -1,10 +1,5 @@
 {
     "fields": [
-        "memorial",
-        "subject/name",
-        "subject/species",
-        "subject/birth",
-        "subject/death",
         "religion"
     ],
     "geometry": [

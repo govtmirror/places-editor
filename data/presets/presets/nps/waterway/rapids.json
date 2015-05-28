@@ -1,8 +1,7 @@
 {
     "fields": [
         "name",
-        "width",
-        "rapid_grade"
+        "width"
     ],
     "geometry": [
         "point"

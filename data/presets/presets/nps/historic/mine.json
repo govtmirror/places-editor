@@ -1,8 +1,7 @@
 {
     "fields": [
         "name",
-        "description",
-        "mineral"
+        "description"
     ],
     "geometry": [
         "point"

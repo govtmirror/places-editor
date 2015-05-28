@@ -132,7 +132,7 @@ dist/img/maki-sprite.png: ./node_modules/maki/www/images/maki-sprite.png dist/im
 	cp $< $@
 	cp $< css/img/
 
-dist/img/npmaki-sprite.png: ./node_modules/npmaki/www/images/maki-sprite.png
+dist/img/npmaki-sprite.png: ./node_modules/npmaki/www/images/npmaki-sprite.png
 	@echo "----< $@ >----"
 	cp $< $@
 	cp $< css/img/npmaki-sprite.png

@@ -1,7 +1,6 @@
 {
     "fields": [
-        "name",
-        "tidal"
+        "name"
     ],
     "geometry": [
         "point"

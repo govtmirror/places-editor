@@ -1,7 +1,7 @@
 {
     "fields": [
         "name",
-        "addr",
+        "address",
         "levels",
         "smoking"
     ],

@@ -1,7 +1,6 @@
 {
     "fields": [
-        "name",
-        "height"
+        "name"
     ],
     "geometry": [
         "point"

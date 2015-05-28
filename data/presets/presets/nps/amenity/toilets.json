@@ -2,11 +2,10 @@
     "fields": [
         "name",
         "operator",
-        "addr",
+        "address",
         "opening_hours",
         "toilets/disposal",
         "gender",
-        "indoor",
         "fee",
         "access"
     ],

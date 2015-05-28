@@ -2,9 +2,8 @@
     "fields": [
         "name",
         "operator",
-        "addr",
+        "address",
         "capacity",
-        "maxstay",
         "fee",
         "access"
     ],

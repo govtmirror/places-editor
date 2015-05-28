@@ -2,8 +2,7 @@
     "fields": [
         "name",
         "operator",
-        "width",
-        "section_grade"
+        "width"
     ],
     "geometry": [
         "point"

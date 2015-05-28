@@ -1,44 +1,44 @@
 {
   "area": [
-    "building",
-    "amenity/parking"
+    "nps/building",
+    "nps/amenity/parking"
   ],
   "line": [
-    "highway/path",
-    "highway/bridleway",
-    "highway/motorway",
-    "highway/residential",
-    "highway/road",
-    "highway/secondary",
-    "highway/service",
-    "highway/tertiary",
-    "highway/trunk"
+    "nps/highway/path",
+    "nps/highway/bridleway",
+    "nps/highway/motorway",
+    "nps/highway/residential",
+    "nps/highway/road",
+    "nps/highway/secondary",
+    "nps/highway/service",
+    "nps/highway/tertiary",
+    "nps/highway/trunk"
   ],
   "point": [
-    "tourism/campground",
-    "tourism/picnic_site",
-    "amenity/parking",
-    "tourism/information",
-    "tourism/visitor_center",
-    "amenity/ranger_station",
-    "highway/trailhead",
-    "amenity/food_court",
-    "tourism/hotel",
-    "shop/general",
-    "tourism/map"
+    "nps/tourism/campground",
+    "nps/tourism/picnic_site",
+    "nps/amenity/parking",
+    "nps/tourism/information",
+    "nps/tourism/visitor_center",
+    "nps/amenity/ranger_station",
+    "nps/highway/trailhead",
+    "nps/amenity/food_court",
+    "nps/tourism/hotel",
+    "nps/shop/general",
+    "nps/tourism/map"
   ],
   "vertex": [
-    "tourism/campground",
-    "tourism/picnic_site",
-    "amenity/parking",
-    "tourism/information",
-    "tourism/visitor_center",
-    "amenity/ranger_station",
-    "highway/trailhead",
-    "amenity/food_court",
-    "tourism/hotel",
-    "shop/general",
-    "tourism/map"
+    "nps/tourism/campground",
+    "nps/tourism/picnic_site",
+    "nps/amenity/parking",
+    "nps/tourism/information",
+    "nps/tourism/visitor_center",
+    "nps/amenity/ranger_station",
+    "nps/highway/trailhead",
+    "nps/amenity/food_court",
+    "nps/tourism/hotel",
+    "nps/shop/general",
+    "nps/tourism/map"
 ],
   "relation": [
   ]

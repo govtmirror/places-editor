@@ -3,7 +3,6 @@
         "name",
         "operator",
         "description",
-        "indoor",
         "access"
     ],
     "geometry": [

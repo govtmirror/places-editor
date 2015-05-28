@@ -1,8 +1,7 @@
 {
     "fields": [
         "name",
-        "surface",
-        "direction"
+        "surface"
     ],
     "geometry": [
         "point"

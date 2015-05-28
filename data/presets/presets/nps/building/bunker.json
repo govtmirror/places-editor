@@ -1,9 +1,8 @@
 {
     "fields": [
         "name",
-        "addr",
-        "levels",
-        "bunker_type"
+        "address",
+        "levels"
     ],
     "geometry": [
         "point"

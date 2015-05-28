@@ -2,9 +2,7 @@
     "fields": [
         "name",
         "operator",
-        "addr",
-        "waste",
-        "bin"
+        "address"
     ],
     "geometry": [
         "point"

@@ -2,10 +2,7 @@
     "fields": [
         "name",
         "operator",
-        "backrest",
-        "direction",
-        "seats",
-        "material"
+        "backrest"
     ],
     "geometry": [
         "point"

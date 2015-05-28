@@ -2,8 +2,7 @@
     "fields": [
         "name",
         "operator",
-        "addr",
-        "cargo"
+        "address"
     ],
     "geometry": [
         "point"

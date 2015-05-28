@@ -2,9 +2,8 @@
     "fields": [
         "name",
         "operator",
-        "addr",
-        "capacity",
-        "mooring"
+        "address",
+        "capacity"
     ],
     "geometry": [
         "point"

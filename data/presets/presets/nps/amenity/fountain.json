@@ -2,8 +2,7 @@
     "fields": [
         "name",
         "operator",
-        "addr",
-        "drinking_water",
+        "address",
         "lit"
     ],
     "geometry": [

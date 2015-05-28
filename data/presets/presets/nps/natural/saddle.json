@@ -1,8 +1,6 @@
 {
     "fields": [
-        "name",
-        "ele",
-        "direction"
+        "name"
     ],
     "geometry": [
         "point"

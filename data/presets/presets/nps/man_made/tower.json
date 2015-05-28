@@ -1,8 +1,7 @@
 {
     "fields": [
         "name",
-        "operator",
-        "tower/type"
+        "operator"
     ],
     "geometry": [
         "point"

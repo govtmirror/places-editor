@@ -1,9 +1,6 @@
 {
     "fields": [
-        "name",
-        "status",
-        "ele",
-        "type"
+        "name"
     ],
     "geometry": [
         "point"

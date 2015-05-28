@@ -1,9 +1,7 @@
 {
     "fields": [
         "name",
-        "operator",
-        "drinking_water",
-        "pump"
+        "operator"
     ],
     "geometry": [
         "point"

@@ -1,8 +1,7 @@
 {
     "fields": [
         "name",
-        "operator",
-        "resource"
+        "operator"
     ],
     "geometry": [
         "point"

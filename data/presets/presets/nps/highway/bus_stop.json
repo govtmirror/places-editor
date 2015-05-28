@@ -2,11 +2,9 @@
     "fields": [
         "name",
         "operator",
-        "addr",
-        "public_transport",
+        "address",
         "network",
-        "shelter",
-        "bench"
+        "shelter"
     ],
     "geometry": [
         "point"

@@ -2,8 +2,7 @@
     "fields": [
         "name",
         "operator",
-        "addr",
-        "indoor"
+        "address"
     ],
     "geometry": [
         "point"
