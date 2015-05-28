@@ -25,7 +25,7 @@ iD.presets.Collection = function(collection) {
             value = value.toLowerCase();
 
             var searchable = _.filter(collection, function(a) {
-                return a.searchable !== false && a.suggestion !== true;
+                return a.searchable === true && a.suggestion !== true;
             }),
             suggestions = _.filter(collection, function(a) {
                 return a.suggestion === true;
