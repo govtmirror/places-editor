@@ -1,0 +1,21 @@
+{
+    "fields": [
+        "name"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "wheelchair-accessible-black",
+    "maki": "npmaki",
+    "matchScore": 1,
+    "name": "Wheelchair Accessible",
+    "searchable": true,
+    "tags": {
+        "wheelchair": "yes"
+    },
+    "terms": [
+        "wheelchair accessible",
+        "wheelchair",
+        "accessible"
+    ]
+}

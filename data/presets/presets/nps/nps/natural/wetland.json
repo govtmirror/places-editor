@@ -1,0 +1,19 @@
+{
+    "fields": [
+        "name"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "wetland",
+    "maki": "maki",
+    "matchScore": 1,
+    "name": "Wetland",
+    "searchable": true,
+    "tags": {
+        "natural": "wetland"
+    },
+    "terms": [
+        "wetland"
+    ]
+}

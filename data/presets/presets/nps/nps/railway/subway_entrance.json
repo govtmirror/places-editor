@@ -1,0 +1,22 @@
+{
+    "fields": [
+        "name"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "rail-metro",
+    "maki": "maki",
+    "matchScore": 1,
+    "name": "Metro Stop / Subway Entrance",
+    "searchable": true,
+    "tags": {
+        "railway": "subway_entrance"
+    },
+    "terms": [
+        "metro stop / subway entrance",
+        "metro stop",
+        "subway entrance",
+        "subway exit"
+    ]
+}

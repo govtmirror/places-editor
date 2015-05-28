@@ -1,0 +1,22 @@
+{
+    "fields": [
+        "name",
+        "addr",
+        "levels",
+        "religion"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "place-of-worship",
+    "maki": "maki",
+    "matchScore": 1,
+    "name": "Chapel",
+    "searchable": true,
+    "tags": {
+        "building": "chapel"
+    },
+    "terms": [
+        "chapel"
+    ]
+}

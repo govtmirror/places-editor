@@ -1,0 +1,31 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "surface",
+        "width",
+        "maxspeed",
+        "oneway",
+        "lanes",
+        "access"
+    ],
+    "geometry": [
+        "line"
+    ],
+    "icon": "highway-road",
+    "matchScore": 1,
+    "name": "Four-Wheel Drive Road",
+    "searchable": true,
+    "tags": {
+        "highway": "road",
+        "4wd_only": "yes"
+    },
+    "terms": [
+        "four-wheel drive road",
+        "4wd",
+        "4 wheeler",
+        "4-wheeler",
+        "four wheeler",
+        "four-wheeler"
+    ]
+}

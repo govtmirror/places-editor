@@ -1,0 +1,24 @@
+{
+    "fields": [
+        "name"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "water",
+    "maki": "maki",
+    "matchScore": 1,
+    "name": "Arroyo",
+    "searchable": true,
+    "tags": {
+        "waterway": "drain",
+        "intermittent": "yes"
+    },
+    "terms": [
+        "arroyo",
+        "coulee",
+        "draw",
+        "gully",
+        "wash"
+    ]
+}

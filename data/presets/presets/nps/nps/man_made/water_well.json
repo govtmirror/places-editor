@@ -1,0 +1,20 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "drinking_water",
+        "pump"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "matchScore": 1,
+    "name": "Water Well",
+    "searchable": true,
+    "tags": {
+        "man_made": "water_well"
+    },
+    "terms": [
+        "water well"
+    ]
+}

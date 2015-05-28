@@ -1,0 +1,24 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "surface",
+        "lit",
+        "width",
+        "access"
+    ],
+    "geometry": [
+        "line"
+    ],
+    "matchScore": 1,
+    "name": "Sidewalk",
+    "searchable": true,
+    "tags": {
+        "highway": "footway",
+        "footway": "sidewalk"
+    },
+    "terms": [
+        "sidewalk",
+        "footway"
+    ]
+}

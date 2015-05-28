@@ -1,0 +1,39 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "tracktype",
+        "surface",
+        "width",
+        "incline",
+        "mtb/scale",
+        "mtb/scale/uphill",
+        "mtb/scale/imba",
+        "sac_scale",
+        "trail_visibility",
+        "access"
+    ],
+    "geometry": [
+        "point",
+        "line"
+    ],
+    "icon": "cross-country-ski-trail-black",
+    "maki": "npmaki",
+    "matchScore": 1,
+    "name": "Cross-Country Ski Trail",
+    "searchable": true,
+    "tags": {
+        "piste:type": "nordic"
+    },
+    "terms": [
+        "cross-country ski trail",
+        "cross-country ski",
+        "cross-country",
+        "nordic ski trail",
+        "nordic ski",
+        "nordic",
+        "xcs",
+        "trail",
+        "track"
+    ]
+}

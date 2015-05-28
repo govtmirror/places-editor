@@ -1,0 +1,24 @@
+{
+    "fields": [
+        "name"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "matchScore": 1,
+    "name": "Bay",
+    "searchable": true,
+    "tags": {
+        "natural": "bay"
+    },
+    "terms": [
+        "bay",
+        "arm",
+        "bight",
+        "cove",
+        "estuary",
+        "gulf",
+        "inlet",
+        "sound"
+    ]
+}

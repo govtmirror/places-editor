@@ -1,0 +1,26 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "surface",
+        "width",
+        "maxspeed",
+        "oneway",
+        "access"
+    ],
+    "geometry": [
+        "line"
+    ],
+    "icon": "highway-tertiary-link",
+    "matchScore": 1,
+    "name": "Tertiary Link",
+    "searchable": true,
+    "tags": {
+        "highway": "tertiary_link"
+    },
+    "terms": [
+        "ramp",
+        "on ramp",
+        "off ramp"
+    ]
+}

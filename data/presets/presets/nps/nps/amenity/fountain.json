@@ -1,0 +1,22 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "addr",
+        "drinking_water",
+        "lit"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "matchScore": 1,
+    "name": "Fountain",
+    "searchable": true,
+    "tags": {
+        "amenity": "fountain"
+    },
+    "terms": [
+        "fountain",
+        "well"
+    ]
+}

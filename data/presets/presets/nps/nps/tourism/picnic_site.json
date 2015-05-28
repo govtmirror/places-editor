@@ -1,0 +1,25 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "addr",
+        "opening_hours",
+        "fee"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "picnic-area-black",
+    "maki": "npmaki",
+    "matchScore": 1,
+    "name": "Picnic Area",
+    "searchable": true,
+    "tags": {
+        "tourism": "picnic_site"
+    },
+    "terms": [
+        "picnic area",
+        "picnic site",
+        "picnic"
+    ]
+}

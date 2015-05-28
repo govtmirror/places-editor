@@ -1,0 +1,26 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "surface",
+        "width",
+        "maxspeed",
+        "oneway",
+        "access"
+    ],
+    "geometry": [
+        "line"
+    ],
+    "icon": "highway-primary-link",
+    "matchScore": 1,
+    "name": "Primary Link",
+    "searchable": true,
+    "tags": {
+        "highway": "primary_link"
+    },
+    "terms": [
+        "ramp",
+        "on ramp",
+        "off ramp"
+    ]
+}

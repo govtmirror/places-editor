@@ -1,0 +1,26 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "surface",
+        "width",
+        "maxspeed",
+        "oneway",
+        "lanes",
+        "access"
+    ],
+    "geometry": [
+        "line"
+    ],
+    "icon": "highway-road",
+    "matchScore": 1,
+    "name": "Unknown Road",
+    "searchable": true,
+    "tags": {
+        "highway": "road"
+    },
+    "terms": [
+        "unknown road",
+        "road"
+    ]
+}

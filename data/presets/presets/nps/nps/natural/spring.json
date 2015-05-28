@@ -1,0 +1,19 @@
+{
+    "fields": [
+        "name",
+        "drinking_water"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "matchScore": 1,
+    "name": "Spring",
+    "searchable": true,
+    "tags": {
+        "natural": "spring"
+    },
+    "terms": [
+        "spring",
+        "seep"
+    ]
+}

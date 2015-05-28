@@ -1,0 +1,21 @@
+{
+    "fields": [
+        "name"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "matchScore": 1,
+    "name": "Grassland (Plain)",
+    "searchable": true,
+    "tags": {
+        "natural": "grassland"
+    },
+    "terms": [
+        "grassland",
+        "plain",
+        "highland",
+        "kula",
+        "upland"
+    ]
+}

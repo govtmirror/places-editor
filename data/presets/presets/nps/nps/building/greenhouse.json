@@ -1,0 +1,23 @@
+{
+    "fields": [
+        "name",
+        "addr",
+        "levels"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "garden",
+    "maki": "maki",
+    "matchScore": 1,
+    "name": "Greenhouse",
+    "searchable": true,
+    "tags": {
+        "building": "greenhouse"
+    },
+    "terms": [
+        "greenhouse",
+        "glasshouse",
+        "garden"
+    ]
+}

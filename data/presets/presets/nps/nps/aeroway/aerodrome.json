@@ -1,0 +1,25 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "addr",
+        "icao",
+        "iata"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "airport-black",
+    "maki": "npmaki",
+    "matchScore": 1,
+    "name": "Airport",
+    "searchable": true,
+    "tags": {
+        "aeroway": "aerodrome"
+    },
+    "terms": [
+        "airport",
+        "aeroway",
+        "aerodrome"
+    ]
+}

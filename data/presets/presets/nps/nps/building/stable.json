@@ -1,0 +1,22 @@
+{
+    "fields": [
+        "name",
+        "addr",
+        "levels",
+        "landuse"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "stable-black",
+    "maki": "npmaki",
+    "matchScore": 1,
+    "name": "Stable",
+    "searchable": true,
+    "tags": {
+        "building": "stable"
+    },
+    "terms": [
+        "stable"
+    ]
+}

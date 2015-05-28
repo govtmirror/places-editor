@@ -1,0 +1,29 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "whitewater",
+        "width",
+        "section_grade"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "canoe-access-black",
+    "maki": "npmaki",
+    "matchScore": 1,
+    "name": "Canoe Access",
+    "searchable": true,
+    "tags": {
+        "access": "canoe",
+        "waterway": "yes"
+    },
+    "terms": [
+        "canoe access",
+        "canoe",
+        "kayak",
+        "raft",
+        "trail",
+        "track"
+    ]
+}

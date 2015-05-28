@@ -1,0 +1,28 @@
+{
+    "fields": [
+        "name"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "matchScore": 1,
+    "name": "Island",
+    "searchable": true,
+    "tags": {
+        "place": "island"
+    },
+    "terms": [
+        "island",
+        "archipelago",
+        "atoll",
+        "cay",
+        "hammock",
+        "hummock",
+        "isla",
+        "isle",
+        "islet",
+        "key",
+        "moku",
+        "rock"
+    ]
+}

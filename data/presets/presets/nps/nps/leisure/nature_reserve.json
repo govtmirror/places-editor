@@ -1,0 +1,25 @@
+{
+    "fields": [
+        "name",
+        "operator"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "park",
+    "maki": "maki",
+    "matchScore": 1,
+    "name": "Reserve",
+    "searchable": true,
+    "tags": {
+        "leisure": "nature_reserve"
+    },
+    "terms": [
+        "reserve",
+        "nature reserve",
+        "wildlife reserve",
+        "wildlife",
+        "protected area",
+        "protected"
+    ]
+}

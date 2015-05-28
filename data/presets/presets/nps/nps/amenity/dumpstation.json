@@ -1,0 +1,23 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "addr"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "sanitary-disposal-station-black",
+    "maki": "npmaki",
+    "matchScore": 1,
+    "name": "Sanitary Disposal Station",
+    "searchable": true,
+    "tags": {
+        "amenity": "dumpstation"
+    },
+    "terms": [
+        "sanitary disposal station",
+        "dumpstation",
+        "dump station"
+    ]
+}

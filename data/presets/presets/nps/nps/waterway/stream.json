@@ -1,0 +1,43 @@
+{
+    "fields": [
+        "name"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "water",
+    "maki": "maki",
+    "matchScore": 1,
+    "name": "Stream",
+    "searchable": true,
+    "tags": {
+        "waterway": "stream"
+    },
+    "terms": [
+        "beck",
+        "branch",
+        "brook",
+        "burn",
+        "course",
+        "creek",
+        "current",
+        "drift",
+        "flood",
+        "flow",
+        "freshet",
+        "race",
+        "rill",
+        "rindle",
+        "rivulet",
+        "run",
+        "runnel",
+        "rush",
+        "spate",
+        "spritz",
+        "surge",
+        "tide",
+        "torrent",
+        "tributary",
+        "watercourse"
+    ]
+}

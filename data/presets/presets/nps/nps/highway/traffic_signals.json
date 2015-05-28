@@ -1,0 +1,25 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "addr"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "circle",
+    "maki": "maki",
+    "matchScore": 1,
+    "name": "Traffic Signals",
+    "searchable": true,
+    "tags": {
+        "highway": "traffic_signals"
+    },
+    "terms": [
+        "traffic signals",
+        "traffic signal",
+        "traffic light",
+        "stop light",
+        "stoplight"
+    ]
+}

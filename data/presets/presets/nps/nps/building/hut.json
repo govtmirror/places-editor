@@ -1,0 +1,21 @@
+{
+    "fields": [
+        "name",
+        "addr",
+        "levels"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "shelter-white",
+    "maki": "npmaki",
+    "matchScore": 1,
+    "name": "Hut",
+    "searchable": true,
+    "tags": {
+        "building": "hut"
+    },
+    "terms": [
+        "hut"
+    ]
+}

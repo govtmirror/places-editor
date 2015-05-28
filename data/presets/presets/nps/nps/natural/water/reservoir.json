@@ -1,0 +1,23 @@
+{
+    "fields": [
+        "name"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "water",
+    "maki": "maki",
+    "matchScore": 1,
+    "name": "Reservoir",
+    "searchable": true,
+    "tags": {
+        "natural": "water",
+        "water": "reservoir",
+        "landuse": "reservoir"
+    },
+    "terms": [
+        "reservoir",
+        "lake",
+        "tank"
+    ]
+}

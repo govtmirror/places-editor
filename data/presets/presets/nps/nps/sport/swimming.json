@@ -1,0 +1,19 @@
+{
+    "fields": [
+        "name"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "swimming-black",
+    "maki": "npmaki",
+    "matchScore": 1,
+    "name": "Swimming Area",
+    "searchable": true,
+    "tags": {
+        "sport": "swimming"
+    },
+    "terms": [
+        "swimming area"
+    ]
+}

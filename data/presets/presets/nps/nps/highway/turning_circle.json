@@ -1,0 +1,24 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "addr"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "circle",
+    "maki": "maki",
+    "matchScore": 1,
+    "name": "Turning Circle",
+    "searchable": true,
+    "tags": {
+        "highway": "turning_circle"
+    },
+    "terms": [
+        "turning circle",
+        "cul-de-sac",
+        "dead end street",
+        "blind alley"
+    ]
+}

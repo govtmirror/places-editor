@@ -1,0 +1,28 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "addr",
+        "opening_hours"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "ranger-station-black",
+    "maki": "npmaki",
+    "matchScore": 1,
+    "name": "Ranger Station",
+    "searchable": true,
+    "tags": {
+        "amenity": "ranger_station",
+        "building": "yes"
+    },
+    "terms": [
+        "ranger station",
+        "permit center",
+        "permit centre",
+        "backcountry office",
+        "warden office",
+        "warden center"
+    ]
+}

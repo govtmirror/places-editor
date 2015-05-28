@@ -1,0 +1,24 @@
+{
+    "fields": [
+        "name",
+        "status",
+        "ele",
+        "type"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "triangle",
+    "maki": "maki",
+    "matchScore": 1,
+    "name": "Volcano (Crater)",
+    "searchable": true,
+    "tags": {
+        "natural": "volcano"
+    },
+    "terms": [
+        "volcano",
+        "crater",
+        "caldera"
+    ]
+}

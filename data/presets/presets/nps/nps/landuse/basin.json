@@ -1,0 +1,17 @@
+{
+    "fields": [
+        "name"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "matchScore": 1,
+    "name": "Basin",
+    "searchable": true,
+    "tags": {
+        "landuse": "basin"
+    },
+    "terms": [
+        "basin"
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "addr",
+        "opening_hours"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "golfing-black",
+    "maki": "npmaki",
+    "matchScore": 1,
+    "name": "Golf Course",
+    "searchable": true,
+    "tags": {
+        "leisure": "golf_course"
+    },
+    "terms": [
+        "golf course"
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "fields": [
+        "name",
+        "addr",
+        "levels"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "building",
+    "maki": "maki",
+    "matchScore": 1,
+    "name": "Residential Building",
+    "searchable": true,
+    "tags": {
+        "building": "residential"
+    },
+    "terms": [
+        "residential building",
+        "residential"
+    ]
+}

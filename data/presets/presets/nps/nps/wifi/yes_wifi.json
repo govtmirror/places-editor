@@ -1,0 +1,21 @@
+{
+    "fields": [
+        "name"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "Wi-Fi",
+    "maki": "nps",
+    "matchScore": 1,
+    "name": "Wifi",
+    "searchable": true,
+    "tags": {
+        "wifi": "yes"
+    },
+    "terms": [
+        "wifi",
+        "internet",
+        "online"
+    ]
+}

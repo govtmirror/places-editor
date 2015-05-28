@@ -1,0 +1,21 @@
+{
+    "fields": [
+        "name",
+        "site_type"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "Ruin",
+    "maki": "nps",
+    "matchScore": 1,
+    "name": "Historic Building",
+    "searchable": true,
+    "tags": {
+        "historic": "building",
+        "building": "yes"
+    },
+    "terms": [
+        "historic building"
+    ]
+}

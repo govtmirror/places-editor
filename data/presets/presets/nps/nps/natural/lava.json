@@ -1,0 +1,19 @@
+{
+    "fields": [
+        "name"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "matchScore": 1,
+    "name": "Lava",
+    "searchable": true,
+    "tags": {
+        "natural": "lava"
+    },
+    "terms": [
+        "lava",
+        "kepula",
+        "lava flow"
+    ]
+}

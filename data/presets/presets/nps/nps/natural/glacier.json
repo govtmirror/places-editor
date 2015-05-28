@@ -1,0 +1,22 @@
+{
+    "fields": [
+        "name",
+        "surface",
+        "direction"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "matchScore": 1,
+    "name": "Glacier",
+    "searchable": true,
+    "tags": {
+        "natural": "glacier"
+    },
+    "terms": [
+        "glacier",
+        "icefield",
+        "ice patch",
+        "snow patch"
+    ]
+}

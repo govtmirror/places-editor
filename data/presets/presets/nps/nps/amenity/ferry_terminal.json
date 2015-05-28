@@ -1,0 +1,22 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "addr",
+        "cargo"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "ferry",
+    "maki": "maki",
+    "matchScore": 1,
+    "name": "Ferry Terminal",
+    "searchable": true,
+    "tags": {
+        "amenity": "ferry_terminal"
+    },
+    "terms": [
+        "ferry terminal"
+    ]
+}

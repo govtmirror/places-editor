@@ -1,0 +1,22 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "addr"
+    ],
+    "geometry": [
+        "point",
+        "line"
+    ],
+    "icon": "Bridge",
+    "maki": "nps",
+    "matchScore": 1,
+    "name": "Bridge",
+    "searchable": true,
+    "tags": {
+        "bridge": "yes"
+    },
+    "terms": [
+        "bridge"
+    ]
+}

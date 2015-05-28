@@ -1,0 +1,29 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "whitewater",
+        "width",
+        "section_grade"
+    ],
+    "geometry": [
+        "line"
+    ],
+    "icon": "highway-track",
+    "matchScore": 1,
+    "name": "Non-Motorized Watercraft Trail",
+    "searchable": true,
+    "tags": {
+        "canoe": "yes",
+        "waterway": "yes"
+    },
+    "terms": [
+        "non-motorized watercraft trail",
+        "non-motorized watercraft",
+        "canoe",
+        "kayak",
+        "raft",
+        "trail",
+        "track"
+    ]
+}

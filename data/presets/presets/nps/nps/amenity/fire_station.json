@@ -1,0 +1,24 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "addr"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "fire-station",
+    "maki": "maki",
+    "matchScore": 1,
+    "name": "Fire Station",
+    "searchable": true,
+    "tags": {
+        "amenity": "fire_station",
+        "building": "yes"
+    },
+    "terms": [
+        "fire station",
+        "fire department",
+        "emergency"
+    ]
+}

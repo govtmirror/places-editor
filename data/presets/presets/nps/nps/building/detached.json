@@ -1,0 +1,23 @@
+{
+    "fields": [
+        "name",
+        "addr",
+        "levels"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "building",
+    "maki": "maki",
+    "matchScore": 1,
+    "name": "Detached Home",
+    "searchable": true,
+    "tags": {
+        "building": "detached"
+    },
+    "terms": [
+        "detached home",
+        "detached",
+        "detached building"
+    ]
+}

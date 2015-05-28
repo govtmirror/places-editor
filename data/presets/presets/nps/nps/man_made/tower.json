@@ -1,0 +1,23 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "tower/type"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "Lookout tower",
+    "maki": "nps",
+    "matchScore": 1,
+    "name": "Tower",
+    "searchable": true,
+    "tags": {
+        "man_made": "tower"
+    },
+    "terms": [
+        "tower",
+        "castle",
+        "overlook"
+    ]
+}

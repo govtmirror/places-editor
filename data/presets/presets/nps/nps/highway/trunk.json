@@ -1,0 +1,27 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "surface",
+        "width",
+        "maxspeed",
+        "oneway",
+        "lanes",
+        "access"
+    ],
+    "geometry": [
+        "line"
+    ],
+    "icon": "highway-trunk",
+    "matchScore": 1,
+    "name": "Trunk Road",
+    "searchable": true,
+    "tags": {
+        "highway": "trunk"
+    },
+    "terms": [
+        "trunk road",
+        "trunk",
+        "road"
+    ]
+}

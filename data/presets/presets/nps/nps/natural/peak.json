@@ -1,0 +1,54 @@
+{
+    "fields": [
+        "name",
+        "ele"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "triangle",
+    "maki": "maki",
+    "matchScore": 1,
+    "name": "Peak",
+    "searchable": true,
+    "tags": {
+        "natural": "peak"
+    },
+    "terms": [
+        "peak",
+        "summit",
+        "ahu",
+        "berg",
+        "bald",
+        "butte",
+        "cerro",
+        "colina",
+        "cone",
+        "cumbre",
+        "dome",
+        "head",
+        "hill",
+        "horn",
+        "knob",
+        "knoll",
+        "mauna",
+        "mesa",
+        "mesita",
+        "mound",
+        "mount",
+        "mountain",
+        "puu",
+        "rock",
+        "sugarload",
+        "table",
+        "acme",
+        "aiguille",
+        "alp",
+        "climax",
+        "crest",
+        "crown",
+        "pinnacle",
+        "tip",
+        "top"
+    ]
+}

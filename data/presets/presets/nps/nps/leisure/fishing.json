@@ -1,0 +1,19 @@
+{
+    "fields": [
+        "name"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "fishing-black",
+    "maki": "npmaki",
+    "matchScore": 1,
+    "name": "Fishing",
+    "searchable": true,
+    "tags": {
+        "leisure": "fishing"
+    },
+    "terms": [
+        "fishing"
+    ]
+}

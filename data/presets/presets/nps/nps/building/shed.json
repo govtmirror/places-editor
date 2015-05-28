@@ -1,0 +1,21 @@
+{
+    "fields": [
+        "name",
+        "addr",
+        "levels"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "building",
+    "maki": "maki",
+    "matchScore": 1,
+    "name": "Shed",
+    "searchable": true,
+    "tags": {
+        "building": "shed"
+    },
+    "terms": [
+        "shed"
+    ]
+}

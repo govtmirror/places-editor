@@ -1,0 +1,22 @@
+{
+    "fields": [
+        "name"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "matchScore": 1,
+    "name": "Strait (Channel)",
+    "searchable": true,
+    "tags": {
+        "natural": "strait"
+    },
+    "terms": [
+        "strait",
+        "channel",
+        "passage",
+        "reach",
+        "thoroughfare",
+        "throughfare"
+    ]
+}

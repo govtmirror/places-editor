@@ -1,0 +1,30 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "surface",
+        "width",
+        "maxspeed",
+        "oneway",
+        "lanes",
+        "access"
+    ],
+    "geometry": [
+        "line"
+    ],
+    "icon": "highway-primary",
+    "matchScore": 1,
+    "name": "Primary Road",
+    "searchable": true,
+    "tags": {
+        "highway": "primary"
+    },
+    "terms": [
+        "primary road",
+        "primary",
+        "road",
+        "highway",
+        "interstate",
+        "interstate highway"
+    ]
+}

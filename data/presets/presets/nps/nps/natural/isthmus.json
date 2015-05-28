@@ -1,0 +1,17 @@
+{
+    "fields": [
+        "name"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "matchScore": 1,
+    "name": "Isthmus",
+    "searchable": true,
+    "tags": {
+        "natural": "isthmus"
+    },
+    "terms": [
+        "isthmus"
+    ]
+}

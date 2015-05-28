@@ -1,0 +1,21 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "resource"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "oil-well",
+    "maki": "maki",
+    "matchScore": 1,
+    "name": "Oilfield",
+    "searchable": true,
+    "tags": {
+        "man_made": "oilfield"
+    },
+    "terms": [
+        "oilfield"
+    ]
+}

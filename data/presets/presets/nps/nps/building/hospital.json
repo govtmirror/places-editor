@@ -1,0 +1,34 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "addr",
+        "emergency"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "hospital-black",
+    "maki": "npmaki",
+    "matchScore": 1,
+    "name": "Hospital Building",
+    "searchable": true,
+    "tags": {
+        "building": "hospital"
+    },
+    "terms": [
+        "hospital building",
+        "hospital",
+        "ward",
+        "institution",
+        "infirmary",
+        "clinic",
+        "emergency room",
+        "doctor",
+        "health service",
+        "sick",
+        "surgery",
+        "medical",
+        "emergency"
+    ]
+}

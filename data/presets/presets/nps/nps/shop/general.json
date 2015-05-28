@@ -1,0 +1,25 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "addr",
+        "opening_hours"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "store-black",
+    "maki": "npmaki",
+    "matchScore": 1,
+    "name": "Store",
+    "searchable": true,
+    "tags": {
+        "shop": "general",
+        "building": "yes"
+    },
+    "terms": [
+        "store",
+        "shop",
+        "general store"
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "tracktype",
+        "surface",
+        "width",
+        "incline",
+        "mtb/scale",
+        "mtb/scale/uphill",
+        "mtb/scale/imba",
+        "sac_scale",
+        "trail_visibility",
+        "access"
+    ],
+    "geometry": [
+        "point",
+        "line"
+    ],
+    "icon": "Snowshoeing",
+    "maki": "nps",
+    "matchScore": 1,
+    "name": "Snowshoe Trail",
+    "searchable": true,
+    "tags": {
+        "piste:type": "hike"
+    },
+    "terms": [
+        "snowshoe trail",
+        "snowshoe",
+        "trail",
+        "track"
+    ]
+}

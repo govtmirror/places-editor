@@ -1,0 +1,23 @@
+{
+    "fields": [
+        "name",
+        "addr",
+        "levels",
+        "bunker_type"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "building",
+    "maki": "maki",
+    "matchScore": 1,
+    "name": "Bunker",
+    "searchable": true,
+    "tags": {
+        "building": "bunker"
+    },
+    "terms": [
+        "bunker",
+        "military bunker"
+    ]
+}

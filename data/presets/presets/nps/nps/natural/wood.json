@@ -1,0 +1,25 @@
+{
+    "fields": [
+        "name",
+        "leaf_type",
+        "leaf_cycle",
+        "crop"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "park2",
+    "maki": "maki",
+    "matchScore": 1,
+    "name": "Woods",
+    "searchable": true,
+    "tags": {
+        "natural": "wood"
+    },
+    "terms": [
+        "wood",
+        "forest",
+        "park",
+        "jungle"
+    ]
+}

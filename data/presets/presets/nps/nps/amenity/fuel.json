@@ -1,0 +1,32 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "addr",
+        "opening_hours"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "gas-station-black",
+    "maki": "npmaki",
+    "matchScore": 1,
+    "name": "Gas Station",
+    "searchable": true,
+    "tags": {
+        "amenity": "fuel"
+    },
+    "terms": [
+        "gas station",
+        "fuel",
+        "petrol station",
+        "petrol",
+        "propane",
+        "diesel",
+        "lng",
+        "liquified natural gas",
+        "cng",
+        "compressed natural gas",
+        "biodiesel"
+    ]
+}

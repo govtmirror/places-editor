@@ -1,0 +1,30 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "addr",
+        "waste",
+        "bin"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "litter-receptacle-black",
+    "maki": "npmaki",
+    "matchScore": 1,
+    "name": "Waste Basket",
+    "searchable": true,
+    "tags": {
+        "amenity": "waste_basket"
+    },
+    "terms": [
+        "waste basket",
+        "waste paper basket",
+        "trash bin",
+        "waste bin",
+        "trash",
+        "rubbish",
+        "litter",
+        "garbage"
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "fields": [
+        "name",
+        "population"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "marker",
+    "maki": "maki",
+    "matchScore": 1,
+    "name": "Locale",
+    "searchable": true,
+    "tags": {
+        "place": "locality"
+    },
+    "terms": [
+        "locale",
+        "locality",
+        "location",
+        "place"
+    ]
+}

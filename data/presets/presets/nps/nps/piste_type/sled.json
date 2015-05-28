@@ -1,0 +1,31 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "tracktype",
+        "surface",
+        "width",
+        "incline",
+        "mtb/scale",
+        "mtb/scale/uphill",
+        "mtb/scale/imba",
+        "sac_scale",
+        "trail_visibility",
+        "access"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "sledding-black",
+    "maki": "npmaki",
+    "matchScore": 1,
+    "name": "Sledding",
+    "searchable": true,
+    "tags": {
+        "piste:type": "sled"
+    },
+    "terms": [
+        "sledding",
+        "sled"
+    ]
+}

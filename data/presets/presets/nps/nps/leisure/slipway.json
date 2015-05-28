@@ -1,0 +1,26 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "whitewater",
+        "width",
+        "section_grade"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "boat-launch-black",
+    "maki": "npmaki",
+    "matchScore": 1,
+    "name": "Boat Launch",
+    "searchable": true,
+    "tags": {
+        "leisure": "slipway",
+        "waterway": "yes"
+    },
+    "terms": [
+        "boat launch",
+        "slipway",
+        "boat ramp"
+    ]
+}

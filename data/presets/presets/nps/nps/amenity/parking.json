@@ -1,0 +1,29 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "addr",
+        "capacity",
+        "maxstay",
+        "fee",
+        "access"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "parking-black",
+    "maki": "npmaki",
+    "matchScore": 1,
+    "name": "Parking",
+    "searchable": true,
+    "tags": {
+        "amenity": "parking"
+    },
+    "terms": [
+        "parking",
+        "car parking",
+        "vehicle parking",
+        "parking lot",
+        "car park"
+    ]
+}

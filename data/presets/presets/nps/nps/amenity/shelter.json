@@ -1,0 +1,30 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "addr",
+        "shelter_type",
+        "drinking_water"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "shelter-black",
+    "maki": "npmaki",
+    "matchScore": 1,
+    "name": "Shelter",
+    "searchable": true,
+    "tags": {
+        "amenity": "shelter",
+        "building": "hut"
+    },
+    "terms": [
+        "shelter",
+        "sanctuary",
+        "cover",
+        "hide",
+        "lean-to",
+        "gazebo",
+        "picnic"
+    ]
+}

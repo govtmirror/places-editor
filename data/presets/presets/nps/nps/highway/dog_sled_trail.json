@@ -1,0 +1,36 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "tracktype",
+        "surface",
+        "width",
+        "incline",
+        "mtb/scale",
+        "mtb/scale/uphill",
+        "mtb/scale/imba",
+        "sac_scale",
+        "trail_visibility",
+        "access"
+    ],
+    "geometry": [
+        "point",
+        "line"
+    ],
+    "matchScore": 1,
+    "name": "Dog Sled Trail",
+    "searchable": true,
+    "tags": {
+        "highway": "track",
+        "piste:type": "sleigh"
+    },
+    "terms": [
+        "dog sled trail",
+        "dog sled",
+        "mushing trail",
+        "mushing",
+        "winter track",
+        "trail",
+        "track"
+    ]
+}

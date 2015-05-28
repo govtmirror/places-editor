@@ -1,0 +1,28 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "addr",
+        "opening_hours"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "commercial",
+    "maki": "maki",
+    "matchScore": 1,
+    "name": "Headquarters",
+    "searchable": true,
+    "tags": {
+        "building": "office",
+        "office": "government",
+        "function": "headquarters"
+    },
+    "terms": [
+        "headquarters",
+        "office",
+        "government headquarters",
+        "government office",
+        "office building"
+    ]
+}

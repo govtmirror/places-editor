@@ -1,0 +1,21 @@
+{
+    "fields": [
+        "name"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "water",
+    "maki": "maki",
+    "matchScore": 1,
+    "name": "Canal",
+    "searchable": true,
+    "tags": {
+        "waterway": "canal"
+    },
+    "terms": [
+        "canal",
+        "ditch",
+        "lateal"
+    ]
+}

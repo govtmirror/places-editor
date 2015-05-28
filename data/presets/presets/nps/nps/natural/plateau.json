@@ -1,0 +1,18 @@
+{
+    "fields": [
+        "name"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "matchScore": 1,
+    "name": "Plateau",
+    "searchable": true,
+    "tags": {
+        "natural": "landform",
+        "landform": "plateau"
+    },
+    "terms": [
+        "plateau"
+    ]
+}

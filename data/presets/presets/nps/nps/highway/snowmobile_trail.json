@@ -1,0 +1,36 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "tracktype",
+        "surface",
+        "width",
+        "incline",
+        "mtb/scale",
+        "mtb/scale/uphill",
+        "mtb/scale/imba",
+        "sac_scale",
+        "trail_visibility",
+        "access"
+    ],
+    "geometry": [
+        "point",
+        "line"
+    ],
+    "icon": "snowmobile-trail-black",
+    "maki": "npmaki",
+    "matchScore": 1,
+    "name": "Snowmobile Trail",
+    "searchable": true,
+    "tags": {
+        "highway": "track",
+        "snowmobile": "yes"
+    },
+    "terms": [
+        "snowmobile trail",
+        "snowmobile",
+        "snow machine",
+        "trail",
+        "track"
+    ]
+}

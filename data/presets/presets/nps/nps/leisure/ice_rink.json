@@ -1,0 +1,27 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "addr",
+        "opening_hours",
+        "seasonal",
+        "sport"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "ice-skating-black",
+    "maki": "npmaki",
+    "matchScore": 1,
+    "name": "Ice Rink",
+    "searchable": true,
+    "tags": {
+        "leisure": "ice_rink"
+    },
+    "terms": [
+        "ice rink",
+        "hockey",
+        "skating",
+        "curling"
+    ]
+}

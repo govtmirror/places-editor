@@ -1,0 +1,22 @@
+{
+    "fields": [
+        "name"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "dam",
+    "maki": "maki",
+    "matchScore": 1,
+    "name": "Dam",
+    "searchable": true,
+    "tags": {
+        "waterway": "dam"
+    },
+    "terms": [
+        "dam",
+        "breakwater",
+        "dike",
+        "jetty"
+    ]
+}

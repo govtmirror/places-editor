@@ -1,0 +1,25 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "description",
+        "indoor",
+        "access"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "drinking-water-black",
+    "maki": "npmaki",
+    "matchScore": 1,
+    "name": "Drinking Water",
+    "searchable": true,
+    "tags": {
+        "amenity": "drinking_water"
+    },
+    "terms": [
+        "drinking water",
+        "fountain",
+        "potable"
+    ]
+}

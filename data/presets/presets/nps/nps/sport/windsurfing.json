@@ -1,0 +1,19 @@
+{
+    "fields": [
+        "name"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "wind-surfing-black",
+    "maki": "npmaki",
+    "matchScore": 1,
+    "name": "Wind Surfing Area",
+    "searchable": true,
+    "tags": {
+        "sport": "windsurfing"
+    },
+    "terms": [
+        "wind surfing area"
+    ]
+}

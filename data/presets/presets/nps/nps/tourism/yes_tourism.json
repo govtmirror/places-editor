@@ -1,0 +1,23 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "addr",
+        "opening_hours"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "Point of interest",
+    "maki": "nps",
+    "matchScore": 1,
+    "name": "Point of Interest",
+    "searchable": true,
+    "tags": {
+        "tourism": "yes"
+    },
+    "terms": [
+        "point of interest",
+        "poi"
+    ]
+}

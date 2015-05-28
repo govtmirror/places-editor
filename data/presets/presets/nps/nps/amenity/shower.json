@@ -1,0 +1,26 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "addr",
+        "opening_hours",
+        "fee",
+        "access"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "showers-black",
+    "maki": "npmaki",
+    "matchScore": 1,
+    "name": "Showers",
+    "searchable": true,
+    "tags": {
+        "amenity": "shower"
+    },
+    "terms": [
+        "showers",
+        "shower",
+        "bath"
+    ]
+}

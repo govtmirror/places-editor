@@ -1,0 +1,21 @@
+{
+    "fields": [
+        "name",
+        "surface"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "matchScore": 1,
+    "name": "Beach",
+    "searchable": true,
+    "tags": {
+        "natural": "beach"
+    },
+    "terms": [
+        "beach",
+        "coast",
+        "shore",
+        "strand"
+    ]
+}

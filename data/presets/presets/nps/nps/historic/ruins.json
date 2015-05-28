@@ -1,0 +1,20 @@
+{
+    "fields": [
+        "name"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "Ruin",
+    "maki": "nps",
+    "matchScore": 1,
+    "name": "Historic Ruins",
+    "searchable": true,
+    "tags": {
+        "historic": "ruins"
+    },
+    "terms": [
+        "historic ruins",
+        "ruins"
+    ]
+}

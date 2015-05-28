@@ -1,0 +1,19 @@
+{
+    "fields": [
+        "name"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "scuba-diving-black",
+    "maki": "npmaki",
+    "matchScore": 1,
+    "name": "Scuba Diving",
+    "searchable": true,
+    "tags": {
+        "sport": "scuba_diving"
+    },
+    "terms": [
+        "scuba diving"
+    ]
+}

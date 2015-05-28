@@ -1,0 +1,28 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "surface",
+        "width",
+        "maxspeed",
+        "oneway",
+        "lanes",
+        "access"
+    ],
+    "geometry": [
+        "line"
+    ],
+    "icon": "highway-road",
+    "matchScore": 1,
+    "name": "Private Road",
+    "searchable": true,
+    "tags": {
+        "highway": "road",
+        "access": "private"
+    },
+    "terms": [
+        "private road",
+        "private",
+        "road"
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "fields": [
+        "name"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "water",
+    "maki": "maki",
+    "matchScore": 1,
+    "name": "Lake",
+    "searchable": true,
+    "tags": {
+        "natural": "water",
+        "water": "lake"
+    },
+    "terms": [
+        "lake",
+        "backwater",
+        "lac",
+        "lagoon",
+        "laguna",
+        "pond",
+        "pool",
+        "resaca",
+        "waterhole",
+        "lakelet",
+        "loch",
+        "mere"
+    ]
+}

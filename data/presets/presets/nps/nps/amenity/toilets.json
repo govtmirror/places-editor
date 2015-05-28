@@ -1,0 +1,38 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "addr",
+        "opening_hours",
+        "toilets/disposal",
+        "gender",
+        "indoor",
+        "fee",
+        "access"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "restrooms-black",
+    "maki": "npmaki",
+    "matchScore": 1,
+    "name": "Restroom",
+    "searchable": true,
+    "tags": {
+        "amenity": "toilets",
+        "building": "yes"
+    },
+    "terms": [
+        "restroom",
+        "toilets",
+        "toilet",
+        "privy",
+        "head",
+        "bathroom",
+        "lavatory",
+        "wc",
+        "water closet",
+        "latrine",
+        "outhouse"
+    ]
+}

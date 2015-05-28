@@ -1,0 +1,22 @@
+{
+    "fields": [
+        "name",
+        "addr",
+        "levels",
+        "landuse"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "farm",
+    "maki": "maki",
+    "matchScore": 1,
+    "name": "Barn",
+    "searchable": true,
+    "tags": {
+        "building": "barn"
+    },
+    "terms": [
+        "barn"
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "fields": [
+        "name"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "water",
+    "maki": "maki",
+    "matchScore": 1,
+    "name": "Waterfall",
+    "searchable": true,
+    "tags": {
+        "waterway": "waterfall"
+    },
+    "terms": [
+        "waterfall",
+        "falls",
+        "cascade",
+        "cataract"
+    ]
+}

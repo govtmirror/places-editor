@@ -1,0 +1,26 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "addr",
+        "opening_hours"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "lodging-white",
+    "maki": "npmaki",
+    "matchScore": 1,
+    "name": "Lodge",
+    "searchable": true,
+    "tags": {
+        "tourism": "alpine_hut",
+        "building": "yes"
+    },
+    "terms": [
+        "lodge",
+        "alpine hut",
+        "wilderness hut",
+        "hut"
+    ]
+}

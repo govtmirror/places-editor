@@ -1,0 +1,21 @@
+{
+    "fields": [
+        "name",
+        "site_type"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "Ruin",
+    "maki": "nps",
+    "matchScore": 1,
+    "name": "Archaeological Site",
+    "searchable": true,
+    "tags": {
+        "historic": "archaeological_site"
+    },
+    "terms": [
+        "archaeological site",
+        "archeological site"
+    ]
+}

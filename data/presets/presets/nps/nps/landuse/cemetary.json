@@ -1,0 +1,20 @@
+{
+    "fields": [
+        "name"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "cemetary",
+    "maki": "maki",
+    "matchScore": 1,
+    "name": "Cemetery",
+    "searchable": true,
+    "tags": {
+        "landuse": "cemetery"
+    },
+    "terms": [
+        "cemetary",
+        "graveyard"
+    ]
+}

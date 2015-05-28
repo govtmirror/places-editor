@@ -1,0 +1,35 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "tracktype",
+        "surface",
+        "width",
+        "incline",
+        "mtb/scale",
+        "mtb/scale/uphill",
+        "mtb/scale/imba",
+        "sac_scale",
+        "trail_visibility",
+        "access"
+    ],
+    "geometry": [
+        "point",
+        "line"
+    ],
+    "icon": "bike-trail-black",
+    "maki": "npmaki",
+    "matchScore": 1,
+    "name": "Bicycle Trail",
+    "searchable": true,
+    "tags": {
+        "highway": "track",
+        "bicycle": "yes"
+    },
+    "terms": [
+        "bicycle trail",
+        "bicycle",
+        "trail",
+        "track"
+    ]
+}

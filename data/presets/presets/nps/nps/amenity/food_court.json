@@ -1,0 +1,26 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "addr",
+        "opening_hours"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "food-service-black",
+    "maki": "npmaki",
+    "matchScore": 1,
+    "name": "Food Service",
+    "searchable": true,
+    "tags": {
+        "amenity": "food_court",
+        "building": "yes"
+    },
+    "terms": [
+        "food service",
+        "food court",
+        "cafe",
+        "restaurant"
+    ]
+}

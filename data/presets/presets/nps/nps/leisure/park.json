@@ -1,0 +1,27 @@
+{
+    "fields": [
+        "name",
+        "operator"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "park",
+    "maki": "maki",
+    "matchScore": 1,
+    "name": "Park",
+    "searchable": true,
+    "tags": {
+        "leisure": "park"
+    },
+    "terms": [
+        "park",
+        "green area",
+        "national park",
+        "state park",
+        "city park",
+        "recreation area",
+        "woodland",
+        "parkland"
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "fields": [
+        "memorial",
+        "subject/name",
+        "subject/species",
+        "subject/birth",
+        "subject/death",
+        "religion"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "cemetary",
+    "maki": "maki",
+    "matchScore": 1,
+    "name": "Grave",
+    "searchable": true,
+    "tags": {
+        "cemetery": "grave"
+    },
+    "terms": [
+        "grave",
+        "tomb"
+    ]
+}

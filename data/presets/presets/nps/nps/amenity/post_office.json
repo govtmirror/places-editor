@@ -1,0 +1,29 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "addr",
+        "opening_hours"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "post-office-black",
+    "maki": "npmaki",
+    "matchScore": 1,
+    "name": "Post Office",
+    "searchable": true,
+    "tags": {
+        "amenity": "post_office",
+        "building": "yes"
+    },
+    "terms": [
+        "post office",
+        "mail office",
+        "post",
+        "mail",
+        "letter",
+        "parcel",
+        "package"
+    ]
+}

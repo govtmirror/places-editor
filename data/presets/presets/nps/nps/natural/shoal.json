@@ -1,0 +1,23 @@
+{
+    "fields": [
+        "name",
+        "tidal"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "matchScore": 1,
+    "name": "Shoal (Bar)",
+    "searchable": true,
+    "tags": {
+        "natural": "shoal"
+    },
+    "terms": [
+        "shoal",
+        "bar",
+        "ledge",
+        "reef",
+        "sandbar",
+        "spit"
+    ]
+}

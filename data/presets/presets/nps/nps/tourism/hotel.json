@@ -1,0 +1,26 @@
+{
+    "fields": [
+        "name",
+        "addr",
+        "levels",
+        "smoking"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "lodging-black",
+    "maki": "npmaki",
+    "matchScore": 1,
+    "name": "Lodging",
+    "searchable": true,
+    "tags": {
+        "tourism": "hotel",
+        "building": "yes"
+    },
+    "terms": [
+        "lodging",
+        "hotel",
+        "motel",
+        "resort"
+    ]
+}

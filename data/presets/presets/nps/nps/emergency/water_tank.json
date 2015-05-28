@@ -1,0 +1,22 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "addr"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "radiator-water-black",
+    "maki": "npmaki",
+    "matchScore": 1,
+    "name": "Radiator Water",
+    "searchable": true,
+    "tags": {
+        "emergency": "water_tank"
+    },
+    "terms": [
+        "radiator water",
+        "water tank"
+    ]
+}

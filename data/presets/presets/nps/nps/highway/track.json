@@ -1,0 +1,32 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "tracktype",
+        "surface",
+        "width",
+        "incline",
+        "mtb/scale",
+        "mtb/scale/uphill",
+        "mtb/scale/imba",
+        "sac_scale",
+        "trail_visibility",
+        "access"
+    ],
+    "geometry": [
+        "point",
+        "line"
+    ],
+    "icon": "trailhead-white",
+    "maki": "npmaki",
+    "matchScore": 1,
+    "name": "Track",
+    "searchable": true,
+    "tags": {
+        "highway": "track"
+    },
+    "terms": [
+        "track",
+        "trail"
+    ]
+}

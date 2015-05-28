@@ -1,0 +1,23 @@
+{
+    "fields": [
+        "name",
+        "addr",
+        "levels",
+        "smoking"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "rail",
+    "maki": "maki",
+    "matchScore": 1,
+    "name": "Train Station",
+    "searchable": true,
+    "tags": {
+        "building": "train_station"
+    },
+    "terms": [
+        "train station",
+        "railway station"
+    ]
+}

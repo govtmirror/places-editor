@@ -1,0 +1,23 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "backrest",
+        "direction",
+        "seats",
+        "material"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "matchScore": 1,
+    "name": "Bench",
+    "searchable": true,
+    "tags": {
+        "amenity": "bench"
+    },
+    "terms": [
+        "bench",
+        "seat"
+    ]
+}

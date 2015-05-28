@@ -1,0 +1,35 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "addr",
+        "opening_hours",
+        "emergency"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "hospital-black",
+    "maki": "npmaki",
+    "matchScore": 1,
+    "name": "Hospital Grounds",
+    "searchable": true,
+    "tags": {
+        "amenity": "hospital"
+    },
+    "terms": [
+        "hospital grounds",
+        "hospital",
+        "ward",
+        "institution",
+        "infirmary",
+        "clinic",
+        "emergency room",
+        "doctor",
+        "health service",
+        "sick",
+        "surgery",
+        "medical",
+        "emergency"
+    ]
+}

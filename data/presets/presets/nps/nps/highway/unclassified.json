@@ -1,0 +1,27 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "surface",
+        "width",
+        "maxspeed",
+        "oneway",
+        "lanes",
+        "access"
+    ],
+    "geometry": [
+        "line"
+    ],
+    "icon": "highway-unclassified",
+    "matchScore": 1,
+    "name": "Unclassified Road",
+    "searchable": true,
+    "tags": {
+        "highway": "unclassified"
+    },
+    "terms": [
+        "unclassified road",
+        "unclassified",
+        "road"
+    ]
+}

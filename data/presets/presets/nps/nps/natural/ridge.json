@@ -1,0 +1,24 @@
+{
+    "fields": [
+        "name"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "matchScore": 1,
+    "name": "Ridge",
+    "searchable": true,
+    "tags": {
+        "natural": "ridge"
+    },
+    "terms": [
+        "ridge",
+        "crest",
+        "cuesta",
+        "escarpment",
+        "hogback",
+        "lae",
+        "rim",
+        "spur"
+    ]
+}

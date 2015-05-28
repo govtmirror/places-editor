@@ -1,0 +1,23 @@
+{
+    "fields": [
+        "name",
+        "addr",
+        "levels"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "college",
+    "maki": "maki",
+    "matchScore": 1,
+    "name": "University Building",
+    "searchable": true,
+    "tags": {
+        "building": "university"
+    },
+    "terms": [
+        "university building",
+        "university",
+        "college"
+    ]
+}

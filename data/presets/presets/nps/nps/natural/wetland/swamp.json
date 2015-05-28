@@ -1,0 +1,26 @@
+{
+    "fields": [
+        "name"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "water",
+    "maki": "maki",
+    "matchScore": 1,
+    "name": "Swamp",
+    "searchable": true,
+    "tags": {
+        "natural": "wetland",
+        "wetland": "swamp"
+    },
+    "terms": [
+        "swamp",
+        "wetland",
+        "bog",
+        "cienega",
+        "marais",
+        "marsh",
+        "pocosin"
+    ]
+}

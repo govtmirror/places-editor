@@ -1,0 +1,19 @@
+{
+    "fields": [
+        "name",
+        "operator"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "matchScore": 1,
+    "name": "Dyke (Levee)",
+    "searchable": true,
+    "tags": {
+        "man_made": "dyke"
+    },
+    "terms": [
+        "dyke",
+        "levee"
+    ]
+}

@@ -1,0 +1,20 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "resource"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "matchScore": 1,
+    "name": "Quarry (Mine)",
+    "searchable": true,
+    "tags": {
+        "landuse": "quarry"
+    },
+    "terms": [
+        "quarry",
+        "mine"
+    ]
+}

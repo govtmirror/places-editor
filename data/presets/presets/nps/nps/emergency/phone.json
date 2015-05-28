@@ -1,0 +1,24 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "addr"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "telephone-white",
+    "maki": "npmaki",
+    "matchScore": 1,
+    "name": "Emergency Telephone",
+    "searchable": true,
+    "tags": {
+        "emergency": "phone"
+    },
+    "terms": [
+        "emergency telephone",
+        "emergency phone",
+        "phone",
+        "emergency"
+    ]
+}

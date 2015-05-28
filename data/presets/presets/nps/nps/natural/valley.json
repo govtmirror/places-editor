@@ -1,0 +1,28 @@
+{
+    "fields": [
+        "name"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "matchScore": 1,
+    "name": "Valley",
+    "searchable": true,
+    "tags": {
+        "natural": "valley"
+    },
+    "terms": [
+        "valley",
+        "barranca",
+        "canyon",
+        "chasm",
+        "cove",
+        "draw",
+        "glen",
+        "gorge",
+        "gulch",
+        "gulf",
+        "hollow",
+        "ravine"
+    ]
+}

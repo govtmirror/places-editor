@@ -1,0 +1,38 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "tracktype",
+        "surface",
+        "width",
+        "incline",
+        "mtb/scale",
+        "mtb/scale/uphill",
+        "mtb/scale/imba",
+        "sac_scale",
+        "trail_visibility",
+        "access"
+    ],
+    "geometry": [
+        "point",
+        "line"
+    ],
+    "icon": "downhill-skiing-black",
+    "maki": "npmaki",
+    "matchScore": 1,
+    "name": "Downhill Ski Trail",
+    "searchable": true,
+    "tags": {
+        "piste:type": "downhill"
+    },
+    "terms": [
+        "downhill ski trail",
+        "downhill ski",
+        "downhill",
+        "alpine ski trail",
+        "alpine ski",
+        "alpine",
+        "trail",
+        "track"
+    ]
+}

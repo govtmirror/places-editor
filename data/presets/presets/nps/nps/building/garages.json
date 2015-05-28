@@ -1,0 +1,22 @@
+{
+    "fields": [
+        "name",
+        "addr",
+        "levels",
+        "capacity"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "warehouse",
+    "maki": "maki",
+    "matchScore": 1,
+    "name": "Garages",
+    "searchable": true,
+    "tags": {
+        "building": "garages"
+    },
+    "terms": [
+        "garages"
+    ]
+}

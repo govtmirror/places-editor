@@ -1,0 +1,26 @@
+{
+    "fields": [
+        "name",
+        "addr",
+        "levels",
+        "smoking"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "icon": "building",
+    "maki": "maki",
+    "matchScore": 1,
+    "name": "Public Building",
+    "searchable": true,
+    "tags": {
+        "building": "public"
+    },
+    "terms": [
+        "public building",
+        "public",
+        "civic",
+        "town hall",
+        "court house"
+    ]
+}
