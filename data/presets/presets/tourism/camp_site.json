@@ -1,10 +1,15 @@
 {
     "fields": [
         "operator",
-        "address"
+        "address",
+        "capacity",
+        "fee"
     ],
     "geometry": [
         "point"
+    ],
+    "terms": [
+        "Tent"
     ],
     "tags": {
         "tourism": "camp_site",
