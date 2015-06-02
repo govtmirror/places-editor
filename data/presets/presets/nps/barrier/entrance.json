@@ -8,7 +8,7 @@
     "geometry": [
         "point"
     ],
-    "icon": "ranger-station-white",
+    "icon": "ranger-station-black",
     "maki": "npmaki",
     "matchScore": 1,
     "name": "Entrance Station",

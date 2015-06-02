@@ -10,7 +10,7 @@
     "geometry": [
         "point"
     ],
-    "icon": "campground-white",
+    "icon": "campground-black",
     "maki": "npmaki",
     "matchScore": 1,
     "name": "Campsite",

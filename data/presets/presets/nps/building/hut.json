@@ -7,7 +7,7 @@
     "geometry": [
         "point"
     ],
-    "icon": "shelter-white",
+    "icon": "shelter-black",
     "maki": "npmaki",
     "matchScore": 1,
     "name": "Hut",

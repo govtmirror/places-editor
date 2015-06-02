@@ -8,7 +8,7 @@
     "geometry": [
         "point"
     ],
-    "icon": "lodging-white",
+    "icon": "lodging-black",
     "maki": "npmaki",
     "matchScore": 1,
     "name": "Lodge",
