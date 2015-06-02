@@ -1,12 +1,11 @@
 {
   "area": [
-    "nps/building",
+    "nps/building/yes_building",
     "nps/amenity/parking"
   ],
   "line": [
     "nps/highway/path",
-    "nps/highway/bridleway",
-    "nps/highway/motorway",
+    "nps/highway/equestrian_trail",
     "nps/highway/residential",
     "nps/highway/road",
     "nps/highway/secondary",
