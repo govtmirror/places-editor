@@ -39,6 +39,10 @@ button.action:hover {
   left: 17px;
   margin: auto;
 }
+.preset-icon-npmaki-area
+.preset-icon-npmaki-line {
+  margin-left: 18px;
+}
 .checkselect label:last-of-type {
   color: #b28000;
 }
