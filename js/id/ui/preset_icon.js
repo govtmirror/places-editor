@@ -31,6 +31,9 @@ iD.ui.PresetIcon = function() {
         $icon.attr('class', function() {
             var icon = p.icon || (geom === 'line' ? 'other-line' : 'marker-stroked'),
                 klass = 'feature-' + icon + ' preset-icon' + (p.maki && p.maki !== 'maki' ? '-' + p.maki : '');
+            if (p.maki === 'npmaki') {
+              klass += ' preset-icon-npmaki-' + geom;
+            }
 
             var featureicon = iD.data.featureIcons[icon];
             if (featureicon && featureicon[geom]) {
