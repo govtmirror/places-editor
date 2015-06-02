@@ -5,6 +5,7 @@
         "width"
     ],
     "geometry": [
+        "area",
         "point"
     ],
     "icon": "boat-launch-black",

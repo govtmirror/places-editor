@@ -5,6 +5,7 @@
         "levels"
     ],
     "geometry": [
+        "area",
         "point"
     ],
     "icon": "shelter-black",

@@ -6,6 +6,7 @@
         "capacity"
     ],
     "geometry": [
+        "area",
         "point"
     ],
     "icon": "warehouse",

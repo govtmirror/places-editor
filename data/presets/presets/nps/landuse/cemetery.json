@@ -3,9 +3,10 @@
         "name"
     ],
     "geometry": [
+        "area",
         "point"
     ],
-    "icon": "cemetary",
+    "icon": "cemetery",
     "maki": "maki",
     "matchScore": 1,
     "name": "Cemetery",
@@ -14,7 +15,7 @@
         "landuse": "cemetery"
     },
     "terms": [
-        "cemetary",
+        "cemetery",
         "graveyard"
     ]
 }

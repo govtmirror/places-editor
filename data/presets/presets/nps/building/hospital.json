@@ -6,6 +6,7 @@
         "emergency"
     ],
     "geometry": [
+        "area",
         "point"
     ],
     "icon": "hospital-black",

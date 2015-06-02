@@ -3,6 +3,7 @@
         "name"
     ],
     "geometry": [
+        "area",
         "point"
     ],
     "icon": "Ruin",

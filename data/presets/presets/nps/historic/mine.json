@@ -4,6 +4,7 @@
         "description"
     ],
     "geometry": [
+        "area",
         "point"
     ],
     "icon": "Ruin",

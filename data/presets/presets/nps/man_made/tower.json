@@ -4,6 +4,7 @@
         "operator"
     ],
     "geometry": [
+        "area",
         "point"
     ],
     "icon": "Lookout tower",

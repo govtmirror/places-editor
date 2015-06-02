@@ -6,6 +6,7 @@
         "smoking"
     ],
     "geometry": [
+        "area",
         "point"
     ],
     "icon": "building",

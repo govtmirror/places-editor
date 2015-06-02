@@ -3,6 +3,7 @@
         "name"
     ],
     "geometry": [
+        "area",
         "point"
     ],
     "matchScore": 1,

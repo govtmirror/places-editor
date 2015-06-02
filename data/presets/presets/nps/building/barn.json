@@ -6,6 +6,7 @@
         "landuse"
     ],
     "geometry": [
+        "area",
         "point"
     ],
     "icon": "farm",

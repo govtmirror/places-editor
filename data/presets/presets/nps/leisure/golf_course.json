@@ -6,6 +6,7 @@
         "opening_hours"
     ],
     "geometry": [
+        "area",
         "point"
     ],
     "icon": "golfing-black",
