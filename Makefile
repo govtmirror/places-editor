@@ -1,24 +1,49 @@
 # See the README for installation instructions.
 
 all: \
+	$(MAKI_TARGETS) \
+	$(BUILDJS_TARGETS) \
 	dist/iD.css \
 	dist/iD.js \
 	dist/iD.min.js \
-	dist/presets.js \
-	dist/imagery.js \
 	dist/img/line-presets.png \
 	dist/img/relation-presets.png \
 
-DATA_FILES = $(shell find data -type f -name '*.json' -o -name '*.md')
-data/data.js: $(DATA_FILES) dist/locales/en.json dist/img/maki-sprite.png data/presets/presets.json data/presets/defaults.json data/presets/categories.json data/presets/fields.json
-	@echo "----< $@ >----"
+MAKI_TARGETS = \
+	css/feature-icons.css \
+	data/feature-icons.json
+
+MAKI_SOURCES = \
+	data/line-icons.json \
+	data/relation-icons.json \
+	node_modules/maki/www/maki-sprite.json \
+	dist/img/maki-sprite.png
+
+$(MAKI_TARGETS): $(MAKI_SOURCES) data/maki_sprite.js
+	node data/maki_sprite.js
+
+dist/img/maki-sprite.png: ./node_modules/maki/www/images/maki-sprite.png
+	cp $< $@
+
+BUILDJS_TARGETS = \
+	data/presets/categories.json \
+	data/presets/fields.json \
+	data/presets/presets.json \
+	data/presets.yaml \
+	data/taginfo.json \
+	data/data.js \
+	dist/locales/en.js \
+	dist/presets.js \
+	dist/imagery.js
+
+BUILDJS_SOURCES = \
+	$(filter-out $(BUILDJS_TARGETS), $(shell find data -type f -name '*.json')) \
+	data/core.yaml
+
+$(BUILDJS_TARGETS): $(BUILDJS_SOURCES) build.js
 	node build.js
 
 node_modules/maki/www/images/maki-sprite.png: node_modules/.install
-
-dist/locales/en.json: data/core.yaml data/presets.yaml data/presets/presets.json data/presets/defaults.json data/presets/categories.json data/presets/fields.json
-	@echo "----< $@ >----"
-	node build.js
 
 npmap:
 	@echo "----< $@ >----"
@@ -88,8 +113,7 @@ dist/iD.min.js: dist/iD.js Makefile
 	@rm -f $@
 	node_modules/.bin/uglifyjs $< -c -m -o $@
 
-dist/iD.css: css/*.css dist/img/maki-sprite.png
-	@echo "----< $@ >----"
+dist/iD.css: $(MAKI_TARGETS) css/*.css
 	cat css/reset.css css/map.css css/app.css css/feature-icons.css css/nps.css> $@
 
 node_modules/.install: package.json
@@ -102,6 +126,7 @@ clean:
 	rm -f dist/img/maki-sprite.png css/img/maki-sprite.png
 	rm -f dist/img/npmaki-sprite.png css/img/npmaki-sprite.png
 	rm -f data/presets.yaml data/presets/fields.json data/presets/categories.json data/presets/presets.json dist/img/relation-presets.png dist/img/line-presets.png
+	rm -f $(MAKI_TARGETS) $(BUILDJS_TARGETS) dist/iD*.js dist/iD.css
 
 translations:
 	@echo "----< $@ >----"
@@ -126,32 +151,11 @@ dist/img/relation-presets.png: svg/relation-presets.svg
 	@echo "----< $@ >----"
 	if [ `which inkscape` ]; then $(SPRITE) --export-png=$@ $<; else echo "Inkscape is not installed"; fi;
 
-dist/img/maki-sprite.png: ./node_modules/maki/www/images/maki-sprite.png dist/img/npmaki-sprite.png
+dist/img/npmaki-sprite.png: ./node_modules/npmaki/www/images/npmaki-sprite.png
 	@echo "----< $@ >----"
 	node data/maki_sprite
 	cp $< $@
-	cp $< css/img/
-
-dist/img/npmaki-sprite.png: ./node_modules/npmaki/www/images/npmaki-sprite.png
-	@echo "----< $@ >----"
-	cp $< $@
 	cp $< css/img/npmaki-sprite.png
-
-data/presets/presets.json:
-	@echo "----< $@ >----"
-	@echo "{}" > $@
-
-data/presets/categories.json:
-	@echo "----< $@ >----"
-	@echo "{}" > $@
-
-data/presets/fields.json:
-	@echo "----< $@ >----"
-	@echo "{}" > $@
-
-data/presets.yaml:
-	@echo "----< $@ >----"
-	@echo "" > $@
 
 D3_FILES = \
 	node_modules/d3/src/start.js \
