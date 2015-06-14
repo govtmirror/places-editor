@@ -8,7 +8,7 @@
 
 //Configuration variables
 var csvFilename = 'presets.csv',
-  presetFoldername = 'nps',
+  presetFoldername = 'presets',
 
   csvParse = require('csv-parse'),
   fs = require('fs'),
@@ -48,7 +48,7 @@ var csvFilename = 'presets.csv',
       });
 
       // write new preset to file
-      var presetFile = preset.Presetpath + '.json',
+      var presetFile = preset.Preset_Path + '.json',
         presetPath = path.join(presetPathRoot, presetFile),
         presetDir = path.dirname(presetPath),
         fileContent = JSON.stringify(newPreset, null, 4);
@@ -72,7 +72,17 @@ var csvFilename = 'presets.csv',
       fieldsPath = './fields/';
 
     return requestedFields.filter(function(fieldName) {
-      return fs.statSync(fieldsPath + fieldName + '.json').isFile();
+      var returnValue = false,
+        stats;
+      try {
+        stats = fs.statSync(fieldsPath + fieldName + '.json');
+        if (stats && stats.isFile()) {
+          returnValue = true;
+        }
+      } catch (e) {
+        returnValue = false;
+      }
+      return returnValue;
     });
   },
   makeGeometryList = function(preset) {
