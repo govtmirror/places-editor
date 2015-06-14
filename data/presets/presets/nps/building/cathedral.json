@@ -6,7 +6,6 @@
         "religion"
     ],
     "geometry": [
-        "area",
         "point"
     ],
     "icon": "place-of-worship",

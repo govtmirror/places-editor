@@ -13,7 +13,7 @@
     "name": "Harbor",
     "searchable": true,
     "tags": {
-        "harbour": "yes"
+        "harbour": "*"
     },
     "terms": [
         "harbour",

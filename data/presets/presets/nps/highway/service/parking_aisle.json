@@ -1,17 +1,22 @@
 {
-    "icon": "highway-service",
     "fields": [
+        "name",
+        "surface",
         "oneway",
-        "access",
-        "surface"
+        "access"
     ],
     "geometry": [
         "line"
     ],
+    "icon": "highway-service",
+    "matchScore": 1,
+    "name": "Parking Aisle",
+    "searchable": true,
     "tags": {
         "highway": "service",
         "service": "parking_aisle"
     },
-    "name": "Parking Aisle",
-    "searchable": true
+    "terms": [
+        "parking aisle"
+    ]
 }

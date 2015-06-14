@@ -9,7 +9,8 @@
     ],
     "geometry": [
         "point",
-        "area"
+        "area",
+        "vertex"
     ],
     "icon": "parking-black",
     "maki": "npmaki",

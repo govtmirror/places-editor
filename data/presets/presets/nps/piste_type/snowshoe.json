@@ -23,6 +23,7 @@
     "name": "Snowshoe Trail",
     "searchable": true,
     "tags": {
+        "route": "piste",
         "piste:type": "hike"
     },
     "terms": [

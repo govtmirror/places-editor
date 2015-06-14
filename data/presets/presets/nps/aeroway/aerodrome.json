@@ -7,8 +7,8 @@
         "iata"
     ],
     "geometry": [
-        "area",
-        "point"
+        "point",
+        "area"
     ],
     "icon": "airport-black",
     "maki": "npmaki",

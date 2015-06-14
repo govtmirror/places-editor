@@ -4,8 +4,8 @@
         "operator"
     ],
     "geometry": [
-        "area",
-        "point"
+        "point",
+        "area"
     ],
     "icon": "oil-well",
     "maki": "maki",

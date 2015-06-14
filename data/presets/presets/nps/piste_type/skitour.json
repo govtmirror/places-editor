@@ -17,22 +17,17 @@
         "point",
         "line"
     ],
-    "icon": "downhill-skiing-black",
-    "maki": "npmaki",
     "matchScore": 1,
-    "name": "Downhill Ski Trail",
+    "name": "Backcountry Ski Trail",
     "searchable": true,
     "tags": {
         "route": "piste",
-        "piste:type": "downhill"
+        "piste:type": "skitour"
     },
     "terms": [
-        "downhill ski trail",
-        "downhill ski",
-        "downhill",
-        "alpine ski trail",
-        "alpine ski",
-        "alpine",
+        "backcountry ski trail",
+        "backcountry ski",
+        "backcountry",
         "trail",
         "track"
     ]

@@ -1,6 +1,6 @@
 {
   "name": "places-editor",
-  "version": "1.7.2",
+  "version": "1.7.3",
   "description": "an editor for the NPS Places Project",
   "main": "iD.js",
   "directories": {
@@ -24,7 +24,7 @@
     "d3": "3.5.5",
     "csv-parse": "0.1.3",
     "smash": "0.0",
-    "lodash-cli": "2.3.0",
+    "lodash-cli": "3.9.3",
     "uglify-js": "~2.4.16",
     "maki": "0.4.5",
     "npmaki": "git+https://github.com/nationalparkservice/npmaki.git#gh-pages",

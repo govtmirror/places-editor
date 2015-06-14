@@ -21,7 +21,7 @@
     "name": "Dog Sled Trail",
     "searchable": true,
     "tags": {
-        "highway": "track",
+        "route": "piste",
         "piste:type": "sleigh"
     },
     "terms": [

@@ -3,7 +3,8 @@
         "name"
     ],
     "geometry": [
-        "point"
+        "point",
+        "line"
     ],
     "icon": "dam",
     "maki": "maki",

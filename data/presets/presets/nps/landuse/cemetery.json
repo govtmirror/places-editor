@@ -3,10 +3,10 @@
         "name"
     ],
     "geometry": [
-        "area",
-        "point"
+        "point",
+        "area"
     ],
-    "icon": "cemetery",
+    "icon": "cemetary",
     "maki": "maki",
     "matchScore": 1,
     "name": "Cemetery",

@@ -4,19 +4,19 @@
     ],
     "geometry": [
         "point",
-        "area"
+        "vertex"
     ],
-    "icon": "campfire-black",
+    "icon": "horseback-riding-black",
     "maki": "npmaki",
     "matchScore": 1,
-    "name": "Campfire",
+    "name": "Horseback Riding",
     "searchable": true,
     "tags": {
-        "leisure": "firepit"
+        "leisure": "horse_riding"
     },
     "terms": [
-        "campfire",
-        "firepit",
-        "fireplace"
+        "horse",
+        "riding",
+        "horseback"
     ]
 }

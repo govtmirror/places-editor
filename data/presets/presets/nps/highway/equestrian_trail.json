@@ -23,7 +23,7 @@
     "name": "Equestrian Trail",
     "searchable": true,
     "tags": {
-        "highway": "track",
+        "highway": "path",
         "horse": "yes"
     },
     "terms": [

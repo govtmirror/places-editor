@@ -3,8 +3,8 @@
         "name"
     ],
     "geometry": [
-        "area",
-        "point"
+        "point",
+        "area"
     ],
     "icon": "Ruin",
     "maki": "nps",
@@ -12,7 +12,7 @@
     "name": "Historic Site",
     "searchable": true,
     "tags": {
-        "historic": "yes"
+        "historic": "*"
     },
     "terms": [
         "historic site",

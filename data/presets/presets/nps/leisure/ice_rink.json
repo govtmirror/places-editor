@@ -8,8 +8,8 @@
         "sport"
     ],
     "geometry": [
-        "area",
-        "point"
+        "point",
+        "area"
     ],
     "icon": "ice-skating-black",
     "maki": "npmaki",

@@ -6,7 +6,8 @@
         "opening_hours"
     ],
     "geometry": [
-        "point"
+        "point",
+        "vertex"
     ],
     "icon": "information-black",
     "maki": "npmaki",

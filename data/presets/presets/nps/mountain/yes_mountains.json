@@ -3,7 +3,8 @@
         "name"
     ],
     "geometry": [
-        "point"
+        "point",
+        "vertex"
     ],
     "matchScore": 1,
     "name": "Mountain Pass (Gap)",

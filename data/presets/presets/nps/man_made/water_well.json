@@ -4,8 +4,8 @@
         "operator"
     ],
     "geometry": [
-        "area",
-        "point"
+        "point",
+        "area"
     ],
     "matchScore": 1,
     "name": "Water Well",

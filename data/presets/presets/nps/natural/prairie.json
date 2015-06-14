@@ -3,16 +3,17 @@
         "name"
     ],
     "geometry": [
-        "point",
-        "area"
+        "point"
     ],
     "matchScore": 1,
-    "name": "Military Area",
+    "name": "Prairie",
     "searchable": true,
     "tags": {
-        "landuse": "military"
+        "natural": "grassland",
+        "grassland": "prarie"
     },
     "terms": [
-        "military area"
+        "prarie",
+        "grassland"
     ]
 }

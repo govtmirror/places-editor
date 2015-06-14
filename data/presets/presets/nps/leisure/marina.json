@@ -6,8 +6,8 @@
         "capacity"
     ],
     "geometry": [
-        "area",
-        "point"
+        "point",
+        "area"
     ],
     "icon": "marina-black",
     "maki": "npmaki",

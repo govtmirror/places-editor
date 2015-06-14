@@ -6,7 +6,6 @@
         "opening_hours"
     ],
     "geometry": [
-        "area",
         "point"
     ],
     "icon": "commercial",

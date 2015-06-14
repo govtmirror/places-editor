@@ -4,7 +4,8 @@
         "operator",
         "address",
         "network",
-        "shelter"
+        "shelter",
+        "bench"
     ],
     "geometry": [
         "point"

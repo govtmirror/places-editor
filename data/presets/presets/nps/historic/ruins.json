@@ -3,8 +3,8 @@
         "name"
     ],
     "geometry": [
-        "area",
-        "point"
+        "point",
+        "area"
     ],
     "icon": "Ruin",
     "maki": "nps",

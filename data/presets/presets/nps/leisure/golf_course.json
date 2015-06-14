@@ -6,8 +6,8 @@
         "opening_hours"
     ],
     "geometry": [
-        "area",
-        "point"
+        "point",
+        "area"
     ],
     "icon": "golfing-black",
     "maki": "npmaki",

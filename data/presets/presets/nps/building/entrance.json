@@ -3,19 +3,17 @@
         "name"
     ],
     "geometry": [
-        "point",
-        "area"
+        "vertex"
     ],
-    "icon": "monument",
+    "icon": "entrance",
     "maki": "maki",
     "matchScore": 1,
-    "name": "Monument",
+    "name": "Entrance/Exit",
     "searchable": true,
     "tags": {
-        "historic": "monument"
+        "building": "entrance"
     },
     "terms": [
-        "monument",
-        "historic monument"
+        "entrance"
     ]
 }

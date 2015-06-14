@@ -14,7 +14,7 @@
     "name": "Building",
     "searchable": true,
     "tags": {
-        "building": "yes"
+        "building": "*"
     },
     "terms": [
         "building",

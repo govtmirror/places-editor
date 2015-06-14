@@ -4,7 +4,9 @@
         "width"
     ],
     "geometry": [
-        "point"
+        "point",
+        "line",
+        "vertex"
     ],
     "icon": "water",
     "maki": "maki",
