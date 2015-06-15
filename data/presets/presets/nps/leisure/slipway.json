@@ -13,8 +13,7 @@
     "name": "Boat Launch",
     "searchable": true,
     "tags": {
-        "leisure": "slipway",
-        "waterway": "yes"
+        "leisure": "slipway"
     },
     "terms": [
         "boat launch",
