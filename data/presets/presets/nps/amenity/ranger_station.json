@@ -14,8 +14,7 @@
     "name": "Ranger Station",
     "searchable": true,
     "tags": {
-        "amenity": "ranger_station",
-        "building": "yes"
+        "amenity": "ranger_station"
     },
     "terms": [
         "ranger station",

@@ -11,8 +11,7 @@
     "name": "Historic Building",
     "searchable": true,
     "tags": {
-        "historic": "building",
-        "building": "yes"
+        "historic": "building"
     },
     "terms": [
         "historic building"

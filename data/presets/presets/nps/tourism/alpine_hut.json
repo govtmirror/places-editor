@@ -14,8 +14,7 @@
     "name": "Lodge",
     "searchable": true,
     "tags": {
-        "tourism": "alpine_hut",
-        "building": "yes"
+        "tourism": "alpine_hut"
     },
     "terms": [
         "lodge",

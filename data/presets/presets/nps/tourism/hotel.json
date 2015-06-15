@@ -14,8 +14,7 @@
     "name": "Lodging",
     "searchable": true,
     "tags": {
-        "tourism": "hotel",
-        "building": "yes"
+        "tourism": "hotel"
     },
     "terms": [
         "lodging",
