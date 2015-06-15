@@ -1,6 +1,7 @@
 {
     "fields": [
         "name",
+        "piste/difficulty",
         "operator",
         "tracktype",
         "surface",
@@ -22,7 +23,6 @@
     "name": "Sledding",
     "searchable": true,
     "tags": {
-        "route": "piste",
         "piste:type": "sled"
     },
     "terms": [
