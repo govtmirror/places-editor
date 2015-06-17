@@ -9,7 +9,7 @@
         "line"
     ],
     "icon": "highway-track",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Non-Motorized Watercraft Trail",
     "searchable": true,
     "tags": {

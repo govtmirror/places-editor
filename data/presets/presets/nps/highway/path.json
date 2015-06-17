@@ -20,7 +20,7 @@
     ],
     "icon": "trailhead-black",
     "maki": "npmaki",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Trail",
     "searchable": true,
     "tags": {

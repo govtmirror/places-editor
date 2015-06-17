@@ -10,7 +10,7 @@
     ],
     "icon": "drinking-water-black",
     "maki": "npmaki",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Drinking Water",
     "searchable": true,
     "tags": {

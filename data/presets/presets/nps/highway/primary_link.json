@@ -13,7 +13,7 @@
         "line"
     ],
     "icon": "highway-primary-link",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Primary Link",
     "searchable": true,
     "tags": {

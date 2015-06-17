@@ -10,7 +10,7 @@
         "line"
     ],
     "icon": "highway-service",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Parking Aisle",
     "searchable": true,
     "tags": {

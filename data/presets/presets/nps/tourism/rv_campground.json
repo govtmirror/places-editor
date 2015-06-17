@@ -12,7 +12,7 @@
     ],
     "icon": "rv-campground-black",
     "maki": "npmaki",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "RV Campground",
     "searchable": true,
     "tags": {

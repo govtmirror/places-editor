@@ -7,7 +7,7 @@
     ],
     "icon": "entrance",
     "maki": "maki",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Entrance/Exit",
     "searchable": true,
     "tags": {

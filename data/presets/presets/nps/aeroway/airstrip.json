@@ -11,7 +11,7 @@
     ],
     "icon": "airfield",
     "maki": "maki",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Airstrip",
     "searchable": true,
     "tags": {

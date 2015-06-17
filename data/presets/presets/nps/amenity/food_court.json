@@ -10,7 +10,7 @@
     ],
     "icon": "food-service-black",
     "maki": "npmaki",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Food Service",
     "searchable": true,
     "tags": {

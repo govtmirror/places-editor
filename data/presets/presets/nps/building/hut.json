@@ -9,7 +9,7 @@
     ],
     "icon": "shelter-black",
     "maki": "npmaki",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Hut",
     "searchable": true,
     "tags": {

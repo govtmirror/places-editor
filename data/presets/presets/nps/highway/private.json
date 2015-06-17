@@ -14,7 +14,7 @@
         "line"
     ],
     "icon": "highway-road",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Private Road",
     "searchable": true,
     "tags": {

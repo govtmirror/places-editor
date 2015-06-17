@@ -10,7 +10,7 @@
     ],
     "icon": "Viewing area|Scenic viewpoint",
     "maki": "nps",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Viewpoint",
     "searchable": true,
     "tags": {

@@ -11,7 +11,7 @@
     ],
     "icon": "golfing-black",
     "maki": "npmaki",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Golf Course",
     "searchable": true,
     "tags": {

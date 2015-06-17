@@ -10,7 +10,7 @@
     ],
     "icon": "lodging-black",
     "maki": "npmaki",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Lodging",
     "searchable": true,
     "tags": {

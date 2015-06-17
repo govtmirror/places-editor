@@ -20,7 +20,7 @@
     ],
     "icon": "bike-trail-black",
     "maki": "npmaki",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Bicycle Trail",
     "searchable": true,
     "tags": {

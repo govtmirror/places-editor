@@ -15,7 +15,7 @@
         "line"
     ],
     "icon": "highway-service",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Service Road",
     "searchable": true,
     "tags": {

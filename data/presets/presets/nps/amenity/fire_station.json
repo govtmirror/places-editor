@@ -9,7 +9,7 @@
     ],
     "icon": "fire-station",
     "maki": "maki",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Fire Station",
     "searchable": true,
     "tags": {

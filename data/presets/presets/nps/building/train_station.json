@@ -10,7 +10,7 @@
     ],
     "icon": "rail",
     "maki": "maki",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Train Station",
     "searchable": true,
     "tags": {

@@ -11,7 +11,7 @@
     ],
     "icon": "hospital-black",
     "maki": "npmaki",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Hospital Grounds",
     "searchable": true,
     "tags": {

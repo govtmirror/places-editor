@@ -10,7 +10,7 @@
     ],
     "icon": "ranger-station-black",
     "maki": "npmaki",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Entrance Station",
     "searchable": true,
     "tags": {

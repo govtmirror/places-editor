@@ -7,7 +7,7 @@
     ],
     "icon": "Wi-Fi",
     "maki": "nps",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Wifi",
     "searchable": true,
     "tags": {

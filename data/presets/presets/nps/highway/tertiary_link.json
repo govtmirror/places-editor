@@ -13,7 +13,7 @@
         "line"
     ],
     "icon": "highway-tertiary-link",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Tertiary Link",
     "searchable": true,
     "tags": {
