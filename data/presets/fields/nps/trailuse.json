@@ -1,0 +1,31 @@
+{
+    "keys": ["motor_vehicle", "motorcycle", "foot", "bicycle", "atv", "4wd_only", "snowmobile", "horse", "canoe", "motorboat"],
+    "reference": {"key": "access"},
+    "type": "access",
+    "label": "Approved Uses",
+    "placeholder": "Unknown",
+    "strings": {
+        "types": {
+            "motor_vehicle": "Motor Vehicles",
+            "motorcycle": "Motorcycle",
+            "foot": "Foot",
+            "bicycle": "Bicycles",
+            "atv": "All Terrain Vehicle",
+            "4wd_only": "Four Wheel Drive Only",
+            "snowmobile": "Snowmobile",
+            "horse": "Horse",
+            "canoe": "Canoe",
+            "motorboat": "Motorboat,"
+        },
+        "options": {
+            "yes": {
+                "title": "Allowed",
+                "description": "Access permitted by law; a right of way"
+            },
+            "no": {
+                "title": "Prohibited",
+                "description": "Access not permitted to the general public"
+            }
+        }
+    }
+}
