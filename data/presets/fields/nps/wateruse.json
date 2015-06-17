@@ -1,20 +1,14 @@
 {
     "keys": ["motor_vehicle", "motorcycle", "foot", "bicycle", "atv", "4wd_only", "snowmobile", "horse", "canoe", "motorboat"],
-    "reference": {"key": "trailuse"},
+    "reference": {"key": "wateruse"},
     "type": "access",
-    "label": "Approved Uses",
+    "label": "Approved Water Uses",
     "placeholder": "Unknown",
     "strings": {
         "types": {
-            "motor_vehicle": "Motor Vehicles",
-            "motorcycle": "Motorcycle",
-            "foot": "Foot",
-            "bicycle": "Bicycles",
-            "atv": "All Terrain Vehicle",
-            "4wd_only": "Four Wheel Drive Only",
-            "snowmobile": "Snowmobile",
-            "horse": "Horse"
-          },
+            "canoe": "Canoe",
+            "motorboat": "Motorboat,"
+        },
         "options": {
             "yes": {
                 "title": "Allowed",
