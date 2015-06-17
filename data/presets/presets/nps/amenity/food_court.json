@@ -14,8 +14,7 @@
     "name": "Food Service",
     "searchable": true,
     "tags": {
-        "amenity": "food_court",
-        "building": "yes"
+        "amenity": "food_court"
     },
     "terms": [
         "food service",

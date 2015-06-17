@@ -1,6 +1,7 @@
 {
     "fields": [
         "name",
+        "piste/difficulty",
         "operator",
         "tracktype",
         "surface",
@@ -23,7 +24,6 @@
     "name": "Downhill Ski Trail",
     "searchable": true,
     "tags": {
-        "route": "piste",
         "piste:type": "downhill"
     },
     "terms": [

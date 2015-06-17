@@ -18,8 +18,7 @@
     "name": "Restroom",
     "searchable": true,
     "tags": {
-        "amenity": "toilets",
-        "building": "yes"
+        "amenity": "toilets"
     },
     "terms": [
         "restroom",

@@ -13,8 +13,7 @@
     "name": "Fire Station",
     "searchable": true,
     "tags": {
-        "amenity": "fire_station",
-        "building": "yes"
+        "amenity": "fire_station"
     },
     "terms": [
         "fire station",

@@ -14,8 +14,7 @@
     "name": "Post Office",
     "searchable": true,
     "tags": {
-        "amenity": "post_office",
-        "building": "yes"
+        "amenity": "post_office"
     },
     "terms": [
         "post office",

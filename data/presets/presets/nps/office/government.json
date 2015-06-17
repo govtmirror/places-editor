@@ -14,8 +14,7 @@
     "name": "Administrative Office",
     "searchable": true,
     "tags": {
-        "office": "government",
-        "building": "yes"
+        "office": "government"
     },
     "terms": [
         "administrative office",

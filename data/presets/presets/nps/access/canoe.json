@@ -13,8 +13,7 @@
     "name": "Canoe Access",
     "searchable": true,
     "tags": {
-        "access": "canoe",
-        "waterway": "yes"
+        "access": "canoe"
     },
     "terms": [
         "canoe access",

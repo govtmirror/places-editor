@@ -14,8 +14,7 @@
     "name": "Store",
     "searchable": true,
     "tags": {
-        "shop": "general",
-        "building": "yes"
+        "shop": "general"
     },
     "terms": [
         "store",
