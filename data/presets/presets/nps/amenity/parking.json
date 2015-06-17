@@ -5,7 +5,7 @@
         "address",
         "capacity",
         "fee",
-        "access"
+        "nps/trailuse"
     ],
     "geometry": [
         "point",

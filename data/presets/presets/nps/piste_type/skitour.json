@@ -1,7 +1,6 @@
 {
     "fields": [
         "name",
-        "piste/difficulty",
         "operator",
         "tracktype",
         "surface",
@@ -12,7 +11,8 @@
         "mtb/scale/imba",
         "sac_scale",
         "trail_visibility",
-        "access"
+        "nps/trailuse",
+        "piste/difficulty"
     ],
     "geometry": [
         "point",
@@ -29,6 +29,7 @@
         "backcountry ski",
         "backcountry",
         "trail",
-        "track"
+        "track",
+        "structure"
     ]
 }

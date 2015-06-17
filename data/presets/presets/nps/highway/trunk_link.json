@@ -6,7 +6,8 @@
         "width",
         "maxspeed",
         "oneway",
-        "access"
+        "nps/trailuse",
+        "structure"
     ],
     "geometry": [
         "line"

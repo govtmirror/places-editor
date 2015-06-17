@@ -5,7 +5,8 @@
         "surface",
         "lit",
         "width",
-        "access"
+        "nps/trailuse",
+        "structure"
     ],
     "geometry": [
         "line"

@@ -7,8 +7,9 @@
         "maxspeed",
         "oneway",
         "lanes",
-        "access",
-        "service"
+        "nps/trailuse",
+        "service",
+        "structure"
     ],
     "geometry": [
         "line"

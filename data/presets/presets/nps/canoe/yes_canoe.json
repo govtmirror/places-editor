@@ -2,7 +2,8 @@
     "fields": [
         "name",
         "operator",
-        "width"
+        "width",
+        "nps/wateruse"
     ],
     "geometry": [
         "line"
