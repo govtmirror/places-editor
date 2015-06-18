@@ -1,5 +1,5 @@
 {
-    "keys": ["motor_vehicle", "motorcycle", "foot", "bicycle", "atv", "4wd_only", "snowmobile", "horse", "canoe", "motorboat"],
+    "keys": ["motor_vehicle", "motorcycle", "foot", "bicycle", "atv", "4wd_only", "snowmobile", "horse"],
     "reference": {"key": "trailuse"},
     "type": "access",
     "label": "Approved Uses",
