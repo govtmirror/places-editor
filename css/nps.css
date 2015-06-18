@@ -81,3 +81,7 @@ button.action:hover {
 .notice .zoom-to:hover {
   background: #f5d176;
 }
+
+.geocode-item {
+  visibility: hidden;
+}
