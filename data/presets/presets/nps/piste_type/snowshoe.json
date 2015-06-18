@@ -18,8 +18,7 @@
         "point",
         "line"
     ],
-    "icon": "Snowshoeing",
-    "maki": "nps",
+    "icon": "feature-marker-stroked",
     "matchScore": 10,
     "name": "Snowshoe Trail",
     "searchable": true,

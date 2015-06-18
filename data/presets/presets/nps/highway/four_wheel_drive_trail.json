@@ -18,8 +18,7 @@
         "point",
         "line"
     ],
-    "icon": "All-terrain trail",
-    "maki": "nps",
+    "icon": "feature-marker-stroked",
     "matchScore": 10,
     "name": "Four-Wheel Drive Trail",
     "searchable": true,

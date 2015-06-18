@@ -7,8 +7,7 @@
         "point",
         "area"
     ],
-    "icon": "Lookout tower",
-    "maki": "nps",
+    "icon": "feature-marker-stroked",
     "matchScore": 10,
     "name": "Tower",
     "searchable": true,

@@ -5,8 +5,7 @@
     "geometry": [
         "point"
     ],
-    "icon": "Ruin",
-    "maki": "nps",
+    "icon": "feature-marker-stroked",
     "matchScore": 10,
     "name": "Historic Building",
     "searchable": true,

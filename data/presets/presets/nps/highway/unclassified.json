@@ -13,7 +13,7 @@
     "geometry": [
         "line"
     ],
-    "icon": "highway-unclassified",
+    "icon": "feature-marker-stroked",
     "matchScore": 10,
     "name": "Unclassified Road",
     "searchable": true,

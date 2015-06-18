@@ -8,8 +8,7 @@
     "geometry": [
         "point"
     ],
-    "icon": "Viewing area|Scenic viewpoint",
-    "maki": "nps",
+    "icon": "feature-marker-stroked",
     "matchScore": 10,
     "name": "Viewpoint",
     "searchable": true,

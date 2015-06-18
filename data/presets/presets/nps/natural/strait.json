@@ -5,6 +5,7 @@
     "geometry": [
         "point"
     ],
+    "icon": "feature-marker-stroked",
     "matchScore": 10,
     "name": "Strait (Channel)",
     "searchable": true,

@@ -9,8 +9,7 @@
         "point",
         "vertex"
     ],
-    "icon": "Point of interest",
-    "maki": "nps",
+    "icon": "feature-marker-stroked",
     "matchScore": 10,
     "name": "Point of Interest",
     "searchable": true,

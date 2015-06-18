@@ -11,6 +11,7 @@
     "geometry": [
         "line"
     ],
+    "icon": "feature-marker-stroked",
     "matchScore": 10,
     "name": "Sidewalk",
     "searchable": true,
