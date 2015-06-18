@@ -101,7 +101,7 @@ var csvFilename = 'presets.csv',
       if (preset.Poly) return preset.JSON_Icon_Poly || preset.JSON_Icon_Line;
       return null;
     } else {
-      return 'feature-marker-stroked'; // Default
+      return 'marker-stroked'; // Default
     }
   },
   makeMaki = function(preset) {
