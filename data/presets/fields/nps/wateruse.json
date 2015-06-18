@@ -1,5 +1,5 @@
 {
-    "keys": ["motor_vehicle", "motorcycle", "foot", "bicycle", "atv", "4wd_only", "snowmobile", "horse", "canoe", "motorboat"],
+    "keys": ["canoe", "motorboat"],
     "reference": {"key": "wateruse"},
     "type": "access",
     "label": "Approved Water Uses",
@@ -7,7 +7,7 @@
     "strings": {
         "types": {
             "canoe": "Canoe",
-            "motorboat": "Motorboat,"
+            "motorboat": "Motorboat"
         },
         "options": {
             "yes": {
