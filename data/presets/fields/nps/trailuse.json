@@ -1,7 +1,7 @@
 {
     "keys": ["motor_vehicle", "motorcycle", "foot", "bicycle", "atv", "4wd_only", "snowmobile", "horse"],
     "reference": {"key": "trailuse"},
-    "type": "access",
+    "type": "npsaccess",
     "label": "Approved Uses",
     "placeholder": "Unknown",
     "strings": {

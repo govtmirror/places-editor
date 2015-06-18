@@ -1,9 +1,9 @@
 {
     "keys": ["canoe", "motorboat"],
     "reference": {"key": "wateruse"},
-    "type": "access",
+    "type": "npsaccess",
     "label": "Approved Water Uses",
-    "placeholder": "Unknown",
+    "placeholder": "Assumed to be No",
     "strings": {
         "types": {
             "canoe": "Canoe",
