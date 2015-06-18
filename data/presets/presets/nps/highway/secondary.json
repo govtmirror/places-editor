@@ -13,6 +13,7 @@
     "geometry": [
         "line"
     ],
+    "icon": "highway-secondary",
     "matchScore": 10,
     "name": "Secondary Road",
     "searchable": true,

@@ -9,6 +9,7 @@
     "geometry": [
         "line"
     ],
+    "icon": "highway-service",
     "matchScore": 10,
     "name": "Parking Aisle",
     "searchable": true,

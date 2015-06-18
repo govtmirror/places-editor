@@ -12,6 +12,7 @@
     "geometry": [
         "line"
     ],
+    "icon": "highway-tertiary-link",
     "matchScore": 10,
     "name": "Tertiary Link",
     "searchable": true,

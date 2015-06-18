@@ -18,6 +18,7 @@
         "point",
         "line"
     ],
+    "icon": "highway-track",
     "matchScore": 10,
     "name": "Four-Wheel Drive Trail",
     "searchable": true,

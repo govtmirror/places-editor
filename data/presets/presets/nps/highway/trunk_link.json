@@ -12,6 +12,7 @@
     "geometry": [
         "line"
     ],
+    "icon": "highway-trunk-link",
     "matchScore": 10,
     "name": "Trunk Link",
     "searchable": true,

@@ -18,6 +18,7 @@
         "point",
         "line"
     ],
+    "icon": "highway-path",
     "matchScore": 10,
     "name": "Backcountry Ski Trail",
     "searchable": true,
