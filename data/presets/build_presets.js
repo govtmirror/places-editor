@@ -99,10 +99,8 @@ var csvFilename = 'presets.csv',
       if (preset.Point || preset.Vertex) return preset.JSON_Icon;
       if (preset.Line) return preset.JSON_Icon_Line;
       if (preset.Poly) return preset.JSON_Icon_Poly || preset.JSON_Icon_Line;
-      return null;
-    } else {
-      return 'marker-stroked'; // Default
     }
+    return null;
   },
   makeMaki = function(preset) {
     if (preset.Point || preset.Vertex) return makis.indexOf(preset.JSON_Maki) >= 0 ? preset.JSON_Maki : null;

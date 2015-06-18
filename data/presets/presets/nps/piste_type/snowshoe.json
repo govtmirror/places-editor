@@ -18,7 +18,6 @@
         "point",
         "line"
     ],
-    "icon": "marker-stroked",
     "matchScore": 10,
     "name": "Snowshoe Trail",
     "searchable": true,

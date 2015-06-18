@@ -6,7 +6,6 @@
         "point",
         "area"
     ],
-    "icon": "marker-stroked",
     "matchScore": 10,
     "name": "Basin",
     "searchable": true,

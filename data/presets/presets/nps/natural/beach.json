@@ -6,7 +6,6 @@
     "geometry": [
         "point"
     ],
-    "icon": "marker-stroked",
     "matchScore": 10,
     "name": "Beach",
     "searchable": true,

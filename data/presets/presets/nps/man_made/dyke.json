@@ -7,7 +7,6 @@
         "point",
         "area"
     ],
-    "icon": "marker-stroked",
     "matchScore": 10,
     "name": "Dyke (Levee)",
     "searchable": true,

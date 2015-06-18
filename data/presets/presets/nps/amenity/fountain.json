@@ -8,7 +8,6 @@
     "geometry": [
         "point"
     ],
-    "icon": "marker-stroked",
     "matchScore": 10,
     "name": "Fountain",
     "searchable": true,
