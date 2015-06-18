@@ -9,7 +9,7 @@
         "point",
         "vertex"
     ],
-    "icon": "feature-marker-stroked",
+    "icon": "marker-stroked",
     "matchScore": 10,
     "name": "Point of Interest",
     "searchable": true,

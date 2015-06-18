@@ -6,7 +6,7 @@
         "point",
         "vertex"
     ],
-    "icon": "feature-marker-stroked",
+    "icon": "marker-stroked",
     "matchScore": 10,
     "name": "Mountain Pass (Gap)",
     "searchable": true,

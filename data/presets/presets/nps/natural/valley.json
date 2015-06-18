@@ -5,7 +5,7 @@
     "geometry": [
         "point"
     ],
-    "icon": "feature-marker-stroked",
+    "icon": "marker-stroked",
     "matchScore": 10,
     "name": "Valley",
     "searchable": true,

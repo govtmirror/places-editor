@@ -14,7 +14,7 @@
     "geometry": [
         "line"
     ],
-    "icon": "feature-marker-stroked",
+    "icon": "marker-stroked",
     "matchScore": 10,
     "name": "Service Road",
     "searchable": true,
