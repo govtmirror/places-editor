@@ -1,0 +1,19 @@
+{
+    "fields": [
+        "name",
+        "operator",
+        "address"
+    ],
+    "geometry": [
+        "point"
+    ],
+    "matchScore": 10,
+    "name": "Bridge",
+    "searchable": true,
+    "tags": {
+        "bridge": "yes"
+    },
+    "terms": [
+        "bridge"
+    ]
+}
