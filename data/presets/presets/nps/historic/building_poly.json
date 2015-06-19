@@ -1,0 +1,18 @@
+{
+    "fields": [
+        "name"
+    ],
+    "geometry": [
+        "area"
+    ],
+    "matchScore": 10,
+    "name": "Historic Building",
+    "searchable": true,
+    "tags": {
+        "historic": "building",
+        "building": "yes"
+    },
+    "terms": [
+        "historic building"
+    ]
+}
