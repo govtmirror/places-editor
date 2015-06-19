@@ -426,7 +426,7 @@ en:
       improve your Park's basemap.
 
       Edits that you make on this map will be visible to everyone who uses
-      Places and/or Park Tiles.
+      Places and/or Park Tiles, including the public. Refer to the [Places Tracing Guide](http://nationalparkservice.github.io/places-tracing-guide/) to review our data schema and tagging best practices.
 
       The Places Editor is a collaborative project with [source
       code available on GitHub](https://github.com/nationalparkservice/iD).
@@ -551,7 +551,7 @@ en:
       airplane flyovers, satellite views, and freely-compiled sources are available
       in the editor under the 'Background Settings' menu on the right.
 
-      By default a Bing Maps satellite layer is
+      By default a Mapbox Satellite layer is
       presented in the editor, but as you pan and zoom the map to new geographical
       areas, new sources will become available.
 
@@ -582,11 +582,11 @@ en:
       has a type assigned, the inspector will display fields with details about
       the feature like its name and address.
 
-      Below the fields you see, you can click icons to add other details,
+      Below the fields you see, you can click 'Add field' to add other details,
       like [Wikipedia](http://www.wikipedia.org/) information, wheelchair
       access, and more.
 
-      At the bottom of the inspector, click 'Additional tags' to add arbitrary
+      At the bottom of the inspector, click 'All tags' to add arbitrary
       other tags to the element. [Taginfo](http://taginfo.openstreetmap.org/) is a
       great resource for learn more about popular tag combinations.
 
@@ -615,18 +615,18 @@ en:
 
       If you want to edit relations, here are the basics.
 
-      To add a feature to a relation, select the feature, click the "+" button in the
-      "All relations" section of the sidebar, and select or type the name of the relation.
+      To add a feature to a relation, select the feature, click the '+' button in the
+      'All relations' section of the sidebar, and select or type the name of the relation.
 
       To create a new relation, select the first feature that should be a member,
-      click the "+" button in the "All relations" section, and select "New relation...".
+      click the '+' button in the 'All relations' section, and select 'New relation...'.
 
       To remove a feature from a relation, select the feature and click the trash
       button next to the relation you want to remove it from.
 
-      You can create multipolygons with holes using the "Merge" tool. Draw two areas (inner
+      You can create multipolygons with holes using the 'Merge' tool. Draw two areas (inner
       and outer), hold the Shift key and click on each of them to select them both, and then
-      click the "Merge" (+) button.
+      click the 'Merge' (+) button.
   intro:
     navigation:
       title: "Navigation"
