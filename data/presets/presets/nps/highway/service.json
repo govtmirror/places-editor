@@ -7,14 +7,15 @@
         "maxspeed",
         "oneway",
         "lanes",
-        "access",
-        "service"
+        "nps/trailuse",
+        "service",
+        "structure"
     ],
     "geometry": [
         "line"
     ],
     "icon": "highway-service",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Service Road",
     "searchable": true,
     "tags": {

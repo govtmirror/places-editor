@@ -11,14 +11,14 @@
         "mtb/scale/imba",
         "sac_scale",
         "trail_visibility",
-        "access"
+        "nps/trailuse"
     ],
     "geometry": [
         "point"
     ],
     "icon": "trailhead-black",
     "maki": "npmaki",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Trailhead",
     "searchable": true,
     "tags": {

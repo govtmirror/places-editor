@@ -10,7 +10,7 @@
     ],
     "icon": "self-guiding-trail-black",
     "maki": "npmaki",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Guidepost",
     "searchable": true,
     "tags": {

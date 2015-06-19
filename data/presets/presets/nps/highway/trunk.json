@@ -7,13 +7,14 @@
         "maxspeed",
         "oneway",
         "lanes",
-        "access"
+        "nps/trailuse",
+        "structure"
     ],
     "geometry": [
         "line"
     ],
     "icon": "highway-trunk",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Trunk Road",
     "searchable": true,
     "tags": {

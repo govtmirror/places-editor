@@ -2,13 +2,14 @@
     "fields": [
         "name",
         "operator",
-        "width"
+        "width",
+        "nps/wateruse"
     ],
     "geometry": [
         "line"
     ],
     "icon": "highway-track",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Motorized Watercraft Trail",
     "searchable": true,
     "tags": {

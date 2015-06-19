@@ -5,12 +5,13 @@
         "surface",
         "lit",
         "width",
-        "access"
+        "nps/trailuse",
+        "structure"
     ],
     "geometry": [
         "line"
     ],
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Sidewalk",
     "searchable": true,
     "tags": {

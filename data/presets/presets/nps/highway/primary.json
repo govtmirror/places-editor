@@ -7,13 +7,14 @@
         "maxspeed",
         "oneway",
         "lanes",
-        "access"
+        "nps/trailuse",
+        "structure"
     ],
     "geometry": [
         "line"
     ],
     "icon": "highway-primary",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Primary Road",
     "searchable": true,
     "tags": {

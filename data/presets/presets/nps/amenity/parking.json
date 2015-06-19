@@ -5,7 +5,7 @@
         "address",
         "capacity",
         "fee",
-        "access"
+        "nps/trailuse"
     ],
     "geometry": [
         "point",
@@ -14,7 +14,7 @@
     ],
     "icon": "parking-black",
     "maki": "npmaki",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Parking",
     "searchable": true,
     "tags": {

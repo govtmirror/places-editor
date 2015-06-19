@@ -2,18 +2,20 @@
     "fields": [
         "name",
         "operator",
-        "width"
+        "width",
+        "nps/wateruse"
     ],
     "geometry": [
         "point"
     ],
     "icon": "canoe-access-black",
     "maki": "npmaki",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Canoe Access",
     "searchable": true,
     "tags": {
-        "access": "canoe"
+        "leisure": "slipway",
+        "canoe": "yes"
     },
     "terms": [
         "canoe access",

@@ -3,13 +3,14 @@
         "name",
         "surface",
         "oneway",
-        "access"
+        "nps/trailuse",
+        "structure"
     ],
     "geometry": [
         "line"
     ],
     "icon": "highway-service",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Parking Aisle",
     "searchable": true,
     "tags": {

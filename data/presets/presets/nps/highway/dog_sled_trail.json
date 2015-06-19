@@ -1,7 +1,6 @@
 {
     "fields": [
         "name",
-        "piste/difficulty",
         "operator",
         "tracktype",
         "surface",
@@ -12,13 +11,15 @@
         "mtb/scale/imba",
         "sac_scale",
         "trail_visibility",
-        "access"
+        "nps/trailuse",
+        "piste/difficulty"
     ],
     "geometry": [
         "point",
         "line"
     ],
-    "matchScore": 1,
+    "icon": "highway-track",
+    "matchScore": 10,
     "name": "Dog Sled Trail",
     "searchable": true,
     "tags": {

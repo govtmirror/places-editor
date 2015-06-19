@@ -5,9 +5,7 @@
     "geometry": [
         "point"
     ],
-    "icon": "Spelunking/Caves",
-    "maki": "nps",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Cave Entrance",
     "searchable": true,
     "tags": {

@@ -1,7 +1,6 @@
 {
     "fields": [
         "name",
-        "piste/difficulty",
         "operator",
         "tracktype",
         "surface",
@@ -12,13 +11,15 @@
         "mtb/scale/imba",
         "sac_scale",
         "trail_visibility",
-        "access"
+        "nps/trailuse",
+        "piste/difficulty"
     ],
     "geometry": [
         "point",
         "line"
     ],
-    "matchScore": 1,
+    "icon": "highway-path",
+    "matchScore": 10,
     "name": "Backcountry Ski Trail",
     "searchable": true,
     "tags": {
@@ -29,6 +30,7 @@
         "backcountry ski",
         "backcountry",
         "trail",
-        "track"
+        "track",
+        "structure"
     ]
 }

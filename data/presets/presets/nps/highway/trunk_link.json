@@ -6,13 +6,14 @@
         "width",
         "maxspeed",
         "oneway",
-        "access"
+        "nps/trailuse",
+        "structure"
     ],
     "geometry": [
         "line"
     ],
     "icon": "highway-trunk-link",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Trunk Link",
     "searchable": true,
     "tags": {

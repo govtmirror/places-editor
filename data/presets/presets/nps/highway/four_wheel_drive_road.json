@@ -7,13 +7,14 @@
         "maxspeed",
         "oneway",
         "lanes",
-        "access"
+        "nps/trailuse",
+        "structure"
     ],
     "geometry": [
         "line"
     ],
     "icon": "highway-road",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Four-Wheel Drive Road",
     "searchable": true,
     "tags": {

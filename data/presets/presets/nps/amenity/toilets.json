@@ -14,7 +14,7 @@
     ],
     "icon": "restrooms-black",
     "maki": "npmaki",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Restroom",
     "searchable": true,
     "tags": {

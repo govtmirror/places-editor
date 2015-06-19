@@ -10,7 +10,7 @@
     ],
     "icon": "information-black",
     "maki": "npmaki",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Information",
     "searchable": true,
     "tags": {

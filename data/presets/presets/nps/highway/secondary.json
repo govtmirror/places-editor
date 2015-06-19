@@ -7,13 +7,14 @@
         "maxspeed",
         "oneway",
         "lanes",
-        "access"
+        "nps/trailuse",
+        "structure"
     ],
     "geometry": [
         "line"
     ],
     "icon": "highway-secondary",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Secondary Road",
     "searchable": true,
     "tags": {

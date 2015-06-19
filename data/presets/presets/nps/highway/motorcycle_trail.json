@@ -11,7 +11,7 @@
         "mtb/scale/imba",
         "sac_scale",
         "trail_visibility",
-        "access"
+        "nps/wateruse"
     ],
     "geometry": [
         "point",
@@ -19,7 +19,7 @@
     ],
     "icon": "motor-bike-trail-black",
     "maki": "npmaki",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Motorcycle Trail",
     "searchable": true,
     "tags": {

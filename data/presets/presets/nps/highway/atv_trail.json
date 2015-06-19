@@ -11,15 +11,15 @@
         "mtb/scale/imba",
         "sac_scale",
         "trail_visibility",
-        "access"
+        "nps/trailuse",
+        "structure"
     ],
     "geometry": [
         "point",
         "line"
     ],
-    "icon": "All-terrain trail",
-    "maki": "nps",
-    "matchScore": 1,
+    "icon": "highway-track",
+    "matchScore": 10,
     "name": "ATV Trail",
     "searchable": true,
     "tags": {
@@ -37,6 +37,7 @@
         "off-road",
         "off road",
         "trail",
-        "track"
+        "track",
+        "structure"
     ]
 }

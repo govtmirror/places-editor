@@ -8,7 +8,7 @@
     "geometry": [
         "point"
     ],
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Fountain",
     "searchable": true,
     "tags": {

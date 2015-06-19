@@ -10,7 +10,7 @@
     ],
     "icon": "post-office-black",
     "maki": "npmaki",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Post Office",
     "searchable": true,
     "tags": {

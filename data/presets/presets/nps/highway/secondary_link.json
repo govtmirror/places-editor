@@ -6,13 +6,14 @@
         "width",
         "maxspeed",
         "oneway",
-        "access"
+        "nps/trailuse",
+        "structure"
     ],
     "geometry": [
         "line"
     ],
     "icon": "highway-secondary-link",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Secondary Link",
     "searchable": true,
     "tags": {

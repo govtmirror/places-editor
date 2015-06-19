@@ -10,7 +10,7 @@
     ],
     "icon": "gas-station-black",
     "maki": "npmaki",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Gas Station",
     "searchable": true,
     "tags": {

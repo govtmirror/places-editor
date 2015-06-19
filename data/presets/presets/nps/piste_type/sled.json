@@ -1,7 +1,6 @@
 {
     "fields": [
         "name",
-        "piste/difficulty",
         "operator",
         "tracktype",
         "surface",
@@ -12,14 +11,15 @@
         "mtb/scale/imba",
         "sac_scale",
         "trail_visibility",
-        "access"
+        "nps/trailuse",
+        "piste/difficulty"
     ],
     "geometry": [
         "point"
     ],
     "icon": "sledding-black",
     "maki": "npmaki",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Sledding",
     "searchable": true,
     "tags": {

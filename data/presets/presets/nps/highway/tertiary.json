@@ -7,13 +7,14 @@
         "maxspeed",
         "oneway",
         "lanes",
-        "access"
+        "nps/trailuse",
+        "structure"
     ],
     "geometry": [
         "line"
     ],
     "icon": "highway-tertiary",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Tertiary Road",
     "searchable": true,
     "tags": {

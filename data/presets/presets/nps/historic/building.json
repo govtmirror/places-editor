@@ -5,9 +5,7 @@
     "geometry": [
         "point"
     ],
-    "icon": "Ruin",
-    "maki": "nps",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Historic Building",
     "searchable": true,
     "tags": {

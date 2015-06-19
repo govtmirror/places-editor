@@ -2,14 +2,15 @@
     "fields": [
         "name",
         "operator",
-        "width"
+        "width",
+        "nps/wateruse"
     ],
     "geometry": [
         "point"
     ],
     "icon": "boat-launch-black",
     "maki": "npmaki",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Boat Launch",
     "searchable": true,
     "tags": {

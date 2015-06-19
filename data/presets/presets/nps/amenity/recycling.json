@@ -13,7 +13,7 @@
     ],
     "icon": "recycling-black",
     "maki": "npmaki",
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Recycling",
     "searchable": true,
     "tags": {

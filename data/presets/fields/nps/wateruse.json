@@ -1,0 +1,23 @@
+{
+    "keys": ["canoe", "motorboat"],
+    "reference": {"key": "wateruse"},
+    "type": "npsaccess",
+    "label": "Approved Water Uses",
+    "placeholder": "Assumed to be No",
+    "strings": {
+        "types": {
+            "canoe": "Canoe",
+            "motorboat": "Motorboat"
+        },
+        "options": {
+            "yes": {
+                "title": "Allowed",
+                "description": "Access permitted by law; a right of way"
+            },
+            "no": {
+                "title": "Prohibited",
+                "description": "Access not permitted to the general public"
+            }
+        }
+    }
+}

@@ -6,7 +6,7 @@
     "geometry": [
         "point"
     ],
-    "matchScore": 1,
+    "matchScore": 10,
     "name": "Glacier",
     "searchable": true,
     "tags": {
