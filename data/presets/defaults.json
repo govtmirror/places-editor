@@ -4,14 +4,13 @@
     "nps/amenity/parking"
   ],
   "line": [
-    "nps/highway/path",
-    "nps/highway/equestrian_trail",
-    "nps/highway/residential",
-    "nps/highway/road",
+    "nps/highway/primary",
     "nps/highway/secondary",
     "nps/highway/service",
-    "nps/highway/tertiary",
-    "nps/highway/trunk"
+    "nps/highway/service/parking_aisle",
+    "nps/highway/unclassified",
+    "nps/highway/trail",
+    "nps/highway/equestrian_trail"
   ],
   "point": [
     "nps/tourism/campground",
@@ -21,6 +20,7 @@
     "nps/tourism/visitor_center",
     "nps/amenity/ranger_station",
     "nps/highway/trailhead",
+    "nps/amenity/toilets",
     "nps/amenity/food_court",
     "nps/tourism/hotel",
     "nps/shop/general",
@@ -34,11 +34,11 @@
     "nps/tourism/visitor_center",
     "nps/amenity/ranger_station",
     "nps/highway/trailhead",
+    "nps/amenity/toilets",
     "nps/amenity/food_court",
     "nps/tourism/hotel",
     "nps/shop/general",
     "nps/tourism/map"
-],
-  "relation": [
-  ]
+  ],
+  "relation": []
 }
