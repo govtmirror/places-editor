@@ -9,7 +9,7 @@
     "icon": "marker",
     "maki": "maki",
     "matchScore": 10,
-    "name": "Locale",
+    "name": "Park District",
     "searchable": true,
     "tags": {
         "place": "locality"
@@ -18,6 +18,8 @@
         "locale",
         "locality",
         "location",
-        "place"
+        "place",
+        "neighborhood",
+        "district"
     ]
 }
