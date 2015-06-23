@@ -9,7 +9,7 @@
     "nps/highway/service",
     "nps/highway/service/parking_aisle",
     "nps/highway/unclassified",
-    "nps/highway/trail",
+    "nps/highway/path",
     "nps/highway/equestrian_trail"
   ],
   "point": [
