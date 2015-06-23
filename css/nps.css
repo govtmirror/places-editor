@@ -85,3 +85,8 @@ button.action:hover {
 .geocode-item {
   visibility: hidden;
 }
+
+path.stroke.tag-highway-unclassified,
+path.stroke.tag-construction-unclassified {
+  stroke:#fff;
+}
