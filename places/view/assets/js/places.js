@@ -13,16 +13,30 @@ var iframe = document.getElementById('iframe'),
     hooks: {
       preinit: function(callback) {
         var attribution = '&copy; <a href="http://mapbox.com/about/maps" target="_blank">Mapbox</a> &copy; <a href="http://openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors',
-          baseLayer = L.extend({}, L.npmap.preset.baselayers.nps.parkTiles);
+          baseLayer,
+          placesLayer = {
+            attribution: attribution,
+              icon: 'nps',
+              id: 'nps.5d3811a3,nps.8e8c74c9',
+              name: 'Places Preview',
+              popup: {
+                title: '{{#if name}}{{name}}{{else}}{{FCategory}}{{/if}}'
+              },
+              type: 'mapbox'
+          };
 
+        baseLayer = L.extend({}, L.npmap.preset.baselayers.nps.parkTiles);
         baseLayer.attribution = attribution;
         baseLayer.id = baseLayer.id + ',nps.jhd2e8lb';
         baseLayer.popup = {
           title: '{{#if name}}{{name}}{{else}}{{FCategory}}{{/if}}'
         };
+
         NPMap.config.baseLayers = [
+          placesLayer,
           baseLayer
         ];
+
         baseLayer = L.extend({}, L.npmap.preset.baselayers.nps.parkTilesImagery);
         baseLayer.attribution = attribution;
         baseLayer.id = baseLayer.id + ',nps.jhd2e8lb';
