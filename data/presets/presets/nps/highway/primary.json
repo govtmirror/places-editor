@@ -8,7 +8,7 @@
         "oneway",
         "lanes",
         "nps/trailuse",
-        "structure"
+        "nps/structure"
     ],
     "geometry": [
         "line"

@@ -11,7 +11,7 @@
         "mtb/scale/imba",
         "sac_scale",
         "trail_visibility",
-        "nps/trailuse",
+        "nps/nonmotorizeduse",
         "piste/difficulty"
     ],
     "geometry": [

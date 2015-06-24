@@ -12,7 +12,7 @@
         "sac_scale",
         "trail_visibility",
         "nps/trailuse",
-        "structure"
+        "nps/structure"
     ],
     "geometry": [
         "point",

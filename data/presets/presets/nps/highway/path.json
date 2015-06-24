@@ -11,8 +11,8 @@
         "mtb/scale/imba",
         "sac_scale",
         "trail_visibility",
-        "nps/trailuse",
-        "structure"
+        "nps/nonmotorizeduse",
+        "nps/structure"
     ],
     "geometry": [
         "point",

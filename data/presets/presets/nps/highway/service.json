@@ -9,7 +9,7 @@
         "lanes",
         "nps/trailuse",
         "service",
-        "structure"
+        "nps/structure"
     ],
     "geometry": [
         "line"

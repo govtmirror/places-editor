@@ -5,8 +5,8 @@
         "surface",
         "lit",
         "width",
-        "nps/trailuse",
-        "structure"
+        "nps/nonmotorizeduse",
+        "nps/structure"
     ],
     "geometry": [
         "line"
