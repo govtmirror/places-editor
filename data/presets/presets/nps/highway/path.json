@@ -21,7 +21,7 @@
     "icon": "trailhead-black",
     "maki": "npmaki",
     "matchScore": 10,
-    "name": "Trail",
+    "name": "Non-Motorized Trail",
     "searchable": true,
     "tags": {
         "highway": "path"
