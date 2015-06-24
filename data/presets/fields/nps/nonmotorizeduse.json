@@ -1,0 +1,24 @@
+{
+    "keys": ["foot", "bicycle", "horse"],
+    "reference": {"key": "trailuse"},
+    "type": "npsaccess",
+    "label": "Approved Uses",
+    "placeholder": "Unknown",
+    "strings": {
+        "types": {
+            "foot": "Foot",
+            "bicycle": "Bicycles",
+            "horse": "Horse"
+          },
+        "options": {
+            "yes": {
+                "title": "Allowed",
+                "description": "Access permitted by law; a right of way"
+            },
+            "no": {
+                "title": "Prohibited",
+                "description": "Access not permitted to the general public"
+            }
+        }
+    }
+}
