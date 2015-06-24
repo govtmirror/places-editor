@@ -90,3 +90,8 @@ path.stroke.tag-highway-unclassified,
 path.stroke.tag-construction-unclassified {
   stroke:#fff;
 }
+
+path.stroke.tag-crossing {
+  stroke-dasharray: 3,3;
+  stroke-linecap: butt;
+} 
