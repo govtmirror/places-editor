@@ -62,7 +62,6 @@ function updateDropdown(newHash) {
   // Add a moveend function
   var newSql;
   newSql = encodeURIComponent(sql.replace(/{{x}}/g, lonLat[0]).replace(/{{y}}/g, lonLat[1]));
-  console.log('CLICK', click, newHash);
   if (!click && newHash !== lastHash) {
     reqwest({
       success: function(park) {
@@ -83,13 +82,24 @@ function updateDropdown(newHash) {
 
 window.onload = function() {
   var hash = window.location.hash,
-    path;
+    path,
+    sql = 'SELECT ' +
+      '  "full_name", ' +
+      '  ST_YMax("the_geom") as maxLat, ' +
+      '  ST_XMax("the_geom") as maxLon, ' +
+      '  ST_YMin("the_geom") as minLat, ' +
+      '  ST_XMin("the_geom") as minLon ' +
+      'FROM ' +
+      '  nps.parks ' +
+      'WHERE ' +
+      '  the_geom IS NOT NULL ' +
+      'ORDER BY ' +
+      '  "full_name";';
 
   window.onhashchange = function() {
-    if (!initiatedByIframe) {
-      path = '../dist/index.html' + this.location.hash;
-      initiatedByParent = true;
-
+      if (!initiatedByIframe) {
+        path = '../dist/index.html' + this.location.hash;
+        initiatedByParent = true;
       if (location.host.indexOf('nationalparkservice.github.io') === -1) {
         path = '../' + path;
       }
@@ -132,7 +142,7 @@ window.onload = function() {
 
   reqwest({
     success: function(parks) {
-      var options = '',
+      var options = [],
         select = document.getElementById('to-park'),
         stored = (function() {
           if (supportsLocalStorage() && localStorage['places-editor:selected']) {
@@ -140,14 +150,31 @@ window.onload = function() {
           } else {
             return null;
           }
-        })();
+          })(),
+          buildOption = function(parkInfo) {
+            var option = document.createElement('option');
+            option.setAttribute('class', 'to-park-option');
+            option.textContent = parkInfo.full_name;
+            if (parkInfo.maxlat) {
+              option.setAttribute('data-bounds', [parkInfo.maxlat, parkInfo.maxlon, parkInfo.minlat, parkInfo.minlon])
+            }
+            if (stored === parkInfo.full_name|| parkInfo.stored) {
+              option.setAttribute('selected', 'selected');
+            }
+            if (parkInfo.disabled) {
+              option.setAttribute('disabled', 'disabled');
+            }
+            return option;
+          };
 
-      options += '<option disabled="disabled"' + (stored ? '' : ' selected') + '>Zoom to a Park...</option>'
+      options.push(buildOption({
+        'full_name': 'Zoom to a Park...',
+        'disabled': true,
+        'stored': !stored
+      }));
 
-      for (var park in parks) {
-        if (park !== 'responseText') {
-          options += '<option' + (stored === park ? ' selected' : '') + '>' + park + '</option>';
-        }
+      for (var j = 0; j < parks.rows.length; j++) {
+        options.push(buildOption(parks.rows[j]));
       }
 
       if (stored) {
@@ -155,12 +182,15 @@ window.onload = function() {
         selected = stored;
       }
 
-      select.innerHTML = select.innerHTML + options;
+      for (var i = 0; i < options.length; i++) {
+        select.appendChild(options[i]);
+      }
+
       select.onchange = function() {
-        var alpha = select.options[select.selectedIndex].text,
+        var item = select.options[select.selectedIndex];
+          bounds = item.getAttribute('data-bounds') ? item.getAttribute('data-bounds').split(',') : null,
           contentWindow = document.getElementById('iframe').contentWindow,
-          park = parks[alpha],
-          extent = document.getElementById('iframe').contentWindow.iD.geo.Extent([park[3], park[2]], [park[0], park[1]]),
+          extent = document.getElementById('iframe').contentWindow.iD.geo.Extent([parseFloat(bounds[3], 10), parseFloat(bounds[2], 10)], [parseFloat(bounds[1], 10), parseFloat(bounds[0], 10)]),
           center = extent.center(),
           hash = window.location.hash.replace('#', ''),
           indexMap = -1,
@@ -198,6 +228,71 @@ window.onload = function() {
       select.style.display = 'block';
     },
     type: 'jsonp',
-    url: 'http://www.nps.gov/npmap/data/park-bounds.js?callback=callback'
+    url: 'https://nps.cartodb.com/api/v2/sql?q=' + encodeURIComponent(sql)
   });
-}
+};
+/*
+window.onload = function() {
+    reqwest({
+    success: function(parks) {
+
+      var options = [],
+        select = document.getElementById('to-park'),
+        stored = (function() {
+            if (supportsLocalStorage() && localStorage['places-editor:selected']) {
+              return localStorage['places-editor:selected'];
+            } else {
+              return null;
+            }
+          })(),
+          buildOption = function(parkInfo) {
+            var option = L.DomUtil.create('option', 'to-park-option');
+            option.textContent = parkInfo.full_name;
+            if (parkInfo.maxlat) {
+              option.setAttribute('data-bounds', [parkInfo.maxlat, parkInfo.maxlon, parkInfo.minlat, parkInfo.minlon])
+            }
+            if (stored === parkInfo.full_name|| parkInfo.stored) {
+              option.setAttribute('selected', 'selected');
+            }
+            if (parkInfo.disabled) {
+              option.setAttribute('disabled', 'disabled');
+            }
+            return option;
+          };
+
+      options.push(buildOption({
+        full_name: 'Zoom to a Park...',
+        stored: !stored,
+        disabled: true
+      }));
+
+      for (var j = 0; j < parks.rows.length; j++) {
+        options.push(buildOption(parks.rows[j]));
+      }
+
+      if (stored) {
+        delete localStorage['places-editor:selected'];
+        selected = stored;
+      }
+
+      for (var i = 0; i < options.length; i++) {
+        select.appendChild(options[i]);
+      }
+
+      select.onchange = function() {
+        var item = select.options[select.selectedIndex],
+        bounds = item.getAttribute('data-bounds') ? item.getAttribute('data-bounds').split(',') : null;
+        click = true;
+
+        selected = item.text;
+        if (bounds) {
+          NPMap.config.L.fitBounds(new L.LatLngBounds(bounds.slice(0,2), bounds.slice(2)));
+        }
+      };
+      select.style.display = 'block';
+    },
+    type: 'jsonp',
+    url: 'https://nps.cartodb.com/api/v2/sql?q=' + encodeURIComponent(sql)
+  });
+};
+*/

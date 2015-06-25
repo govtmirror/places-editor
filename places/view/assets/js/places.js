@@ -113,24 +113,53 @@ function switchTo(to) {
 }
 
 window.onload = function() {
-  reqwest({
+    var sql = 'SELECT ' +
+      '  "full_name", ' +
+      '  ST_YMax("the_geom") as maxLat, ' +
+      '  ST_XMax("the_geom") as maxLon, ' +
+      '  ST_YMin("the_geom") as minLat, ' +
+      '  ST_XMin("the_geom") as minLon ' +
+      'FROM ' +
+      '  nps.parks ' +
+      'WHERE ' +
+      '  the_geom IS NOT NULL ' +
+      'ORDER BY ' +
+      '  "full_name";';
+    reqwest({
     success: function(parks) {
-      var options = '',
+
+      var options = [],
         select = document.getElementById('to-park'),
         stored = (function() {
-          if (supportsLocalStorage() && localStorage['places-editor:selected']) {
-            return localStorage['places-editor:selected'];
-          } else {
-            return null;
-          }
-        })();
+            if (supportsLocalStorage() && localStorage['places-editor:selected']) {
+              return localStorage['places-editor:selected'];
+            } else {
+              return null;
+            }
+          })(),
+          buildOption = function(parkInfo) {
+            var option = L.DomUtil.create('option', 'to-park-option');
+            option.textContent = parkInfo.full_name;
+            if (parkInfo.maxlat) {
+              option.setAttribute('data-bounds', [parkInfo.maxlat, parkInfo.maxlon, parkInfo.minlat, parkInfo.minlon])
+            }
+            if (stored === parkInfo.full_name|| parkInfo.stored) {
+              option.setAttribute('selected', 'selected');
+            }
+            if (parkInfo.disabled) {
+              option.setAttribute('disabled', 'disabled');
+            }
+            return option;
+          };
 
-      options += '<option disabled="disabled"' + (stored ? '' : ' selected') + '>Zoom to a Park...</option>'
+      options.push(buildOption({
+        full_name: 'Zoom to a Park...',
+        stored: !stored,
+        disabled: true
+      }));
 
-      for (var park in parks) {
-        if (park !== 'responseText') {
-          options += '<option' + (stored === park ? ' selected' : '') + '>' + park + '</option>';
-        }
+      for (var j = 0; j < parks.rows.length; j++) {
+        options.push(buildOption(parks.rows[j]));
       }
 
       if (stored) {
@@ -138,21 +167,24 @@ window.onload = function() {
         selected = stored;
       }
 
-      // TODO: Selected is set now. You should unset it when the map is panned and zoomed. Should you also reset the select?
+      for (var i = 0; i < options.length; i++) {
+        select.appendChild(options[i]);
+      }
 
-      select.innerHTML = select.innerHTML + options;
       select.onchange = function() {
-        var alpha = select.options[select.selectedIndex].text,
-          park = parks[alpha];
+        var item = select.options[select.selectedIndex];
+        var bounds = item.getAttribute('data-bounds') ? item.getAttribute('data-bounds').split(',') : null; 
         click = true;
 
-        selected = alpha;
-        NPMap.config.L.fitBounds(new L.LatLngBounds([park[2], park[3]],[park[1], park[0]]));
+        selected = item.text;
+        if (bounds) {
+          NPMap.config.L.fitBounds(new L.LatLngBounds(bounds.slice(0,2), bounds.slice(2)));
+        }
       };
       select.style.display = 'block';
     },
     type: 'jsonp',
-    url: 'http://www.nps.gov/npmap/data/park-bounds.js?callback=callback'
+    url: 'https://nps.cartodb.com/api/v2/sql?q=' + encodeURIComponent(sql)
   });
 };
 
