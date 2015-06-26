@@ -1,5 +1,6 @@
 iD.ui.preset = function(context) {
     var event = d3.dispatch('change'),
+        completed,
         state,
         fields,
         preset,
@@ -13,6 +14,43 @@ iD.ui.preset = function(context) {
             .on('change', event.change);
 
         if (field.input.entity) field.input.entity(entity);
+
+        field.complete = function() {
+
+          var replacer = function(origText, object) {
+            var regex;
+            for (var property in object) {
+              regex = new RegExp('{{' + property + '}}', 'g');
+              origText = origText.replace(regex, encodeURIComponent(object[property]));
+            }
+            return origText;
+          };
+
+          if (field.autocomplete) {
+            completed = completed || {};
+            completed[entity.id] = completed[entity.id] || {};
+            if (!tags[field.id] && !completed[entity.id][field.key] ) {
+              completed[entity.id][field.key] = 'started';
+
+              var entityInfo = {
+                lat: entity.loc[1],
+                lon: entity.loc[0],
+                tags: JSON.stringify(entity.tags)
+              };
+
+              d3.json(replacer(field.autocomplete.url, entityInfo), function(e,r) {
+                if (!e && r && r.rows && r.rows[0] && r.rows[0][field.autocomplete.field]) {
+                  completed[entity.id][field.key] = 'completed';
+                  tags[field.key] = r.rows[0][field.autocomplete.field];
+                  field.input.tags(tags);
+                }
+              });
+              return true;
+            }
+          }
+
+          return false;
+        };
 
         field.keys = field.keys || [field.key];
 
@@ -146,6 +184,7 @@ iD.ui.preset = function(context) {
 
                 d3.select(this)
                     .call(field.input)
+                    .call(field.complete)
                     .call(reference.body)
                     .select('.form-label-button-wrap')
                     .call(reference.button);
