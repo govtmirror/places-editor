@@ -33,8 +33,8 @@ iD.ui.preset = function(context) {
               completed[entity.id][field.key] = 'started';
 
               var entityInfo = {
-                lat: entity.loc[1],
-                lon: entity.loc[0],
+                lat: entity.extent(context.graph()).center()[1],
+                lon: entity.extent(context.graph()).center()[0],
                 tags: JSON.stringify(entity.tags)
               };
 
