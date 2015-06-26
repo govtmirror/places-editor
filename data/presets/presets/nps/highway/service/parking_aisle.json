@@ -1,6 +1,7 @@
 {
     "fields": [
         "name",
+        "nps/unitcode",
         "surface",
         "oneway",
         "nps/trailuse",

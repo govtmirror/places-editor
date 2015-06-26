@@ -1,6 +1,7 @@
 {
     "fields": [
-        "name"
+        "name",
+        "nps/unitcode"
     ],
     "geometry": [
         "area"

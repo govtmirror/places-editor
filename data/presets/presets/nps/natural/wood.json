@@ -1,6 +1,7 @@
 {
     "fields": [
         "name",
+        "nps/unitcode",
         "leaf_type",
         "leaf_cycle",
         "crop"
