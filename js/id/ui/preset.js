@@ -26,10 +26,7 @@ iD.ui.preset = function(context) {
             return origText;
           };
 
-          if (field.autocomplete && entity.id.substr(1,1) === '-') {
-            completed = completed || {};
-            completed[entity.id] = completed[entity.id] || {};
-            if (!tags[field.id] && !completed[entity.id][field.key] ) {
+          var completeTask = function(field, entity) {
               completed[entity.id][field.key] = 'started';
 
               var entityInfo = {
@@ -46,6 +43,13 @@ iD.ui.preset = function(context) {
                 }
               });
               return true;
+          };
+
+          if (field.autocomplete && entity.id.substr(1,1) === '-') { // entity.id.substr(1,1) checks to make sure this is a new node
+            completed = completed || {};
+            completed[entity.id] = completed[entity.id] || {};
+            if (!tags[field.id] && !completed[entity.id][field.key] ) {
+              return completeTask(field, entity);
             }
           }
 
