@@ -26,7 +26,7 @@ iD.ui.preset = function(context) {
             return origText;
           };
 
-          if (field.autocomplete) {
+          if (field.autocomplete && entity.id.substr(1,1) === '-') {
             completed = completed || {};
             completed[entity.id] = completed[entity.id] || {};
             if (!tags[field.id] && !completed[entity.id][field.key] ) {
@@ -41,8 +41,8 @@ iD.ui.preset = function(context) {
               d3.json(replacer(field.autocomplete.url, entityInfo), function(e,r) {
                 if (!e && r && r.rows && r.rows[0] && r.rows[0][field.autocomplete.field]) {
                   completed[entity.id][field.key] = 'completed';
-                  tags[field.key] = r.rows[0][field.autocomplete.field];
-                  field.input.tags(tags);
+                  entity.tags[field.key] = r.rows[0][field.autocomplete.field];
+                  field.input.tags(entity.tags);
                 }
               });
               return true;
@@ -57,7 +57,8 @@ iD.ui.preset = function(context) {
         field.show = show;
 
         field.shown = function() {
-            return field.id === 'name' || field.show || _.any(field.keys, function(key) { return !!tags[key]; });
+          console.log(field,'**');
+            return field.id === 'name' || field.id === 'nps/unitcode' || field.show || _.any(field.keys, function(key) { return !!tags[key]; });
         };
 
         field.modified = function() {
@@ -103,6 +104,7 @@ iD.ui.preset = function(context) {
                 geometry = context.geometry(id);
 
             fields = [UIField(context.presets().field('name'), entity)];
+            fields.push(UIField(context.presets().field('nps/unitcode'), entity));
 
             preset.fields.forEach(function(field) {
                 if (field.matchGeometry(geometry)) {
