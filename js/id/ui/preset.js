@@ -57,7 +57,6 @@ iD.ui.preset = function(context) {
         field.show = show;
 
         field.shown = function() {
-          console.log(field,'**');
             return field.id === 'name' || field.id === 'nps/unitcode' || field.show || _.any(field.keys, function(key) { return !!tags[key]; });
         };
 
