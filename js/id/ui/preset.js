@@ -1,5 +1,6 @@
 iD.ui.preset = function(context) {
     var event = d3.dispatch('change'),
+        completed,
         state,
         fields,
         preset,
@@ -14,12 +15,53 @@ iD.ui.preset = function(context) {
 
         if (field.input.entity) field.input.entity(entity);
 
+        field.complete = function() {
+
+          var replacer = function(origText, object) {
+            var regex;
+            for (var property in object) {
+              regex = new RegExp('{{' + property + '}}', 'g');
+              origText = origText.replace(regex, encodeURIComponent(object[property]));
+            }
+            return origText;
+          };
+
+          var completeTask = function(field, entity) {
+              completed[entity.id][field.key] = 'started';
+
+              var entityInfo = {
+                lat: entity.extent(context.graph()).center()[1],
+                lon: entity.extent(context.graph()).center()[0],
+                tags: JSON.stringify(entity.tags)
+              };
+
+              d3.json(replacer(field.autocomplete.url, entityInfo), function(e,r) {
+                if (!e && r && r.rows && r.rows[0] && r.rows[0][field.autocomplete.field]) {
+                  completed[entity.id][field.key] = 'completed';
+                  entity.tags[field.key] = r.rows[0][field.autocomplete.field];
+                  field.input.tags(entity.tags);
+                }
+              });
+              return true;
+          };
+
+          if (field.autocomplete && entity.id.substr(1,1) === '-') { // entity.id.substr(1,1) checks to make sure this is a new node
+            completed = completed || {};
+            completed[entity.id] = completed[entity.id] || {};
+            if (!tags[field.id] && !completed[entity.id][field.key] ) {
+              return completeTask(field, entity);
+            }
+          }
+
+          return false;
+        };
+
         field.keys = field.keys || [field.key];
 
         field.show = show;
 
         field.shown = function() {
-            return field.id === 'name' || field.show || _.any(field.keys, function(key) { return !!tags[key]; });
+            return field.id === 'name' || field.id === 'nps/unitcode' || field.show || _.any(field.keys, function(key) { return !!tags[key]; });
         };
 
         field.modified = function() {
@@ -65,6 +107,7 @@ iD.ui.preset = function(context) {
                 geometry = context.geometry(id);
 
             fields = [UIField(context.presets().field('name'), entity)];
+            fields.push(UIField(context.presets().field('nps/unitcode'), entity));
 
             preset.fields.forEach(function(field) {
                 if (field.matchGeometry(geometry)) {
@@ -146,6 +189,7 @@ iD.ui.preset = function(context) {
 
                 d3.select(this)
                     .call(field.input)
+                    .call(field.complete)
                     .call(reference.body)
                     .select('.form-label-button-wrap')
                     .call(reference.button);

@@ -3,6 +3,20 @@
     "description": "A reusable form element for presets",
     "type": "object",
     "properties": {
+        "autocomplete": {
+            "description": "",
+            "type": "object",
+            "properties": {
+                "field": {
+                    "description": "The field to use for the autocompletion",
+                    "type": "string"
+                },
+                "url": {
+                    "description": "The URL that will return a list of results, using {{}} brackets around the input",
+                    "type": "string"
+                }
+            }
+        },
         "key": {
             "description": "Tag key whose value is to be displayed",
             "type": "string"

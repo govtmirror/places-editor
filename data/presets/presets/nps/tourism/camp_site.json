@@ -1,6 +1,7 @@
 {
     "fields": [
         "name",
+        "nps/unitcode",
         "operator",
         "address",
         "opening_hours",
@@ -10,7 +11,7 @@
     "geometry": [
         "point"
     ],
-    "icon": "campground-black",
+    "icon": "campsite-black",
     "maki": "npmaki",
     "matchScore": 10,
     "name": "Campsite",
