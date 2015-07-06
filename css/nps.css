@@ -94,4 +94,77 @@ path.stroke.tag-construction-unclassified {
 path.stroke.tag-crossing {
   stroke-dasharray: 3,3;
   stroke-linecap: butt;
-} 
+}
+
+path.stroke.tag-highway-motorway,
+path.stroke.tag-highway-motorway_link,
+path.stroke.tag-construction-motorway {
+    stroke:#882255;
+}
+
+path.casing.tag-highway-motorway,
+path.casing.tag-highway-motorway_link,
+path.casing.tag-construction-motorway {
+    stroke:#8f7657;
+}
+
+path.stroke.tag-highway-trunk,
+path.stroke.tag-highway-trunk_link,
+path.stroke.tag-construction-trunk {
+    stroke:#aa4499;
+}
+path.casing.tag-highway-trunk,
+path.casing.tag-highway-trunk_link,
+path.casing.tag-construction-trunk {
+    stroke:#8f7657;
+}
+
+path.stroke.tag-highway-primary,
+path.stroke.tag-highway-primary_link,
+path.stroke.tag-construction-primary {
+    stroke:#aa4499;
+}
+path.casing.tag-highway-primary,
+path.casing.tag-highway-primary_link,
+path.casing.tag-construction-primary {
+    stroke:#8f7657;
+}
+
+path.stroke.tag-highway-secondary,
+path.stroke.tag-highway-secondary_link,
+path.stroke.tag-construction-secondary {
+    stroke:#cc6677;
+}
+path.casing.tag-highway-secondary,
+path.casing.tag-highway-secondary_link,
+path.casing.tag-construction-secondary {
+    stroke:#8f7657;
+}
+
+path.stroke.tag-highway-tertiary,
+path.stroke.tag-highway-tertiary_link,
+path.stroke.tag-construction-tertiary {
+    stroke:#fff4ad;
+}
+path.casing.tag-highway-tertiary,
+path.casing.tag-highway-tertiary_link,
+path.casing.tag-construction-tertiary {
+    stroke:#8f7657;
+}
+
+/* Buildings */
+
+path.stroke.tag-building,
+path.stroke.tag-amenity-shelter {
+    stroke: rgb(170, 68, 153);
+}
+path.fill.tag-building,
+path.fill.tag-amenity-shelter {
+    stroke: rgba(170, 68, 153, 0.3);
+    fill: rgba(170, 68, 153, 0.3);
+}
+.preset-icon-fill-area.tag-building,
+.preset-icon-fill-area.tag-amenity-shelter {
+    border-color: rgb(170, 68, 153);
+    background-color: rgba(170, 68, 153, 0.3);
+}
