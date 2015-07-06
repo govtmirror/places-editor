@@ -31,7 +31,6 @@ var iframe = document.getElementById('iframe'),
         baseLayer.popup = {
           title: '{{#if name}}{{name}}{{else}}{{FCategory}}{{/if}}'
         };
-
         NPMap.config.baseLayers = [
           placesLayer,
           baseLayer
@@ -47,7 +46,9 @@ var iframe = document.getElementById('iframe'),
         callback();
       },
       init: function(callback) {
-        var sql = 'SELECT full_name FROM parks WHERE the_geom && St_MakePoint({{x}}, {{y}}) AND St_Intersects(the_geom, St_SetSRID(St_MakePoint({{x}}, {{y}}),4326)) ORDER BY area DESC LIMIT 1;',
+        var div = document.createElement('div'),
+          sql = 'SELECT full_name FROM parks WHERE the_geom && St_MakePoint({{x}}, {{y}}) AND St_Intersects(the_geom, St_SetSRID(St_MakePoint({{x}}, {{y}}),4326)) ORDER BY area DESC LIMIT 1;',
+
           matchOption = function(parkName) {
             var select = document.getElementById('to-park');
             selected = parkName;
@@ -62,7 +63,11 @@ var iframe = document.getElementById('iframe'),
             select.selectedIndex = 0;
             return;
           };
-        // Add a moveend function
+
+        div.innerHTML = '<button aria-label="Close" class="close" data-dismiss="alert" type="button"><span aria-hidden="true">&times;</span></button><p>This map reflects a snapshot of the Places database. It may be different than data seen in edit mode. Edits made generally show up in this preview within one business day.</p>';
+        div.className = 'alert alert-dismissible alert-info';
+        div.style.cssText = 'position:absolute;width:256px;left:50%;margin-left:-125px;top:15px;z-index:9999;';
+        L.npmap.util._.getElementsByClassName('npmap-map')[0].appendChild(div);
         NPMap.config.L.on('moveend', function() {
           var newSql;
           var center = NPMap.config.L.getCenter();
