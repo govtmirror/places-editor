@@ -230,9 +230,9 @@ iD.Background = function(context) {
     background.load = function(imagery) {
         backgroundSources = imagery.map(function(source) {
             if (source.type === 'bing') {
-                return iD.BackgroundSource.Bing(source, dispatch);
+                return iD.BackgroundSource.Bing(source, dispatch, context);
             } else {
-                return iD.BackgroundSource(source);
+                return iD.BackgroundSource(source, context);
             }
         });
 
@@ -242,7 +242,7 @@ iD.Background = function(context) {
             chosen = q.background || q.layer;
 
         if (chosen && chosen.indexOf('custom:') === 0) {
-            background.baseLayerSource(iD.BackgroundSource.Custom(chosen.replace(/^custom:/, '')));
+            background.baseLayerSource(iD.BackgroundSource.Custom(chosen.replace(/^custom:/, ''), context));
         } else {
             background.baseLayerSource(findSource(chosen) || findSource('bing-imagery') || backgroundSources[1]);
         }
