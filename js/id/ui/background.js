@@ -62,7 +62,7 @@ iD.ui.Background = function(context) {
         }
 
         function setCustom(template) {
-            context.background().baseLayerSource(iD.BackgroundSource.Custom(template, context));
+            context.background().baseLayerSource(iD.BackgroundSource.Custom(template));
             selectLayer();
             context.storage('background-custom-template', template);
         }
