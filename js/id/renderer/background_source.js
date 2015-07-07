@@ -1,4 +1,4 @@
-iD.BackgroundSource = function(data) {
+iD.BackgroundSource = function(data, context) {
     var source = _.clone(data),
         offset = [0, 0],
         name = source.name;
@@ -27,7 +27,8 @@ iD.BackgroundSource = function(data) {
     };
 
     source.url = function(coord) {
-        return data.template
+        var template = source.editTemplate && context.map().editable() ? source.editTemplate : data.template;
+        return template
             .replace('{x}', coord[0])
             .replace('{y}', coord[1])
             // TMS-flipped y coordinate
