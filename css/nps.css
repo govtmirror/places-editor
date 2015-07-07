@@ -13,7 +13,8 @@ a:hover {
   color: #b17f00;
 }
 .help-wrap .toc li a.selected,
-.layer-list li.active {
+.layer-list li.active,
+.minimap-toggle.active {
   background: #f5d176;
 }
 .toggle-list > label {
@@ -50,7 +51,8 @@ button.action:hover {
 .map-control > button.active:hover {
   background: #b28000;
 }
-.layer-list li {
+.layer-list li,
+.minimap-toggle {
   color: #b28000;
 }
 .hide-toggle:before {
