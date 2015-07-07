@@ -54,6 +54,7 @@ iD.behavior.Hash = function(context) {
     }
 
     function hash() {
+        var npmapMinZoom = iD.npmap.settings.editing.minZoom < context.minEditableZoom() ? iD.npmap.settings.editing.minZoom : context.minEditableZoom();
         context.map()
             .on('move.hash', throttledUpdate);
 
@@ -67,7 +68,19 @@ iD.behavior.Hash = function(context) {
             var q = iD.util.stringQs(location.hash.substring(1));
             if (q.id) context.zoomToEntity(q.id.split(',')[0], !q.map);
             if (q.comment) context.storage('comment', q.comment);
-            hashchange();
+            if (q.unit_code && !q.map) {
+                var sql = 'SELECT ST_AsGeoJSON(ST_Extent(the_geom)) AS "bounds" FROM parks WHERE "the_geom" IS NOT NULL AND LOWER("unit_code") = LOWER(\'{{unit_code}}\');';
+                sql = sql.replace('{{unit_code}}', q.unit_code);
+                d3.json('https://nps.cartodb.com/api/v2/sql?q=' + encodeURIComponent(sql), function (error, json) {
+                    var gj;
+                    if (json.rows.length && json.rows[0].bounds) {
+                        gj = JSON.parse(json.rows[0].bounds);
+                        context.map().centerZoom(d3.geo.centroid(gj), context.map().trimmedExtentZoom(d3.geo.bounds(gj)));
+                    }
+                });
+            } else {
+                hashchange();
+            }
             if (q.map) hash.hadHash = true;
         }
     }
