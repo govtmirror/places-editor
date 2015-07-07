@@ -54,7 +54,6 @@ iD.behavior.Hash = function(context) {
     }
 
     function hash() {
-        var npmapMinZoom = iD.npmap.settings.editing.minZoom < context.minEditableZoom() ? iD.npmap.settings.editing.minZoom : context.minEditableZoom();
         context.map()
             .on('move.hash', throttledUpdate);
 
