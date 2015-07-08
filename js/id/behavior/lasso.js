@@ -35,6 +35,7 @@ iD.behavior.Lasso = function(context) {
         }
 
         function mouseup() {
+              console.log('shiftmouselasso', context.editable());
 
             selection
                 .on('mousemove.lasso', null)
@@ -48,12 +49,16 @@ iD.behavior.Lasso = function(context) {
 
             lasso.close();
 
-            var selected = context.intersects(extent).filter(function (entity) {
-                return entity.type === 'node';
-            });
+            if (context.editable()) {
+             var selected = context.intersects(extent).filter(function (entity) {
+                  return entity.type === 'node';
+              });
 
-            if (selected.length) {
-                context.enter(iD.modes.Select(context, _.pluck(selected, 'id')));
+              if (selected.length) {
+                  context.enter(iD.modes.Select(context, _.pluck(selected, 'id')));
+              }
+            } else {
+                context.map().zoomTo({extent: function(){return extent;}});
             }
         }
 
