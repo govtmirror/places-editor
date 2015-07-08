@@ -88,6 +88,10 @@ button.action:hover {
   visibility: hidden;
 }
 
+.map-in-map {
+  background-color: rgb(230, 229, 224);
+}
+
 path.stroke.tag-highway-unclassified,
 path.stroke.tag-construction-unclassified {
   stroke:#fff;
