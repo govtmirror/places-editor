@@ -92,6 +92,14 @@ button.action:hover {
   background-color: rgb(230, 229, 224);
 }
 
+.zoom-in-warning {
+  margin-top: 30px;
+  width: 60%;
+  margin-left: 20%;
+  font-size: 12pt;
+  background-color: #d9edf7;
+}
+
 path.stroke.tag-highway-unclassified,
 path.stroke.tag-construction-unclassified {
   stroke:#fff;
