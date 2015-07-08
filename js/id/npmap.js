@@ -17,7 +17,7 @@ iD.npmap = {
                 "nps:fcat"
             ],
             "line": true,
-            "minZoom": 15,
+            "minZoom": 15.5,
             "point": true
         },
         "locationOverlayMaxZoom": 22,
