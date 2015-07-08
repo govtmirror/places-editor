@@ -3,6 +3,10 @@ iD.ui.Notice = function(context) {
         var div = selection.append('div')
             .attr('class', 'notice');
 
+        div.append('div')
+            .attr('class', 'zoom-in-warning')
+            .text(t('zoom_in_warning'));
+
         var button = div.append('button')
             .attr('class', 'zoom-to notice')
             .on('click', function() { context.map().zoom(context.minEditableZoom()); });
