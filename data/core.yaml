@@ -184,6 +184,7 @@ en:
     localized_translation_language: Choose language
     localized_translation_name: Name
   zoom_in_edit: Zoom in to Edit
+  zoom_in_warning: "This map reflects a snapshot of the Places database. New edits will display in the preview within 48 hours."
   logout: logout
   loading_auth: "Connecting to Places..."
   report_a_bug: report a bug
