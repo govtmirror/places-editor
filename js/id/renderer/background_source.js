@@ -1,4 +1,4 @@
-iD.BackgroundSource = function(data) {
+iD.BackgroundSource = function(data, preview, context) {
     var source = _.clone(data),
         offset = [0, 0],
         name = source.name;
@@ -27,7 +27,9 @@ iD.BackgroundSource = function(data) {
     };
 
     source.url = function(coord) {
-        return data.template
+        var template = preview && !context.map().editable() ? preview.template : data.template;
+        d3.selectAll('#map').style('background-color', preview && !context.map().editable() ? 'rgb(230, 229, 224)' : 'black');
+        return template
             .replace('{x}', coord[0])
             .replace('{y}', coord[1])
             // TMS-flipped y coordinate
