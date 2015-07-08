@@ -58,7 +58,7 @@ iD.behavior.Lasso = function(context) {
                   context.enter(iD.modes.Select(context, _.pluck(selected, 'id')));
               }
             } else {
-                context.map().zoomTo({extent: function(){return extent;}});
+                context.map().zoomTo({extent: function(){return extent;}}, [0,18]);
             }
         }
 
