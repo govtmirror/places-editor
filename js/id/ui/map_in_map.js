@@ -158,6 +158,7 @@ iD.ui.MapInMap = function(context) {
             background
                 .call(backgroundLayer);
 
+            /* TODO: Overlays do not work right in the map_in_map
             // redraw overlay
             var overlaySources = context.background().overlayLayerSources(),
                 hasOverlay = false;
@@ -227,6 +228,7 @@ iD.ui.MapInMap = function(context) {
                     .attr('d', getPath)
                     .classed('thick', function(d) { return getPath.area(d) < 30; });
             }
+            */
         }
 
 
