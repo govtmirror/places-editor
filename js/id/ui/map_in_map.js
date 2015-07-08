@@ -143,7 +143,7 @@ iD.ui.MapInMap = function(context) {
 
             // redraw background
             backgroundLayer
-                .source(context.background().baseLayerSource())
+                .source(context.background().previewLayerSource())
                 .projection(projection)
                 .dimensions(dMini);
 
@@ -185,10 +185,12 @@ iD.ui.MapInMap = function(context) {
             overlay.exit()
                 .remove();
 
+            /*
             if (hasOverlay) {
                 overlay
                     .call(overlayLayer);
             }
+            */
 
             gpxLayer
                 .projection(projection);
