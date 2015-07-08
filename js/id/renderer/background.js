@@ -114,14 +114,19 @@ iD.Background = function(context) {
         if (!arguments.length) return baseLayer.source();
 
         baseLayer.source(d);
+        baseLayer.previewSource = iD.BackgroundSource(baseLayer.previewOverlay, baseLayer.previewOverlay, context);
         dispatch.change();
         updateImagery();
 
         return background;
     };
 
-    background.previewLayerSource = function() {
-      return iD.BackgroundSource(baseLayer.previewOverlay, baseLayer.previewOverlay, context);
+    background.previewLayerSource = function(d) {
+      if (arguments.length) {
+        return background.baseLayerSource(d);
+      } else {
+        return baseLayer.previewSource;
+      }
     };
 
     background.bing = function() {
@@ -232,7 +237,7 @@ iD.Background = function(context) {
     };
 
     background.load = function(imagery) {
-        baseLayer.previewOverlay = imagery.filter(function(s){return s.previewOverlay;})[0];
+        baseLayer.previewOverlay = imagery.filter(function(s){return s.preview;})[0];
         backgroundSources = imagery.map(function(source) {
             if (source.type === 'bing') {
                 return iD.BackgroundSource.Bing(source, dispatch);
