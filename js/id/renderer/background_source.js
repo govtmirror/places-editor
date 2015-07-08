@@ -1,4 +1,4 @@
-iD.BackgroundSource = function(data, context) {
+iD.BackgroundSource = function(data, previewOverlay, context) {
     var source = _.clone(data),
         offset = [0, 0],
         name = source.name;
@@ -27,7 +27,7 @@ iD.BackgroundSource = function(data, context) {
     };
 
     source.url = function(coord) {
-        var template = source.editTemplate && context.map().editable() ? source.editTemplate : data.template;
+        var template = previewOverlay && !context.map().editable() ? previewOverlay.template : data.template;
         return template
             .replace('{x}', coord[0])
             .replace('{y}', coord[1])
