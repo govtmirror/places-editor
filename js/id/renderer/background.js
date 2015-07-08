@@ -114,7 +114,7 @@ iD.Background = function(context) {
         if (!arguments.length) return baseLayer.source();
 
         baseLayer.source(d);
-        baseLayer.previewSource = iD.BackgroundSource(baseLayer.previewOverlay, baseLayer.previewOverlay, context);
+        baseLayer.previewSource = iD.BackgroundSource(baseLayer.previewOverlay, null, context);
         dispatch.change();
         updateImagery();
 
@@ -122,15 +122,11 @@ iD.Background = function(context) {
     };
 
     background.previewLayerSource = function(d) {
-      if (arguments.length) {
-        return background.baseLayerSource(d);
-      } else {
         return baseLayer.previewSource;
-      }
     };
 
     background.bing = function() {
-        background.baseLayerSource(findSource('bing-imagery'));
+        background.baseLayerSource(findSource('Bing'));
     };
 
     background.hasGpxLayer = function() {
@@ -254,17 +250,22 @@ iD.Background = function(context) {
         if (chosen && chosen.indexOf('custom:') === 0) {
             background.baseLayerSource(iD.BackgroundSource.Custom(chosen.replace(/^custom:/, '')));
         } else {
-            background.baseLayerSource(findSource(chosen) || findSource('bing-imagery') || backgroundSources[1]);
+            background.baseLayerSource(findSource(chosen) || findSource('Bing') || backgroundSources[1]);
         }
 
-        if (q.overlays) {
-            var overlays = q.overlays.split(',');
+        var locator = _.find(backgroundSources, function(d) {
+            return d.overlay && d.default;
+        });
 
-            overlays.forEach(function(overlay) {
-                overlay = findSource(overlay);
-                if (overlay) background.toggleOverlayLayer(overlay);
-            });
+        if (locator) {
+            background.toggleOverlayLayer(locator);
         }
+
+        var overlays = (q.overlays || '').split(',');
+        overlays.forEach(function(overlay) {
+            overlay = findSource(overlay);
+            if (overlay) background.toggleOverlayLayer(overlay);
+        });
 
         var gpx = q.gpx;
         if (gpx) {

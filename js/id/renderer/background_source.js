@@ -1,4 +1,4 @@
-iD.BackgroundSource = function(data, previewOverlay, context) {
+iD.BackgroundSource = function(data) {
     var source = _.clone(data),
         offset = [0, 0],
         name = source.name;
@@ -27,9 +27,7 @@ iD.BackgroundSource = function(data, previewOverlay, context) {
     };
 
     source.url = function(coord) {
-        var template = previewOverlay && !context.map().editable() ? previewOverlay.template : data.template;
-        d3.selectAll('#map').style('background-color', previewOverlay && !context.map().editable() ? 'rgb(230, 229, 224)' : 'black');
-        return template
+        return data.template
             .replace('{x}', coord[0])
             .replace('{y}', coord[1])
             // TMS-flipped y coordinate
@@ -60,13 +58,12 @@ iD.BackgroundSource = function(data, previewOverlay, context) {
     };
 
     source.validZoom = function(z) {
-        z = z + 2;
         return source.scaleExtent[0] <= z &&
             (source.overzoom || source.scaleExtent[1] > z);
     };
 
     source.isLocatorOverlay = function() {
-        return name.match('Locator Overlay');
+        return name === 'Locator Overlay';
     };
 
     source.copyrightNotices = function() {};
@@ -81,7 +78,7 @@ iD.BackgroundSource.Bing = function(data, dispatch) {
     data.template = 'https://ecn.t{switch:0,1,2,3}.tiles.virtualearth.net/tiles/a{u}.jpeg?g=587&mkt=en-gb&n=z';
 
     var bing = iD.BackgroundSource(data),
-        key = 'Anqg2cbRJqtC3TWYUXf1cP2HT8J1xVN0urFGnWVFQwsLd4RfI9Gv5H4hcysuOEGj', // NPMap key
+        key = 'Arzdiw4nlOJzRwOz__qailc8NiR31Tt51dN2D7cm57NrnceZnCpgOkmJhNpGoppU', // Same as P2 and JOSM
         url = 'https://dev.virtualearth.net/REST/v1/Imagery/Metadata/Aerial?include=ImageryProviders&key=' +
             key + '&jsonp={callback}',
         providers = [];

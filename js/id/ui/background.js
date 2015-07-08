@@ -7,7 +7,7 @@ iD.ui.Background = function(context) {
             ['right', [-1, 0]],
             ['bottom', [0, 1]]],
         opacityDefault = (context.storage('background-opacity') !== null) ?
-            (+context.storage('background-opacity')) : 1,
+            (+context.storage('background-opacity')) : 0.5,
         customTemplate = context.storage('background-custom-template') || '';
 
     // Can be 0 from <1.3.0 use or due to issue #1923.
@@ -108,7 +108,7 @@ iD.ui.Background = function(context) {
         }
 
         function update() {
-            backgroundList.call(drawList, 'radio', clickSetSource, function(d) { return !d.overlay && !d.preview; });
+            backgroundList.call(drawList, 'radio', clickSetSource, function(d) { return !d.overlay; });
             overlayList.call(drawList, 'checkbox', clickSetOverlay, function(d) { return d.overlay; });
 
             selectLayer();
