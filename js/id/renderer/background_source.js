@@ -28,6 +28,7 @@ iD.BackgroundSource = function(data, previewOverlay, context) {
 
     source.url = function(coord) {
         var template = previewOverlay && !context.map().editable() ? previewOverlay.template : data.template;
+        d3.selectAll('#map').style('background-color', previewOverlay && !context.map().editable() ? 'rgb(230, 229, 224)' : 'black');
         return template
             .replace('{x}', coord[0])
             .replace('{y}', coord[1])
