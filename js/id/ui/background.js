@@ -76,7 +76,8 @@ iD.ui.Background = function(context) {
         function drawList(layerList, type, change, filter) {
             var sources = context.background()
                 .sources(context.map().extent())
-                .filter(filter);
+                .filter(filter)
+                .filter(function(d){ return d.selectable !== false; });
 
             var layerLinks = layerList.selectAll('li.layer')
                 .data(sources, function(d) { return d.name(); });
