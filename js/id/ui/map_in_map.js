@@ -143,7 +143,7 @@ iD.ui.MapInMap = function(context) {
 
             // redraw background
             backgroundLayer
-                .source(context.background().previewLayerSource())
+                .source(context.background().mapInMapLayerSource())
                 .projection(projection)
                 .dimensions(dMini);
 
