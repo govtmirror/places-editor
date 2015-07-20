@@ -1,7 +1,11 @@
-iD.Connection = function(context) {
+iD.Connection = function(useHttps) {
+    if (typeof useHttps !== 'boolean') {
+      useHttps = window.location.protocol === 'https:';
+    }
 
     var event = d3.dispatch('authenticating', 'authenticated', 'auth', 'loading', 'loaded'),
-        url = iD.npmap.settings.connection.api,
+        protocol = useHttps ? 'https:' : 'http:',
+        url = protocol + iD.npmap.settings.connection.api,
         connection = {},
         inflight = {},
         loadedTiles = {},
@@ -11,8 +15,7 @@ iD.Connection = function(context) {
             oauth_consumer_key: iD.npmap.settings.connection.oauth.consumerKey,
             oauth_secret: iD.npmap.settings.connection.oauth.secret,
             loading: authenticating,
-            done: authenticated,
-            context: context
+            done: authenticated
         }),
         ndStr = 'nd',
         tagStr = 'tag',
