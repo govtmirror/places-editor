@@ -182,3 +182,11 @@ path.fill.tag-amenity-shelter {
     border-color: rgb(170, 68, 153);
     background-color: rgba(170, 68, 153, 0.3);
 }
+
+.preview-layer-attribution {
+    position: absolute;
+    color: #888;
+    font-size: 10px;
+    left: 10px;
+}
+
