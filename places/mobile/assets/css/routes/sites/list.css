@@ -1,0 +1,15 @@
+#map-frame {
+  height: 450px;
+  position: relative;
+  width: 100%;
+}
+#empty,
+#sites {
+  display: none;
+}
+.table > tbody > tr > td {
+  vertical-align: middle;
+}
+  .table > tbody > tr > td:last-child {
+    text-align: right;
+  }

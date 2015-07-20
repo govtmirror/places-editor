@@ -1,0 +1,20 @@
+#modal_add-new-park .modal-body {
+  margin-bottom: -15px;
+  padding: 15px 0;
+}
+#modal_add-new-park .tab-content {
+  padding-bottom: 15px;
+}
+#map {
+  height: 379px;
+  position: relative;
+  width: 100%;
+}
+.bounding-box-existing,
+.bounding-box-new {
+  display: none;
+}
+.buttons {
+  margin-top: 30px;
+  text-align: center;
+}

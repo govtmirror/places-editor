@@ -1,0 +1,348 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="The NPMap Team">
+    <link href="http://www.nps.gov/lib/bootstrap/3.3.2/css/nps-bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/assets/css/landing.css" rel="stylesheet">
+    <link rel="alternate" type="application/atom+xml" href="http://www.nps.gov/npmap/blog/atom.xml" title="NPMap blog posts">
+    <link rel="shortcut icon" href="http://www.nps.gov/lib/assets/img/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://www.nps.gov/lib/assets/img/apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://www.nps.gov/lib/assets/img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://www.nps.gov/lib/assets/img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="http://www.nps.gov/lib/assets/img/apple-touch-icon-57x57-precomposed.png">
+    <link href="assets/css/landing.css" rel="stylesheet">
+    <title>Places | InsideMaps</title>
+    <script>var logOnCallbacks=[];</script>
+  </head>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="http://www.nps.gov/lib/bootstrap/3.3.2/js/nps-bootstrap.min.js"></script>
+    <a class="sr-only" href="#content">Skip navigation</a>
+    <header class="insidemaps-nav navbar navbar-inverse navbar-fixed-top" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="/" class="navbar-brand">InsideMaps</a>
+        </div>
+        <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+          <ul class="nav navbar-nav" style="padding-top:1px;">
+            <li>
+              <a href="/maps/">Maps</a>
+            </li>
+            <li>
+              <a href="/builder/">Builder</a>
+            </li>
+            <li class="active dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Places <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li>
+                  <a href="/places/">Home</a>
+                </li>
+                <li>
+                  <a href="/places/mobile/">Mobile</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="/live/">Live</a>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li id="alerts" style="display:none;"></li>
+            <li id="admin" style="display:none;"><a href="/admin/">Admin</a></li>
+            <li id="sign-in"><p class="navbar-text">Checking status...</p></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="insidemaps-header insidemaps-header-places" id="content">
+      <div class="container">
+        <h1>Places</h1>
+        
+        <p>Contribute to your park's map.</p>
+        
+      </div>
+    </div>
+    
+    <div class="insidemaps-breadcrumbs">
+      <div class="container">
+        <ol class="breadcrumb">
+          <li><a href="/">Home</a></li>
+          
+          <li class="active">Places</li>
+          
+        </ol>
+      </div>
+    </div>
+    
+    <div class="container main-content" style="padding-bottom:35px;padding-top:35px;">
+      <div class="btn-group-wrapper">
+  <div class="btn-group menu">
+    <a class="btn btn-lg btn-primary" href="view/" role="button">
+      <span class="fa fa-2x fa-map-marker pull-left"></span>
+      <span class="hidden-xs">Start Editing</span>
+    </a>
+    <a class="btn btn-lg btn-primary" href="http://www.nps.gov/npmap/tools/places/tracing-guide/" role="button">
+      <span class="fa fa-2x fa-book pull-left"></span>
+      <span class="hidden-xs">View Tracing Guide</span>
+    </a>
+  </div>
+  <p style="font-style:italic;margin-top:10px;">Looking for the beta of the <a href="mobile/">Places Mobile Editor</a>?</p>
+</div>
+<p>Places is an internal data collection system for the National Park Service's "core" geospatial data, including <strong>points of interest</strong>, <strong>buildings</strong>, <strong>roads</strong>, <strong>trails</strong>, and <strong>parking lots</strong>. Data from the system is used by many of the National Park Service's visitor-facing digital products like <a href="http://www.nps.gov">NPS.gov</a>, <a href="http://www.nps.gov/npmap/tools/park-tiles/">Park Tiles</a>, and <a href="http://go.nps.gov/places-mobile">Places Mobile</a> iOS/Android apps.</p>
+<p>Places was originally seeded with GIS datasets from parks, regions, and programs. For more information regarding these sources, take a look at <a href="https://docs.google.com/spreadsheets/d/1dXwwszQbF1hBOJZ2BCH37LAGY-VgpO8vOBN2XzQc6EQ">this spreadsheet</a>. If you would like to seed Places with a dataset, <a href="mailto:npmap@nps.gov">get in touch</a>; we are happy to help!</p>
+<p>Click on the "Places Editor" button above to start contributing to your park's map right now.</p>
+<h2>Statistics</h2>
+<p>You can use the interface below to view statistics for the datasets that live in Places. Select a park to filter the statistics and use the buttons on the right to download a dataset and/or view the a dataset's metadata.</p>
+<form class="park">
+  <div class="form-group">
+    <label for="select-park">Display statistics for:</label>
+    <select class="form-control" id="select-park">
+      <option value="servicewide">All Parks</option>
+    </select>
+    <!--
+    <a class="btn btn-primary" href="http://insidemaps.nps.gov/places/edit/">Edit in Places</a>
+    -->
+  </div>
+</form>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Dataset</th>
+      <th># of Geometries</th>
+      <th>Last Updated</th>
+      <th class="hidden-sm hidden-xs"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr id="buildings">
+      <td>Buildings</td>
+      <td></td>
+      <td></td>
+      <td class="hidden-sm hidden-xs">
+        <div class="btn-group" role="group">
+          <div class="btn-group" role="group">
+            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
+              <i class="fa fa-download"></i>
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+              <li>
+                <a href="https://nps.cartodb.com/api/v2/sql?filename=NPS_Buildings&format=csv&q=SELECT+*+FROM+buildings">CSV</a>
+              </li>
+              <li>
+                <a href="https://nps.cartodb.com/api/v2/sql?filename=NPS_Buildings&format=geojson&q=SELECT+*+FROM+buildings">GeoJSON</a>
+              </li>
+              <li>
+                <a href="https://nps.cartodb.com/api/v2/sql?filename=NPS_Buildings&format=kml&q=SELECT+*+FROM+buildings">KML</a>
+              </li>
+              <li>
+                <a href="https://nps.cartodb.com/api/v2/sql?filename=NPS_Buildings&format=shp&q=SELECT+*+FROM+buildings">Shapefile</a>
+              </li>
+              <li>
+                <a href="https://nps.cartodb.com/api/v2/sql?filename=NPS_Buildings&format=spatialite&q=SELECT+*+FROM+buildings">SpatiaLite</a>
+              </li>
+            </ul>
+          </div>
+          <a class="btn btn-default" href="https://irma.nps.gov/App/Reference/Profile/2222470" target="_blank">
+            <i class="fa fa-code"></i>
+          </a>
+        </div>
+      </td>
+    </tr>
+    <tr id="parking_lots">
+      <td>Parking Lots</td>
+      <td></td>
+      <td></td>
+      <td class="hidden-sm hidden-xs">
+        <div class="btn-group" role="group">
+          <div class="btn-group" role="group">
+            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
+              <i class="fa fa-download"></i>
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+              <li>
+                <a href="https://nps.cartodb.com/api/v2/sql?filename=NPS_Parking_Lots&format=csv&q=SELECT+*+FROM+parking_lots">CSV</a>
+              </li>
+              <li>
+                <a href="https://nps.cartodb.com/api/v2/sql?filename=NPS_Parking_Lots&format=geojson&q=SELECT+*+FROM+parking_lots">GeoJSON</a>
+              </li>
+              <li>
+                <a href="https://nps.cartodb.com/api/v2/sql?filename=NPS_Parking_Lots&format=kml&q=SELECT+*+FROM+parking_lots">KML</a>
+              </li>
+              <li>
+                <a href="https://nps.cartodb.com/api/v2/sql?filename=NPS_Parking_Lots&format=shp&q=SELECT+*+FROM+parking_lots">Shapefile</a>
+              </li>
+              <li>
+                <a href="https://nps.cartodb.com/api/v2/sql?filename=NPS_Parking_Lots&format=spatialite&q=SELECT+*+FROM+parking_lots">SpatiaLite</a>
+              </li>
+            </ul>
+          </div>
+          <a class="btn btn-default" href="https://irma.nps.gov/App/Reference/Profile/2222471" target="_blank">
+            <i class="fa fa-code"></i>
+          </a>
+        </div>
+      </td>
+    </tr>
+    <tr id="points_of_interest">
+      <td>Points of Interest</td>
+      <td></td>
+      <td></td>
+      <td class="hidden-sm hidden-xs">
+        <div class="btn-group" role="group">
+          <div class="btn-group" role="group">
+            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
+              <i class="fa fa-download"></i>
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+              <li>
+                <a href="https://nps.cartodb.com/api/v2/sql?filename=NPS_Points_of_Interest&format=csv&q=SELECT+*+FROM+points_of_interest">CSV</a>
+              </li>
+              <li>
+                <a href="https://nps.cartodb.com/api/v2/sql?filename=NPS_Points_of_Interest&format=geojson&q=SELECT+*+FROM+points_of_interest">GeoJSON</a>
+              </li>
+              <li>
+                <a href="https://nps.cartodb.com/api/v2/sql?filename=NPS_Points_of_Interest&format=kml&q=SELECT+*+FROM+points_of_interest">KML</a>
+              </li>
+              <li>
+                <a href="https://nps.cartodb.com/api/v2/sql?filename=NPS_Points_of_Interest&format=shp&q=SELECT+*+FROM+points_of_interest">Shapefile</a>
+              </li>
+              <li>
+                <a href="https://nps.cartodb.com/api/v2/sql?filename=NPS_Points_of_Interest&format=spatialite&q=SELECT+*+FROM+points_of_interest">SpatiaLite</a>
+              </li>
+            </ul>
+          </div>
+          <a class="btn btn-default" href="https://irma.nps.gov/App/Reference/Profile/2222472" target="_blank">
+            <i class="fa fa-code"></i>
+          </a>
+        </div>
+      </td>
+    </tr>
+    <tr id="roads">
+      <td>Roads</td>
+      <td></td>
+      <td></td>
+      <td class="hidden-sm hidden-xs">
+        <div class="btn-group" role="group">
+          <div class="btn-group" role="group">
+            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
+              <i class="fa fa-download"></i>
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+              <li>
+                <a href="https://nps.cartodb.com/api/v2/sql?filename=NPS_Roads&format=csv&q=SELECT+*+FROM+roads">CSV</a>
+              </li>
+              <li>
+                <a href="https://nps.cartodb.com/api/v2/sql?filename=NPS_Roads&format=geojson&q=SELECT+*+FROM+roads">GeoJSON</a>
+              </li>
+              <li>
+                <a href="https://nps.cartodb.com/api/v2/sql?filename=NPS_Roads&format=kml&q=SELECT+*+FROM+roads">KML</a>
+              </li>
+              <li>
+                <a href="https://nps.cartodb.com/api/v2/sql?filename=NPS_Roads&format=shp&q=SELECT+*+FROM+roads">Shapefile</a>
+              </li>
+              <li>
+                <a href="https://nps.cartodb.com/api/v2/sql?filename=NPS_Roads&format=spatialite&q=SELECT+*+FROM+roads">SpatiaLite</a>
+              </li>
+            </ul>
+          </div>
+          <a class="btn btn-default" href="https://irma.nps.gov/App/Reference/Profile/2222473" target="_blank">
+            <i class="fa fa-code"></i>
+          </a>
+        </div>
+      </td>
+    </tr>
+    <tr id="trails">
+      <td>Trails</td>
+      <td></td>
+      <td></td>
+      <td class="hidden-sm hidden-xs">
+        <div class="btn-group" role="group">
+          <div class="btn-group" role="group">
+            <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" type="button">
+              <i class="fa fa-download"></i>
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-right" role="menu">
+              <li>
+                <a href="https://nps.cartodb.com/api/v2/sql?filename=NPS_Trails&format=csv&q=SELECT+*+FROM+trails">CSV</a>
+              </li>
+              <li>
+                <a href="https://nps.cartodb.com/api/v2/sql?filename=NPS_Trails&format=geojson&q=SELECT+*+FROM+trails">GeoJSON</a>
+              </li>
+              <li>
+                <a href="https://nps.cartodb.com/api/v2/sql?filename=NPS_Trails&format=kml&q=SELECT+*+FROM+trails">KML</a>
+              </li>
+              <li>
+                <a href="https://nps.cartodb.com/api/v2/sql?filename=NPS_Trails&format=shp&q=SELECT+*+FROM+trails">Shapefile</a>
+              </li>
+              <li>
+                <a href="https://nps.cartodb.com/api/v2/sql?filename=NPS_Trails&format=spatialite&q=SELECT+*+FROM+trails">SpatiaLite</a>
+              </li>
+            </ul>
+          </div>
+          <a class="btn btn-default" href="https://irma.nps.gov/App/Reference/Profile/2222344" target="_blank">
+            <i class="fa fa-code"></i>
+          </a>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h2>X-Ray View</h2>
+<p>The map below gives you a visual glimpse into the Places system. It is updated nightly during the work week, so any changes made in Places will display the next business day.</p>
+<iframe src="http://www.nps.gov/maps/embed.html?mapId=39b8a3c2-b097-4fed-b2d0-8869fe39ef0f" style="border:none;height:500px;width:100%"></iframe>
+<h2>Quickstart Video</h2>
+<p>Watch the ~9 minute quickstart video below for a quick introduction to the Places Editor.</p>
+<div class="embed-container">
+  <iframe frameborder="0" src="https://player.vimeo.com/video/132260134" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+</div>
+    </div>
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="social">
+          <ul class="social-buttons">
+            <li class="follow-btn">
+              <a href="https://twitter.com/npmap" class="twitter-follow-button" data-link-color="#0069D6" data-show-count="true">Follow @npmap</a>
+            </li>
+          </ul>
+        </div>
+        <p style="margin-bottom:20px;">Designed and built by the <a href="http://www.nps.gov/npmap/team">NPMap team</a>.</p>
+      </div>
+    </footer>
+    <div aria-describedby="modal-alerts-body" aria-labelledby="modal-alerts-title" class="modal" id="modal-alerts" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 id="modal-alerts-title" class="modal-title">InsideMaps Alerts</h4>
+          </div>
+          <div id="modal-alerts-body" class="modal-body">
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-default" data-dismiss="modal" type="button">Dismiss</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://platform.twitter.com/widgets.js"></script>
+    <script src="/assets/js/landing.js"></script>
+    <script src="/assets/js/logon.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-22502841-1');ga('send','pageview');
+      </script>
+        <script src="assets/js/landing.js"></script>
+  </body>
+</html>

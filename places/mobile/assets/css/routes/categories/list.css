@@ -1,0 +1,41 @@
+#categories,
+#empty {
+  display: none;
+}
+.table > tbody > tr > td {
+  vertical-align: middle;
+}
+  .table > tbody > tr > td:last-child {
+    text-align: right;
+  }
+table tr.orderable {
+  cursor: move;
+}
+table tr.unorderable {
+  font-style: italic;
+}
+tr.placeholder {
+  background: red;
+  border: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+  table tr.placeholder:before {
+    border: 5px solid transparent;
+    border-left-color: red;
+    border-right: none;
+    content: "";
+    height: 0;
+    left: -5px;
+    margin-top: -5px;
+    position: absolute;
+    width: 0;
+  }
+.dragged {
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  z-index: 2000;
+}

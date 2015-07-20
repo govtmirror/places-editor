@@ -1,0 +1,67 @@
+<div class="action-buttons text-center">
+  <div class="btn-group">
+    <button class="btn btn-default" data-target="#modal-metadata" data-toggle="modal" type="button"><i class="fa fa-info"></i>&nbsp;Metadata</button>
+    <button class="btn btn-danger" type="button"><i class="fa fa-trash"></i>&nbsp;Delete</button>
+  </div>
+</div>
+<ul class="nav nav-tabs" role="tablist">
+  <li class="active" role="presentation">
+    <a data-toggle="tab" href="#details" role="tab">Details</a>
+  </li>
+  <li data-toggle="tooltip" title="You must save the category before adding sites to it." role="presentation">
+    <a data-toggle="tab" href="#sites" role="tab">Sites</a>
+  </li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="details" role="tabpanel">
+    <form role="form">
+      <div class="buttons text-center">
+        <button class="btn btn-primary" type="submit">Save</button>
+      </div>
+    </form>
+  </div>
+  <div class="tab-pane" id="sites" role="tabpanel">
+    <div class="row">
+      <form class="col-md-8 col-md-offset-2 form-inline">
+        <div class="col-md-8 form-group">
+          <select class="form-control">
+          </select>
+        </div>
+        <button class="btn btn-primary col-md-4">Add Site to Category</button>
+      </form>
+    </div>
+    <div class="empty">
+      <p>No sites have been added to this category.</p>
+    </div>
+    <table class="table table-striped">
+      <thead class="sr-only">
+        <tr>
+          <td>Name</td>
+          <td></td>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <!--
+    <div class="img-thumbnail" id="map-frame"></div>
+    -->
+  </div>
+</div>
+<div aria-hidden="true" aria-labelledby="metadata-label" class="modal" id="modal-metadata" role="dialog" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" data-dismiss="modal" type="button">
+          <span aria-hidden="true">&times;</span>
+          <span class="sr-only">Close</span>
+        </button>
+        <h4 class="modal-title" id="metadata-label">Metadata</h4>
+      </div>
+      <div class="modal-body" id="metadata">
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-default" data-dismiss="modal" type="button">Dismiss</button>
+      </div>
+    </div>
+  </div>
+</div>

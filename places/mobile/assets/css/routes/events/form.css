@@ -1,0 +1,15 @@
+#map {
+  height: 250px;
+  position: relative;
+  width: 100%;
+}
+#metadata .row {
+  margin-bottom: 25px;
+}
+.buttons {
+  margin-top: 30px;
+  text-align: center;
+}
+#location .existing {
+  display: none;
+}

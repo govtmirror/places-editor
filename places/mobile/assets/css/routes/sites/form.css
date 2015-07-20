@@ -1,0 +1,103 @@
+#map {
+  height: 250px;
+  position: relative;
+  width: 100%;
+}
+.btn-danger {
+  margin-right: 5px;
+}
+#metadata .row {
+  margin-bottom: 25px;
+}
+.buttons {
+  margin-top: 30px;
+  text-align: center;
+}
+#information .bg-info {
+  margin-bottom: 20px;
+}
+#information .information-buttons,
+#media .information-buttons {
+  margin-bottom: 20px;
+  text-align: center;
+}
+#information table tr {
+  cursor: move;
+}
+#information tr.placeholder {
+  background: red;
+  border: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+  #information table tr.placeholder:before {
+    border: 5px solid transparent;
+    border-left-color: red;
+    border-right: none;
+    content: "";
+    height: 0;
+    left: -5px;
+    margin-top: -5px;
+    position: absolute;
+    width: 0;
+  }
+#information table,
+#information-empty,
+#location .existing {
+  display: none;
+}
+.dragged {
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  z-index: 2000;
+}
+#media .empty,
+#media .images {
+  display: none;
+}
+@media (min-width: 768px) and (max-width: 990px) {
+  #media .images .row > .clear:nth-child(4n)::before {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+@media (min-width: 991px) {
+  #media .images .row > .clear:nth-child(6n)::before {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+#media .images .row .col-md-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+  #media .images .row .col-md-4 p {
+    margin-top: 10px;
+    text-align: center;
+  }
+  #media .images .row .col-md-4 .wrapper {
+    cursor: pointer;
+    position: relative;
+  }
+  #media .images .row .col-md-4 .wrapper .order {
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    left: 5px;
+    padding: 3px;
+    position: absolute;
+    top: 5px;
+  }
+#modal-media .btn-danger {
+  float: left;
+}
+#modal-media .media-preview {
+  height: 270px;
+  margin-bottom: 15px;
+  text-align: center;
+}

@@ -1,0 +1,68 @@
+<div class="action-buttons">
+  <div class="btn-group">
+    <button class="btn btn-default" id="button-metadata" type="button"><i class="fa fa-info"></i>&nbsp;Metadata</button>
+    <button class="btn btn-danger" id="button-delete" type="button"><i class="fa fa-trash"></i>&nbsp;Delete</button>
+  </div>
+</div>
+<ul class="nav nav-tabs" role="tablist">
+  <li class="active" role="presentation">
+    <a data-toggle="tab" href="#details">Details</a>
+  </li>
+  <li role="presentation">
+    <a data-toggle="tab" href="#bounding-box">Bounding Box</a>
+  </li>
+</ul>
+<div class="tab-content">
+  <div class="active tab-pane" id="details" role="tabpanel">
+    <form role="form">
+      <div class="buttons">
+        <button class="btn btn-primary" type="submit">Save</button>
+      </div>
+    </form>
+  </div>
+  <div class="tab-pane" id="bounding-box" role="tabpanel">
+    <form role="form">
+      <div class="buttons">
+        <button class="btn btn-primary" type="submit">Save</button>
+      </div>
+    </form>
+  </div>
+</div>
+<div aria-hidden="true" aria-labelledby="delete-label" class="modal" id="modal-delete-park" role="dialog" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" data-dismiss="modal" type="button">
+          <span aria-hidden="true">&times;</span>
+          <span class="sr-only">Close</span>
+        </button>
+        <h4 class="modal-title" id="delete-label">Are you sure?</h4>
+      </div>
+      <div class="modal-body">
+        <p>If you delete this park, it cannot be recovered.</p>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-default" data-dismiss="modal" type="button">Cancel</button>
+        <button class="btn btn-primary" id="button-delete" type="button">Delete</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div aria-hidden="true" aria-labelledby="metadata-label" class="modal" id="modal-metadata" role="dialog" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" data-dismiss="modal" type="button">
+          <span aria-hidden="true">&times;</span>
+          <span class="sr-only">Close</span>
+        </button>
+        <h4 class="modal-title" id="metadata-label">Metadata</h4>
+      </div>
+      <div class="modal-body" id="metadata">
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-default" data-dismiss="modal" type="button">Dismiss</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,163 @@
+<div class="action-buttons">
+  <div class="btn-group">
+    <button class="btn btn-default" data-target="#modal-metadata" data-toggle="modal" type="button"><i class="fa fa-info"></i>&nbsp;Metadata</button>
+    <button class="btn btn-danger" data-target="#modal-delete-site" data-toggle="modal" type="button"><i class="fa fa-trash"></i>&nbsp;Delete Site</button>
+  </div>
+</div>
+<ul class="nav nav-tabs" role="tablist">
+  <li class="active" role="presentation">
+    <a data-toggle="tab" href="#details" role="tab">Details</a>
+  </li>
+  <li role="presentation">
+    <a data-toggle="tab" href="#location" role="tab">Location</a>
+  </li>
+  <li data-toggle="tooltip" role="presentation" title="You must save the site before adding images to it." >
+    <a data-toggle="tab" href="#media" role="tab">Images</a>
+  </li>
+  <li data-toggle="tooltip" role="presentation" title="You must save the site before adding information sections to it.">
+    <a data-toggle="tab" href="#information" role="tab">Sections</a>
+  </li>
+</ul>
+<div class="tab-content">
+  <div class="tab-pane active" id="details" role="tabpanel">
+    <form role="form">
+      <div class="buttons">
+        <button class="btn btn-primary" type="submit">Save</button>
+      </div>
+    </form>
+  </div>
+  <div class="tab-pane" id="location" role="tabpanel">
+    <form role="form">
+      <div class="buttons">
+        <button class="btn btn-primary" type="submit">Save</button>
+      </div>
+    </form>
+  </div>
+  <div class="tab-pane" id="media" role="tabpanel">
+    <div class="information-buttons">
+      <div class="btn-group">
+        <button class="btn btn-default">Upload Image</button>
+      </div>
+    </div>
+    <div class="images">
+      <div class="row">
+      </div>
+    </div>
+    <div class="empty">
+      <p>No images have been added for this site.</p>
+    </div>
+  </div>
+  <div class="tab-pane" id="information" role="tabpanel">
+    <div class="information-buttons">
+      <div class="btn-group">
+        <button class="btn btn-default">Create Section</button>
+      </div>
+    </div>
+    <table class="table table-striped">
+      <thead class="sr-only">
+        <tr>
+          <td>Name</td>
+          <td>Description</td>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="empty">
+      <p>No sections have been added to this site.</p>
+    </div>
+  </div>
+</div>
+<div aria-hidden="true" aria-labelledby="media-label" class="modal" id="modal-media" role="dialog" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" data-dismiss="modal" type="button">
+          <span aria-hidden="true">&times;</span>
+          <span class="sr-only">Close</span>
+        </button>
+        <h4 class="modal-title" id="information-label">Edit Image</h4>
+      </div>
+      <div class="modal-body">
+        <div class="media-preview">
+        </div>
+        <form enctype="multipart/form-data" method="post" id="media-upload" role="form">
+          <div class="form-group">
+            <input id="media-file" name="userPhoto" type="file">
+          </div>
+          <input name="types" type="hidden" value="image_350">
+          <input name="types" type="hidden" value="image_480">
+          <input name="types" type="hidden" value="image_640">
+          <input name="types" type="hidden" value="image_768">
+          <input name="types" type="hidden" value="image_960">
+          <input name="types" type="hidden" value="image_1080">
+          <input name="types" type="hidden" value="image_1536">
+          <input id="unitCode" name="unitCode" type="hidden">
+          <input name="uuid" type="hidden">
+        </form>
+        <form class="fields" role="form">
+          <div class="form-group">
+            <label for="media-alt">Alt Text <span class="text-danger">*</span></label>
+            <input class="form-control" id="media-alt" name="media-alt" type="text">
+          </div>
+          <div class="form-group">
+            <label for="media-caption">Caption</label>
+            <input class="form-control" id="media-caption" name="media-caption" type="text">
+            <p class="help-block">Suggested max length: 12 words.</p>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-danger" type="button">Delete</button>
+        <button class="btn btn-default" data-dismiss="modal" type="button">Cancel</button>
+        <button class="btn btn-primary" type="button">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div aria-hidden="true" aria-labelledby="metadata-label" class="modal" id="modal-metadata" role="dialog" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" data-dismiss="modal" type="button">
+          <span aria-hidden="true">&times;</span>
+          <span class="sr-only">Close</span>
+        </button>
+        <h4 class="modal-title" id="metadata-label">Metadata</h4>
+      </div>
+      <div class="modal-body" id="metadata">
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-default" data-dismiss="modal" type="button">Dismiss</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div aria-hidden="true" aria-labelledby="information-label" class="modal" id="modal-section" role="dialog" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" data-dismiss="modal" type="button">
+          <span aria-hidden="true">&times;</span>
+          <span class="sr-only">Close</span>
+        </button>
+        <h4 class="modal-title" id="information-label">Edit Section</h4>
+      </div>
+      <div class="modal-body">
+        <form role="form">
+          <div class="form-group">
+            <label for="information-name">Name <span class="text-danger">*</span></label>
+            <input class="form-control" id="information-name" name="information-name" type="text">
+          </div>
+          <div class="form-group">
+            <label for="information-description">Description <span class="text-danger">*</span></label>
+            <textarea class="form-control markdown" id="information-description" name="information-description" rows="5"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-default" data-dismiss="modal" type="button">Cancel</button>
+        <button class="btn btn-primary" type="button">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
