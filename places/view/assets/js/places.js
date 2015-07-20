@@ -47,8 +47,7 @@ var iframe = document.getElementById('iframe'),
       },
       init: function(callback) {
         var div = document.createElement('div'),
-          sql = 'SELECT full_name FROM parks WHERE the_geom && St_MakePoint({{x}}, {{y}}) AND St_Intersects(the_geom, St_SetSRID(St_MakePoint({{x}}, {{y}}),4326)) ORDER BY area DESC LIMIT 1;',
-
+          sql = 'SELECT * FROM parks WHERE the_geom && St_MakePoint({{x}}, {{y}}) AND St_Intersects(the_geom, St_SetSRID(St_MakePoint({{x}}, {{y}}),4326)) ORDER BY area DESC LIMIT 1;',
           matchOption = function(parkName) {
             var select = document.getElementById('to-park');
             selected = parkName;
