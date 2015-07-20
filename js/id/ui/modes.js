@@ -64,6 +64,18 @@ iD.ui.Modes = function(context) {
 
         function update() {
             buttons.property('disabled', !editable());
+
+            /* Other items not available in edit mode */
+            var bar = d3.select('#bar'),
+              mapInMap = d3.select('#content .map-in-map'),
+              controls = ['limiter', 'background-control','map-data-control','help-control'];
+
+              bar.style('background-color', editable() ? '' : 'transparent');
+              for (var i = 0; i < controls.length; i++) {
+                bar.select('.' + controls[i]).style('display', editable() ? 'block' : 'none');
+              }
+              mapInMap.style('top', editable() ? '' : '0px');
+
         }
     };
 };
