@@ -115,15 +115,21 @@ iD.Background = function(context) {
 
         baseLayer.source(d);
         baseLayer.previewSource = iD.BackgroundSource(baseLayer.previewOverlay, null, context);
+        baseLayer.mapInMapSource = iD.BackgroundSource(baseLayer.mapInMap, null, context);
         dispatch.change();
         updateImagery();
 
         return background;
     };
 
-    background.previewLayerSource = function(d) {
+    background.previewLayerSource = function() {
         return baseLayer.previewSource;
     };
+
+    background.mapInMapLayerSource = function() {
+        return baseLayer.mapInMapSource;
+    };
+
 
     background.bing = function() {
         background.baseLayerSource(findSource('Bing'));
@@ -234,6 +240,7 @@ iD.Background = function(context) {
 
     background.load = function(imagery) {
         baseLayer.previewOverlay = imagery.filter(function(s){return s.preview;})[0];
+        baseLayer.mapInMap = imagery.filter(function(s){return s.mapInMap;})[0];
         backgroundSources = imagery.map(function(source) {
             if (source.type === 'bing') {
                 return iD.BackgroundSource.Bing(source, dispatch);
