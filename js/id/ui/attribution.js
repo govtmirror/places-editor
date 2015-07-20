@@ -61,6 +61,7 @@ iD.ui.Attribution = function(context) {
 
     function update() {
         attribution([context.background().baseLayerSource()], 'base-layer-attribution');
+        attribution([context.background().previewLayerSource()], 'preview-layer-attribution');
         attribution(context.background().overlayLayerSources().filter(function (s) {
             return s.validZoom(context.map().zoom());
         }), 'overlay-layer-attribution');
