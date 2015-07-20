@@ -5,7 +5,7 @@ iD.Connection = function(useHttps) {
 
     var event = d3.dispatch('authenticating', 'authenticated', 'auth', 'loading', 'loaded'),
         protocol = useHttps ? 'https:' : 'http:',
-        url = protocol + iD.npmap.settings.connection.api,
+        url = protocol + iD.npmap.settings.connection.api.replace(/^https?:/g,''),
         connection = {},
         inflight = {},
         loadedTiles = {},
