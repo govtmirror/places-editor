@@ -5011,6 +5011,8 @@
         "preview": true,
         "selectable": false,
         "template": "https://{switch:a,b,c,d}.tiles.mapbox.com/v4/nps.map-n9nxe12m,nps.9a8fbcd7,nps.bb75a833/{zoom}/{x}/{y}.png?access_token=pk.eyJ1IjoibnBzIiwiYSI6IkdfeS1OY1UifQ.K8Qn5ojTw4RV1GwBlsci-Q",
+        "terms_text": "Park Tiles: © Mapbox © OpenStreetMap contributors",
+        "terms_url": "http://www.nps.gov/npmap/disclaimer.html",
         "type": "tms"
     },
     {
