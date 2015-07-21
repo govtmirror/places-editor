@@ -318,35 +318,6 @@ function switchTo() {
   window.location.href = ' ../view/#' + Math.round(split[0]) + '/' + split[2] + '/' + split[1];
 }
 
-function updateHash(key, value, hash) {
-  hash = hash || window.location.hash;
-  var newHash,
-    newRecord = key + '=' + encodeURIComponent(value),
-    regex = new RegExp('(^|[#?&])(' + key + ')=(.+?)($|[&$])', 'gi');
-
-  if (hash.match(regex)) {
-    // If the tag is in there, update it or delete it
-    if (value) {
-      newHash = hash.replace(regex, '$1' + newRecord + '$4');
-    } else if (arguments.length === 1 || (arguments.length > 1 && !value)) {
-      newHash = hash.replace(regex, '');
-    }
-  } else if (value) {
-    // if it's not in there and we're not deleting it
-    newHash = (hash.length > 0 ? hash + '&' : '#') + newRecord;
-  }
-  if (newHash !== hash) {
-    window.location.hash = newHash;
-  }
-  if (newHash && newHash.match(regex)) {
-    return newHash.match(regex).map(function(d) {
-      return d.replace(regex, decodeURIComponent('$3'));
-    });
-  } else {
-    return [];
-  }
-}
-
 function updateDropdown(newHash) {
   var lonLat = (newHash.replace(/.+?\/([\d-.]{2,}).+?([\d-.]{2,}).{0,}/g, '$1,$2').split(','));
   var sql = 'SELECT full_name, unit_code FROM parks WHERE the_geom && St_MakePoint({{x}}, {{y}}) AND St_Intersects(the_geom, St_SetSRID(St_MakePoint({{x}}, {{y}}),4326)) ORDER BY area DESC LIMIT 1;',
@@ -357,12 +328,10 @@ function updateDropdown(newHash) {
         for (var i = 0; i < select.options.length; i++) {
           if (parkName === select.options[i].text) {
             select.selectedIndex = i;
-            updateHash('unit_code', select.options[i].getAttribute('data-unit_code'));
             return;
           }
         }
       }
-      updateHash('unit_code', null);
       select.selectedIndex = 0;
       return;
     };
