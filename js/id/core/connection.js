@@ -1,4 +1,4 @@
-iD.Connection = function(useHttps) {
+iD.Connection = function(context, useHttps) {
     if (typeof useHttps !== 'boolean') {
       useHttps = window.location.protocol === 'https:';
     }
@@ -15,7 +15,8 @@ iD.Connection = function(useHttps) {
             oauth_consumer_key: iD.npmap.settings.connection.oauth.consumerKey,
             oauth_secret: iD.npmap.settings.connection.oauth.secret,
             loading: authenticating,
-            done: authenticated
+            done: authenticated,
+            context: context
         }),
         ndStr = 'nd',
         tagStr = 'tag',
