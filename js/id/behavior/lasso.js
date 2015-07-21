@@ -35,7 +35,6 @@ iD.behavior.Lasso = function(context) {
         }
 
         function mouseup() {
-              console.log('shiftmouselasso', context.editable());
 
             selection
                 .on('mousemove.lasso', null)
