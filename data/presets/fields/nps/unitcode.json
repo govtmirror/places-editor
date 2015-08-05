@@ -3,6 +3,8 @@
       "url": "https://nps.cartodb.com/api/v2/sql?q=SELECT%20%22unit_code%22%20FROM%20parks%20WHERE%20the_geom%20%26%26%20St_MakePoint({{lon}}%2C{{lat}})%20AND%20St_Intersects(the_geom%2C%20St_SetSRID(St_MakePoint({{lon}}%2C{{lat}})%2C4326))%20ORDER%20BY%20area%20DESC%20LIMIT%201%3B",
       "field": "unit_code"
     },
+    "regex": "^(.+?)(;.+|$)/$1/g",
+    "forceCase": "lower",
     "key": "nps:unit_code",
     "type": "text",
     "label": "NPS Unit Code"

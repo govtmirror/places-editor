@@ -66,8 +66,38 @@ iD.ui.preset = function(context) {
 
         field.modified = function() {
             var original = context.graph().base().entities[entity.id];
+
             return _.any(field.keys, function(key) {
-                return original ? tags[key] !== original.tags[key] : tags[key];
+              var newValue = tags[key];
+
+              // Change the case if requested
+              if (field.forceCase && newValue) {
+                var tasks = {
+                  'upper': function (d) {
+                    return d.toUpperCase();
+                  },
+                  'lower': function (d) {
+                    return d.toLowerCase();
+                  },
+                  'title': function (d) {
+                    return d.replace(/\w\S*/g, function (txt) {
+                      return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+                    });
+                  }
+                };
+                if (tasks[field.forceCase]) {
+                  newValue = tasks[field.forceCase](newValue);
+                  tags[key] = newValue;
+                }
+
+                // Apply the regex
+                if (field.regex) {
+                  var re = new RegExp(field.regex.split('/')[0], field.regex.split('/')[2] || '');
+                  newValue = newValue.replace(re, field.regex.split('/')[1] || '');
+                  tags[key] = newValue;
+                }
+              }
+              return original ? newValue !== original.tags[key] : newValue;
             });
         };
 

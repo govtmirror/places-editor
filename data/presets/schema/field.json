@@ -17,6 +17,14 @@
                 }
             }
         },
+        "forceCase": {
+            "description": "Takes params ['upper','lower','proper'] and will force case to be set to one of those",
+            "type": "string"
+        },
+        "regex": {
+            "description": "Regular expression that gets applied to any modified value",
+            "type": "string"
+        },
         "key": {
             "description": "Tag key whose value is to be displayed",
             "type": "string"
