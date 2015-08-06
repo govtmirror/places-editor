@@ -109,6 +109,12 @@ path.stroke.tag-crossing {
   stroke-linecap: butt;
 }
 
+path.stroke.tag-highway-unclassified,
+path.stroke.tag-construction-unclassified {
+  stroke:#bbbbbb;
+}
+
+
 path.stroke.tag-highway-motorway,
 path.stroke.tag-highway-motorway_link,
 path.stroke.tag-construction-motorway {
