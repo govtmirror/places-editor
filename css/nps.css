@@ -93,11 +93,15 @@ button.action:hover {
 }
 
 .zoom-in-warning {
-  margin-top: 30px;
-  width: 60%;
-  margin-left: 20%;
-  font-size: 12pt;
   background-color: #d9edf7;
+  border: 1px solid #bcd8f1;
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  color: #31708f;
+  margin: auto;
+  padding: 15px;
+  width: 80%;
 }
 
 path.stroke.tag-highway-unclassified,
@@ -189,4 +193,3 @@ path.fill.tag-amenity-shelter {
     font-size: 10px;
     left: 10px;
 }
-

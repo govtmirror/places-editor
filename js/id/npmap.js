@@ -1,46 +1,52 @@
+/* globals iD */
+
 iD.npmap = {
-    "settings": {
-        "connection": {
-            "api": "http://10.147.153.193",
-            "oauth": {
-                "external": false,
-                "url": "http://10.147.153.193",
-                "consumerKey": "CpIont3biEafgafInTYWkFlooQkcFLtGREu6yMG0",
-                "secret": "MFgSWe00v8EsddR9KI42uZZX61r2XL8JwEPxHY2p"
+    settings: {
+        connection: {
+            api: 'http://10.147.153.193',
+            oauth: {
+                consumerKey: 'CpIont3biEafgafInTYWkFlooQkcFLtGREu6yMG0',
+                external: false,
+                secret: 'MFgSWe00v8EsddR9KI42uZZX61r2XL8JwEPxHY2p',
+                url: 'http://10.147.153.193'
             }
         },
-        "editing": {
-            "area": true,
-            "disabledFields": [
-                "nps:places_uuid",
-                "nps:building_id",
-                "nps:fcat"
+        editing: {
+            area: true,
+            disabledFields: [
+                'nps:building_id',
+                'nps:fcat',
+                'nps:source_system',
+                'nps:source_system_key',
+                'nps:source_system_key_value'
             ],
-            "line": true,
-            "minZoom": 15.5,
-            "point": true
+            line: true,
+            minZoom: 15.5,
+            point: true
         },
-        "locationOverlayMaxZoom": 22,
-        "map": {
-            "center": [
+        locationOverlayMaxZoom: 22,
+        map: {
+            center: [
                 -77.0228,
                 38.8944
             ],
-            "defaultBackground": "Esri",
-            "zoom": 15.01
+            defaultBackground: 'mapbox-satellite',
+            zoom: 15.01
         },
-        "tags": {
-            "disabledFields": [
-                "nps:building_id",
-                "nps:fcat",
-                "nps:places_id"
+        tags: {
+            disabledFields: [
+                'nps:building_id',
+                'nps:fcat',
+                'nps:source_system',
+                'nps:source_system_key',
+                'nps:source_system_key_value'
             ],
-            "uninterestingFields": [
-                "attribution",
-                "created_by",
-                "nps:unit_code",
-                "odbl",
-                "source"
+            uninterestingFields: [
+                'attribution',
+                'created_by',
+                'nps:unit_code',
+                'odbl',
+                'source'
             ]
         }
     }

@@ -1,7 +1,7 @@
 {
   "name": "places-editor",
   "version": "1.7.3",
-  "description": "an editor for the NPS Places Project",
+  "description": "An editor for the National Park Service's Places system",
   "main": "iD.js",
   "directories": {
     "doc": "docs",
@@ -27,7 +27,7 @@
     "lodash-cli": "3.9.3",
     "uglify-js": "~2.4.16",
     "maki": "0.4.5",
-    "npmaki": "git+https://github.com/nationalparkservice/npmaki.git#gh-pages",
+    "npmap-symbol-library": "git+https://github.com/nationalparkservice/npmap-symbol-library.git#gh-pages",
     "jshint": "2.3.0",
     "mocha": "~1.21.5",
     "mocha-phantomjs": "~3.5.3",

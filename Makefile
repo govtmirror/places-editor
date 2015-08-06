@@ -17,7 +17,7 @@ MAKI_SOURCES = \
 	data/line-icons.json \
 	data/relation-icons.json \
 	node_modules/maki/www/maki-sprite.json \
-	node_modules/npmaki/www/npmaki-sprite.json \
+	node_modules/npmap-symbol-library/www/npmaki-sprite.json \
 	dist/img/maki-sprite.png \
 	dist/img/npmaki-sprite.png
 
@@ -27,7 +27,7 @@ $(MAKI_TARGETS): $(MAKI_SOURCES) data/maki_sprite.js
 dist/img/maki-sprite.png: ./node_modules/maki/www/images/maki-sprite.png
 	cp $< $@
 
-dist/img/npmaki-sprite.png: ./node_modules/npmaki/www/images/npmaki-sprite.png
+dist/img/npmaki-sprite.png: ./node_modules/npmap-symbol-library/www/images/npmaki-sprite.png
 	cp $< $@
 
 BUILDJS_TARGETS = \
@@ -157,7 +157,7 @@ dist/img/relation-presets.png: svg/relation-presets.svg
 	@echo "----< $@ >----"
 	if [ `which inkscape` ]; then $(SPRITE) --export-png=$@ $<; else echo "Inkscape is not installed"; fi;
 
-dist/img/npmaki-sprite.png: ./node_modules/npmaki/www/images/npmaki-sprite.png
+dist/img/npmaki-sprite.png: ./node_modules/npmap-symbol-library/www/images/npmaki-sprite.png
 	@echo "----< $@ >----"
 	node data/maki_sprite
 	cp $< $@

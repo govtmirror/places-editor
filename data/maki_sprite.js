@@ -2,7 +2,7 @@ var fs = require('fs');
 var _ = require('../js/lib/lodash');
 
 var maki = require('maki/www/maki-sprite.json');
-var npmaki = require('npmaki/www/npmaki-sprite.json');
+var npmaki = require('npmap-symbol-library/www/npmaki-sprite.json');
 var lineIcons = require('./line-icons.json');
 var relationIcons = require('./relation-icons.json');
 
