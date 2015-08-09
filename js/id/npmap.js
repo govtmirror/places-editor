@@ -29,11 +29,11 @@ iD.npmap = {
     locationOverlayMaxZoom: 22,
     map: {
       center: [
-        -77.0228,
-        38.8944
+        -99.00,
+        39.00
       ],
       defaultBackground: 'mapbox-satellite',
-      zoom: 15.01
+      zoom: 4.00
     },
     tags: {
       disabledFields: [

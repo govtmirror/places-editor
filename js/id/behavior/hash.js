@@ -64,7 +64,6 @@ iD.behavior.Hash = function(context) {
             .on('hashchange.hash', hashchange);
 
         if (location.hash) {
-            console.log(location.hash);
             var q = iD.util.stringQs(location.hash.substring(1));
             if (q.id) context.zoomToEntity(q.id.split(',')[0], !q.map);
             if (q.comment) context.storage('comment', q.comment);
@@ -82,7 +81,6 @@ iD.behavior.Hash = function(context) {
                 hashchange();
             }
             if (q.map) hash.hadHash = true;
-            console.log(q);
         }
     }
 

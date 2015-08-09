@@ -219,7 +219,6 @@ iD.Background = function(context) {
             .source(d)
             .projection(context.projection)
             .dimensions(baseLayer.dimensions());
-
         overlayLayers.push(layer);
         dispatch.change();
         updateImagery();
@@ -257,8 +256,11 @@ iD.Background = function(context) {
         if (chosen && chosen.indexOf('custom:') === 0) {
             background.baseLayerSource(iD.BackgroundSource.Custom(chosen.replace(/^custom:/, '')));
         } else {
-            background.baseLayerSource(findSource(chosen) || findSource('Bing') || backgroundSources[1]);
+            background.baseLayerSource(findSource(chosen) || findSource(iD.npmap.settings.map.defaultBackground) || backgroundSources[1]);
         }
+
+        /*
+        // Taking out because this breaks passing park-tiles-overlay in via hash.
 
         var locator = _.find(backgroundSources, function(d) {
             return d.overlay && d.default;
@@ -267,6 +269,7 @@ iD.Background = function(context) {
         if (locator) {
             background.toggleOverlayLayer(locator);
         }
+        */
 
         var overlays = (q.overlays || '').split(',');
         overlays.forEach(function(overlay) {
