@@ -55,6 +55,7 @@ function updateDropdown (newHash) {
 
 window.onload = function () {
   var hash = window.location.hash;
+  var iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
   var sql = 'SELECT ' +
     '  "full_name", ' +
     '  "unit_code", ' +
@@ -68,6 +69,11 @@ window.onload = function () {
     '  the_geom IS NOT NULL ' +
     'ORDER BY ' +
     '  "full_name";';
+  var interval;
+
+  function updateHash (hash) {
+    window.history.replaceState(null, null, window.location.protocol + '//' + window.location.host + window.location.pathname + hash);
+  }
 
   if (hash && hash.length) {
     iframe.src = '../../dist/index.html' + hash;
@@ -82,21 +88,25 @@ window.onload = function () {
       initiatedByParent = false;
     }
   };
-  iframe.onload = function () {
-    if (!hash || hash.length) {
-      window.location.hash = this.contentWindow.location.hash;
-    }
+  interval = setInterval(function () {
+    if (iframeDoc.readyState === 'complete') {
+      clearInterval(interval);
 
-    this.contentWindow.onhashchange = function () {
-      if (!initiatedByParent) {
-        hash = this.location.hash;
-        initiatedByIframe = true;
-        window.location.hash = hash;
-        updateDropdown(hash);
-        initiatedByIframe = false;
+      if (!hash || hash.length) {
+        updateHash(iframe.contentWindow.location.hash);
       }
-    };
-  };
+
+      iframe.contentWindow.onhashchange = function () {
+        if (!initiatedByParent) {
+          hash = this.location.hash;
+          initiatedByIframe = true;
+          updateHash(hash);
+          updateDropdown(hash);
+          initiatedByIframe = false;
+        }
+      };
+    }
+  }, 100);
   reqwest({
     success: function (parks) {
       var options = [];
