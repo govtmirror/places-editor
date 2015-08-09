@@ -5,15 +5,11 @@ console.log('***********************');
 var configFile = __dirname + '/../../config.json';
 var fs = require('fs');
 var settingsFile = __dirname + '/js/id/npmap.js';
-var config, idSettings, key;
-
-// Check if our config file exists
-if (fs.existsSync(configFile)) {
-  var readConfig = require('../../readConfig');
-
-  config = readConfig(JSON.parse(fs.readFileSync(configFile)));
-  idSettings = config.iD;
-  key = config.oauth.keys.filter(function (d) {
+var configUrl = 'https://raw.githubusercontent.com/nationalparkservice/places-website/master/config.json';
+var https = require('https');
+var complete = function (config) {
+  var idSettings = config.iD;
+  var key = config.oauth.keys.filter(function (d) {
     return d.name === 'iD';
   })[0];
   idSettings.settings.connection.oauth = {
@@ -28,4 +24,33 @@ if (fs.existsSync(configFile)) {
   console.log('***********************');
   console.log('NPMap settings updated');
   console.log('***********************');
+};
+
+// Check if our config file exists
+if (fs.existsSync(configFile)) {
+  var readConfig = require('../../readConfig');
+  complete(readConfig(JSON.parse(fs.readFileSync(configFile))));
+} else {
+  var getFile = function (url, callback) {
+    var file = '';
+    https.get(url, function (resp) {
+      resp.on('data', function (d) {
+        file += d.toString();
+      });
+      resp.on('error', function (e) {
+        console.log('error', e);
+        callback(e);
+      });
+      resp.on('end', function (d) {
+        console.log('hmm', JSON.parse(file));
+        callback(null, JSON.parse(file));
+      });
+    });
+  };
+
+  getFile(configUrl, function (e, r) {
+    if (!e) {
+      complete(r);
+    }
+  });
 }

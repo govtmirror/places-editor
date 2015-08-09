@@ -28,7 +28,7 @@ iD.BackgroundSource = function(data, preview, context) {
 
     source.url = function(coord) {
         var template = preview && !context.map().editable() ? preview.template : data.template;
-        d3.selectAll('#map').style('background-color', !context.map().editable() ? 'rgb(230, 229, 224)' : 'black');
+        d3.selectAll('#map').style('background-color', (!context || !context.map().editable())  ? 'rgb(230, 229, 224)' : 'black');
         return template
             .replace('{x}', coord[0])
             .replace('{y}', coord[1])

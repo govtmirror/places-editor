@@ -24,12 +24,6 @@ MAKI_SOURCES = \
 $(MAKI_TARGETS): $(MAKI_SOURCES) data/maki_sprite.js
 	node data/maki_sprite.js
 
-dist/img/maki-sprite.png: ./node_modules/maki/www/images/maki-sprite.png
-	cp $< $@
-
-dist/img/npmaki-sprite.png: ./node_modules/npmap-symbol-library/www/images/npmaki-sprite.png
-	cp $< $@
-
 BUILDJS_TARGETS = \
 	data/presets/categories.json \
 	data/presets/fields.json \
@@ -157,7 +151,7 @@ dist/img/relation-presets.png: svg/relation-presets.svg
 	@echo "----< $@ >----"
 	if [ `which inkscape` ]; then $(SPRITE) --export-png=$@ $<; else echo "Inkscape is not installed"; fi;
 
-dist/img/npmaki-sprite.png: ./node_modules/npmap-symbol-library/www/images/npmaki-sprite.png
+dist/img/npmaki-sprite.png: node_modules/npmap-symbol-library/www/images/npmaki-sprite.png
 	@echo "----< $@ >----"
 	node data/maki_sprite
 	cp $< $@
