@@ -13,9 +13,9 @@ var complete = function (config) {
     return d.name === 'iD';
   })[0];
   idSettings.settings.connection.oauth = {
-    consumerKey: key.consumerKey,
+    consumerKey: key.consumerKey && key.consumerKey.indexOf('{{') === -1 ? key.consumerKey : 'CpIont3biEafgafInTYWkFlooQkcFLtGREu6yMG0',
     external: config.oauth.external,
-    secret: key.consumerSecret,
+    secret: key.consumerSecret && key.consumerSecret.indexOf('{{') === -1 ? key.consumerSecret : 'MFgSWe00v8EsddR9KI42uZZX61r2XL8JwEPxHY2p',
     url: idSettings.settings.connection.api
   };
 
