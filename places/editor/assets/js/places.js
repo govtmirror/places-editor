@@ -16,7 +16,6 @@ function supportsLocalStorage () {
 function updateDropdown (newHash) {
   var lonLat = (newHash.replace(/.+?\/([\d-.]{2,}).+?([\d-.]{2,}).{0,}/g, '$1,$2').split(','));
   var sql = 'SELECT full_name, unit_code FROM parks WHERE the_geom && St_MakePoint({{x}}, {{y}}) AND St_Intersects(the_geom, St_SetSRID(St_MakePoint({{x}}, {{y}}),4326)) ORDER BY area DESC LIMIT 1;';
-  var newSql = encodeURIComponent(sql.replace(/{{x}}/g, lonLat[0]).replace(/{{y}}/g, lonLat[1]));
 
   function matchOption (parkName) {
     var select = document.getElementById('to-park');
@@ -44,13 +43,16 @@ function updateDropdown (newHash) {
         }
       },
       type: 'jsonp',
-      url: 'https://nps.cartodb.com/api/v2/sql?q=' + newSql
+      url: 'https://nps.cartodb.com/api/v2/sql?q=' + encodeURIComponent(sql.replace(/{{x}}/g, lonLat[0]).replace(/{{y}}/g, lonLat[1]))
     });
   } else {
     click = false;
   }
 
   lastHash = newHash;
+}
+function updateHash (newHash) {
+  window.history.replaceState(null, null, window.location.protocol + '//' + window.location.host + window.location.pathname + newHash);
 }
 
 window.onload = function () {
@@ -70,10 +72,6 @@ window.onload = function () {
     'ORDER BY ' +
     '  "full_name";';
   var interval;
-
-  function updateHash (hash) {
-    window.history.replaceState(null, null, window.location.protocol + '//' + window.location.host + window.location.pathname + hash);
-  }
 
   if (hash && hash.length) {
     iframe.src = '../../dist/index.html' + hash;
@@ -192,7 +190,13 @@ window.onload = function () {
         }
 
         click = true;
-        iframe.src = '../../dist/index.html#' + hash.join('&');
+        iframe.contentWindow.location.hash = hash.join('&');
+        /*
+        // TODO: Zoom the iD map yourself, and let iD update the hash (and then it will propagate up to window)
+        initiatedByIframe = true;
+        contentWindow.id.map().centerZoom(center, contentWindow.id.map().extentZoom(extent));
+        initiatedByIframe = false;
+        */
       };
       select.style.display = 'block';
     },
