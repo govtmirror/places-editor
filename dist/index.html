@@ -14,6 +14,7 @@
         <!--[if !IE]>-->
         <script src='iD.min.js'></script>
         <script src='presets.js'></script>
+        <script src='//nationalparkservice.github.io/places-data/npmapPresets.js'></script>
         <script src='imagery.js'></script>
         <!--<![endif]-->
     </head>
@@ -25,7 +26,7 @@
             document.getElementById('id-container').className = 'unsupported';
             } else {
                 var id = iD()
-                  .presets(iD.data.presets)
+                  .presets([iD.data.presets, iD.data.npmapPresets])
                   .imagery(iD.data.imagery)
                   .taginfo(iD.taginfo());
 

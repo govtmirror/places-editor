@@ -245,6 +245,8 @@
         <script src='js/id/validations/missing_tag.js'></script>
         <script src='js/id/validations/tag_suggests_area.js'></script>
 
+        <script src='//nationalparkservice.github.io/places-data/npmapPresets.js'></script>
+
         <script src='js/lib/locale.js'></script>
         <script src='data/introGraph.js'></script>
     </head>
@@ -253,7 +255,7 @@
         <script>
             iD.data.load(function() {
                 id = iD()
-                    .presets(iD.data.presets)
+                    .presets([iD.data.presets, iD.data.npmapPresets])
                     .imagery(iD.data.imagery)
                     .taginfo(iD.taginfo())
                     .assetPath('dist/');

@@ -119,6 +119,7 @@ iD.svg.Defs = function(context) {
           });
         });
 
+          console.log('***', makis);
         defs.call(SpriteDefinition(
             'sprite',
             context.imagePath('sprite.svg'),
@@ -130,8 +131,8 @@ iD.svg.Defs = function(context) {
             makis.maki));
 
         defs.call(SpriteDefinition(
-            'npmaki-sprite',
-            context.imagePath('npmaki-sprite.png'),
-            makis.npmaki));
+            'npmap-symbol-library-sprite',
+            context.imagePath('npmap-symbol-library-sprite.png'),
+            makis['npmap-symbol-library']));
     };
 };

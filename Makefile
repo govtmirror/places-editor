@@ -19,7 +19,7 @@ MAKI_SOURCES = \
 	node_modules/maki/www/maki-sprite.json \
 	node_modules/npmap-symbol-library/www/npmaki-sprite.json \
 	dist/img/maki-sprite.png \
-	dist/img/npmaki-sprite.png
+	dist/img/npmap-symbol-library-sprite.png
 
 $(MAKI_TARGETS): $(MAKI_SOURCES) data/maki_sprite.js
 	node data/maki_sprite.js
@@ -124,7 +124,7 @@ clean:
 	@echo "----< $@ >----"
 	rm -f dist/iD*.js dist/iD.css
 	rm -f dist/img/maki-sprite.png css/img/maki-sprite.png
-	rm -f dist/img/npmaki-sprite.png css/img/npmaki-sprite.png
+	rm -f dist/img/npmap-symbol-library-sprite.png css/img/npmap-symbol-library-sprite.png
 	rm -f data/presets.yaml data/presets/fields.json data/presets/categories.json data/presets/presets.json dist/img/relation-presets.png dist/img/line-presets.png
 	rm -f $(MAKI_TARGETS) $(BUILDJS_TARGETS) dist/iD*.js dist/iD.css
 
@@ -151,11 +151,11 @@ dist/img/relation-presets.png: svg/relation-presets.svg
 	@echo "----< $@ >----"
 	if [ `which inkscape` ]; then $(SPRITE) --export-png=$@ $<; else echo "Inkscape is not installed"; fi;
 
-dist/img/npmaki-sprite.png: node_modules/npmap-symbol-library/www/images/npmaki-sprite.png
+dist/img/npmap-symbol-library-sprite.png: node_modules/npmap-symbol-library/www/images/npmaki-sprite.png
 	@echo "----< $@ >----"
 	node data/maki_sprite
 	cp $< $@
-	cp $< css/img/npmaki-sprite.png
+	cp $< css/img/npmap-symbol-library-sprite.png
 
 D3_FILES = \
 	node_modules/d3/src/start.js \

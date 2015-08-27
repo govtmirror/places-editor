@@ -1,44 +1,44 @@
 {
   "area": [
-    "nps/building/yes_building",
-    "nps/amenity/parking"
+    "building/building/building footprint",
+    "parking/parking/parking lot"
   ],
   "line": [
-    "nps/highway/primary",
-    "nps/highway/secondary",
-    "nps/highway/service",
-    "nps/highway/service/parking_aisle",
-    "nps/highway/unclassified",
-    "nps/highway/path",
-    "nps/highway/equestrian_trail"
+    "road/primary/primary road",
+    "road/secondary/secondary road",
+    "road/service/service road",
+    "road/service/parking aisle",
+    "road/minor/minor road",
+    "trail/water/motorized trail",
+    "trail/non-motorized/non-motorized trail"
   ],
   "point": [
-    "nps/tourism/campground",
-    "nps/tourism/picnic_site",
-    "nps/amenity/parking",
-    "nps/tourism/information",
-    "nps/tourism/visitor_center",
-    "nps/amenity/ranger_station",
-    "nps/highway/trailhead",
-    "nps/amenity/toilets",
-    "nps/amenity/food_court",
-    "nps/tourism/hotel",
-    "nps/shop/general",
-    "nps/tourism/map"
+    "land recreation/camping/campground",
+    "land recreation/picnic/picnic area",
+    "service/parking/parking lot",
+    "service/information/information",
+    "service/information/visitor center",
+    "service/support/ranger station",
+    "land recreation/trail/trailhead",
+    "accommodation/restroom/restroom",
+    "service/food/food service",
+    "building/commercial/hotel building",
+    "service/shopping/store",
+    "service/information/information map"
   ],
   "vertex": [
-    "nps/tourism/campground",
-    "nps/tourism/picnic_site",
-    "nps/amenity/parking",
-    "nps/tourism/information",
-    "nps/tourism/visitor_center",
-    "nps/amenity/ranger_station",
-    "nps/highway/trailhead",
-    "nps/amenity/toilets",
-    "nps/amenity/food_court",
-    "nps/tourism/hotel",
-    "nps/shop/general",
-    "nps/tourism/map"
+    "land recreation/camping/campground",
+    "land recreation/picnic/picnic area",
+    "service/parking/parking lot",
+    "service/information/information",
+    "service/information/visitor center",
+    "service/support/ranger station",
+    "land recreation/trail/trailhead",
+    "accommodation/restroom/restroom",
+    "service/food/food service",
+    "building/commercial/hotel building",
+    "service/shopping/store",
+    "service/information/information map"
   ],
   "relation": []
 }
