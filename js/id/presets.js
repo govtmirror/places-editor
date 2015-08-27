@@ -82,7 +82,23 @@ iD.presets = function() {
         return areaKeys;
     };
 
-    all.load = function(d) {
+    all.load = function(inputs) {
+      var d = {};
+        if (Array.isArray(inputs)) {
+          // Allow an array of presets to come in, giving precedence to values later in the array
+          inputs.forEach(function(p, i) {
+            console.log(i, p);
+            for (var type in p) {
+              d[type] = d[type] || {};
+              for (var item in p[type]) {
+                d[type][item] = p[type][item];
+              }
+            }
+          });
+        } else {
+          d = inputs;
+        }
+        console.log(d);
 
         if (d.fields) {
             _.forEach(d.fields, function(d, id) {
