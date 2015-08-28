@@ -1,44 +1,50 @@
 {
-  "area": [
-    "building/building/building footprint",
-    "parking/parking/parking lot"
-  ],
-  "line": [
-    "road/primary/primary road",
-    "road/secondary/secondary road",
-    "road/service/service road",
-    "road/service/parking aisle",
-    "road/minor/minor road",
-    "trail/water/motorized trail",
-    "trail/non-motorized/non-motorized trail"
-  ],
-  "point": [
-    "land recreation/camping/campground",
-    "land recreation/picnic/picnic area",
-    "service/parking/parking lot",
-    "service/information/information",
-    "service/information/visitor center",
-    "service/support/ranger station",
-    "land recreation/trail/trailhead",
-    "accommodation/restroom/restroom",
-    "service/food/food service",
-    "building/commercial/hotel building",
-    "service/shopping/store",
-    "service/information/information map"
-  ],
-  "vertex": [
-    "land recreation/camping/campground",
-    "land recreation/picnic/picnic area",
-    "service/parking/parking lot",
-    "service/information/information",
-    "service/information/visitor center",
-    "service/support/ranger station",
-    "land recreation/trail/trailhead",
-    "accommodation/restroom/restroom",
-    "service/food/food service",
-    "building/commercial/hotel building",
-    "service/shopping/store",
-    "service/information/information map"
-  ],
-  "relation": []
+    "area": [
+        "category-landuse",
+        "category-building",
+        "category-water-area",
+        "leisure/park",
+        "amenity/hospital",
+        "amenity/place_of_worship",
+        "amenity/cafe",
+        "amenity/restaurant",
+        "area"
+    ],
+    "line": [
+        "category-road",
+        "category-rail",
+        "category-path",
+        "category-water-line",
+        "power/line",
+        "line"
+    ],
+    "point": [
+        "leisure/park",
+        "amenity/hospital",
+        "amenity/place_of_worship",
+        "amenity/cafe",
+        "amenity/restaurant",
+        "amenity/fast_food",
+        "amenity/bar",
+        "amenity/bank",
+        "shop/supermarket",
+        "point"
+    ],
+    "vertex": [
+        "highway/crosswalk",
+        "highway/crossing",
+        "railway/level_crossing",
+        "highway/traffic_signals",
+        "highway/turning_circle",
+        "highway/mini_roundabout",
+        "highway/motorway_junction",
+        "vertex"
+    ],
+    "relation": [
+        "category-route",
+        "category-restriction",
+        "type/boundary",
+        "type/multipolygon",
+        "relation"
+    ]
 }
