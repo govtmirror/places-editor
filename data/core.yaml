@@ -427,7 +427,7 @@ en:
       improve your Park's basemap.
 
       Edits that you make on this map will be visible to everyone who uses
-      Places and/or Park Tiles, including the public. Refer to the [Places Tracing Guide](http://nationalparkservice.github.io/places-tracing-guide/) to review our data schema and tagging best practices.
+      Places and/or Park Tiles, including the public. Refer to the [Places Tracing Guide](http://insidemaps.nps.gov/places/tracing-guide/) to review our data schema and tagging best practices.
 
       The Places Editor is a collaborative project with [source
       code available on GitHub](https://github.com/nationalparkservice/iD).
