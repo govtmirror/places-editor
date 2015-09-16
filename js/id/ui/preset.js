@@ -140,7 +140,7 @@ iD.ui.preset = function(context) {
             fields.push(UIField(context.presets().field('nps/unitcode'), entity));
 
             preset.fields.forEach(function(field) {
-                if (field.matchGeometry(geometry)) {
+                if (field && field.matchGeometry(geometry)) {
                     fields.push(UIField(field, entity, true));
                 }
             });
