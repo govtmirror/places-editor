@@ -72,7 +72,7 @@ iD.presets.Preset = function(id, preset, fields) {
 
         for (var f in preset.fields) {
             var field = preset.fields[f];
-            if (field.matchGeometry(geometry) && field['default'] === tags[field.key]) {
+            if (field && field.matchGeometry(geometry) && field['default'] === tags[field.key]) {
                 delete tags[field.key];
             }
         }
@@ -116,7 +116,7 @@ iD.presets.Preset = function(id, preset, fields) {
 
         for (var f in preset.fields) {
             var field = preset.fields[f];
-            if (field.matchGeometry(geometry) && field.key && !tags[field.key] && field['default']) {
+            if (field && field.matchGeometry(geometry) && field.key && !tags[field.key] && field['default']) {
                 tags[field.key] = field['default'];
             }
         }
