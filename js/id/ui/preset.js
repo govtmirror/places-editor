@@ -48,7 +48,7 @@ iD.ui.preset = function(context) {
           if (field.autocomplete && entity.id.substr(1,1) === '-') { // entity.id.substr(1,1) checks to make sure this is a new node
             completed = completed || {};
             completed[entity.id] = completed[entity.id] || {};
-            if (!tags[field.id] && !completed[entity.id][field.key] ) {
+            if (!tags[field.id] && Object.keys(entity.tags).length > 0 && !completed[entity.id][field.key]) {
               return completeTask(field, entity);
             }
           }
