@@ -407,6 +407,7 @@ en:
     in: Zoom In
     out: Zoom Out
   cannot_zoom: "Cannot zoom out further in current mode."
+  full_screen: Toggle Full Screen
   gpx:
     local_layer: "Local GPX file"
     drag_drop: "Drag and drop a .gpx file on the page, or click the button to the right to browse"
@@ -529,13 +530,13 @@ en:
       or press 'Return' or 'Enter' on your keyboard.
     gps: |
       # GPS
-
-      GPS data can be a great source of information. This editor supports local traces
-      - `.gpx` files on your local computer. You can collect this kind of GPS trace
-      with a number of smartphone applications as well as personal GPS hardware.
+      Collected GPS traces are one valuable source of data. This editor
+      supports local traces - `.gpx` files on your local computer. You can collect
+      this kind of GPS trace with a number of smartphone applications as well as
+      personal GPS hardware.
 
       For information on how to perform a GPS survey, read
-      [Surveying with a GPS](http://learnosm.org/en/beginner/using-gps/).
+      [Mapping with a smartphone, GPS, or paper](http://learnosm.org/en/mobile-mapping/).
 
       To use a GPX track for mapping, drag and drop the GPX file onto the map
       editor. If it's recognized, it will be added to the map as a bright purple
@@ -583,9 +584,8 @@ en:
       has a type assigned, the inspector will display fields with details about
       the feature like its name and address.
 
-      Below the fields you see, you can click 'Add field' to add other details,
-      like [Wikipedia](http://www.wikipedia.org/) information, wheelchair
-      access, and more.
+      Below the fields you see, you can click the 'Add field' dropdown to add
+      other details, like a Wikipedia link, wheelchair access, and more.
 
       At the bottom of the inspector, click 'All tags' to add arbitrary
       other tags to the element. [Taginfo](http://taginfo.openstreetmap.org/) is a

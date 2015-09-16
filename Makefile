@@ -24,6 +24,12 @@ MAKI_SOURCES = \
 $(MAKI_TARGETS): $(MAKI_SOURCES) data/maki_sprite.js
 	node data/maki_sprite.js
 
+$(MAKI_SOURCES): node_modules/.install
+
+dist/img/maki-sprite.png: node_modules/maki/www/images/maki-sprite.png
+	cp $< $@
+
+
 BUILDJS_TARGETS = \
 	data/presets/categories.json \
 	data/presets/fields.json \
