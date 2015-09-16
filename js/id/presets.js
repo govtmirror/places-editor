@@ -87,10 +87,13 @@ iD.presets = function() {
         if (Array.isArray(inputs)) {
           // Allow an array of presets to come in, giving precedence to values later in the array
           inputs.forEach(function(p, i) {
-            console.log(i, p);
             for (var type in p) {
               d[type] = d[type] || {};
               for (var item in p[type]) {
+                if (i != inputs.length-1) {
+                  // Reduce the matchScore unless it's already specified
+                  p[type][item].matchScore = p[type][item].matchScore || 0.3;
+                }
                 d[type][item] = p[type][item];
               }
             }
@@ -98,7 +101,6 @@ iD.presets = function() {
         } else {
           d = inputs;
         }
-        console.log(d);
 
         if (d.fields) {
             _.forEach(d.fields, function(d, id) {
