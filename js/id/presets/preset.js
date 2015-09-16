@@ -21,7 +21,7 @@ iD.presets.Preset = function(id, preset, fields) {
         for (var t in tags) {
             if (entity.tags[t] === tags[t]) {
                 score += matchScore;
-            } else if (tags[t] === '*' && t in entity.tags) {
+            } else if (tags[t] === '*' && t in entity.tags && entity.tags[t] !== 'no') {
                 score += matchScore / 2;
             } else {
                 return -1;
