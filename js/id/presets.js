@@ -75,7 +75,7 @@ iD.presets = function() {
 
             var value = d.tags[key];
             if (d.geometry.indexOf('area') === -1 && key in areaKeys && value !== '*') {
-                areaKeys[key][value] = true;
+                areaKeys[key][value] = d.geometry;
             }
         });
 

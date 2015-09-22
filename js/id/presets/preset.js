@@ -83,7 +83,7 @@ iD.presets.Preset = function(id, preset, fields) {
 
     var applyTags = preset.addTags || preset.tags;
     preset.applyTags = function(tags, geometry) {
-        var k;
+        var k, v;
 
         tags = _.clone(tags);
 
@@ -104,8 +104,12 @@ iD.presets.Preset = function(id, preset, fields) {
             if (preset.geometry.indexOf('line') === -1) {
                 for (k in applyTags) {
                     if (k in iD.areaKeys) {
-                        needsAreaTag = false;
-                        break;
+                        for (v in iD.areaKeys[k]) {
+                          if (iD.areaKeys[k][v] && iD.areaKeys[k][v].indexOf('line') !== -1) {
+                            needsAreaTag = false;
+                            break;
+                          }
+                        }
                     }
                 }
             }
