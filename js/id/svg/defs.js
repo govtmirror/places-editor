@@ -119,7 +119,6 @@ iD.svg.Defs = function(context) {
           });
         });
 
-          console.log('***', makis);
         defs.call(SpriteDefinition(
             'sprite',
             context.imagePath('sprite.svg'),
