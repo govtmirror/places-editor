@@ -15,7 +15,10 @@
 
 ## Installation
 
-In order to make syncing with the [openstreetmap/iD](https://github.com/openstreetmap/iD) project easier, a prebuilt version of Places Editor is not available in this repository. You will need to build the project in order to use it.
+To run the current development version, fork this project, run `make`, and serve it locally.
+If you have Python handy, just `cd` into the project root directory and run
+
+     python -m SimpleHTTPServer
 
 ## Building / Installing
 

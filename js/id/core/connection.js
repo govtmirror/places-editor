@@ -211,7 +211,7 @@ iD.Connection = function(context, useHttps) {
                     tag: _.map(tags, function(value, key) {
                         return { '@k': key, '@v': value };
                     }),
-                    '@version': 0.3,
+                    '@version': 0.6,
                     '@generator': 'iD'
                 }
             }
@@ -241,7 +241,7 @@ iD.Connection = function(context, useHttps) {
 
         return {
             osmChange: {
-                '@version': 0.3,
+                '@version': 0.6,
                 '@generator': 'iD',
                 'create': nest(changes.created.map(rep), ['node', 'way', 'relation']),
                 'modify': nest(changes.modified.map(rep), ['node', 'way', 'relation']),
@@ -256,7 +256,7 @@ iD.Connection = function(context, useHttps) {
                 created_by: 'iD ' + iD.version,
                 imagery_used: imageryUsed.join(';').substr(0, 255),
                 host: (window.location.origin + window.location.pathname).substr(0, 255),
-                locale: detected.locale,
+                locale: detected.locale
             };
 
         if (comment) {

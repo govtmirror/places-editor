@@ -7,7 +7,7 @@ window.iD = function () {
 
     // https://github.com/openstreetmap/iD/issues/772
     // http://mathiasbynens.be/notes/localstorage-pattern#comment-9
-    try { storage = localStorage; } catch (e) {}
+    try { storage = localStorage; } catch (e) {}  // eslint-disable-line no-empty
     storage = storage || (function() {
         var s = {};
         return {
@@ -24,9 +24,9 @@ window.iD = function () {
             else storage.setItem(k, v);
         } catch(e) {
             // localstorage quota exceeded
-            /* jshint devel:true */
+            /* eslint-disable no-console */
             if (typeof console !== 'undefined') console.error('localStorage quota exceeded');
-            /* jshint devel:false */
+            /* eslint-enable no-console */
         }
     };
 
@@ -333,7 +333,7 @@ window.iD = function () {
     return d3.rebind(context, dispatch, 'on');
 };
 
-iD.version = '1.7.3';
+iD.version = '1.7.4';
 
 (function() {
     var detected = {};
