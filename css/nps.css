@@ -10,7 +10,7 @@ a:visited, a {
   color: #b28000;
 }
 a:hover {
-  color: #b17f00;
+  color: #b1p7f00;
 }
 .help-wrap .toc li a.selected,
 .layer-list li.active,
@@ -34,14 +34,14 @@ button.action:hover {
 .feature-list-item:hover .entity-type {
   color: #b17f00;
 }
-.preset-icon-npmaki {
+.preset-icon-npmap-symbol-library {
   position: absolute;
   top: 17px;
   left: 17px;
   margin: auto;
 }
-.preset-icon-npmaki-area
-.preset-icon-npmaki-line {
+.preset-icon-npmap-symbol-library-area
+.preset-icon-npmap-symbol-library-line {
   margin-left: 18px;
 }
 .checkselect label:last-of-type {

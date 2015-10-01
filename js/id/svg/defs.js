@@ -130,8 +130,8 @@ iD.svg.Defs = function(context) {
             makis.maki));
 
         defs.call(SpriteDefinition(
-            'npmaki-sprite',
-            context.imagePath('npmaki-sprite.png'),
-            makis.npmaki));
+            'npmap-symbol-library-sprite',
+            context.imagePath('npmap-symbol-library-sprite.png'),
+            makis['npmap-symbol-library']));
     };
 };

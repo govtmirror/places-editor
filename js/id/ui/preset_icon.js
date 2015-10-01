@@ -23,7 +23,7 @@ iD.ui.PresetIcon = function() {
             return s;
         });
 
-        var $icon = selection.selectAll('.preset-icon,.preset-icon-npmaki')
+        var $icon = selection.selectAll('.preset-icon,.preset-icon-npmap-symbol-library')
             .data([0]);
 
         $icon.enter().append('div');
@@ -31,8 +31,8 @@ iD.ui.PresetIcon = function() {
         $icon.attr('class', function() {
             var icon = p.icon || (geom === 'line' ? 'other-line' : 'marker-stroked'),
                 klass = 'feature-' + icon + ' preset-icon' + (p.maki && p.maki !== 'maki' ? '-' + p.maki : '');
-            if (p.maki === 'npmaki') {
-              klass += ' preset-icon-npmaki-' + geom;
+            if (p.maki === 'npmap-symbol-library') {
+              klass += ' preset-icon-npmap-symbol-library-' + geom;
             }
 
             var featureicon = iD.data.featureIcons[icon];

@@ -530,8 +530,7 @@ en:
       or press 'Return' or 'Enter' on your keyboard.
     gps: |
       # GPS
-
-      Collected GPS traces are one valuable source of data for Places. This editor
+      Collected GPS traces are one valuable source of data. This editor
       supports local traces - `.gpx` files on your local computer. You can collect
       this kind of GPS trace with a number of smartphone applications as well as
       personal GPS hardware.

@@ -14,7 +14,7 @@ iD.presets.Category = function(id, category, all) {
     category.matchScore = function() { return -1; };
 
     category.name = function() {
-        return t('presets.categories.' + id + '.name', {'default': id});
+        return category.displayName || t('presets.categories.' + id + '.name', {'default': id});
     };
 
     category.terms = function() {

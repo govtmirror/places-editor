@@ -21,7 +21,7 @@ iD.presets.Preset = function(id, preset, fields) {
         for (var t in tags) {
             if (entity.tags[t] === tags[t]) {
                 score += matchScore;
-            } else if (tags[t] === '*' && t in entity.tags) {
+            } else if (tags[t] === '*' && t in entity.tags && entity.tags[t] !== 'no') {
                 score += matchScore / 2;
             } else {
                 return -1;
@@ -72,7 +72,7 @@ iD.presets.Preset = function(id, preset, fields) {
 
         for (var f in preset.fields) {
             var field = preset.fields[f];
-            if (field.matchGeometry(geometry) && field.default === tags[field.key]) {
+            if (field && field.matchGeometry(geometry) && field['default'] === tags[field.key]) {
                 delete tags[field.key];
             }
         }
@@ -83,7 +83,7 @@ iD.presets.Preset = function(id, preset, fields) {
 
     var applyTags = preset.addTags || preset.tags;
     preset.applyTags = function(tags, geometry) {
-        var k;
+        var k, v;
 
         tags = _.clone(tags);
 
@@ -104,8 +104,12 @@ iD.presets.Preset = function(id, preset, fields) {
             if (preset.geometry.indexOf('line') === -1) {
                 for (k in applyTags) {
                     if (k in iD.areaKeys) {
-                        needsAreaTag = false;
-                        break;
+                        for (v in iD.areaKeys[k]) {
+                          if (iD.areaKeys[k][v] && iD.areaKeys[k][v].indexOf('line') !== -1) {
+                            needsAreaTag = false;
+                            break;
+                          }
+                        }
                     }
                 }
             }
@@ -116,8 +120,8 @@ iD.presets.Preset = function(id, preset, fields) {
 
         for (var f in preset.fields) {
             var field = preset.fields[f];
-            if (field.matchGeometry(geometry) && field.key && !tags[field.key] && field.default) {
-                tags[field.key] = field.default;
+            if (field && field.matchGeometry(geometry) && field.key && !tags[field.key] && field['default']) {
+                tags[field.key] = field['default'];
             }
         }
 

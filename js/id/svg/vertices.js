@@ -123,7 +123,7 @@ iD.svg.Vertices = function(projection, context) {
             .attr('xlink:href', function(d) {
               return '#maki-' + icon(d) + '-12';
             });
-            // TODO: This will need an update to use npmaki if we add a vertex to npmaki (not likely)
+            // TODO: This will need an update to use npmap-symbol-library if we add a vertex to the npmap-symbol-library
 
         // Vertices with tags get a fill.
         enter.filter(function(d) { return d.hasInterestingTags(); })
