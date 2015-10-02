@@ -137,9 +137,11 @@ _.extend(iD.Way.prototype, {
             return true;
         if (!this.isClosed() || this.tags.area === 'no')
             return false;
-        for (var key in this.tags)
-            if (key in iD.areaKeys && !(this.tags[key] in iD.areaKeys[key]))
+        for (var key in this.tags) {
+            if (key in iD.areaKeys && ((this.tags[key] in iD.areaKeys[key]) && iD.areaKeys[key][this.tags[key]].indexOf('line') === -1)) {
                 return true;
+            }
+        }
         return false;
     },
 
