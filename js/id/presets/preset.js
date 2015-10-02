@@ -99,14 +99,16 @@ iD.presets.Preset = function(id, preset, fields) {
         // This is necessary if the geometry is already an area (e.g. user drew an area) AND any of:
         // 1. chosen preset could be either an area or a line (`barrier=city_wall`)
         // 2. chosen preset doesn't have a key in areaKeys (`railway=station`)
+        //
+        // Changed to only need an area tag if there is a conflicting line
         if (geometry === 'area') {
-            var needsAreaTag = true;
+            var needsAreaTag = false;
             if (preset.geometry.indexOf('line') === -1) {
                 for (k in applyTags) {
                     if (k in iD.areaKeys) {
                         for (v in iD.areaKeys[k]) {
                           if (iD.areaKeys[k][v] && iD.areaKeys[k][v].indexOf('line') !== -1) {
-                            needsAreaTag = false;
+                            needsAreaTag = true;
                             break;
                           }
                         }
