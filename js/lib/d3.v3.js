@@ -1,5 +1,5 @@
 !function(){
-  var d3 = {version: "3.5.5"}; // semver
+  var d3 = {version: "3.5.6"}; // semver
 d3.ascending = d3_ascending;
 
 function d3_ascending(a, b) {
@@ -611,11 +611,6 @@ function d3_eventPreventDefault() {
   d3.event.preventDefault();
 }
 
-function d3_eventCancel() {
-  d3.event.preventDefault();
-  d3.event.stopPropagation();
-}
-
 function d3_eventSource() {
   var e = d3.event, s;
   while (s = e.sourceEvent) e = s;
@@ -1021,8 +1016,8 @@ d3_selectionPrototype.text = function(value) {
   return arguments.length
       ? this.each(typeof value === "function"
       ? function() { var v = value.apply(this, arguments); this.textContent = v == null ? "" : v; } : value == null
-      ? function() { if (this.textContent !== "") this.textContent = ""; }
-      : function() { if (this.textContent !== value) this.textContent = value; })
+      ? function() { this.textContent = ""; }
+      : function() { this.textContent = value; })
       : this.node().textContent;
 };
 
@@ -1420,7 +1415,6 @@ function d3_selection_on(type, listener, capture) {
 
   function onAdd() {
     var l = wrap(listener, d3_array(arguments));
-    if (typeof Raven !== 'undefined') l = Raven.wrap(l);
     onRemove.call(this);
     this.addEventListener(type, this[name] = l, l.$ = capture);
     l._ = listener;
@@ -1504,7 +1498,7 @@ function d3_event_dragSuppress(node) {
     if (d3_event_dragSelect) style[d3_event_dragSelect] = select;
     if (suppressClick) { // suppress the next click, but only if it’s immediate
       var off = function() { w.on(click, null); };
-      w.on(click, function() { d3_eventCancel(); off(); }, true);
+      w.on(click, function() { d3_eventPreventDefault(); off(); }, true);
       setTimeout(off, 0);
     }
   };
@@ -1820,8 +1814,7 @@ d3.behavior.zoom = function() {
   }
 
   function zoomended(dispatch) {
-    if (!--zooming) dispatch({type: "zoomend"});
-    center0 = null;
+    if (!--zooming) dispatch({type: "zoomend"}), center0 = null;
   }
 
   function mousedowned() {
@@ -1964,7 +1957,7 @@ d3.behavior.zoom = function() {
   function mousewheeled() {
     var dispatch = event.of(this, arguments);
     if (mousewheelTimer) clearTimeout(mousewheelTimer);
-    else translate0 = location(center0 = center || d3.mouse(this)), d3_selection_interrupt.call(this), zoomstarted(dispatch);
+    else d3_selection_interrupt.call(this), translate0 = location(center0 = center || d3.mouse(this)), zoomstarted(dispatch);
     mousewheelTimer = setTimeout(function() { mousewheelTimer = null; zoomended(dispatch); }, 50);
     d3_eventPreventDefault();
     scaleTo(Math.pow(2, d3_behavior_zoomDelta() * .002) * view.k);
@@ -4998,7 +4991,7 @@ function d3_rgb_parse(format, rgb, hsl) {
       color;
 
   /* Handle hsl, rgb. */
-  m1 = /([a-z]+)\((.*)\)/i.exec(format);
+  m1 = /([a-z]+)\((.*)\)/.exec(format = format.toLowerCase());
   if (m1) {
     m2 = m1[2].split(",");
     switch (m1[1]) {
@@ -5020,7 +5013,7 @@ function d3_rgb_parse(format, rgb, hsl) {
   }
 
   /* Named colors. */
-  if (color = d3_rgb_names.get(format.toLowerCase())) {
+  if (color = d3_rgb_names.get(format)) {
     return rgb(color.r, color.g, color.b);
   }
 
@@ -5365,7 +5358,7 @@ function d3_interpolate(a, b) {
 d3.interpolators = [
   function(a, b) {
     var t = typeof b;
-    return (t === "string" ? (d3_rgb_names.has(b) || /^(#|rgb\(|hsl\()/.test(b) ? d3_interpolateRgb : d3_interpolateString)
+    return (t === "string" ? (d3_rgb_names.has(b.toLowerCase()) || /^(#|rgb\(|hsl\()/i.test(b) ? d3_interpolateRgb : d3_interpolateString)
         : b instanceof d3_color ? d3_interpolateRgb
         : Array.isArray(b) ? d3_interpolateArray
         : t === "object" && isNaN(b) ? d3_interpolateObject
