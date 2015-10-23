@@ -17,7 +17,7 @@ MAKI_SOURCES = \
 	data/line-icons.json \
 	data/relation-icons.json \
 	node_modules/maki/www/maki-sprite.json \
-	node_modules/npmap-symbol-library/www/npmaki-sprite.json \
+	node_modules/npmap-symbol-library/www/npmap-builder/npmap-symbol-library-sprite.json \
 	dist/img/maki-sprite.png \
 	dist/img/npmap-symbol-library-sprite.png
 
@@ -160,7 +160,7 @@ dist/img/relation-presets.png: svg/relation-presets.svg
 	@echo "----< $@ >----"
 	if [ `which inkscape` ]; then $(SPRITE) --export-png=$@ $<; else echo "Inkscape is not installed"; fi;
 
-dist/img/npmap-symbol-library-sprite.png: node_modules/npmap-symbol-library/www/images/npmaki-sprite.png
+dist/img/npmap-symbol-library-sprite.png: node_modules/npmap-symbol-library/www/npmap-builder/images/npmap-symbol-library-sprite.png
 	@echo "----< $@ >----"
 	node data/maki_sprite
 	cp $< $@
