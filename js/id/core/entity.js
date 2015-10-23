@@ -116,13 +116,7 @@ iD.Entity.prototype = {
     },
 
     hasInterestingTags: function() {
-        return _.keys(this.tags).some(function(key) {
-            // All of the npmap disabled tags are also 'uninteresting'
-            return iD.npmap.settings.tags.disabledFields.concat(
-                    iD.npmap.settings.tags.uninterestingFields
-                ).indexOf(key) === -1 &&
-                key.indexOf('tiger:') !== 0;
-        });
+        return _.keys(this.tags).some(iD.interestingTag);
     },
 
     isHighwayIntersection: function() {

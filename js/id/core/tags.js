@@ -29,3 +29,16 @@ iD.oneWayTags = {
         'stream': true
     }
 };
+
+iD.interestingTag = function (key) {
+    // These are the tags that are hardcoded into iD as being uninteresting
+    var idUninterestingTags = ['attribution', 'created_by', 'source', 'odbl'];
+
+    // All of the npmap disabled tags are also 'uninteresting', as at the uninteresting tags
+    return [].concat(
+        iD.npmap.settings.tags.disabledFields,
+        iD.npmap.settings.tags.uninterestingFields,
+        idUninterestingTags
+      ).indexOf(key) === -1 &&
+      key.indexOf('tiger:') !== 0;
+};
