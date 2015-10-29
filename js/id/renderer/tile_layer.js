@@ -3,10 +3,12 @@ iD.TileLayer = function() {
         tile = d3.geo.tile(),
         projection,
         cache = {},
+        utfGrid = {},
         tileOrigin,
         z,
         transformProp = iD.util.prefixCSSProperty('Transform'),
         source = d3.functor('');
+
 
     function tileSizeAtZoom(d, z) {
         return Math.ceil(tileSize * Math.pow(2, z - d[2])) / tileSize;
@@ -42,6 +44,7 @@ iD.TileLayer = function() {
 
     function addSource(d) {
         d.push(source.url(d));
+        d.push(source.url(d, 'templateGrid'));
         return d;
     }
 
@@ -116,7 +119,24 @@ iD.TileLayer = function() {
 
         var image = selection
             .selectAll('img')
-            .data(requests, function(d) { return d[3]; });
+            .data(requests, function(d) { 
+              // Load the utfGrid when it tries to load the image
+              if (d[4]) {
+                // Fill out the JSON grid cache
+                utfGrid[d[2]] = utfGrid[d[2]] || {};
+                utfGrid[d[2]][d[0]] = utfGrid[d[2]][d[0]] || {};
+                if (utfGrid[d[2]][d[0]][d[1]]) {
+                  console.log('reading data', utfGrid[d[2]][d[0]][d[1]]);
+                } else {
+                  utfGrid[d[2]][d[0]][d[1]] = 'loading';
+                  d3.json(d[4], function (e, r) {
+                    utfGrid[d[2]][d[0]][d[1]] = e ? {'error': e} : r;
+                    console.log('adding data', utfGrid[d[2]][d[0]][d[1]]);
+                  });
+                }
+              }
+              return d[3];
+            });
 
         image.exit()
             .style(transformProp, imageTransform)
