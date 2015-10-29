@@ -57,6 +57,14 @@ iD.Map = function(context) {
         supersurface.call(context.background());
 
         surface.on('mousemove.map', function() {
+            console.log(projection.invert(d3.mouse(this)));
+            console.log('map', ~~map.zoom());
+            window.BB = context.background();
+            var grids = context.background().overlayLayerSources().filter(function(d) {
+              return d.utfGrid === true;
+            });
+            console.log(grids);
+            window.grids = grids;
             mousemove = d3.event;
         });
 
