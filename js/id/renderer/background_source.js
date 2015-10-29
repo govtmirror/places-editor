@@ -1,4 +1,16 @@
 iD.BackgroundSource = function(data, preview, context) {
+
+  // Get the cartodb template link
+    if (data.type === 'cartodb' && data.mapconfig && !data.template) {
+      d3.json('https://' + data.account + '.cartodb.com/api/v1/map?config=' + encodeURIComponent(JSON.stringify(data.mapconfig)), function (e, r) {
+        if (!e && r && r.layergroupid) {
+          data.template = 'https://' + data.account + '.cartodb.com/api/v1/map/' + r.layergroupid + '/{zoom}/{x}/{y}.png';
+          // TODO: using a layer param instead of hardcoding layer 0
+          data.templateGrid = 'https://' + data.account + '.cartodb.com/api/v1/map/' + r.layergroupid + '/0/{zoom}/{x}/{y}.grid.json';
+        }
+      });
+    }
+
     var source = _.clone(data),
         offset = [0, 0],
         name = source.name;
@@ -26,8 +38,10 @@ iD.BackgroundSource = function(data, preview, context) {
         return source.id || name;
     };
 
-    source.url = function(coord) {
-        var template = preview && !context.map().editable() ? preview.template : data.template;
+    source.url = function(coord, templateName) {
+        templateName = templateName || 'template';
+        var template = template || preview && !context.map().editable() ? preview.template : data[templateName];
+        if (!template) return;
         d3.selectAll('#map').style('background-color', (!context || !context.map().editable())  ? 'rgb(230, 229, 224)' : 'black');
         return template
             .replace('{x}', coord[0])
