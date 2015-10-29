@@ -40,7 +40,7 @@ iD.BackgroundSource = function(data, preview, context) {
 
     source.url = function(coord, templateName) {
         templateName = templateName || 'template';
-        var template = template || preview && !context.map().editable() ? preview.template : data[templateName];
+        var template = template || preview && !context.map().editable() ? preview[templateName] : data[templateName];
         if (!template) return;
         d3.selectAll('#map').style('background-color', (!context || !context.map().editable())  ? 'rgb(230, 229, 224)' : 'black');
         return template
