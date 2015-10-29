@@ -1,6 +1,7 @@
 iD.TileLayer = function() {
     var tileSize = 256,
         tile = d3.geo.tile(),
+        tileMath = iD.tileMath,
         projection,
         cache = {},
         utfGrid = {},
@@ -95,6 +96,7 @@ iD.TileLayer = function() {
             d3.select(this)
                 .on('error', null)
                 .on('load', null)
+                .on('mousemove', function (d) { console.log('MOUSE', d); })
                 .classed('tile-loaded', true);
             render(selection);
         }
@@ -130,7 +132,7 @@ iD.TileLayer = function() {
                 } else {
                   utfGrid[d[2]][d[0]][d[1]] = 'loading';
                   d3.json(d[4], function (e, r) {
-                    utfGrid[d[2]][d[0]][d[1]] = e ? {'error': e} : r;
+                    utfGrid[d[2]][d[0]][d[1]] = e ? {'error': e, 'tile': d} : r;
                     console.log('adding data', utfGrid[d[2]][d[0]][d[1]]);
                   });
                 }
@@ -173,13 +175,43 @@ iD.TileLayer = function() {
         return background;
     };
 
-    background.source = function(_) {
+    background.source = function (_) {
+      source.utfGridCache = function (coords, zoom) {
+        var grid;
+        var getTile = function (lon, lat, z) {
+          lat = parseFloat(lat, 10);
+          lon = parseFloat(lon, 10);
+          z = parseInt(z, 10);
+          var tileAddress = [z, tileMath.long2tile(lon, z), tileMath.lat2tile(lat, z)];
+          var tile = utfGrid[tileAddress[0]] && utfGrid[tileAddress[0]][tileAddress[1]] && utfGrid[tileAddress[0]][tileAddress[1]][tileAddress[2]];
+          var dimension = 256;
+          var resolution = 4;
+          var tileBounds = {
+            north: tileMath.tile2lat(tileAddress[2], z),
+            south: tileMath.tile2lat(tileAddress[2] + 1, z),
+            west: tileMath.tile2long(tileAddress[1], z),
+            east: tileMath.tile2long(tileAddress[1] + 1, z)
+          };
+          console.log('tile', tileAddress);
+          console.log('lat', ((lat - tileBounds.north) / (tileBounds.south - tileBounds.north))*(dimension/resolution));
+          console.log('lon', ((lon - tileBounds.east) / (tileBounds.west - tileBounds.east))*(dimension/resolution));
+          return tile;
+
+        };
+        var returnValue = utfGrid;
+        if (coords && zoom) {
+          returnValue = getTile(coords[0], coords[1], zoom) || getTile(coords[0], coords[1], zoom + 1) || getTile(coords[0], coords[1], zoom - 1);
+        }
+        return returnValue;
+      };
+
         if (!arguments.length) return source;
         source = _;
         cache = {};
         tile.scaleExtent(source.scaleExtent);
         return background;
     };
+
 
     return background;
 };
