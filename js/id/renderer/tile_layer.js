@@ -96,7 +96,6 @@ iD.TileLayer = function() {
             d3.select(this)
                 .on('error', null)
                 .on('load', null)
-                .on('mousemove', function (d) { console.log('MOUSE', d); })
                 .classed('tile-loaded', true);
             render(selection);
         }
@@ -127,13 +126,12 @@ iD.TileLayer = function() {
                 // Fill out the JSON grid cache
                 utfGrid[d[2]] = utfGrid[d[2]] || {};
                 utfGrid[d[2]][d[0]] = utfGrid[d[2]][d[0]] || {};
-                if (utfGrid[d[2]][d[0]][d[1]]) {
-                  console.log('reading data', utfGrid[d[2]][d[0]][d[1]]);
-                } else {
+
+                // If we don't already have this grid, load it
+                if (!utfGrid[d[2]][d[0]][d[1]]) {
                   utfGrid[d[2]][d[0]][d[1]] = 'loading';
                   d3.json(d[4], function (e, r) {
                     utfGrid[d[2]][d[0]][d[1]] = e ? {'error': e, 'tile': d} : r;
-                    console.log('adding data', utfGrid[d[2]][d[0]][d[1]]);
                   });
                 }
               }
@@ -177,30 +175,54 @@ iD.TileLayer = function() {
 
     background.source = function (_) {
       source.utfGridCache = function (coords, zoom) {
-        var grid;
-        var getTile = function (lon, lat, z) {
+        var pixelOffset = [
+          Math.round(source.offset()[0] * Math.pow(2, z)),
+          Math.round(source.offset()[1] * Math.pow(2, z))
+        ];
+
+        var getTile = function (lon, lat, z, pixelOffset) {
+          // Resolve the UTF-8 encoding stored in grids to simple
+          // number values.
+          // See the [utfgrid spec](https://github.com/mapbox/utfgrid-spec)
+          // for details.
+          var returnValue;
+          function resolveCode (key) {
+            if (key >= 93) key--;
+            if (key >= 35) key--;
+            key -= 32;
+            return key;
+          }
+
+          var dimension = 256;
+          var resolution = 4;
+
           lat = parseFloat(lat, 10);
           lon = parseFloat(lon, 10);
           z = parseInt(z, 10);
-          var tileAddress = [z, tileMath.long2tile(lon, z), tileMath.lat2tile(lat, z)];
-          var tile = utfGrid[tileAddress[0]] && utfGrid[tileAddress[0]][tileAddress[1]] && utfGrid[tileAddress[0]][tileAddress[1]][tileAddress[2]];
-          var dimension = 256;
-          var resolution = 4;
-          var tileBounds = {
-            north: tileMath.tile2lat(tileAddress[2], z),
-            south: tileMath.tile2lat(tileAddress[2] + 1, z),
-            west: tileMath.tile2long(tileAddress[1], z),
-            east: tileMath.tile2long(tileAddress[1] + 1, z)
-          };
-          console.log('tile', tileAddress);
-          console.log('lat', ((lat - tileBounds.north) / (tileBounds.south - tileBounds.north))*(dimension/resolution));
-          console.log('lon', ((lon - tileBounds.east) / (tileBounds.west - tileBounds.east))*(dimension/resolution));
-          return tile;
 
+          var tileLocation = [z, tileMath.long2tile(lon, z, pixelOffset[0], true), tileMath.lat2tile(lat, z, pixelOffset[1], true)];
+          var tile = utfGrid[tileLocation[0]] &&
+            utfGrid[tileLocation[0]][Math.floor(tileLocation[1])] &&
+              utfGrid[tileLocation[0]][Math.floor(tileLocation[1])][Math.floor(tileLocation[2])];
+
+          if (tile && tile.grid) {
+            var location = [Math.floor((tileLocation[2] % 1) * (dimension / resolution)), Math.floor((tileLocation[1] % 1) * (dimension / resolution))];
+            var code = resolveCode(tile.grid[location[0]].charCodeAt(location[1]));
+            var key = tile.keys[code];
+            var data = key ? tile.data[key] : {};
+
+            returnValue = data;
+          }
+
+          return returnValue;
         };
-        var returnValue = utfGrid;
+        var returnValue;
         if (coords && zoom) {
-          returnValue = getTile(coords[0], coords[1], zoom) || getTile(coords[0], coords[1], zoom + 1) || getTile(coords[0], coords[1], zoom - 1);
+          // If a grid isn't found at the current zoom, try looking up or down one zoom level before giving up
+          returnValue = getTile(coords[0], coords[1], zoom, pixelOffset) ||
+            getTile(coords[0], coords[1], zoom + 1, pixelOffset) ||
+              getTile(coords[0], coords[1], zoom - 1, pixelOffset) ||
+                {};
         }
         return returnValue;
       };
