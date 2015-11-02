@@ -5000,10 +5000,10 @@
     },
     {
         "account": "nps",
-        "default": false,
+        "default": true,
         "description": "NPS Park Boundaries",
         "name": "Park Boundaries",
-        "selectable": true,
+        "selectable": false,
         "overlay": true,
         "utfGrid": true,
         "mapconfig": {
