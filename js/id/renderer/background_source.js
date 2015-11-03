@@ -1,19 +1,21 @@
 iD.BackgroundSource = function(data, preview, context) {
 
-  // Get the cartodb template link
-    if (data.type === 'cartodb' && data.mapconfig && !data.template) {
-      d3.json('https://' + data.account + '.cartodb.com/api/v1/map?config=' + encodeURIComponent(JSON.stringify(data.mapconfig)), function (e, r) {
-        if (!e && r && r.layergroupid) {
-          data.template = 'https://' + data.account + '.cartodb.com/api/v1/map/' + r.layergroupid + '/{zoom}/{x}/{y}.png';
-          // TODO: using a layer param instead of hardcoding layer 0
-          data.templateGrid = 'https://' + data.account + '.cartodb.com/api/v1/map/' + r.layergroupid + '/0/{zoom}/{x}/{y}.grid.json';
-        }
-      });
-    }
-
-    var source = _.clone(data),
+    var sourceDispatch = d3.dispatch('loaded'),
+        source = _.clone(data),
         offset = [0, 0],
         name = source.name;
+
+  // Get the cartodb template link
+    if (source.type === 'cartodb' && source.mapconfig && !source.template) {
+      d3.json('https://' + source.account + '.cartodb.com/api/v1/map?config=' + encodeURIComponent(JSON.stringify(source.mapconfig)), function (e, r) {
+        if (!e && r && r.layergroupid) {
+          data.template = source.template = 'https://' + source.account + '.cartodb.com/api/v1/map/' + r.layergroupid + '/{zoom}/{x}/{y}.png';
+          // TODO: using a layer param instead of hardcoding layer 0
+          data.templateGrid = source.templateGrid = 'https://' + source.account + '.cartodb.com/api/v1/map/' + r.layergroupid + '/0/{zoom}/{x}/{y}.grid.json';
+        }
+        sourceDispatch.loaded(e);
+      });
+    }
 
     source.scaleExtent = data.scaleExtent || [0, 20];
     source.overzoom = data.overzoom !== false;
@@ -38,17 +40,43 @@ iD.BackgroundSource = function(data, preview, context) {
         return source.id || name;
     };
 
+    source.field = function(field, value) {
+      source[field] = value || source[field];
+      return source[field];
+    };
+
     source.url = function(coord, templateName) {
+        var template;
         templateName = templateName || 'template';
-        var template = template || preview && !context.map().editable() ? preview[templateName] : data[templateName];
+
+        if (context.map().editable()) {
+          // If the map is editable, use the template
+          template = source[templateName];
+        } else {
+          if (!source.overlay) {
+            // If it's not an overlay, use the preview layer
+            template = preview[templateName];
+          } else {
+            if (source.utfGrid) {
+              // Load the template for utfGrids
+              template = source[templateName];
+            }
+          }
+        }
+
+        // If the template is still blank, then we can't load it
         if (!template) return;
-        d3.selectAll('#map').style('background-color', (!context || !context.map().editable())  ? 'rgb(230, 229, 224)' : 'black');
+
+        context.container().selectAll('#map').style('background-color', (!context || !context.map().editable())  ? 'rgb(230, 229, 224)' : 'black');
+        context.container().selectAll('.background-layer')
+                .style('opacity', context.map().editable() ? context.container().selectAll('.background-layer').attr('data-opacity') : 1);
+
         return template
             .replace('{x}', coord[0])
             .replace('{y}', coord[1])
             // TMS-flipped y coordinate
             .replace(/\{[t-]y\}/, Math.pow(2, coord[2]) - coord[1] - 1)
-            .replace(/\{z(oom)?\}/, coord[2])
+            .replace(/\{z(oom)?\}/, coord[2]) //{
             .replace(/\{switch:([^}]+)\}/, function(s, r) {
                 var subdomains = r.split(',');
                 return subdomains[(coord[0] + coord[1]) % subdomains.length];
@@ -84,7 +112,7 @@ iD.BackgroundSource = function(data, preview, context) {
 
     source.copyrightNotices = function() {};
 
-    return source;
+    return d3.rebind(source, sourceDispatch, 'on');
 };
 
 iD.BackgroundSource.Bing = function(data, dispatch) {
@@ -94,7 +122,7 @@ iD.BackgroundSource.Bing = function(data, dispatch) {
     data.template = 'https://ecn.t{switch:0,1,2,3}.tiles.virtualearth.net/tiles/a{u}.jpeg?g=587&mkt=en-gb&n=z';
 
     var bing = iD.BackgroundSource(data),
-        key = 'Arzdiw4nlOJzRwOz__qailc8NiR31Tt51dN2D7cm57NrnceZnCpgOkmJhNpGoppU', // Same as P2 and JOSM
+        key = 'Anqg2cbRJqtC3TWYUXf1cP2HT8J1xVN0urFGnWVFQwsLd4RfI9Gv5H4hcysuOEGj', // NPMap key
         url = 'https://dev.virtualearth.net/REST/v1/Imagery/Metadata/Aerial?include=ImageryProviders&key=' +
             key + '&jsonp={callback}',
         providers = [];
@@ -130,7 +158,7 @@ iD.BackgroundSource.Bing = function(data, dispatch) {
     bing.logo = 'bing_maps.png';
     bing.terms_url = 'http://opengeodata.org/microsoft-imagery-details';
 
-    return bing;
+    return d3.rebind(bing, dispatch, 'on');
 };
 
 iD.BackgroundSource.None = function() {
