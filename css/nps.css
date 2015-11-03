@@ -194,3 +194,18 @@ path.fill.tag-amenity-shelter {
     font-size: 10px;
     left: 10px;
 }
+
+.park-name {
+    margin-top: 4px;
+    background: rgba(0,0,0,.5);
+    left: 400px;
+    position: fixed;
+    border-bottom-right-radius: 5px;
+}
+
+.park-name-text {
+    padding-left: 10px;
+    padding-right: 5px;
+    color: #b28000;
+    float: right;
+}
