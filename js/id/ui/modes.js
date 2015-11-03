@@ -74,6 +74,7 @@ iD.ui.Modes = function(context) {
               },
               bar = d3.select('#bar'),
               mapInMap = d3.select('#content .map-in-map'),
+              parkName = d3.select('.park-name'),
               controls = ['limiter', 'background-control','map-data-control','help-control'];
 
               bar.style('background-color', editable() ? '' : 'transparent');
@@ -81,6 +82,7 @@ iD.ui.Modes = function(context) {
                 bar.select('.' + controls[i]).style('display', editable() ? 'block' : 'none');
               }
               mapInMap.style('top', editable() ? '' : '0px');
+              parkName.style('top', editable() ? '56px' : '-4px');
 
               for (var attr in attribs) {
                 attrib.select('.' + attr).style('display', (editable() && attribs[attr]) || (!editable() && !attribs[attr]) ? 'block' : 'none');
