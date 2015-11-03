@@ -5014,7 +5014,7 @@
               "cartocss_version": "2.1.1",
               "cartocss": "#parks { line-color:rgba(147,171,108,1); line-width: 1.5; polygon-fill: transparent; }",
               "sql": "SELECT * FROM parks",
-              "interactivity": ["unit_code", "display_name"]
+              "interactivity": ["unit_code", "full_name"]
             }
           }]
         },
