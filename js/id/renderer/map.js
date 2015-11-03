@@ -1,6 +1,6 @@
 iD.Map = function(context) {
     var dimensions = [1, 1],
-        dispatch = d3.dispatch('move', 'drawn'),
+        dispatch = d3.dispatch('move', 'drawn', 'overpark'),
         projection = context.projection,
         roundedProjection = iD.svg.RoundProjection(projection),
         zoom = d3.behavior.zoom()
@@ -57,15 +57,11 @@ iD.Map = function(context) {
         supersurface.call(context.background());
 
         surface.on('mousemove.map', function() {
-            console.log(projection.invert(d3.mouse(this)));
-            console.log('map', ~~map.zoom());
-            window.BB = context.background();
-            var grids = context.background().overlayLayerSources().filter(function(d) {
-              return d.utfGrid === true;
-            });
-            console.log(grids);
-            window.grids = grids;
-            mousemove = d3.event;
+          var location = projection.invert(d3.mouse(this));
+
+          dispatch.overpark(map.getUtfGrid(location, 'Park Boundaries', 'full_name'));
+
+          mousemove = d3.event;
         });
 
         surface.on('mouseover.vertices', function() {
@@ -471,6 +467,15 @@ iD.Map = function(context) {
         if (!arguments.length) return minzoom;
         minzoom = _;
         return map;
+    };
+
+    map.getUtfGrid = function (location, layerName, field) {
+      return context.background().overlayLayerSources().filter(function (d) {
+        return d.utfGrid === true && d.name() === layerName && d.utfGridCache;
+      }).map(function (d) {
+        var result = d.utfGridCache(location, ~~map.zoom());
+        return result[field];
+      })[0];
     };
 
     return d3.rebind(map, dispatch, 'on');
