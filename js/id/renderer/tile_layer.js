@@ -60,7 +60,14 @@ iD.TileLayer = function() {
 
         z = Math.max(Math.log(projection.scale() * 2 * Math.PI) / Math.log(2) - 8, 0);
 
-        render(selection);
+        // If the source is loaded, get the tiles, if not wait for it to get loaded
+        if (source.field('template')) {
+          render(selection);
+        } else {
+          source.on('loaded', function() {
+            render(selection);
+          });
+        }
     }
 
     // Derive the tiles onscreen, remove those offscreen and position them.
