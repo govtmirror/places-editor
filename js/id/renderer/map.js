@@ -1,6 +1,6 @@
 iD.Map = function(context) {
     var dimensions = [1, 1],
-        dispatch = d3.dispatch('move', 'drawn', 'overpark'),
+        dispatch = d3.dispatch('move', 'drawn', 'overpark', 'editalert'),
         projection = context.projection,
         roundedProjection = iD.svg.RoundProjection(projection),
         zoom = d3.behavior.zoom()
@@ -17,6 +17,7 @@ iD.Map = function(context) {
         lines = iD.svg.Lines(projection),
         areas = iD.svg.Areas(projection),
         midpoints = iD.svg.Midpoints(roundedProjection, context),
+        locked = false,
         labels = iD.svg.Labels(projection, context),
         supersurface, surface,
         mouse,
@@ -59,13 +60,20 @@ iD.Map = function(context) {
         surface.on('mousemove.map', function() {
           var location = projection.invert(d3.mouse(this));
 
-          dispatch.overpark(map.getUtfGrid(location, 'Park Boundaries', 'full_name'));
+          var overPark = map.getUtfGrid(location, 'Park Boundaries', ['unit_code', 'full_name']);
+          var lockMap = map.checkLocationLock(null, overPark[0] || 'none', true);
+
+          map.lock(lockMap);
+          dispatch.overpark(overPark[1]);
+          if (lockMap) {
+            dispatch.editalert('', overPark[1]);
+          }
 
           mousemove = d3.event;
         });
 
         surface.on('mouseover.vertices', function() {
-            if (map.editable() && !transformed) {
+            if (map.editable() && !transformed && !locked) {
                 var hover = d3.event.target.__data__;
                 surface.call(vertices.drawHover, context.graph(), hover, map.extent(), map.zoom());
                 dispatch.drawn({full: false});
@@ -73,7 +81,7 @@ iD.Map = function(context) {
         });
 
         surface.on('mouseout.vertices', function() {
-            if (map.editable() && !transformed) {
+            if (map.editable() && !transformed && !locked) {
                 var hover = d3.event.relatedTarget && d3.event.relatedTarget.__data__;
                 surface.call(vertices.drawHover, context.graph(), hover, map.extent(), map.zoom());
                 dispatch.drawn({full: false});
@@ -81,7 +89,7 @@ iD.Map = function(context) {
         });
 
         context.on('enter.map', function() {
-            if (map.editable() && !transformed) {
+            if (map.editable() && !transformed && !locked) {
                 var all = context.intersects(map.extent()),
                     filter = d3.functor(true),
                     graph = context.graph();
@@ -469,13 +477,72 @@ iD.Map = function(context) {
         return map;
     };
 
-    map.getUtfGrid = function (location, layerName, field) {
+    map.getUtfGrid = function(location, layerName, field) {
+      field = [].concat(field);
       return context.background().overlayLayerSources().filter(function (d) {
         return d.utfGrid === true && d.name() === layerName && d.utfGridCache;
       }).map(function (d) {
         var result = d.utfGridCache(location, ~~map.zoom());
-        return result[field];
+        return field.map(function (f) {
+          return result[f];
+        });
       })[0];
+    };
+
+    map.isLocked = function() {
+      return locked;
+    };
+
+    map.lock = function (setLock) {
+      if (setLock !== locked) {
+        locked = setLock;
+        if (!locked) {
+          dispatch.editalert();
+        }
+      }
+    };
+
+    map.checkIdLock = function(inIds) {
+      inIds = [].concat(inIds).filter(function(d){return !!d;});
+      var returnValue = false;
+      var fns = {
+        'n': function(nodeId) {
+          return [context.graph().entity(nodeId).loc];
+        },
+        'w': function(wayId) {
+          return fns.list(context.graph().entity(wayId).nodes);
+        },
+        'r': function(relationId) {
+          return fns.list(context.graph().entity(relationId).members.map(function (m){return m.id;}));
+        },
+        'list': function(ids) {
+          ids = [].concat(ids);
+          var locations = [];
+          ids.forEach(function(id) {
+            locations = locations.concat(fns[id.substr(0,1)](id));
+          });
+          return locations;
+        }
+      };
+      inIds.forEach(function(id) {
+        var unitCode = context.graph().entity(id).tags['nps:unit_code'];
+        if (unitCode && map.checkLocationLock(null, unitCode)) {
+          returnValue = true;
+        }
+      });
+      return returnValue || fns.list(inIds).filter(function(l,i) {
+        return map.checkLocationLock(l);
+      }).length > 0;
+    };
+
+    map.checkLocationLock = function (location, unitCode, suppressMessage) {
+      var lockedParks = ['gate'];
+      var testCodes = unitCode ? [].concat(unitCode) : map.getUtfGrid(location, 'Park Boundaries', ['unit_code']);
+      var locationLocked = lockedParks.indexOf(testCodes[0]) !== -1;
+      if (locationLocked && !suppressMessage) {
+        dispatch.editalert('Don\'t even think about it');
+      }
+      return locationLocked;
     };
 
     return d3.rebind(map, dispatch, 'on');
