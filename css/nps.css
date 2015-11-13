@@ -209,3 +209,23 @@ path.fill.tag-amenity-shelter {
     color: #b28000;
     float: right;
 }
+
+.edit-alert {
+    top: 0px;
+    left: 400px;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    display: none;
+    background-color: black;
+}
+
+.edit-alert-main {
+    color: red;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.edit-alert-text {
+  padding-left: 10px;
+}
