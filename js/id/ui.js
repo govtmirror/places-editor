@@ -72,6 +72,10 @@ iD.ui = function(context) {
             .attr('class', 'park-name')
             .call(iD.ui.ParkName(context));
 
+        bar.append('div')
+            .attr('class', 'edit-alert')
+            .call(iD.ui.EditAlert(context));
+
         var controls = bar.append('div')
             .attr('class', 'map-controls');
 
