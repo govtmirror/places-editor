@@ -57,7 +57,7 @@ iD.modes.Select = function(context, selectedIDs) {
 
     function showMenu() {
         closeMenu();
-        if (!suppressMenu && radialMenu) {
+        if (!suppressMenu && !context.map().checkIdLock(selectedIDs) && radialMenu) {
             context.surface().call(radialMenu);
         }
     }
