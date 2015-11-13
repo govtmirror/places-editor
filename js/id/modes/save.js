@@ -171,7 +171,7 @@ iD.modes.Save = function(context) {
                                 window.setTimeout(function() {
                                     loading.close();
                                     context.flush();
-                                }, 2500);
+                                }, 4000);
                             }
                         });
                 } else {        // changes were insignificant or reverted by user
