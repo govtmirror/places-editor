@@ -6,24 +6,21 @@ iD.ui.ParkName = function (context) {
       .attr('class', 'park-name-text');
 
     map.on('overpark', function (d) {
-      if (d) {
-        // Over a park
-        txt.text(d);
-        selection
-          .style('display', '')
-          .transition()
-          .style('opacity', 1);
-      } else {
-        // Not over a park
-        selection
-          .transition()
-          .style('opacity', 0)
-          .each('end', function (d) {
-            selection
-              .style('display', 'none');
-            txt.text('');
-          });
-      }
+      // the overpark feature is currently disabled
+      return;
+      // if (d) {
+      //   // Over a park
+      //   txt.text(d);
+      //   selection
+      //     .style('display', '')
+      //     .style('opacity', 1);
+      // } else {
+      //   // Not over a park
+      //   selection
+      //     .style('opacity', 0)
+      //     .style('display', 'none');
+      //   txt.text('');
+      // }
     });
   };
 };
