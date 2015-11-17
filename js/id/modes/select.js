@@ -1,4 +1,4 @@
-iD.modes.Select = function(context, selectedIDs) {
+iD.modes.Select = function(context, selectedIDs, lock) {
     var mode = {
         id: 'select',
         button: 'browse'
