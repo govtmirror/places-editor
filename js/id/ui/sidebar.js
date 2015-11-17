@@ -36,9 +36,7 @@ iD.ui.Sidebar = function(context) {
 
         sidebar.select = function(id, newFeature) {
             var disabled = context.map().checkIdLock(id) || null;
-            inspectorWrap.selectAll('input').attr('disabled', disabled);
-            inspectorWrap.selectAll('button').attr('disabled', disabled);
-            console.log('setting text', disabled, id, context.map().checkIdLock(id), newFeature);
+
             d3.selectAll('.entity-editor-pane').selectAll('div.header').selectAll('h3').text((disabled ? 'View' : 'EdiT') + ' feature');
 
             if (!current && id) {
@@ -59,6 +57,9 @@ iD.ui.Sidebar = function(context) {
                 inspectorWrap.classed('inspector-hidden', true);
                 inspector.state('hide');
             }
+            inspectorWrap.selectAll('input').attr('disabled', disabled);
+            inspectorWrap.selectAll('button').attr('disabled', disabled);
+            inspectorWrap.selectAll('textarea').attr('disabled', disabled);
         };
 
         sidebar.show = function(component) {
