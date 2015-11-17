@@ -58,7 +58,6 @@ iD.behavior.drag = function(context) {
 
     function mousedown() {
         if (context.map().isLocked()) {
-          console.log('this park is locked', 'iD.behavior.drag, mousedown');
           drag.cancel();
           return;
         }
