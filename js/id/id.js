@@ -5,6 +5,13 @@ window.iD = function () {
     var context = {},
         storage;
 
+        var sql = 'SELECT "unit_code", "full_name" FROM "parks" WHERE "places_lock"=true';
+        d3.json('https://nps.cartodb.com/api/v2/sql?q=' + encodeURIComponent(sql), function (error, json) {
+          iD.lockedParks = json.rows;
+        });
+
+
+
     // https://github.com/openstreetmap/iD/issues/772
     // http://mathiasbynens.be/notes/localstorage-pattern#comment-9
     try { storage = localStorage; } catch (e) {}  // eslint-disable-line no-empty
@@ -122,7 +129,7 @@ window.iD = function () {
             if (!context.hasEntity(id)) return;
             map.on('drawn.zoomToEntity', null);
             context.on('enter.zoomToEntity', null);
-            context.enter(iD.modes.Select(context, [id]));
+            context.enter(iD.modes.Select(context, [id], map.checkIdLock(id)));
         });
 
         context.on('enter.zoomToEntity', function() {
