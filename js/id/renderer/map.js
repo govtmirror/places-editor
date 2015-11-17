@@ -45,11 +45,13 @@ iD.Map = function(context) {
 
         map.surface = surface = dataLayer.append('svg')
             .on('mousedown.zoom', function() {
+              map.mouseLock(projection.invert(d3.mouse(this)), d3.event.buttons);
                 if (d3.event.button === 2) {
                     d3.event.stopPropagation();
                 }
             }, true)
             .on('mouseup.zoom', function() {
+              map.mouseLock(projection.invert(d3.mouse(this)), d3.event.buttons);
                 if (resetTransform()) redraw();
             })
             .attr('id', 'surface')
@@ -58,16 +60,7 @@ iD.Map = function(context) {
         supersurface.call(context.background());
 
         surface.on('mousemove.map', function() {
-          var location = projection.invert(d3.mouse(this));
-
-          var overPark = map.getUtfGrid(location, 'Park Boundaries', ['unit_code', 'full_name']);
-          var lockMap = map.checkLocationLock(null, overPark[0] || 'none', true);
-
-          map.lock(lockMap);
-          dispatch.overpark(overPark[1]);
-          if (lockMap) {
-            dispatch.editalert('', overPark[1]);
-          }
+          map.mouseLock(projection.invert(d3.mouse(this)), d3.event.buttons);
 
           mousemove = d3.event;
         });
@@ -536,13 +529,25 @@ iD.Map = function(context) {
     };
 
     map.checkLocationLock = function (location, unitCode, suppressMessage) {
-      var lockedParks = ['gate'];
       var testCodes = unitCode ? [].concat(unitCode) : map.getUtfGrid(location, 'Park Boundaries', ['unit_code']);
-      var locationLocked = lockedParks.indexOf(testCodes[0]) !== -1;
-      if (locationLocked && !suppressMessage) {
-        dispatch.editalert('Don\'t even think about it');
+      var locationLocked = iD.lockedParks.filter(function(p){return testCodes[0] === p.unit_code;});
+      if ((locationLocked.length > 0) && !suppressMessage) {
+        dispatch.editalert('', locationLocked[0].full_name);
       }
-      return locationLocked;
+      return locationLocked.length > 0;
+    };
+
+    map.mouseLock = function(location, buttons) {
+      var overPark = map.getUtfGrid(location, 'Park Boundaries', ['unit_code', 'full_name']);
+      var lockMap = map.checkLocationLock(null, overPark[0] || 'none', true);
+      if (buttons === 0) {
+
+        map.lock(lockMap);
+        dispatch.overpark(overPark[1]);
+        if (lockMap) {
+          dispatch.editalert('', overPark[1]);
+        }
+      }
     };
 
     return d3.rebind(map, dispatch, 'on');
