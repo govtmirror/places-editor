@@ -86,9 +86,17 @@ iD.TileLayer = function() {
                   }
                 }
                 if (d[4] && typeof d[4] === 'string') {
-                  var e = [d[0],d[1],d[2],d[4],'utfGrid'];
-                  if (cache[e[3]] === false && lookUp(e)) {
-                    requests.push(addSource(lookUp(e)));
+                  // Load the utfGrid when it tries to load the image
+                  // Fill out the JSON grid cache
+                  utfGrid[d[2]] = utfGrid[d[2]] || {};
+                  utfGrid[d[2]][d[0]] = utfGrid[d[2]][d[0]] || {};
+
+                  // If we don't already have this grid, load it
+                  if (!utfGrid[d[2]][d[0]][d[1]]) {
+                    utfGrid[d[2]][d[0]][d[1]] = 'loading';
+                    d3.json(d[4], function (e, r) {
+                      utfGrid[d[2]][d[0]][d[1]] = e ? {'error': e, 'tile': d} : r;
+                    });
                   }
                 }
             });
@@ -134,20 +142,7 @@ iD.TileLayer = function() {
         var image = selection
             .selectAll('img')
             .data(requests, function(d) { 
-              // Load the utfGrid when it tries to load the image
-              if (d[4] === 'utfGrid') {
-                // Fill out the JSON grid cache
-                utfGrid[d[2]] = utfGrid[d[2]] || {};
-                utfGrid[d[2]][d[0]] = utfGrid[d[2]][d[0]] || {};
 
-                // If we don't already have this grid, load it
-                if (!utfGrid[d[2]][d[0]][d[1]]) {
-                  utfGrid[d[2]][d[0]][d[1]] = 'loading';
-                  d3.json(d[3], function (e, r) {
-                    utfGrid[d[2]][d[0]][d[1]] = e ? {'error': e, 'tile': d} : r;
-                  });
-                }
-              }
               return d[3];
             });
 
