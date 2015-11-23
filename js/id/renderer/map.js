@@ -530,15 +530,16 @@ iD.Map = function(context) {
 
     map.checkLocationLock = function (location, unitCode, suppressMessage) {
       var testCodes = unitCode ? [].concat(unitCode) : map.getUtfGrid(location, 'Park Boundaries', ['unit_code']);
-      var locationLocked = iD.lockedParks.filter(function(p){return testCodes[0] === p.unit_code;});
+      var locationLocked = iD.lockedParks.filter(function(p){
+        return testCodes[0].toLowerCase() === p.unit_code.toLowerCase();});
       if ((locationLocked.length > 0) && !suppressMessage) {
-        dispatch.editalert('', locationLocked[0].full_name);
+        dispatch.editalert('', locationLocked[0].name);
       }
       return locationLocked.length > 0;
     };
 
     map.mouseLock = function(location, buttons) {
-      var overPark = map.getUtfGrid(location, 'Park Boundaries', ['unit_code', 'full_name']);
+      var overPark = map.getUtfGrid(location, 'Park Boundaries', ['unit_code', 'name']);
       var lockMap = map.checkLocationLock(null, overPark[0] || 'none', true);
       if (buttons === 0) {
 
