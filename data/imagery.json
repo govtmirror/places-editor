@@ -5003,21 +5003,10 @@
         "default": true,
         "description": "NPS Park Boundaries",
         "name": "Park Boundaries",
-        "selectable": false,
+        "selectable": true,
         "overlay": true,
         "utfGrid": true,
-        "mapconfig": {
-          "version": "1.3.1",
-          "layers": [{
-            "type": "cartodb",
-            "options": {
-              "cartocss_version": "2.1.1",
-              "cartocss": "#parks { line-color:transparent; polygon-fill: transparent; }",
-              "sql": "SELECT * FROM parks",
-              "interactivity": ["unit_code", "full_name"]
-            }
-          }]
-        },
-        "type": "cartodb"
+        "templateGrid": "https://{switch:a,b,c,d}.tiles.mapbox.com/v4/nps.4ca50f94/{zoom}/{x}/{y}.grid.json?access_token=pk.eyJ1IjoibnBzIiwiYSI6IkdfeS1OY1UifQ.K8Qn5ojTw4RV1GwBlsci-Q",
+        "type": "tms"
     }
 ]
