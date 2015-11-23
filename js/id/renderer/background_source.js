@@ -48,6 +48,7 @@ iD.BackgroundSource = function(data, preview, context) {
     source.url = function(coord, templateName) {
         var template;
         templateName = templateName || 'template';
+        // console.log('loading template', templateName, source[templateName]);
 
         if (context.map().editable()) {
           // If the map is editable, use the template
@@ -56,12 +57,8 @@ iD.BackgroundSource = function(data, preview, context) {
           if (!source.overlay) {
             // If it's not an overlay, use the preview layer
             template = preview[templateName];
-          } else {
-            if (source.utfGrid) {
-              // Load the template for utfGrids
-              template = source[templateName];
-            }
-          }
+            // If using UTF Grids at non-editable zooms, changes needs to go here
+         }
         }
 
         // If the template is still blank, then we can't load it
