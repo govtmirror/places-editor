@@ -61,7 +61,7 @@ iD.TileLayer = function() {
         z = Math.max(Math.log(projection.scale() * 2 * Math.PI) / Math.log(2) - 8, 0);
 
         // If the source is loaded, get the tiles, if not wait for it to get loaded
-        if (source.field('template')) {
+        if (source.field('template') || source.field('templateGrid')) {
           render(selection);
         } else {
           source.on('loaded', function() {
@@ -79,11 +79,17 @@ iD.TileLayer = function() {
         if (source.validZoom(z)) {
             tile().forEach(function(d) {
                 addSource(d);
-                if (d[3] === '') return;
-                if (typeof d[3] !== 'string') return; // Workaround for chrome crash https://github.com/openstreetmap/iD/issues/2295
-                requests.push(d);
-                if (cache[d[3]] === false && lookUp(d)) {
+                if (d[3] && typeof d[3] === 'string') {
+                  requests.push(d);
+                  if (cache[d[3]] === false && lookUp(d)) {
                     requests.push(addSource(lookUp(d)));
+                  }
+                }
+                if (d[4] && typeof d[4] === 'string') {
+                  var e = [d[0],d[1],d[2],d[4],'utfGrid'];
+                  if (cache[e[3]] === false && lookUp(e)) {
+                    requests.push(addSource(lookUp(e)));
+                  }
                 }
             });
 
@@ -129,7 +135,7 @@ iD.TileLayer = function() {
             .selectAll('img')
             .data(requests, function(d) { 
               // Load the utfGrid when it tries to load the image
-              if (d[4]) {
+              if (d[4] === 'utfGrid') {
                 // Fill out the JSON grid cache
                 utfGrid[d[2]] = utfGrid[d[2]] || {};
                 utfGrid[d[2]][d[0]] = utfGrid[d[2]][d[0]] || {};
@@ -137,7 +143,7 @@ iD.TileLayer = function() {
                 // If we don't already have this grid, load it
                 if (!utfGrid[d[2]][d[0]][d[1]]) {
                   utfGrid[d[2]][d[0]][d[1]] = 'loading';
-                  d3.json(d[4], function (e, r) {
+                  d3.json(d[3], function (e, r) {
                     utfGrid[d[2]][d[0]][d[1]] = e ? {'error': e, 'tile': d} : r;
                   });
                 }
