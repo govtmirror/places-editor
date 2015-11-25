@@ -528,28 +528,29 @@ iD.Map = function(context) {
       }).length > 0;
     };
 
-    map.checkLocationLock = function (location, unitCode, suppressMessage) {
-      var testCodes = unitCode ? [].concat(unitCode) : map.getUtfGrid(location, 'Park Boundaries', ['unit_code']);
+    map.checkLocationLock = function (location, unitCode, suppressMessage, returnValues) {
+      var testCodes = unitCode ? [].concat(unitCode) : map.getUtfGrid(location, 'Park Boundaries', ['unit_code', 'full_name']);
       var locationLocked = iD.lockedParks.filter(function(p){
-        return testCodes[0].toLowerCase() === p.unit_code.toLowerCase();});
+        if (testCodes[0] && testCodes[0].toLowerCase() === p.unit_code.toLowerCase()) {
+          p.name = p.name || testCodes[1];
+          p.message = testCodes[1] ? "You can't edit " + testCodes[1] : p.message;
+          return true;
+        }
+      });
       if ((locationLocked.length > 0) && !suppressMessage) {
-        dispatch.editalert('', locationLocked[0].name);
+        dispatch.editalert(locationLocked[0].message || '', locationLocked[0].name || locationLocked[0].unit_code || '');
       }
-      return locationLocked.length > 0;
+      return suppressMessage ? locationLocked : locationLocked.length > 0;
     };
 
     map.mouseLock = function(location, buttons) {
-      var overPark = map.getUtfGrid(location, 'Park Boundaries', ['unit_code', 'name']);
-      var lockMap = map.checkLocationLock(null, overPark[0] || 'none', true);
+      var locationLocked = map.checkLocationLock(location, undefined, true);
       if (buttons === 0) {
-
-        map.lock(lockMap);
-        dispatch.overpark(overPark[1]);
-        if (lockMap) {
-          dispatch.editalert('', overPark[1]);
+        map.lock(locationLocked.length && locationLocked[0] && locationLocked[0].name || '');
+        if (locationLocked[0]) {
+          dispatch.editalert(locationLocked[0].message || '', locationLocked[0].name || locationLocked[0].unit_code || '');
         }
       }
     };
-
     return d3.rebind(map, dispatch, 'on');
 };
