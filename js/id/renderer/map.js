@@ -533,7 +533,7 @@ iD.Map = function(context) {
       var locationLocked = iD.lockedParks.filter(function(p){
         if (testCodes[0] && testCodes[0].toLowerCase() === p.unit_code.toLowerCase()) {
           p.name = p.name || testCodes[1];
-          p.message = testCodes[1] ? "You can't edit " + testCodes[1] : p.message;
+          p.message = ''; //testCodes[1] ? "You can't edit " + testCodes[1] : p.message;
           return true;
         }
       });
