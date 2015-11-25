@@ -9,9 +9,8 @@ iD.BackgroundSource = function(data, preview, context) {
     if (source.type === 'cartodb' && source.mapconfig && !source.template) {
       d3.json('https://' + source.account + '.cartodb.com/api/v1/map?config=' + encodeURIComponent(JSON.stringify(source.mapconfig)), function (e, r) {
         if (!e && r && r.layergroupid) {
-          data.template = source.template = 'https://' + source.account + '.cartodb.com/api/v1/map/' + r.layergroupid + '/{zoom}/{x}/{y}.png';
-          // TODO: using a layer param instead of hardcoding layer 0
-          data.templateGrid = source.templateGrid = 'https://' + source.account + '.cartodb.com/api/v1/map/' + r.layergroupid + '/0/{zoom}/{x}/{y}.grid.json';
+          if (source.hasTemplate !== false) data.template = source.template = 'https://' + source.account + '.cartodb.com/api/v1/map/' + r.layergroupid + '/{zoom}/{x}/{y}.png';
+          if (source.utfGrid) data.templateGrid = source.templateGrid = 'https://' + source.account + '.cartodb.com/api/v1/map/' + r.layergroupid + '/0/{zoom}/{x}/{y}.grid.json';
         }
         sourceDispatch.loaded(e);
       });
