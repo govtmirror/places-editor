@@ -11,7 +11,7 @@ iD.ui.EditAlert = function (context) {
     map.on('editalert', function (messageText, parkName) {
       main.text(mainText + (parkName ? ' for ' + parkName : ''));
       if (map.isLocked() && map.editable()) {
-        message.text(messageText || '');
+        message.html(messageText || '');
         selection
           .style('display', 'block')
           .style('opacity', 1);
