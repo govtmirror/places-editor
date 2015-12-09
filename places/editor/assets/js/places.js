@@ -183,6 +183,10 @@ window.onload = function () {
           }
         }
 
+        if (Object.prototype.toString.call(hash) !== '[object Array]') {
+          hash = [hash];
+        }
+
         if (indexMap) {
           hash[indexMap] = map;
         } else {
