@@ -76,7 +76,7 @@ window.onload = function () {
   if (hash && hash.length) {
     iframe.src = '../../dist/index.html' + hash;
   } else {
-    iframe.src = '../../dist/index.html#background=mapbox-satellite&map=4.00/-99.00/39.00&overlays=park-tiles-overlay';
+    iframe.src = '../../dist/index.html#background=mapbox-satellite&map=4.00/-99.00/39.00';
   }
 
   window.onhashchange = function () {
