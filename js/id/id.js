@@ -5,7 +5,7 @@ window.iD = function () {
     var context = {},
         storage;
 
-        var sql = 'SELECT "unit_code", "full_name" FROM "parks" WHERE "places_lock"=true';
+        var sql = 'SELECT "unit_code", "full_name", "steward_email", "steward_name" FROM "parks_places_status" WHERE "places_lock"=true';
         d3.json('https://nps.cartodb.com/api/v2/sql?q=' + encodeURIComponent(sql), function (error, json) {
           iD.lockedParks = json.rows;
         });
