@@ -16,6 +16,9 @@ iD.behavior.Draw = function(context) {
     }
 
     function mousedown() {
+      if (context.map().isLocked()) {
+        return;
+      }
 
         function point() {
             var p = context.container().node();

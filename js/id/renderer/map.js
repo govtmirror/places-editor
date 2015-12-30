@@ -1,6 +1,6 @@
 iD.Map = function(context) {
     var dimensions = [1, 1],
-        dispatch = d3.dispatch('move', 'drawn'),
+        dispatch = d3.dispatch('move', 'drawn', 'overpark', 'editalert'),
         projection = context.projection,
         roundedProjection = iD.svg.RoundProjection(projection),
         zoom = d3.behavior.zoom()
@@ -17,6 +17,7 @@ iD.Map = function(context) {
         lines = iD.svg.Lines(projection),
         areas = iD.svg.Areas(projection),
         midpoints = iD.svg.Midpoints(roundedProjection, context),
+        locked = false,
         labels = iD.svg.Labels(projection, context),
         supersurface, surface,
         mouse,
@@ -44,11 +45,13 @@ iD.Map = function(context) {
 
         map.surface = surface = dataLayer.append('svg')
             .on('mousedown.zoom', function() {
+              map.mouseLock(projection.invert(d3.mouse(this)), d3.event.buttons);
                 if (d3.event.button === 2) {
                     d3.event.stopPropagation();
                 }
             }, true)
             .on('mouseup.zoom', function() {
+              map.mouseLock(projection.invert(d3.mouse(this)), d3.event.buttons);
                 if (resetTransform()) redraw();
             })
             .attr('id', 'surface')
@@ -57,11 +60,13 @@ iD.Map = function(context) {
         supersurface.call(context.background());
 
         surface.on('mousemove.map', function() {
-            mousemove = d3.event;
+          map.mouseLock(projection.invert(d3.mouse(this)), d3.event.buttons);
+
+          mousemove = d3.event;
         });
 
         surface.on('mouseover.vertices', function() {
-            if (map.editable() && !transformed) {
+            if (map.editable() && !transformed && !locked) {
                 var hover = d3.event.target.__data__;
                 surface.call(vertices.drawHover, context.graph(), hover, map.extent(), map.zoom());
                 dispatch.drawn({full: false});
@@ -69,7 +74,7 @@ iD.Map = function(context) {
         });
 
         surface.on('mouseout.vertices', function() {
-            if (map.editable() && !transformed) {
+            if (map.editable() && !transformed && !locked) {
                 var hover = d3.event.relatedTarget && d3.event.relatedTarget.__data__;
                 surface.call(vertices.drawHover, context.graph(), hover, map.extent(), map.zoom());
                 dispatch.drawn({full: false});
@@ -77,7 +82,7 @@ iD.Map = function(context) {
         });
 
         context.on('enter.map', function() {
-            if (map.editable() && !transformed) {
+            if (map.editable() && !transformed && !locked) {
                 var all = context.intersects(map.extent()),
                     filter = d3.functor(true),
                     graph = context.graph();
@@ -465,5 +470,87 @@ iD.Map = function(context) {
         return map;
     };
 
+    map.getUtfGrid = function(location, layerName, field) {
+      field = [].concat(field);
+      return context.background().overlayLayerSources().filter(function (d) {
+        return d.utfGrid === true && d.name() === layerName && d.utfGridCache;
+      }).map(function (d) {
+        var result = d.utfGridCache(location, ~~map.zoom());
+        return field.map(function (f) {
+          return result[f];
+        });
+      })[0];
+    };
+
+    map.isLocked = function() {
+      return locked;
+    };
+
+    map.lock = function (setLock) {
+      if (setLock !== locked) {
+        locked = setLock;
+        if (!locked) {
+          dispatch.editalert();
+        }
+      }
+    };
+
+    map.checkIdLock = function(inIds) {
+      inIds = [].concat(inIds).filter(function(d){return !!d;});
+      var returnValue = false;
+      var fns = {
+        'n': function(nodeId) {
+          return [context.graph().entity(nodeId).loc];
+        },
+        'w': function(wayId) {
+          return fns.list(context.graph().entity(wayId).nodes);
+        },
+        'r': function(relationId) {
+          return fns.list(context.graph().entity(relationId).members.map(function (m){return m.id;}));
+        },
+        'list': function(ids) {
+          ids = [].concat(ids);
+          var locations = [];
+          ids.forEach(function(id) {
+            locations = locations.concat(fns[id.substr(0,1)](id));
+          });
+          return locations;
+        }
+      };
+      inIds.forEach(function(id) {
+        var unitCode = context.graph().entity(id).tags['nps:unit_code'];
+        if (unitCode && map.checkLocationLock(null, unitCode)) {
+          returnValue = true;
+        }
+      });
+      return returnValue || fns.list(inIds).filter(function(l,i) {
+        return map.checkLocationLock(l);
+      }).length > 0;
+    };
+
+    map.checkLocationLock = function (location, unitCode, suppressMessage, returnValues) {
+      var testCodes = unitCode ? [].concat(unitCode) : map.getUtfGrid(location, 'Park Boundaries', ['unit_code', 'full_name']);
+      var locationLocked = iD.lockedParks.filter(function(p){
+        if (testCodes[0] && testCodes[0].toLowerCase() === p.unit_code.toLowerCase()) {
+          p.name = p.name || testCodes[1];
+          p.message = (p.steward_name && p.steward_name.length > 0 && p.steward_email && p.steward_email.length > 0) ? 'For more information, please contact <a href="mailto:' + p.steward_email + '">' + p.steward_name + '</a>' : '';
+          return true;
+        }
+      });
+      if ((locationLocked.length > 0) && !suppressMessage) {
+        dispatch.editalert(locationLocked[0].message || '', locationLocked[0].name || locationLocked[0].unit_code || '');
+      }
+      return suppressMessage ? locationLocked : locationLocked.length > 0;
+    };
+
+    map.mouseLock = function(location, buttons) {
+      var locationLocked = map.checkLocationLock(location, undefined, true);
+      if (buttons === 0) {
+        map.lock(locationLocked.length && locationLocked[0] && locationLocked[0].name || '');
+        if (locationLocked[0]) {
+          dispatch.editalert(locationLocked[0].message || '', locationLocked[0].name || locationLocked[0].unit_code || '');
+        }
+      }
+    };
     return d3.rebind(map, dispatch, 'on');
 };

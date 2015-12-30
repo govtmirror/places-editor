@@ -17,7 +17,11 @@ iD.Background = function(context) {
 
     function updateImagery() {
         var b = background.baseLayerSource(),
-            o = overlayLayers.map(function (d) { return d.source().id; }).join(','),
+            o = overlayLayers.filter(function(d){
+              return !(d.source().isLocatorOverlay() || (d.source().selectable === false || d.source().default === true));
+            }).map(function (d) {
+              return d.source().id;
+            }).join(','),
             q = iD.util.stringQs(location.hash.substring(1));
 
         var id = b.id;
@@ -42,10 +46,10 @@ iD.Background = function(context) {
         var imageryUsed = [b.imageryUsed()];
 
         overlayLayers.forEach(function (d) {
-            var source = d.source();
-            if (!source.isLocatorOverlay()) {
-                imageryUsed.push(source.imageryUsed());
-            }
+          var source = d.source();
+          if (!(source.isLocatorOverlay() || (source.selectable === false || source.default === true))) {
+            imageryUsed.push(source.imageryUsed());
+          }
         });
 
         if (background.showsGpxLayer()) {
@@ -116,6 +120,7 @@ iD.Background = function(context) {
         baseLayer.source(d);
         baseLayer.previewSource = iD.BackgroundSource(baseLayer.previewOverlay, null, context);
         baseLayer.mapInMapSource = iD.BackgroundSource(baseLayer.mapInMap, null, context);
+        baseLayer.utfGridSource = iD.BackgroundSource(baseLayer.utfGrid, null, context);
         dispatch.change();
         updateImagery();
 
@@ -130,6 +135,9 @@ iD.Background = function(context) {
         return baseLayer.mapInMapSource;
     };
 
+    background.utfGridLayerSource = function() {
+        return baseLayer.utfGridSource;
+    };
 
     background.bing = function() {
         background.baseLayerSource(findSource('Bing'));
@@ -240,6 +248,7 @@ iD.Background = function(context) {
     background.load = function(imagery) {
         baseLayer.previewOverlay = imagery.filter(function(s){return s.preview;})[0];
         baseLayer.mapInMap = imagery.filter(function(s){return s.mapInMap;})[0];
+        baseLayer.utfGrid = imagery.filter(function(s){return s.utfGrid;})[0];
         backgroundSources = imagery.map(function(source) {
             if (source.type === 'bing') {
                 return iD.BackgroundSource.Bing(source, dispatch);
@@ -259,17 +268,12 @@ iD.Background = function(context) {
             background.baseLayerSource(findSource(chosen) || findSource(iD.npmap.settings.map.defaultBackground) || backgroundSources[1]);
         }
 
-        /*
-        // Taking out because this breaks passing park-tiles-overlay in via hash.
-
-        var locator = _.find(backgroundSources, function(d) {
-            return d.overlay && d.default;
+        // Turn on default layers
+        backgroundSources.filter(function (d) {
+          return d.default === true && d.overlay === true;
+        }).map(function (d) {
+          background.toggleOverlayLayer(d);
         });
-
-        if (locator) {
-            background.toggleOverlayLayer(locator);
-        }
-        */
 
         var overlays = (q.overlays || '').split(',');
         overlays.forEach(function(overlay) {

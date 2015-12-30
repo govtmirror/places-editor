@@ -1,12 +1,15 @@
 iD.TileLayer = function() {
     var tileSize = 256,
         tile = d3.geo.tile(),
+        tileMath = iD.tileMath,
         projection,
         cache = {},
+        utfGrid = {},
         tileOrigin,
         z,
         transformProp = iD.util.prefixCSSProperty('Transform'),
         source = d3.functor('');
+
 
     function tileSizeAtZoom(d, z) {
         return Math.ceil(tileSize * Math.pow(2, z - d[2])) / tileSize;
@@ -42,6 +45,7 @@ iD.TileLayer = function() {
 
     function addSource(d) {
         d.push(source.url(d));
+        d.push(source.url(d, 'templateGrid'));
         return d;
     }
 
@@ -56,7 +60,14 @@ iD.TileLayer = function() {
 
         z = Math.max(Math.log(projection.scale() * 2 * Math.PI) / Math.log(2) - 8, 0);
 
-        render(selection);
+        // If the source is loaded, get the tiles, if not wait for it to get loaded
+        if (source.field('template') || source.field('templateGrid')) {
+          render(selection);
+        } else {
+          source.on('loaded', function() {
+            render(selection);
+          });
+        }
     }
 
     // Derive the tiles onscreen, remove those offscreen and position them.
@@ -68,11 +79,25 @@ iD.TileLayer = function() {
         if (source.validZoom(z)) {
             tile().forEach(function(d) {
                 addSource(d);
-                if (d[3] === '') return;
-                if (typeof d[3] !== 'string') return; // Workaround for chrome crash https://github.com/openstreetmap/iD/issues/2295
-                requests.push(d);
-                if (cache[d[3]] === false && lookUp(d)) {
+                if (d[3] && typeof d[3] === 'string') {
+                  requests.push(d);
+                  if (cache[d[3]] === false && lookUp(d)) {
                     requests.push(addSource(lookUp(d)));
+                  }
+                }
+                if (d[4] && typeof d[4] === 'string') {
+                  // Load the utfGrid when it tries to load the image
+                  // Fill out the JSON grid cache
+                  utfGrid[d[2]] = utfGrid[d[2]] || {};
+                  utfGrid[d[2]][d[0]] = utfGrid[d[2]][d[0]] || {};
+
+                  // If we don't already have this grid, load it
+                  if (!utfGrid[d[2]][d[0]][d[1]]) {
+                    utfGrid[d[2]][d[0]][d[1]] = 'loading';
+                    d3.json(d[4], function (e, r) {
+                      utfGrid[d[2]][d[0]][d[1]] = e ? {'error': e, 'tile': d} : r;
+                    });
+                  }
                 }
             });
 
@@ -116,7 +141,10 @@ iD.TileLayer = function() {
 
         var image = selection
             .selectAll('img')
-            .data(requests, function(d) { return d[3]; });
+            .data(requests, function(d) { 
+
+              return d[3];
+            });
 
         image.exit()
             .style(transformProp, imageTransform)
@@ -153,13 +181,67 @@ iD.TileLayer = function() {
         return background;
     };
 
-    background.source = function(_) {
+    background.source = function (_) {
+      source.utfGridCache = function (coords, zoom) {
+        var pixelOffset = [
+          Math.round(source.offset()[0] * Math.pow(2, z)),
+          Math.round(source.offset()[1] * Math.pow(2, z))
+        ];
+
+        var getTile = function (lon, lat, z, pixelOffset) {
+          // Resolve the UTF-8 encoding stored in grids to simple
+          // number values.
+          // See the [utfgrid spec](https://github.com/mapbox/utfgrid-spec)
+          // for details.
+          var returnValue;
+          function resolveCode (key) {
+            if (key >= 93) key--;
+            if (key >= 35) key--;
+            key -= 32;
+            return key;
+          }
+
+          var dimension = 256;
+          var resolution = 4;
+
+          lat = parseFloat(lat, 10);
+          lon = parseFloat(lon, 10);
+          z = parseInt(z, 10);
+
+          var tileLocation = [z, tileMath.long2tile(lon, z, pixelOffset[0], true), tileMath.lat2tile(lat, z, pixelOffset[1], true)];
+          var tile = utfGrid[tileLocation[0]] &&
+            utfGrid[tileLocation[0]][Math.floor(tileLocation[1])] &&
+              utfGrid[tileLocation[0]][Math.floor(tileLocation[1])][Math.floor(tileLocation[2])];
+
+          if (tile && tile.grid) {
+            var location = [Math.floor((tileLocation[2] % 1) * (dimension / resolution)), Math.floor((tileLocation[1] % 1) * (dimension / resolution))];
+            var code = resolveCode(tile.grid[location[0]].charCodeAt(location[1]));
+            var key = tile.keys[code];
+            var data = key ? tile.data[key] : {};
+
+            returnValue = data;
+          }
+
+          return returnValue;
+        };
+        var returnValue;
+        if (coords && zoom) {
+          // If a grid isn't found at the current zoom, try looking up or down one zoom level before giving up
+          returnValue = getTile(coords[0], coords[1], zoom, pixelOffset) ||
+            getTile(coords[0], coords[1], zoom + 1, pixelOffset) ||
+              getTile(coords[0], coords[1], zoom - 1, pixelOffset) ||
+                {};
+        }
+        return returnValue;
+      };
+
         if (!arguments.length) return source;
         source = _;
         cache = {};
         tile.scaleExtent(source.scaleExtent);
         return background;
     };
+
 
     return background;
 };

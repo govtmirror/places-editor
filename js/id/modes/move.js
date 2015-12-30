@@ -58,6 +58,10 @@ iD.modes.Move = function(context, entityIDs) {
     }
 
     function finish() {
+        if (context.map().checkIdLock(entityIDs)) {
+          cancel();
+          return;
+        }
         d3.event.stopPropagation();
         context.enter(iD.modes.Select(context, entityIDs).suppressMenu(true));
         stopNudge();

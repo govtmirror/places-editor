@@ -35,6 +35,10 @@ iD.ui.Sidebar = function(context) {
         sidebar.hover = _.throttle(sidebar.hover, 200);
 
         sidebar.select = function(id, newFeature) {
+            var disabled = context.map().checkIdLock(id) || null;
+
+            d3.selectAll('.entity-editor-pane').selectAll('div.header').selectAll('h3').text((disabled ? 'View' : 'EdiT') + ' feature');
+
             if (!current && id) {
                 featureListWrap.classed('inspector-hidden', true);
                 inspectorWrap.classed('inspector-hidden', false)
@@ -53,6 +57,9 @@ iD.ui.Sidebar = function(context) {
                 inspectorWrap.classed('inspector-hidden', true);
                 inspector.state('hide');
             }
+            inspectorWrap.selectAll('input').attr('disabled', disabled);
+            inspectorWrap.selectAll('button').attr('disabled', disabled);
+            inspectorWrap.selectAll('textarea').attr('disabled', disabled);
         };
 
         sidebar.show = function(component) {

@@ -164,7 +164,7 @@ iD.modes.DragNode = function(context) {
             .classed('active', true);
     }
 
-    var behavior = iD.behavior.drag()
+    var behavior = iD.behavior.drag(context)
         .delegate('g.node, g.point, g.midpoint')
         .surface(context.surface().node())
         .origin(origin)

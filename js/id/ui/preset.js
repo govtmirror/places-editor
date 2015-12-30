@@ -135,6 +135,7 @@ iD.ui.preset = function(context) {
         if (!fields) {
             var entity = context.entity(id),
                 geometry = context.geometry(id);
+            var disabled = context.map().checkIdLock(id) || null;
 
             fields = [UIField(context.presets().field('name'), entity)];
             fields.push(UIField(context.presets().field('nps/unitcode'), entity));
@@ -289,6 +290,9 @@ iD.ui.preset = function(context) {
             d3.event.preventDefault();
             event.change(field.remove());
         }
+        $enter.selectAll('input').attr('disabled', disabled);
+        $enter.selectAll('button').attr('disabled', disabled);
+        $enter.selectAll('textarea').attr('disabled', disabled);
     }
 
     presets.preset = function(_) {

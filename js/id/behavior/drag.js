@@ -14,7 +14,7 @@
     * Delegation is supported via the `delegate` function.
 
  */
-iD.behavior.drag = function() {
+iD.behavior.drag = function(context) {
     function d3_eventCancel() {
       d3.event.stopPropagation();
       d3.event.preventDefault();
@@ -57,6 +57,10 @@ iD.behavior.drag = function() {
             };
 
     function mousedown() {
+        if (context.map().isLocked()) {
+          drag.cancel();
+          return;
+        }
         target = this;
         event_ = event.of(target, arguments);
         var eventTarget = d3.event.target,
@@ -113,6 +117,11 @@ iD.behavior.drag = function() {
         }
 
         function dragend() {
+          if (context.map().isLocked()) {
+            context.undo();
+            context.history().perform();
+            return;
+          }
             if (started) {
                 event_({
                     type: 'end'
@@ -129,6 +138,7 @@ iD.behavior.drag = function() {
 
         function click() {
             d3_eventCancel();
+            if (context.map().isLocked()) return;
             w.on('click.drag', null);
         }
     }
