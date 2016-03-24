@@ -1,4 +1,4 @@
-# Places Editor - a fork of [iD](https://github.com/openstreetmap/id), OpenStreetMap's friendly JavaScript editor, customized for use in the National Park Service's [Places](http://www.nps.gov/tools/places/) system
+# Places Editor - a fork of [iD](https://github.com/openstreetmap/id), OpenStreetMap's friendly JavaScript editor, customized for use in the National Park Service's [Places](https://www.nps.gov/tools/places/) system
 
 ## Basics
 
